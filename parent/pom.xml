@@ -45,6 +45,14 @@
 	    	<groupId>org.slf4j</groupId>                
 	    	<artifactId>jcl-over-slf4j</artifactId>     
 	    </dependency>
+	    
+	    <!-- 测试模块，包括JUnit、Hamcrest、Mockito -->
+		<dependency>
+		   <groupId>org.springframework.boot</groupId>
+		   <artifactId>spring-boot-starter-test</artifactId>
+		   <scope>test</scope>
+		</dependency>
+		
 	</dependencies>
 
 </project>
