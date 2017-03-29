@@ -1,4 +1,4 @@
-package com.hry.spring.async.asyncconfigurer;
+package com.hry.spring.async.exception;
 
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -14,7 +14,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * @author hry
  *
  */
-@RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootApplication
 @EnableAsync // 启动异步调用
 public class AsyncApplicationWithAsyncConfigurer {

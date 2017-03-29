@@ -1,4 +1,4 @@
-package com.hry.spring.async.asyncconfigurer;
+package com.hry.spring.async.exception;
 
 import java.lang.reflect.Method;
 import java.util.concurrent.Executor;
@@ -11,7 +11,8 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Service;
 
 /**
- * 通过实现AsyncConfigurer自定义异常线程池
+ * 通过实现AsyncConfigurer自定义异常线程池，包含异常处理
+ * 
  * @author hry
  *
  */

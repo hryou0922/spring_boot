@@ -1,4 +1,4 @@
-package com.hry.spring.async.asyncconfigurer;
+package com.hry.spring.async.xml;
 
 import java.util.concurrent.Future;
 
@@ -15,8 +15,8 @@ import org.springframework.stereotype.Component;
  *
  */
 @Component
-public class AsyncExceptionDemo {
-	private static final Logger log = LoggerFactory.getLogger(AsyncExceptionDemo.class);
+public class AsyncDemo {
+	private static final Logger log = LoggerFactory.getLogger(AsyncDemo.class);
 
 	/**
 	 * 最简单的异步调用，返回值为void
@@ -28,18 +28,16 @@ public class AsyncExceptionDemo {
 
 	/**
 	 * 带参数的异步调用 异步方法可以传入参数
-	 * 	对于返回值是void，异常会被AsyncUncaughtExceptionHandler处理掉
+	 * 
 	 * @param s
 	 */
 	@Async
-	public void asyncInvokeWithException(String s) {
+	public void asyncInvokeWithParameter(String s) {
 		log.info("asyncInvokeWithParameter, parementer={}", s);
-		throw new IllegalArgumentException(s);
 	}
 
 	/**
 	 * 异常调用返回Future
-	 * 	对于返回值是Future，不会被AsyncUncaughtExceptionHandler处理，需要我们在方法中捕获异常并处理
 	 * 
 	 * @param i
 	 * @return
@@ -51,11 +49,8 @@ public class AsyncExceptionDemo {
 		try {
 			Thread.sleep(1000 * 1);
 			future = new AsyncResult<String>("success:" + i);
-			throw new IllegalArgumentException("a");
 		} catch (InterruptedException e) {
 			future = new AsyncResult<String>("error");
-		} catch(IllegalArgumentException e){
-			future = new AsyncResult<String>("error-IllegalArgumentException");
 		}
 		return future;
 	}

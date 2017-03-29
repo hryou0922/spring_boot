@@ -14,10 +14,10 @@ http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
     default-lazy-init="false">  
     
   	<!-- 等价于 @EnableAsync， executor指定线程池 -->
-  	<task:annotation-driven executor="myExecutor"/>
+  	<task:annotation-driven executor="xmlExecutor"/>
   	<!-- id指定线程池产生线程名称的前缀 -->
     <task:executor
-        id="myExecutor"
+        id="xmlExecutor"
         pool-size="5-25"
         queue-capacity="100"
 	    keep-alive="120"

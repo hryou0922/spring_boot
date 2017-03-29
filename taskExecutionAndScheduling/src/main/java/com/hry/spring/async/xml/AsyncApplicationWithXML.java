@@ -1,4 +1,4 @@
-package com.hry.spring.async;
+package com.hry.spring.async.xml;
 
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -14,7 +14,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * @author hry
  *
  */
-@RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootApplication
 @ImportResource("classpath:/async/spring_async.xml")
 public class AsyncApplicationWithXML {
