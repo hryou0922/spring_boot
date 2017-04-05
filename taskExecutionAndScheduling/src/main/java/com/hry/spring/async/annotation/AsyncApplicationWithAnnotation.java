@@ -24,6 +24,7 @@ public class AsyncApplicationWithAnnotation {
 	
 	/**
 	 * 自定义异步线程池
+	 * 	如果没有这个方法，则使用默认的线程池
 	 * @return
 	 */
     @Bean

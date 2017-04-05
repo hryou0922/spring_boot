@@ -40,6 +40,7 @@ public class AsyncExceptionDemo {
 	/**
 	 * 异常调用返回Future
 	 * 	对于返回值是Future，不会被AsyncUncaughtExceptionHandler处理，需要我们在方法中捕获异常并处理
+	 *  或者在调用方在调用Futrue.get时捕获异常进行处理
 	 * 
 	 * @param i
 	 * @return
