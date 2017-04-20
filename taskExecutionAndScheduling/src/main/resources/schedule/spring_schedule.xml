@@ -13,7 +13,7 @@ http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
         http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.0.xsd"  
     default-lazy-init="false">  
     
-  	<!-- 等价于 @EnableAsync， executor指定线程池 -->
+  	<!-- 等价于 @EnableScheduling， scheduler指定线程池 -->
   	<task:annotation-driven scheduler="myScheduler"/>
   	
   	<!-- id指定线程池产生线程名称的前缀 -->

@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
- * 通过@EnableAsync启动异步方法
+ * 通过@EnableScheduling启动定时方法
  * 配置
  * 
  * @author hry

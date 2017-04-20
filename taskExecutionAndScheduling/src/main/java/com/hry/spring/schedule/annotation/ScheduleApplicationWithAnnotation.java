@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
- * 通过@EnableAsync启动异步方法
+ * 通过@EnableScheduling启动异步方法
  * @author hry
  * 
  */
