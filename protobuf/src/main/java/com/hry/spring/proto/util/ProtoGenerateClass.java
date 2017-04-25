@@ -18,7 +18,7 @@ public class ProtoGenerateClass {
 	// 生成java类输出目录
 	private static final String JAVA_OUT = "d:/tmp";
 	// 指定proto文件
-	private static final String protos = "D:/project/git/spring_boot/protobuf/src/main/resources/com/hry/spring/proto/simple/*.proto";
+	private static final String protos = "D:/project/git/spring_boot/protobuf/src/main/resources/com/hry/spring/proto/*/*.proto";
 			
 	public static void main(String[] args) throws IOException {
 		List<String> lCommand = new ArrayList<String>();
