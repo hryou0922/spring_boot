@@ -1,4 +1,4 @@
-package com.hry.spring.proto.util;
+package com.hry.spring.util;
 
 import java.io.IOException;
 import java.io.InputStream;

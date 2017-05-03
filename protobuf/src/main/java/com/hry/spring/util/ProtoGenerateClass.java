@@ -1,4 +1,4 @@
-package com.hry.spring.proto.util;
+package com.hry.spring.util;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -18,7 +18,7 @@ public class ProtoGenerateClass {
 	// 生成java类输出目录
 	private static final String JAVA_OUT = "d:/tmp";
 	// 指定proto文件
-	private static final String protos = "D:/project/git/spring_boot/protobuf/src/main/resources/com/hry/spring/proto/*/*.proto";
+	private static final String protos = "D:/project/git/spring_boot/protobuf/src/main/resources/com/hry/spring/*/*/*.proto";
 			
 	public static void main(String[] args) throws IOException {
 		List<String> lCommand = new ArrayList<String>();
