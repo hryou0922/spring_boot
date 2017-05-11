@@ -183,13 +183,13 @@ public class HelloStreamClient {
 			client.simpleRpc(1);
 
 			// server2ClientRpc
-//			client.server2ClientRpc(1, 2);
-//
-//			// client2ServerRpc
-//			client.client2ServerRpc(2);
-//
-//			// bindirectionalStreamRpc
-//			client.bindirectionalStreamRpc();
+			client.server2ClientRpc(1, 2);
+
+			// client2ServerRpc
+			client.client2ServerRpc(2);
+
+			// bindirectionalStreamRpc
+			client.bindirectionalStreamRpc();
 
 		} finally {
 			client.shutdown();

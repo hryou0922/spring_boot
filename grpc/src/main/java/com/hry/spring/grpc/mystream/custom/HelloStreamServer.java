@@ -80,12 +80,14 @@ public class HelloStreamServer {
 		public void simpleRpc(Simple request, StreamObserver<SimpleFeature> responseObserver) {
 			SimpleFeature rtn = SimpleFeature.newBuilder().setName(request.getName() + "simpleRpc").setLocation(request)
 					.build();
+			logger.info("recevier simpleRpc ： {}", request);
 			responseObserver.onNext(rtn);
 			responseObserver.onCompleted();
 		}
 
 		@Override
 		public void server2ClientRpc(SimpleList request, StreamObserver<SimpleFeature> responseObserver) {
+			logger.info("recevier server2ClientRpc ： {}", request);
 			for (SimpleFeature feature : this.features) {
 				Simple simpleLocation = feature.getLocation();
 				for (Simple o : request.getSimpleListList()) {
@@ -103,6 +105,7 @@ public class HelloStreamServer {
 		 */
 		@Override
 		public StreamObserver<Simple> client2ServerRpc(StreamObserver<SimpleSummary> responseObserver) {
+			
 			return new StreamObserver<Simple>() {
 				int feature_count = 0;
 
@@ -138,6 +141,7 @@ public class HelloStreamServer {
 			return new StreamObserver<Simple>() {
 				@Override
 				public void onNext(Simple value) {
+					logger.info("bindirectionalStreamRpc receive {}", value);
 					for (SimpleFeature feature : features) {
 						Simple simpleLocation = feature.getLocation();
 						if (value.getNum() == simpleLocation.getNum()) {
