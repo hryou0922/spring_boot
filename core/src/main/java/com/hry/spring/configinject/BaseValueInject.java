@@ -35,7 +35,7 @@ public class BaseValueInject {
 	private Resource resourceFile; // 注入文件资源
 	
 	@Value("http://www.baidu.com")
-	private Resource testUrl; // 注入资源
+	private Resource testUrl; // 注入URL资源
 	
 	@Override
 	public String toString(){

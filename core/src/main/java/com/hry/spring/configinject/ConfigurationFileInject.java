@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 // 引入外部配置文件组：${app.configinject}的值来自config.properties。
-// 如果相同
+// 如果相同第一个属性文件和第二属性文件存在相同key，则后一个属性文件里的key启作用
 @PropertySource({"classpath:com/hry/spring/configinject/config.properties",
 	"classpath:com/hry/spring/configinject/config_${anotherfile.configinject}.properties"})
 public class ConfigurationFileInject{
