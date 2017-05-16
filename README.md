@@ -22,3 +22,6 @@ grpc的用法总结
 # thymeleaf
 thymeleaf的用法总结
 
+# core
+存储常用的spring核心用法
+	- com.hry.spring.configinject：@Value注入用法总结
