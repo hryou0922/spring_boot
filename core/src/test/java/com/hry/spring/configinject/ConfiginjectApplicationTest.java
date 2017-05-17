@@ -15,6 +15,9 @@ public class ConfiginjectApplicationTest {
 	@Autowired
 	private ConfigurationFileInject configurationFileInject;
 	
+	@Autowired
+	private AdvanceValueInject advanceValueInject;
+	
 	@Test
 	public void baseValueInject(){
 		System.out.println(baseValueInject.toString());
@@ -23,5 +26,10 @@ public class ConfiginjectApplicationTest {
 	@Test
 	public void configurationFileInject(){
 		System.out.println(configurationFileInject.toString());
+	}
+	
+	@Test
+	public void advanceValueInject(){
+		System.out.println(advanceValueInject.toString());
 	}
 }
