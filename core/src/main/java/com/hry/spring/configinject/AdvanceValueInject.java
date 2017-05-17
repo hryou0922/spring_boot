@@ -26,17 +26,25 @@ public class AdvanceValueInject {
 	@Value("#{'${server.name}'.split(',')}")
 	private List<String> servers;
 	
-	// SpEL: 使用default.value设置值，如果不存在则使用默认值
-	@Value("${default.value:127.0.0.1}")
-	private String defaultValue;
+//	// SpEL: 注意不能反过来${}在外面，#{}在里面，这个会执行失败
+//	@Value("${#{'HelloWorld'.concat('_')}}")
+//	private List<String> servers2;
+	
+	// 使用default.value设置值，如果不存在则使用默认值
+	@Value("${spelDefault.value:127.0.0.1}")
+	private String spelDefault;
+	
+	// 如果属性文件没有spelDefault.value，则会报错
+//	@Value("${spelDefault.value}")
+//	private String spelDefault2;
 	
 	public String toString(){
 		StringBuilder sb = new StringBuilder();
 		sb.append("helloWorld=").append(helloWorld).append("\r\n")
 		.append("helloWorldbytes=").append(helloWorldbytes).append("\r\n")
 		.append("servers=").append(servers).append("\r\n")
-		.append("defaultValue=").append(defaultValue).append("\r\n")
-		.append("defaultValue=").append(defaultValue).append("\r\n")
+		.append("spelDefault=").append(spelDefault).append("\r\n")
+	//	.append("spelDefault2=").append(spelDefault2).append("\r\n")
 		;
 		return sb.toString();
 	}
