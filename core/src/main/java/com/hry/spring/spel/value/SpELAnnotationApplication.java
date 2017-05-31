@@ -44,7 +44,4 @@ public class SpELAnnotationApplication {
 		invertor.setMap(map);
 		return invertor;
 	}
-	
- 
-	
 }
