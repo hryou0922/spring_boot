@@ -228,7 +228,7 @@ public class SpELAnnotationExample {
 	private List<String> collectionProjection;
 	
 	public String toString(){
-		System.out.println(mapKeyValue);
+	//	System.out.println(mapKeyValue);
 		return JSON.toJSONString(this);
 	}
 
