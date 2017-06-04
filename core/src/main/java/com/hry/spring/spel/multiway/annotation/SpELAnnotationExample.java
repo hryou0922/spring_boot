@@ -22,7 +22,7 @@ public class SpELAnnotationExample {
 	@Value("#{ people.name }")
 	private String objName; // 获取People的name值，比较name值是不是hry
 	@Value("#{ people.name=='hry' }")
-	private boolean objNamecmp;  // 比较name值是不是hry人结果
+	private boolean objNamecmp;  // 比较name值是不是hry的结果
 
 	@Override
 	public String toString(){
