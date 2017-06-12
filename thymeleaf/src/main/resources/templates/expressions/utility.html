@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+==================== 变量表达式(Variable Expressions) ===============================<br/>
+<!-- 变量表达式(Variable Expressions) 输出: simple_name -->
+<input type="text" name="userName" value="James Carrot" th:value="${user.name}" /> <br />
+<!-- 变量值和字符串拼接 输出： The name of the user is simple_name  -->
+<span th:text="'The name of the user is ' + ${user.name}" ></span> <br />
+<br />
+
+
+</body>
+</html>
