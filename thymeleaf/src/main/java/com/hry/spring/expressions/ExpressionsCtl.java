@@ -62,8 +62,19 @@ public class ExpressionsCtl {
 	 */
 	@RequestMapping("/utility")
 	public String utility(ModelMap modeMap){
-		
 		return "expressions/utility";
+	}
+	
+	/**
+	 * 处理URL
+	 * 
+	 * @param modeMap
+	 * @return
+	 */
+	@RequestMapping("/url")
+	public String url(ModelMap modeMap){
+		modeMap.put("id", "123");
+		return "expressions/url";
 	}
 }
 
