@@ -11,6 +11,14 @@ public class User {
 		this.name = name;
 	}
 
+	public User(String name, boolean isAdmin, String other, int age) {
+		super();
+		this.name = name;
+		this.isAdmin = isAdmin;
+		this.other = other;
+		this.age = age;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -25,6 +33,10 @@ public class User {
 
 	public void setAdmin(boolean isAdmin) {
 		this.isAdmin = isAdmin;
+	}
+	
+	public boolean getIsAdmin() {
+		return isAdmin;
 	}
 
 	public String getOther() {

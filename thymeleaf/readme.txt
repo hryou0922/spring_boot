@@ -6,7 +6,8 @@ com.hry.spring.expressions: 标准表达式,加载外部属性文件，复杂对
 	http://localhost:8080/expressions/complex?id=112
 	http://localhost:8080/expressions/url
 	http://localhost:8080/expressions/utility
-
+com.hry.spring.programming：Simple conditionals: “if” and “unless”;Iteration;Switch statements
+	
 代处理：
 	standard Expression Syntax
 	Setting Attribute Values：Appending and prepending;  Fixed-value boolean attributes;
@@ -17,9 +18,7 @@ com.hry.spring.expressions: 标准表达式,加载外部属性文件，复杂对
 	Link URLs
 	语法：
 		操作符：Conditional operators，Special tokens:
-		Simple conditionals: “if” and “unless”
-		Iteration
-		Switch statements
+		
 	定义和引用模板： th:include 和 th:replace，	th:remove 删除代码
 		
 	
