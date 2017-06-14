@@ -37,7 +37,7 @@ ${user.isAdmin()} == false --> <span th:if="${user.isAdmin()} == false"> false <
 ${user.other} == null --> <span th:if="${user.other} == null"> null</span>
 <br />
 
-========================== 文本操作符： Text operations: ==================================<br/>
+========================== 文本操作符： Text operations ==================================<br/>
 <!-- +:字符串拼接字体串 -->
 'The name of the user is ' + ${user.name} + '_' + ${user.age} --> <span th:text="'The name of the user is ' + ${user.name} + '_' + ${user.age}"> </span> <br/>
 <!-- 简化字符中拼接操作： Literal substitutions（使用"|"包围字符串，不需要对字符串使用"'"） -->

@@ -4,6 +4,8 @@ com.hry.spring.ctl
 com.hry.spring.expressions: 标准表达式,加载外部属性文件，复杂对象(成员变量是对象,list,map),web对象
 	http://localhost:8080/expressions/simple
 	http://localhost:8080/expressions/complex?id=112
+	http://localhost:8080/expressions/url
+	http://localhost:8080/expressions/utility
 
 代处理：
 	standard Expression Syntax
