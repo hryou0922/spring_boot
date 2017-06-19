@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>template</title>
+</head>
+<body>
+	==================这里使用的thymeleaf 2版本 ============================= <br />
+	<!-- spring boot 默认使用的 thymeleaf 2，这里只演示thymeleaf 2语法 -->
+	================== fragment语法 ============================= <br />
+	<!--  语法说明  "::"前面是模板文件名，后面是选择器 -->
+	<div th:include="template/footer::copy"></div>
+	<!-- 只写选择器，这里指fragment名称，则加载本页面对应的fragment -->
+	<div th:include="::#thispage"></div>
+	<!-- 只写模板文件名，则加载整个页面 -->
+	<div th:include="template/footer"></div>
+	
+	================= 通过 th:fragment 和 css选择器加载代码块 =================
+	<!-- 这里加载”th:fragment 定义用于加载的块“ -->
+	<div th:include="template/footer::copy"></div>
+	<!-- 这里加载”id=copy-section“的节点 -->
+	<div th:include="template/footer::#copy-section"></div> 
+	
+	================= th:include 和 th:replace============================
+	<!-- 加载模板的内容： 读取加载节点的内容（不含节点名称），替换<div>的内容 -->
+	<div th:include="template/footer::copy">1</div>
+	<!-- 替换当前标签为模板中的标签： 加载的节点会整个替换掉加载他的<div>  -->
+  	<div th:replace="template/footer::copy">2</div>
+  	 
+  	<!-- th:insert: thymeleaf3 才支持这个标签，默认spring boot使用的是2的版本，所以以下代码不启作用
+	<div th:insert="footer :: copy"></div>
+	-->
+	<br />
+	
+	================= 参数化模板配置 ============================
+	<div th:include="template/footer::frag(${month},${date})">...</div>
+	
+	================= 加载块 ============================
+	<br />
+	<span id="thispage">
+		div in this page.
+	</span>
+</body>
+
+</html>
