@@ -25,3 +25,6 @@ thymeleaf的用法总结
 # core：存储常用的spring核心用法 
 - com.hry.spring.configinject：@Value注入用法总结
 - com.hry.spring.spel.multiway：xml、注解和Programing 3种方式使用Spring EL
+
+# redis
+redis的用法总结
