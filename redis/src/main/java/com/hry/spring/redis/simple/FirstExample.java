@@ -12,4 +12,9 @@ public class FirstExample {
     public void save(String userId, String value) {
         template.boundListOps(userId).leftPush(value);
     }
+    
+    public void runLuaScript(){
+    	template.
+    }
+    
 }
