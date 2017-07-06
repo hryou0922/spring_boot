@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.hry.spring.redis.distributedlock.lockmsg.LuaLockRedisLockManager;
 import com.hry.spring.redis.distributedlock.lockmsg.SimpleCallBack;
 import com.hry.spring.redis.distributedlock.lockmsg.SimpleRedisLockManager;
 
@@ -16,6 +17,9 @@ public class TestCtrl {
 	
 	@Autowired
 	private SimpleRedisLockManager simpleRedisLockManager;
+	
+	@Autowired
+	private LuaLockRedisLockManager luaLockRedisLockManager;
 	
 	@ResponseBody
 	@RequestMapping("/distributeLock")
@@ -32,8 +36,13 @@ public class TestCtrl {
 	
 	@ResponseBody
 	@RequestMapping("/distributeLock2")
-	public String distributeLock2(@RequestBody String content){
-		System.out.println(content);
+	public String distributeLock2(){
+		luaLockRedisLockManager.lockCallBack("distributeLock2" + ThreadLocalRandom.current().nextInt(1000), new SimpleCallBack() {
+			@Override
+			public void execute() {
+				System.out.println("distributeLock2");
+			}
+		});
 		return "distributeLock2";
 	}
 }

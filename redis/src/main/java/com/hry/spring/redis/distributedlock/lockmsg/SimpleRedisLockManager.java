@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
 import com.hry.spring.redis.distributedlock.lock.DistributeLock;
+import com.hry.spring.redis.distributedlock.lock.ILock;
 
 /**
  * 简单分布锁管理，
@@ -21,9 +22,9 @@ import com.hry.spring.redis.distributedlock.lock.DistributeLock;
 public class SimpleRedisLockManager implements ILockManager {	
 	
 	@Autowired
-	private StringRedisTemplate redisTemplate;
+	protected StringRedisTemplate redisTemplate;
 	
-	private DistributeLock distributeLock; // 分布锁
+	protected ILock distributeLock; // 分布锁
 	
 	@PostConstruct
 	public void init(){

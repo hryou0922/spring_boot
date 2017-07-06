@@ -16,4 +16,9 @@ public class FirstApplicationTests {
 	public void save(){
 		firstExample.save("name", "value");
 	}
+	
+	@Test
+	public void luaScript(){
+		firstExample.luaScript("expectedValue", "newValue");		
+	}
 }
