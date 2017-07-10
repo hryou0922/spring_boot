@@ -1,7 +1,7 @@
 package com.hry.spring.redis.distributedlock.lockmsg;
 
 /**
- * 分布式锁MSG
+ * 分布式锁MSG：  封装分布锁使用
  * @author hry
  *
  */

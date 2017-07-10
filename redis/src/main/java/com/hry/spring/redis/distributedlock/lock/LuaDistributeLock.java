@@ -88,12 +88,6 @@ public class LuaDistributeLock implements ILock {
 	/**
 	 * 释放锁，同时要考虑当前锁是否为自己所有，以下情况会导致当前线程失去锁：线程执行的时间超过超时的时间，导致此锁被其它线程拿走; 此时用户不可以执行删除
 	 * 
-	 * 以上方法的缺陷：
-	 * 	a. 在本线程获取值，判断锁本线程所有，但是在执行删除前，锁超时被释放同时被另一个线程获取，则本操作释放锁
-	 * 
-	 * 最终解决方案
-	 * 	a. 使用lua脚本，保证检测和删除在同一事物中
-	 * 
 	 */
 	@Override
 	public void unlock(final String lock) {

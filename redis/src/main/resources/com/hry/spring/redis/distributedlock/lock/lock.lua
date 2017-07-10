@@ -7,6 +7,7 @@ local ttl     = ARGV[1]
 local lockSet = redis.call('setnx', key, content)
 if lockSet == 1 then
   redis.call('pexpire', key, ttl)
+--  redis.call('incr', "count")
 else 
   -- 如果value相同，则认为是同一个线程的请求，则认为重入锁
   local value = redis.call('get', key)
