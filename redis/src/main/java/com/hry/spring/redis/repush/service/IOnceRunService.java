@@ -1,7 +1,9 @@
 package com.hry.spring.redis.repush.service;
 
+import java.util.Date;
 import java.util.List;
 
+import com.hry.spring.redis.repush.support.OnceRunModel;
 import com.hry.spring.redis.repush.support.RetryPushModel;
 
 /**
@@ -11,7 +13,7 @@ import com.hry.spring.redis.repush.support.RetryPushModel;
  *
  */
 public interface IOnceRunService {
-	void save(RetryPushModel model);
+	void save(OnceRunModel model, Date executeTime);
 
 	void delete(String id);
 
