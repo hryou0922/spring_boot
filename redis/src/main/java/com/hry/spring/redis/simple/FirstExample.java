@@ -18,6 +18,12 @@ public class FirstExample {
 		redisTemplate.boundListOps(userId).leftPush(value);
 	}
 
+	/**
+	 * 如何使用lua脚本
+	 * @param expectedValue
+	 * @param newValue
+	 * @return
+	 */
 	public boolean luaScript(String expectedValue, String newValue) {
 		DefaultRedisScript<Boolean> redisScript = new DefaultRedisScript<Boolean>();
 		redisScript.setScriptSource(
