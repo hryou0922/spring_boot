@@ -103,4 +103,45 @@ public class RepushRunTestJob {
 		}
 		
 	}
+	
+	
+	/**
+	 * 获取下次执行的时间
+	 * @param time
+	 * @return
+	 */
+	protected Date getPushNextTime(int time) {
+		long delayTime;
+		int size = retryIntervalSecondsList.size();
+		// 次数从1开始，索引从0开始
+		if(size >= time){
+			delayTime =  retryIntervalSecondsList.get(time-1) * 1000;
+		}else if(size > 0){
+			// 超过配置的次数，则延迟时间使用最后一次
+			delayTime = retryIntervalSecondsList.get(retryIntervalSecondsList.size() - 1) * 1000;
+		}else{
+			delayTime = 300 * 1000; // 延迟时间，默认5分钟
+		}
+		Date rtnDate = new Date(System.currentTimeMillis() + delayTime);   	
+		return rtnDate;
+	}
+	
+    /**
+     * 生成重推消息
+     * 	如果超过重推最大次数，则重推结束
+     * @param url
+     * @param time
+     * @param jsonBody
+     * @param sessionId
+     */
+	protected void generateRetryPush(String url, int time, String jsonBody,
+			String sessionId, int type) {
+		RetryPushModel model = new RetryPushModel();
+		model.setContent(jsonBody);
+		model.setType(type);
+		model.setUrl(url);
+		model.setPushTime(time); 
+		model.setPushNextTime(getPushNextTime(time));
+		retryPushService.save(model);
+	}
 }
