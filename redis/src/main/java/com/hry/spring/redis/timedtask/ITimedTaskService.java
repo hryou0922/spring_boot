@@ -1,9 +1,7 @@
-package com.hry.spring.redis.repush;
+package com.hry.spring.redis.timedtask;
 
 import java.util.Date;
 import java.util.List;
-
-import com.hry.spring.redis.repush.support.IModel;
 
 public interface ITimedTaskService{
 	// 作为定时器 存储到key的后缀
@@ -16,7 +14,7 @@ public interface ITimedTaskService{
 	 * @param executeTime 执行的时间
 	 * @param value
 	 */
-	<T extends IModel> T add(String keySuffix, Date executeTime, T value);
+	<T extends ITimedTaskModel> T add(String keySuffix, Date executeTime, T value);
 
 	/**
 	 * 批量删除已经执行的定时任务
@@ -31,7 +29,7 @@ public interface ITimedTaskService{
 	 * @param keySuffix
 	 * @return
 	 */
-	<T extends IModel> List<T> getTimedTaskContent(String keySuffix,
+	<T extends ITimedTaskModel> List<T> getTimedTaskContent(String keySuffix,
 			Class<T> cls);
 
 	/**
@@ -40,8 +38,8 @@ public interface ITimedTaskService{
 	 * @param cls
 	 * @return
 	 */
-	<T extends IModel> List<T> queryAllTimedTaskContent(String keySuffix,
+	<T extends ITimedTaskModel> List<T> queryAllTimedTaskContent(String keySuffix,
 			Class<T> cls);
 
-	<T extends IModel> T queryTimedTaskContentByKey(String keySuffix, String zSetValueAndHashKeys, Class<T> cls);
+	<T extends ITimedTaskModel> T queryTimedTaskContentByKey(String keySuffix, String zSetValueAndHashKeys, Class<T> cls);
 }

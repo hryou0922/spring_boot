@@ -1,10 +1,7 @@
-package com.hry.spring.redis.repush.service;
+package com.hry.spring.redis.timedtask.simple;
 
 import java.util.Date;
 import java.util.List;
-
-import com.hry.spring.redis.repush.support.OnceRunModel;
-import com.hry.spring.redis.repush.support.RetryPushModel;
 
 /**
  * 一些定时任务，只执行一次
@@ -13,9 +10,14 @@ import com.hry.spring.redis.repush.support.RetryPushModel;
  *
  */
 public interface IOnceRunService {
+	/**
+	 * 保存记录
+	 * @param model
+	 * @param executeTime :下次执行的时间
+	 */
 	void save(OnceRunModel model, Date executeTime);
 
 	void delete(String id);
 
-	List<RetryPushModel> queryAll();
+	List<OnceRunModel> queryAll();
 }

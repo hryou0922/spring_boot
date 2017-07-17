@@ -1,4 +1,4 @@
-package com.hry.spring.redis.repush;
+package com.hry.spring.redis.timedtask;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -17,7 +17,6 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
 import com.alibaba.fastjson.JSON;
-import com.hry.spring.redis.repush.support.IModel;
 
 /**
  * 用于对定时任务的管理
@@ -60,7 +59,7 @@ public class TimedTaskService implements ITimedTaskService{
 	 * @see im.yixin.api.cache.impl.ITimedTaskService#add(java.lang.String, java.util.Date, java.lang.String)
 	 */
 	@Override
-	public <T extends IModel> T add(String keySuffix, final Date executeTime,final T value){
+	public <T extends ITimedTaskModel> T add(String keySuffix, final Date executeTime,final T value){
 		final String zSetsortKey = generateTimedTaskSortKey(keySuffix);
 		final String zHashKey = generateTimedTaskContentKey(keySuffix);
 		final String keyId = UUID.randomUUID().toString() ; // 此值作为zset里的value，但是作为hash里的key值
@@ -74,7 +73,7 @@ public class TimedTaskService implements ITimedTaskService{
 						throws DataAccessException {
 					operations.multi();
 					// 添加定时任务内容表中 
-					operations.opsForHash().put(zHashKey, keyId, JSON.toJSON(value));
+					operations.opsForHash().put(zHashKey, keyId, JSON.toJSONString(value));
 					// 添加到定时任务排序表
 					operations.opsForZSet().add(zSetsortKey, keyId, executeTime.getTime());
 					return operations.exec();
@@ -153,7 +152,7 @@ public class TimedTaskService implements ITimedTaskService{
 	 * @see im.yixin.api.cache.impl.ITimedTaskService#getTimedTaskContent(java.lang.String, java.lang.Class)
 	 */
 	@Override
-	public <T extends IModel> List<T> getTimedTaskContent(String keySuffix, Class<T> cls){
+	public <T extends ITimedTaskModel> List<T> getTimedTaskContent(String keySuffix, Class<T> cls){
 		List<T> rtnList = new ArrayList<T>();
 		final String zSetsortKey = generateTimedTaskSortKey(keySuffix);
 		final String zHashKey = generateTimedTaskContentKey(keySuffix);
@@ -172,7 +171,7 @@ public class TimedTaskService implements ITimedTaskService{
 	}
 
 	@Override
-	public <T extends IModel> List<T> queryAllTimedTaskContent(
+	public <T extends ITimedTaskModel> List<T> queryAllTimedTaskContent(
 			String keySuffix, Class<T> cls) {
 		List<T> rtnList = new ArrayList<T>();
 		final String zSetsortKey = generateTimedTaskSortKey(keySuffix);
@@ -188,7 +187,7 @@ public class TimedTaskService implements ITimedTaskService{
 		return rtnList;
 	}
 	
-	public <T extends IModel> T queryTimedTaskContentByKey(String keySuffix, String id, Class<T> cls){
+	public <T extends ITimedTaskModel> T queryTimedTaskContentByKey(String keySuffix, String id, Class<T> cls){
 		final String zHashKey = generateTimedTaskContentKey(keySuffix);
 		// 获取所有已经到了需要执行的定时任务
 		Object hashValue = redisTemplate.opsForHash().get(zHashKey, id);

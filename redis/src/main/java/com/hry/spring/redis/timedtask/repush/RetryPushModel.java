@@ -1,8 +1,10 @@
-package com.hry.spring.redis.repush.support;
+package com.hry.spring.redis.timedtask.repush;
 
 import java.util.Date;
 
-public class RetryPushModel implements IModel{
+import com.hry.spring.redis.timedtask.ITimedTaskModel;
+
+public class RetryPushModel implements ITimedTaskModel{
 	private String id; //  
 	private String url; // 推送地址
 	private String content; // 内容

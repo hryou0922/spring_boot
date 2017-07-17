@@ -6,5 +6,7 @@ com.hry.spring.redis.distributedlock
 	http://192.168.188.6:8080/distributeLock
 com.hry.spring.redis.cache
 	redis做为缓存
-com.hry.spring.redis.repush
-	重推
+com.hry.spring.redis.timedtask
+	通过redis处理定时任务
+		1. 简单定时任务
+		2. 失败重推

@@ -1,6 +1,9 @@
-package com.hry.spring.redis.repush.support;
+package com.hry.spring.redis.timedtask.simple;
 
-public class OnceRunModel implements IModel {
+import com.alibaba.fastjson.JSON;
+import com.hry.spring.redis.timedtask.ITimedTaskModel;
+
+public class OnceRunModel implements ITimedTaskModel {
 	private String id;
 	private String content;
 	
@@ -22,4 +25,8 @@ public class OnceRunModel implements IModel {
 		this.content = content;
 	}
 
+	@Override
+	public String toString(){
+		return JSON.toJSONString(this);
+	}
 }

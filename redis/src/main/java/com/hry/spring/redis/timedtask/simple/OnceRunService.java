@@ -1,4 +1,4 @@
-package com.hry.spring.redis.repush.service;
+package com.hry.spring.redis.timedtask.simple;
 
 import java.util.Date;
 import java.util.List;
@@ -7,10 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
-import com.hry.spring.redis.repush.ITimedTaskService;
-import com.hry.spring.redis.repush.support.OnceRunModel;
-import com.hry.spring.redis.repush.support.RetryPushEnum;
-import com.hry.spring.redis.repush.support.RetryPushModel;
+import com.hry.spring.redis.timedtask.ITimedTaskService;
+import com.hry.spring.redis.timedtask.TimedTaskEnum;
 
 /**
  * 
@@ -20,7 +18,7 @@ import com.hry.spring.redis.repush.support.RetryPushModel;
 @Component
 public class OnceRunService implements IOnceRunService {
 	
-	private String keySuffix = RetryPushEnum.ONCE_RUN.getKeySuffix();
+	private String keySuffix = TimedTaskEnum.ONCE_RUN.getKeySuffix();
 	
 	@Autowired
 	private ITimedTaskService timedTaskService;
@@ -40,8 +38,8 @@ public class OnceRunService implements IOnceRunService {
 	}
 
 	@Override
-	public List<RetryPushModel> queryAll() {
-		List<RetryPushModel> list = timedTaskService.getTimedTaskContent(keySuffix, RetryPushModel.class);
+	public List<OnceRunModel> queryAll() {
+		List<OnceRunModel> list = timedTaskService.getTimedTaskContent(keySuffix, OnceRunModel.class);
 		return list;
 	}
 

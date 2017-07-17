@@ -1,8 +1,6 @@
-package com.hry.spring.redis.repush.service;
+package com.hry.spring.redis.timedtask.repush;
 
 import java.util.List;
-
-import com.hry.spring.redis.repush.support.RetryPushModel;
 
 /**
  * 重新推送
