@@ -8,7 +8,7 @@ import javax.annotation.PostConstruct;
 
 import com.hry.spring.redis.cache.support.Book;
 
-public class AbstractService {
+public abstract class AbstractService {
 
 	protected static Map<String, Book> repositoryBook = new HashMap<>();
 

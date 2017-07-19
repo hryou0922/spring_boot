@@ -61,6 +61,7 @@ public class CacheTest {
 		bookService.clearBook1All();
 		// 执行@CachePut注解方法，每次执行都不从缓存中获取，执行成功后会使用新的返回的替换缓存中的值
 		System.out.println(bookService.queryBookCachePut("1"));
+		System.out.println(bookService.queryBookCachePut("1"));
 		// 执行@Cacheable注解方法，此时从缓存中获取值
 		System.out.println(bookService.queryBookCacheable("1"));
 	}
@@ -70,6 +71,22 @@ public class CacheTest {
 		BookQry qry = new BookQry();
 		qry.setId("3");
 		System.out.println(bookService.queryBookCacheableByBookQry(qry));
+	}
+	
+	@Test
+	public void queryBookCacheableWithCondition(){
+		System.out.println(bookService.queryBookCacheableWithCondition("3"));
+		System.out.println(bookService.queryBookCacheableWithCondition("3"));
+		System.out.println(bookService.queryBookCacheableWithCondition("2"));
+		System.out.println(bookService.queryBookCacheableWithCondition("2"));
+	}
+	
+	@Test
+	public void queryBookCacheableWithUnless(){
+		System.out.println(bookService.queryBookCacheableWithUnless("3"));
+		System.out.println(bookService.queryBookCacheableWithUnless("3"));
+		System.out.println(bookService.queryBookCacheableWithUnless("2"));
+		System.out.println(bookService.queryBookCacheableWithUnless("2"));
 	}
 	
 	@Test

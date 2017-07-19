@@ -108,7 +108,7 @@ public class BookService extends AbstractService {
 	 * 	如下面只有id < 3才进行缓存
 	 * 
 	 */
-	@Cacheable(cacheNames="book1", condition="#id < 3")
+	@Cacheable(cacheNames="book11", condition="T(java.lang.Integer).parseInt(#id) < 3 ")
 	public Book queryBookCacheableWithCondition(String id) {
 		logger.info("queryBookCacheableByBookQry,id={}",id);
 		return repositoryBook.get(id);
@@ -118,12 +118,11 @@ public class BookService extends AbstractService {
 	 * 条件缓存：
 	 * 对不满足unless的记录，才进行缓存
 	 * 	"unless expressions" are evaluated after the method has been called
-	 * 	如下面：只对不满足返回 'book.id < 3' 的记录进行缓存
+	 * 	如下面：只对不满足返回 'T(java.lang.Integer).parseInt(#result.id) <3 ' 的记录进行缓存
 	 * @param id
 	 * @return
 	 */
-	@Cacheable(cacheNames="book1", unless = "#result.id < 3")
-//	@Cacheable(cacheNames="book1", unless = "#id < 3")
+	@Cacheable(cacheNames="book22", unless = "T(java.lang.Integer).parseInt(#result.id) <3 ")
 	public Book queryBookCacheableWithUnless(String id) {
 		logger.info("queryBookCacheableByBookQry,id={}",id);
 		return repositoryBook.get(id);
