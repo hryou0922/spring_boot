@@ -1,18 +1,8 @@
 package com.hry.spring.redis.cache;
 
-import java.lang.reflect.Method;
-
-import org.springframework.cache.CacheManager;
-import org.springframework.cache.annotation.CachingConfigurerSupport;
-import org.springframework.cache.annotation.EnableCaching;
-import org.springframework.cache.interceptor.KeyGenerator;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.data.redis.cache.RedisCacheManager;
-import org.springframework.data.redis.connection.RedisConnectionFactory;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.StringRedisTemplate;
-
+/**
+ * spring 通过 CacheRedisConfig 配置redis
+ */
 //@Configuration  
 //@EnableCaching  
 //public class CacheRedisConfig extends CachingConfigurerSupport{  

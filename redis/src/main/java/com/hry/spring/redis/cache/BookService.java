@@ -25,6 +25,7 @@ public class BookService extends AbstractService {
 	// ==================== @Cacheable ========================
 	/**
 	 * cacheNames 设置缓存的值 
+	 * 	key：指定缓存的key，这是指参数id值。 key可以使用spEl表达式
 	 * @param id
 	 * @return
 	 */
@@ -34,12 +35,23 @@ public class BookService extends AbstractService {
 		return repositoryBook.get(id);
 	}
 	
+	/**
+	 * 这里使用另一个缓存存储缓存
+	 * 
+	 * @param id
+	 * @return
+	 */
 	@Cacheable(cacheNames="book2", key="#id")
 	public Book queryBookCacheable_2(String id){
 		logger.info("queryBookCacheable_2,id={}",id);
 		return repositoryBook.get(id);
 	}
 	
+	/**
+	 * 缓存的key也可以指定对象的成员变量
+	 * @param qry
+	 * @return
+	 */
 	@Cacheable(cacheNames="book1", key="#qry.id")
 	public Book queryBookCacheableByBookQry(BookQry qry){
 		logger.info("queryBookCacheableByBookQry,qry={}",qry);
@@ -55,6 +67,68 @@ public class BookService extends AbstractService {
 		}
 		return book;
 	}
+	
+	/**
+	 * 以上我们使用默认的keyGenerator，对应spring的
+	 * 	如果你的使用很复杂，我们也可以自定义myKeyGenerator的生成key
+	 * 
+	 *  key和keyGenerator是互斥，如果同时制定
+	 * 	The key and keyGenerator parameters are mutually exclusive and an operation specifying both will result in an exception.
+	 * 
+	 * @param id
+	 * @return
+	 */
+	@Cacheable(cacheNames="book3",  keyGenerator="myKeyGenerator")
+	public Book queryBookCacheableUseMyKeyGenerator(String id){
+		logger.info("queryBookCacheableUseMyKeyGenerator,id={}",id);
+		return repositoryBook.get(id);
+	}
+	
+	/***
+	 * 如果设置sync=true，
+	 * 	如果缓存中没有数据，多个线程同时访问这个方法，则只有一个方法会执行到方法，其它方法需要等待
+	 * 	如果缓存中已经有数据，则多个线程可以同时从缓存中获取数据
+	 * @param id
+	 * @return
+	 */
+	@Cacheable(cacheNames="book3", sync=true)
+	public Book queryBookCacheableWithSync(String id) {
+		logger.info("begin ... queryBookCacheableByBookQry,id={}",id);
+		try {
+			Thread.sleep(1000 * 2);
+		} catch (InterruptedException e) {
+		}
+		logger.info("end ... queryBookCacheableByBookQry,id={}",id);
+		return repositoryBook.get(id);
+	}
+	
+	/**
+	 * 条件缓存：
+	 * 只有满足condition的请求才可以进行缓存，如果不满足条件，则跟方法没有@Cacheable注解的方法一样
+	 * 	如下面只有id < 3才进行缓存
+	 * 
+	 */
+	@Cacheable(cacheNames="book1", condition="#id < 3")
+	public Book queryBookCacheableWithCondition(String id) {
+		logger.info("queryBookCacheableByBookQry,id={}",id);
+		return repositoryBook.get(id);
+	}
+	
+	/**
+	 * 条件缓存：
+	 * 对不满足unless的记录，才进行缓存
+	 * 	"unless expressions" are evaluated after the method has been called
+	 * 	如下面：只对不满足返回 'book.id < 3' 的记录进行缓存
+	 * @param id
+	 * @return
+	 */
+	@Cacheable(cacheNames="book1", unless = "#result.id < 3")
+//	@Cacheable(cacheNames="book1", unless = "#id < 3")
+	public Book queryBookCacheableWithUnless(String id) {
+		logger.info("queryBookCacheableByBookQry,id={}",id);
+		return repositoryBook.get(id);
+	}
+	
 	
 	// ==================== @CacheEvict ========================
 	/**

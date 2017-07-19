@@ -16,6 +16,9 @@ public class CacheTest {
 	@Autowired
 	private BookService bookService;
 	
+	@Autowired
+	private BookService2 bookService2;
+	
 	@Test
 	public void queryBookCacheable(){
 		System.out.println(bookService.queryBookCacheable("1"));
@@ -24,6 +27,11 @@ public class CacheTest {
 	@Test
 	public void queryBookCacheable_2(){
 		System.out.println(bookService.queryBookCacheable_2("2"));
+	}
+	
+	@Test
+	public void queryBookCacheableUseMyKeyGenerator(){
+		System.out.println(bookService.queryBookCacheableUseMyKeyGenerator("3"));
 	}
 	
 	@Test
@@ -62,6 +70,16 @@ public class CacheTest {
 		BookQry qry = new BookQry();
 		qry.setId("3");
 		System.out.println(bookService.queryBookCacheableByBookQry(qry));
+	}
+	
+	@Test
+	public void bookService2_queryBookCacheable(){
+		System.out.println(bookService2.queryBookCacheable("1"));
+	}
+	
+	@Test
+	public void bookService2_queryBookCacheable2(){
+		System.out.println(bookService2.queryBookCacheable2("2"));
 	}
 }
 
