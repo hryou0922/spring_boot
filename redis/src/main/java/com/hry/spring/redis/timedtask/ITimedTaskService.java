@@ -3,11 +3,7 @@ package com.hry.spring.redis.timedtask;
 import java.util.Date;
 import java.util.List;
 
-public interface ITimedTaskService{
-	// 作为定时器 存储到key的后缀
-	static final String BATCH_BIND_KEY_SUFFIX = "batchBind";
-	static final String RETRY_PUSH_KEY_SUFFIX = "retryPush";
-	
+public interface ITimedTaskService{	
 	/**
 	 * 添加需要定时执行的任务
 	 * @param keySuffix
@@ -31,15 +27,15 @@ public interface ITimedTaskService{
 	 */
 	<T extends ITimedTaskModel> List<T> getTimedTaskContent(String keySuffix,
 			Class<T> cls);
+//
+//	/**
+//	 * 获取所有的定时任务
+//	 * @param keySuffix
+//	 * @param cls
+//	 * @return
+//	 */
+//	<T extends ITimedTaskModel> List<T> queryAllTimedTaskContent(String keySuffix,
+//			Class<T> cls);
 
-	/**
-	 * 获取所有的定时任务
-	 * @param keySuffix
-	 * @param cls
-	 * @return
-	 */
-	<T extends ITimedTaskModel> List<T> queryAllTimedTaskContent(String keySuffix,
-			Class<T> cls);
-
-	<T extends ITimedTaskModel> T queryTimedTaskContentByKey(String keySuffix, String zSetValueAndHashKeys, Class<T> cls);
+//	<T extends ITimedTaskModel> T queryTimedTaskContentByKey(String keySuffix, String zSetValueAndHashKeys, Class<T> cls);
 }

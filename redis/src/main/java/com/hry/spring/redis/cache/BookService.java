@@ -69,10 +69,10 @@ public class BookService extends AbstractService {
 	}
 	
 	/**
-	 * 以上我们使用默认的keyGenerator，对应spring的
+	 * 以上我们使用默认的keyGenerator，对应spring的SimpleKeyGenerator 
 	 * 	如果你的使用很复杂，我们也可以自定义myKeyGenerator的生成key
 	 * 
-	 *  key和keyGenerator是互斥，如果同时制定
+	 *  key和keyGenerator是互斥，如果同时制定会出异常
 	 * 	The key and keyGenerator parameters are mutually exclusive and an operation specifying both will result in an exception.
 	 * 
 	 * @param id

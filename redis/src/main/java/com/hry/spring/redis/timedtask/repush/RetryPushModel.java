@@ -2,6 +2,7 @@ package com.hry.spring.redis.timedtask.repush;
 
 import java.util.Date;
 
+import com.alibaba.fastjson.JSON;
 import com.hry.spring.redis.timedtask.ITimedTaskModel;
 
 public class RetryPushModel implements ITimedTaskModel{
@@ -48,5 +49,9 @@ public class RetryPushModel implements ITimedTaskModel{
 	public void setId(String id) {
 		this.id = id;
 	}
-	
+
+	@Override
+	public String toString(){
+		return JSON.toJSONString(this);
+	}
 }
