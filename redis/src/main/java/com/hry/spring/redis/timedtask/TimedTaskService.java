@@ -119,12 +119,13 @@ public class TimedTaskService implements ITimedTaskService{
 		
 		List<String> keyList = new ArrayList<String>();
 		for(String relationValue : relationValues){
+			// hash
 			keyList.add(hashKey);
 			keyList.add(relationValue);
+			// zset
 			keyList.add(zSetKey);
 			keyList.add(relationValue);
 		}
-		
 		Long result = redisTemplate.execute(addScript, keyList);
 		logger.info("执行keySuffix[{}],value[{}]，返回[{}]", keySuffix, Arrays.toString(relationValues), result);
 	}

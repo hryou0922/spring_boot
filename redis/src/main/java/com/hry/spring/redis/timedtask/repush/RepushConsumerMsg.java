@@ -20,7 +20,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class RepushConsumerMsg {
-	private static final Logger logger = LoggerFactory.getLogger(RepushRunTestJob.class);
+	private static final Logger logger = LoggerFactory.getLogger(RepushRunConsumerJob.class);
 	
 	@Autowired
 	private IRetryPushService retryPushService;
