@@ -10,5 +10,6 @@ local zSetMember = KEYS[6]
 
 -- save hash
 local result_1 = redis.call('HSET', hashKey, hashField, hashFieldValue)
+-- save zset
 local result_2 = redis.call('ZADD', zSetKey, zSetScore, zSetMember)
 return result_1 + result_2

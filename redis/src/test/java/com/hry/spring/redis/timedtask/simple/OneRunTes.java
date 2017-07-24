@@ -18,11 +18,11 @@ public class OneRunTes {
 	@Test
 	public void producer(){
 		// 发送数量
-		int sendCount = 1;
-		
-		while(sendCount -- > 0){
+		int sendMaxCount = 10;
+		int newCount = 0;
+		while(newCount++ < sendMaxCount){
 			Date executeTime = new Date();
-			int newCount = sendCount++;
+			
 			
 			OnceRunModel model = new OnceRunModel();
 			model.setId(String.valueOf(newCount));

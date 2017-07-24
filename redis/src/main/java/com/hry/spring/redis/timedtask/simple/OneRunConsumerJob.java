@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class OneRunConsumerJob {
-	private static final Logger logger = LoggerFactory.getLogger(OneRunTes.class);
+	private static final Logger logger = LoggerFactory.getLogger(OneRunConsumerJob.class);
 	
 	@Autowired
 	private IOnceRunService onceRunService;

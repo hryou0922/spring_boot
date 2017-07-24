@@ -2,6 +2,7 @@ package com.hry.spring.redis.timedtask;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -72,6 +73,9 @@ public class TimedTaskService implements ITimedTaskService{
 	// 删除操作
 	private DefaultRedisScript<Long> batchDelScript;
 	
+	// 查询
+	private DefaultRedisScript<List> querycontentsScript;
+	
 	@PostConstruct	
 	public void init() {
 		// Lock script
@@ -82,8 +86,13 @@ public class TimedTaskService implements ITimedTaskService{
 		// unlock script
 		batchDelScript = new DefaultRedisScript<Long>();
 		batchDelScript.setScriptSource(
-				new ResourceScriptSource(new ClassPathResource("com/hry/spring/redis/timedtask/batchdel")));
+				new ResourceScriptSource(new ClassPathResource("com/hry/spring/redis/timedtask/batchdel.lua")));
 		batchDelScript.setResultType(Long.class);
+		// query script
+		querycontentsScript = new DefaultRedisScript<List>();
+		querycontentsScript.setScriptSource(
+				new ResourceScriptSource(new ClassPathResource("com/hry/spring/redis/timedtask/querycontents.lua")));
+		querycontentsScript.setResultType(List.class);
 	}
 	
 	@Override
@@ -95,39 +104,41 @@ public class TimedTaskService implements ITimedTaskService{
 		final String zSetKey = generateTimedTaskZsetKey(keySuffix);
 		final String hashKey = generateTimedTaskHashContentKey(keySuffix);
 		// keyId将zset和hash关联起来，此值作为zset里的value，但是作为hash里的key值
-		final String relationValue = UUID.randomUUID().toString() ; 
-		value.setId(relationValue);
+		final String id = UUID.randomUUID().toString() ; 
+		value.setId(id);
 		// 封装参数
 		List<String> keyList = new ArrayList<String>();
 		// hash的操作参数
 		keyList.add(hashKey); // hash key
-		keyList.add(relationValue); // hash Field
+		keyList.add(id); // hash Field
 		keyList.add(JSON.toJSONString(value)); // hash Field Value
 		// zset的操作参数
 		keyList.add(zSetKey); // zSetKey
 		keyList.add(String.valueOf(executeTime.getTime())); // zSetScore
-		keyList.add(relationValue); // zSetMember
+		keyList.add(id); // zSetMember
 		Long result = redisTemplate.execute(addScript, keyList);
-		logger.info("执行[{}]，返回[{}]", JSON.toJSONString(value), result);
+		logger.info("add 执行[{}]，返回[{}]", JSON.toJSONString(value), result);
 		return value;
 	}
 
 	@Override
-	public void bathDel(String keySuffix, final String... relationValues){
+	public void bathDel(String keySuffix, final String... ids){
 		final String zSetKey = generateTimedTaskZsetKey(keySuffix);
 		final String hashKey = generateTimedTaskHashContentKey(keySuffix);
 		
 		List<String> keyList = new ArrayList<String>();
-		for(String relationValue : relationValues){
+		for(String id : ids){
 			// hash
 			keyList.add(hashKey);
-			keyList.add(relationValue);
+			keyList.add(id);
 			// zset
 			keyList.add(zSetKey);
-			keyList.add(relationValue);
+			keyList.add(id);
 		}
-		Long result = redisTemplate.execute(addScript, keyList);
-		logger.info("执行keySuffix[{}],value[{}]，返回[{}]", keySuffix, Arrays.toString(relationValues), result);
+		if(keyList.size() > 0){
+			Long result = redisTemplate.execute(batchDelScript, keyList);
+			logger.info("bathDel 执行keySuffix[{}],value[{}]，返回[{}]", keySuffix, Arrays.toString(ids), result);
+		}
 	}
 	
 	@Override
@@ -136,14 +147,20 @@ public class TimedTaskService implements ITimedTaskService{
 		final String zSetKey = generateTimedTaskZsetKey(keySuffix);
 		final String hashKey = generateTimedTaskHashContentKey(keySuffix);
 		// 获取所有已经到了需要执行的定时任务
-		Set<String> zSetValues = redisTemplate.opsForZSet().rangeByScore(zSetKey, Long.MIN_VALUE, System.currentTimeMillis());
+		List<String> keyList = new ArrayList<String>();
+		// zset
+		keyList.add(zSetKey);
+		keyList.add(String.valueOf(Long.MIN_VALUE));
+		keyList.add(String.valueOf(System.currentTimeMillis()));
+		// hashkey
+		keyList.add(hashKey);
 		
-		HashOperations<String,String,String> hashOperation = redisTemplate.opsForHash();
-		for(String key : zSetValues){
-			// 获取需要执行任务的详细信息, zset的value是Hash的key值
-			String hashValue = hashOperation.get(hashKey, key);
-			rtnList.add(JSON.parseObject(hashValue, cls));
-			logger.info("获取需要执行定时任务={}",hashValue);
+		if(keyList.size() > 0){
+		List resultList = redisTemplate.execute(querycontentsScript, keyList);
+			for(Object o : resultList){
+				logger.info("read content = {}", o.toString());
+				rtnList.add(JSON.parseObject(o.toString(), cls));
+			}
 		}
 		return rtnList;
 	}

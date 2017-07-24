@@ -23,11 +23,11 @@ public class RepushRunTest {
 	@Test
 	public void producerCdrs(){
 		// 发送数量
-		int sendCount = 1;
-		
-		while(sendCount-- > 0){
+		int sendMaxCount = 10;
+		int newCount = 1;
+		while(newCount++ < sendMaxCount){
 			Date executeTime = new Date();
-			int newCount = sendCount++;
+		
 			
 			RetryPushModel model = new RetryPushModel();
 			model.setId(String.valueOf(newCount));
@@ -48,10 +48,10 @@ public class RepushRunTest {
 	@Test
 	public void producerSms(){
 		// 发送数量
-		int sendCount = 1;
-		while(sendCount-- > 0){		
+		int sendMaxCount = 10;
+		int newCount = 1;
+		while(newCount++ < sendMaxCount){
 			Date executeTime = new Date();
-			int newCount = sendCount++;
 			
 			RetryPushModel model = new RetryPushModel();
 			model.setId(String.valueOf(newCount));
