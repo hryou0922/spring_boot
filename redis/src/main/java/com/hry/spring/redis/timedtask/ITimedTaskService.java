@@ -25,15 +25,4 @@ public interface ITimedTaskService{
 	 * @return
 	 */
 	<T extends ITimedTaskModel> List<T> getTimedTaskContent(String keySuffix, Class<T> cls);
-//
-//	/**
-//	 * 获取所有的定时任务
-//	 * @param keySuffix
-//	 * @param cls
-//	 * @return
-//	 */
-//	<T extends ITimedTaskModel> List<T> queryAllTimedTaskContent(String keySuffix,
-//			Class<T> cls);
-
-//	<T extends ITimedTaskModel> T queryTimedTaskContentByKey(String keySuffix, String zSetValueAndHashKeys, Class<T> cls);
 }

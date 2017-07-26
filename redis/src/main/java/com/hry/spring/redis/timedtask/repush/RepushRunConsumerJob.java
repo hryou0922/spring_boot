@@ -27,7 +27,7 @@ public class RepushRunConsumerJob {
 	private int receiveCount = 0;
 	
 	
-	@Scheduled(initialDelay=500, fixedRate=5000)
+	@Scheduled(initialDelay=3000, fixedRate=5000)
 	public void consumer(){
 		List<RetryPushModel> list = retryPushService.queryAll();
 		for(RetryPushModel model : list){

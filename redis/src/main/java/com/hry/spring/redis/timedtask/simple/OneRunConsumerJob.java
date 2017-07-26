@@ -23,7 +23,7 @@ public class OneRunConsumerJob {
 	// 接受数量
 	private int receiveCount = 0;
 	
-	@Scheduled(initialDelay=500, fixedRate=5000)
+	@Scheduled(initialDelay=3000, fixedRate=5000)
 	public void consumer(){
 		List<OnceRunModel> list = onceRunService.queryAll();
 		for(OnceRunModel model : list){

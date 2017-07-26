@@ -11,7 +11,7 @@ import com.hry.spring.redis.timedtask.ITimedTaskService;
 import com.hry.spring.redis.timedtask.TimedTaskEnum;
 
 /**
- * 
+ * 一次任务的服务类
  * @author Administrator
  *
  */

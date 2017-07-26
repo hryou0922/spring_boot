@@ -39,8 +39,8 @@ public class RepushConsumerMsg {
 		retryIntervalSecondsList.add(10);
 		retryIntervalSecondsList.add(15);
 		
-		// 最后的重推次数
-		maxPushTime = 3;
+		// 最大推送次数
+		maxPushTime = 4;
 	}
 	
 	
@@ -54,7 +54,7 @@ public class RepushConsumerMsg {
 	 * @param model
 	 */
 	public void execute(RetryPushModel model){
-		int time = model.getPushTime() == null ? 1: model.getPushTime();
+		int time = model.getPushTime() == null ? 1: (model.getPushTime() < 1 ? 1 : model.getPushTime());
 		String url = model.getUrl();
 		// 这里使用随机函数进行判定如果 > 5，则认为发送到url成功
 		boolean isNeedRetry = true;
@@ -68,7 +68,7 @@ public class RepushConsumerMsg {
 		}
 		if(isNeedRetry){
 			// 失败需要重推送
-			generateRetryPush(url, time, model.toString(), model.getType());
+			generateRetryPush(url, time, model.getContent(), model.getType());
 		}
 		
 	}
@@ -104,11 +104,12 @@ public class RepushConsumerMsg {
      * @param sessionId
      */
 	protected void generateRetryPush(String url, int time, String jsonBody, int type) {
+		time++; //  // 推送次数+1
 		RetryPushModel model = new RetryPushModel();
-		model.setContent(jsonBody);
+		model.setContent(time + "_" + jsonBody);
 		model.setType(type);
 		model.setUrl(url);
-		model.setPushTime(time); 
+		model.setPushTime(time+1); 
 		model.setPushNextTime(getPushNextTime(time));
 		retryPushService.save(model);
 	}

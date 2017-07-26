@@ -24,34 +24,34 @@ import org.springframework.util.Assert;
 import com.alibaba.fastjson.JSON;
 
 /**
- * 用于对定时任务的管理
+ * 定时任务的服务类
  * 
  * 变量定义：
  * 	unique_keySuffix; 
  * 		此任务的定时任务可以被多种定时任务共用，为了区分不同定时任务，所以不同任务的key后缀不同
  * 		每个不同的定时任务，需要定义唯一的后缀, 如"cdrs","repush"
- *  relationValue = UUID; //将ZSet和Hash里相应记录关联起来的值
+ *  id = UUID; //将ZSet和Hash里相应记录关联起来的值
  *  
  * 主要定义两个key来保存定时任务的信息
  * 	ZSet:
  * 		各个参数值的说明
  * 			key：timedTask_#{unique_keySuffix} // timedTask_
- * 			member：#{relationValue}
+ * 			member：#{id}
  * 			score： 执行时间  // 分值计算
  * 	Hash：
  * 		各个参数值的说明
  * 			key：timedTaskContent_#{unique_keySuffix}
- * 			field： #{relationValue}
+ * 			field： #{id}
  * 			fieldValue: 执行定时任务所需要的参数
  *		
  *	添加任务：
- *		一个任务需要同时在zset和hash中添加一条记录，两条记录通过relationValue值关联在一起
+ *		一个任务需要同时在zset和hash中添加一条记录，两条记录通过id值关联在一起
  *		在ZSet和Hash里根据以上规则各自添加1条新的记录
  *	获取需要执行的任务：
  *		ZSet使用score保存任务执行时间，先从ZSet里面获取所有score <= 当前时间 的记录，
- *		然后逐个根据zset的member值从hash中获取field和zset的member相同的fieldValue值（member和fieldValue都是relationValue值），fieldValue存储本次需要执行任务的详细内容
+ *		然后逐个根据zset的member值从hash中获取field和zset的member相同的fieldValue值（member和fieldValue都是id值），fieldValue存储本次需要执行任务的详细内容
  *	删除记录
- * 		根据传入#{relationValue}值，从ZSet和Hash删除记录
+ * 		根据传入#{id}值，从ZSet和Hash删除记录
  * 
  *  使用lua脚本：
  *  	由于同时操作两个key，为了需要保证，需要使用脚本
