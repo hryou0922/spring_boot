@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.codehaus.groovy:groovy:2.4.11">
+    <CLASSES>
+      <root url="jar://D:/dev_tool/maven/repository/org/codehaus/groovy/groovy/2.4.11/groovy-2.4.11.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/dev_tool/maven/repository/org/codehaus/groovy/groovy/2.4.11/groovy-2.4.11-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/dev_tool/maven/repository/org/codehaus/groovy/groovy/2.4.11/groovy-2.4.11-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
