@@ -28,41 +28,41 @@ public final class HelloStreamGrpc {
 
   // Static method descriptors that strictly reflect the proto.
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<com.hry.spring.grpc.mystream.Simple,
-      com.hry.spring.grpc.mystream.SimpleFeature> METHOD_SIMPLE_RPC =
+  public static final io.grpc.MethodDescriptor<Simple,
+      SimpleFeature> METHOD_SIMPLE_RPC =
       io.grpc.MethodDescriptor.create(
           io.grpc.MethodDescriptor.MethodType.UNARY,
           generateFullMethodName(
               "HelloStream", "simpleRpc"),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.hry.spring.grpc.mystream.Simple.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.hry.spring.grpc.mystream.SimpleFeature.getDefaultInstance()));
+          io.grpc.protobuf.ProtoUtils.marshaller(Simple.getDefaultInstance()),
+          io.grpc.protobuf.ProtoUtils.marshaller(SimpleFeature.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<com.hry.spring.grpc.mystream.SimpleList,
-      com.hry.spring.grpc.mystream.SimpleFeature> METHOD_SERVER2CLIENT_RPC =
+  public static final io.grpc.MethodDescriptor<SimpleList,
+      SimpleFeature> METHOD_SERVER2CLIENT_RPC =
       io.grpc.MethodDescriptor.create(
           io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING,
           generateFullMethodName(
               "HelloStream", "server2ClientRpc"),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.hry.spring.grpc.mystream.SimpleList.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.hry.spring.grpc.mystream.SimpleFeature.getDefaultInstance()));
+          io.grpc.protobuf.ProtoUtils.marshaller(SimpleList.getDefaultInstance()),
+          io.grpc.protobuf.ProtoUtils.marshaller(SimpleFeature.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<com.hry.spring.grpc.mystream.Simple,
-      com.hry.spring.grpc.mystream.SimpleSummary> METHOD_CLIENT2SERVER_RPC =
+  public static final io.grpc.MethodDescriptor<Simple,
+      SimpleSummary> METHOD_CLIENT2SERVER_RPC =
       io.grpc.MethodDescriptor.create(
           io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING,
           generateFullMethodName(
               "HelloStream", "client2ServerRpc"),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.hry.spring.grpc.mystream.Simple.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.hry.spring.grpc.mystream.SimpleSummary.getDefaultInstance()));
+          io.grpc.protobuf.ProtoUtils.marshaller(Simple.getDefaultInstance()),
+          io.grpc.protobuf.ProtoUtils.marshaller(SimpleSummary.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<com.hry.spring.grpc.mystream.Simple,
-      com.hry.spring.grpc.mystream.Simple> METHOD_BINDIRECTIONAL_STREAM_RPC =
+  public static final io.grpc.MethodDescriptor<Simple,
+      Simple> METHOD_BINDIRECTIONAL_STREAM_RPC =
       io.grpc.MethodDescriptor.create(
           io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING,
           generateFullMethodName(
               "HelloStream", "bindirectionalStreamRpc"),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.hry.spring.grpc.mystream.Simple.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.hry.spring.grpc.mystream.Simple.getDefaultInstance()));
+          io.grpc.protobuf.ProtoUtils.marshaller(Simple.getDefaultInstance()),
+          io.grpc.protobuf.ProtoUtils.marshaller(Simple.getDefaultInstance()));
 
   /**
    * Creates a new async stub that supports all call types for the service
@@ -96,8 +96,8 @@ public final class HelloStreamGrpc {
      * A simple RPC.
      * </pre>
      */
-    public void simpleRpc(com.hry.spring.grpc.mystream.Simple request,
-        io.grpc.stub.StreamObserver<com.hry.spring.grpc.mystream.SimpleFeature> responseObserver) {
+    public void simpleRpc(Simple request,
+        io.grpc.stub.StreamObserver<SimpleFeature> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_SIMPLE_RPC, responseObserver);
     }
 
@@ -106,8 +106,8 @@ public final class HelloStreamGrpc {
      * A server-to-client streaming RPC.
      * </pre>
      */
-    public void server2ClientRpc(com.hry.spring.grpc.mystream.SimpleList request,
-        io.grpc.stub.StreamObserver<com.hry.spring.grpc.mystream.SimpleFeature> responseObserver) {
+    public void server2ClientRpc(SimpleList request,
+        io.grpc.stub.StreamObserver<SimpleFeature> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_SERVER2CLIENT_RPC, responseObserver);
     }
 
@@ -116,8 +116,8 @@ public final class HelloStreamGrpc {
      * A client-to-server streaming RPC.
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<com.hry.spring.grpc.mystream.Simple> client2ServerRpc(
-        io.grpc.stub.StreamObserver<com.hry.spring.grpc.mystream.SimpleSummary> responseObserver) {
+    public io.grpc.stub.StreamObserver<Simple> client2ServerRpc(
+        io.grpc.stub.StreamObserver<SimpleSummary> responseObserver) {
       return asyncUnimplementedStreamingCall(METHOD_CLIENT2SERVER_RPC, responseObserver);
     }
 
@@ -126,40 +126,40 @@ public final class HelloStreamGrpc {
      * A Bidirectional streaming RPC.
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<com.hry.spring.grpc.mystream.Simple> bindirectionalStreamRpc(
-        io.grpc.stub.StreamObserver<com.hry.spring.grpc.mystream.Simple> responseObserver) {
+    public io.grpc.stub.StreamObserver<Simple> bindirectionalStreamRpc(
+        io.grpc.stub.StreamObserver<Simple> responseObserver) {
       return asyncUnimplementedStreamingCall(METHOD_BINDIRECTIONAL_STREAM_RPC, responseObserver);
     }
 
-    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
+    @Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             METHOD_SIMPLE_RPC,
             asyncUnaryCall(
               new MethodHandlers<
-                com.hry.spring.grpc.mystream.Simple,
-                com.hry.spring.grpc.mystream.SimpleFeature>(
+                Simple,
+                SimpleFeature>(
                   this, METHODID_SIMPLE_RPC)))
           .addMethod(
             METHOD_SERVER2CLIENT_RPC,
             asyncServerStreamingCall(
               new MethodHandlers<
-                com.hry.spring.grpc.mystream.SimpleList,
-                com.hry.spring.grpc.mystream.SimpleFeature>(
+                SimpleList,
+                SimpleFeature>(
                   this, METHODID_SERVER2CLIENT_RPC)))
           .addMethod(
             METHOD_CLIENT2SERVER_RPC,
             asyncClientStreamingCall(
               new MethodHandlers<
-                com.hry.spring.grpc.mystream.Simple,
-                com.hry.spring.grpc.mystream.SimpleSummary>(
+                Simple,
+                SimpleSummary>(
                   this, METHODID_CLIENT2SERVER_RPC)))
           .addMethod(
             METHOD_BINDIRECTIONAL_STREAM_RPC,
             asyncBidiStreamingCall(
               new MethodHandlers<
-                com.hry.spring.grpc.mystream.Simple,
-                com.hry.spring.grpc.mystream.Simple>(
+                Simple,
+                Simple>(
                   this, METHODID_BINDIRECTIONAL_STREAM_RPC)))
           .build();
     }
@@ -177,7 +177,7 @@ public final class HelloStreamGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected HelloStreamStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new HelloStreamStub(channel, callOptions);
@@ -188,8 +188,8 @@ public final class HelloStreamGrpc {
      * A simple RPC.
      * </pre>
      */
-    public void simpleRpc(com.hry.spring.grpc.mystream.Simple request,
-        io.grpc.stub.StreamObserver<com.hry.spring.grpc.mystream.SimpleFeature> responseObserver) {
+    public void simpleRpc(Simple request,
+        io.grpc.stub.StreamObserver<SimpleFeature> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_SIMPLE_RPC, getCallOptions()), request, responseObserver);
     }
@@ -199,8 +199,8 @@ public final class HelloStreamGrpc {
      * A server-to-client streaming RPC.
      * </pre>
      */
-    public void server2ClientRpc(com.hry.spring.grpc.mystream.SimpleList request,
-        io.grpc.stub.StreamObserver<com.hry.spring.grpc.mystream.SimpleFeature> responseObserver) {
+    public void server2ClientRpc(SimpleList request,
+        io.grpc.stub.StreamObserver<SimpleFeature> responseObserver) {
       asyncServerStreamingCall(
           getChannel().newCall(METHOD_SERVER2CLIENT_RPC, getCallOptions()), request, responseObserver);
     }
@@ -210,8 +210,8 @@ public final class HelloStreamGrpc {
      * A client-to-server streaming RPC.
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<com.hry.spring.grpc.mystream.Simple> client2ServerRpc(
-        io.grpc.stub.StreamObserver<com.hry.spring.grpc.mystream.SimpleSummary> responseObserver) {
+    public io.grpc.stub.StreamObserver<Simple> client2ServerRpc(
+        io.grpc.stub.StreamObserver<SimpleSummary> responseObserver) {
       return asyncClientStreamingCall(
           getChannel().newCall(METHOD_CLIENT2SERVER_RPC, getCallOptions()), responseObserver);
     }
@@ -221,8 +221,8 @@ public final class HelloStreamGrpc {
      * A Bidirectional streaming RPC.
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<com.hry.spring.grpc.mystream.Simple> bindirectionalStreamRpc(
-        io.grpc.stub.StreamObserver<com.hry.spring.grpc.mystream.Simple> responseObserver) {
+    public io.grpc.stub.StreamObserver<Simple> bindirectionalStreamRpc(
+        io.grpc.stub.StreamObserver<Simple> responseObserver) {
       return asyncBidiStreamingCall(
           getChannel().newCall(METHOD_BINDIRECTIONAL_STREAM_RPC, getCallOptions()), responseObserver);
     }
@@ -240,7 +240,7 @@ public final class HelloStreamGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected HelloStreamBlockingStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new HelloStreamBlockingStub(channel, callOptions);
@@ -251,7 +251,7 @@ public final class HelloStreamGrpc {
      * A simple RPC.
      * </pre>
      */
-    public com.hry.spring.grpc.mystream.SimpleFeature simpleRpc(com.hry.spring.grpc.mystream.Simple request) {
+    public SimpleFeature simpleRpc(Simple request) {
       return blockingUnaryCall(
           getChannel(), METHOD_SIMPLE_RPC, getCallOptions(), request);
     }
@@ -261,8 +261,8 @@ public final class HelloStreamGrpc {
      * A server-to-client streaming RPC.
      * </pre>
      */
-    public java.util.Iterator<com.hry.spring.grpc.mystream.SimpleFeature> server2ClientRpc(
-        com.hry.spring.grpc.mystream.SimpleList request) {
+    public java.util.Iterator<SimpleFeature> server2ClientRpc(
+        SimpleList request) {
       return blockingServerStreamingCall(
           getChannel(), METHOD_SERVER2CLIENT_RPC, getCallOptions(), request);
     }
@@ -280,7 +280,7 @@ public final class HelloStreamGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected HelloStreamFutureStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new HelloStreamFutureStub(channel, callOptions);
@@ -291,8 +291,8 @@ public final class HelloStreamGrpc {
      * A simple RPC.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.hry.spring.grpc.mystream.SimpleFeature> simpleRpc(
-        com.hry.spring.grpc.mystream.Simple request) {
+    public com.google.common.util.concurrent.ListenableFuture<SimpleFeature> simpleRpc(
+        Simple request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_SIMPLE_RPC, getCallOptions()), request);
     }
@@ -316,34 +316,34 @@ public final class HelloStreamGrpc {
       this.methodId = methodId;
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_SIMPLE_RPC:
-          serviceImpl.simpleRpc((com.hry.spring.grpc.mystream.Simple) request,
-              (io.grpc.stub.StreamObserver<com.hry.spring.grpc.mystream.SimpleFeature>) responseObserver);
+          serviceImpl.simpleRpc((Simple) request,
+              (io.grpc.stub.StreamObserver<SimpleFeature>) responseObserver);
           break;
         case METHODID_SERVER2CLIENT_RPC:
-          serviceImpl.server2ClientRpc((com.hry.spring.grpc.mystream.SimpleList) request,
-              (io.grpc.stub.StreamObserver<com.hry.spring.grpc.mystream.SimpleFeature>) responseObserver);
+          serviceImpl.server2ClientRpc((SimpleList) request,
+              (io.grpc.stub.StreamObserver<SimpleFeature>) responseObserver);
           break;
         default:
           throw new AssertionError();
       }
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_CLIENT2SERVER_RPC:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.client2ServerRpc(
-              (io.grpc.stub.StreamObserver<com.hry.spring.grpc.mystream.SimpleSummary>) responseObserver);
+              (io.grpc.stub.StreamObserver<SimpleSummary>) responseObserver);
         case METHODID_BINDIRECTIONAL_STREAM_RPC:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.bindirectionalStreamRpc(
-              (io.grpc.stub.StreamObserver<com.hry.spring.grpc.mystream.Simple>) responseObserver);
+              (io.grpc.stub.StreamObserver<Simple>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -351,7 +351,7 @@ public final class HelloStreamGrpc {
   }
 
   private static final class HelloStreamDescriptorSupplier implements io.grpc.protobuf.ProtoFileDescriptorSupplier {
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
       return com.hry.spring.grpc.mystream.HelloStreamEntity.getDescriptor();
     }

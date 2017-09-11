@@ -17,7 +17,7 @@ public  final class Rectangle extends
   private Rectangle() {
   }
 
-  @java.lang.Override
+  @Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
@@ -43,11 +43,11 @@ public  final class Rectangle extends
             break;
           }
           case 10: {
-            com.hry.spring.grpc.stream.Point.Builder subBuilder = null;
+            Point.Builder subBuilder = null;
             if (lo_ != null) {
               subBuilder = lo_.toBuilder();
             }
-            lo_ = input.readMessage(com.hry.spring.grpc.stream.Point.parser(), extensionRegistry);
+            lo_ = input.readMessage(Point.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(lo_);
               lo_ = subBuilder.buildPartial();
@@ -56,11 +56,11 @@ public  final class Rectangle extends
             break;
           }
           case 18: {
-            com.hry.spring.grpc.stream.Point.Builder subBuilder = null;
+            Point.Builder subBuilder = null;
             if (hi_ != null) {
               subBuilder = hi_.toBuilder();
             }
-            hi_ = input.readMessage(com.hry.spring.grpc.stream.Point.parser(), extensionRegistry);
+            hi_ = input.readMessage(Point.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(hi_);
               hi_ = subBuilder.buildPartial();
@@ -84,15 +84,15 @@ public  final class Rectangle extends
     return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_Rectangle_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
     return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_Rectangle_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.hry.spring.grpc.stream.Rectangle.class, com.hry.spring.grpc.stream.Rectangle.Builder.class);
+            Rectangle.class, Builder.class);
   }
 
   public static final int LO_FIELD_NUMBER = 1;
-  private com.hry.spring.grpc.stream.Point lo_;
+  private Point lo_;
   /**
    * <pre>
    * 引入Message Point
@@ -110,8 +110,8 @@ public  final class Rectangle extends
    *
    * <code>optional .Point lo = 1;</code>
    */
-  public com.hry.spring.grpc.stream.Point getLo() {
-    return lo_ == null ? com.hry.spring.grpc.stream.Point.getDefaultInstance() : lo_;
+  public Point getLo() {
+    return lo_ == null ? Point.getDefaultInstance() : lo_;
   }
   /**
    * <pre>
@@ -125,7 +125,7 @@ public  final class Rectangle extends
   }
 
   public static final int HI_FIELD_NUMBER = 2;
-  private com.hry.spring.grpc.stream.Point hi_;
+  private Point hi_;
   /**
    * <code>optional .Point hi = 2;</code>
    */
@@ -135,8 +135,8 @@ public  final class Rectangle extends
   /**
    * <code>optional .Point hi = 2;</code>
    */
-  public com.hry.spring.grpc.stream.Point getHi() {
-    return hi_ == null ? com.hry.spring.grpc.stream.Point.getDefaultInstance() : hi_;
+  public Point getHi() {
+    return hi_ == null ? Point.getDefaultInstance() : hi_;
   }
   /**
    * <code>optional .Point hi = 2;</code>
@@ -183,15 +183,15 @@ public  final class Rectangle extends
   }
 
   private static final long serialVersionUID = 0L;
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.hry.spring.grpc.stream.Rectangle)) {
+    if (!(obj instanceof Rectangle)) {
       return super.equals(obj);
     }
-    com.hry.spring.grpc.stream.Rectangle other = (com.hry.spring.grpc.stream.Rectangle) obj;
+    Rectangle other = (Rectangle) obj;
 
     boolean result = true;
     result = result && (hasLo() == other.hasLo());
@@ -207,7 +207,7 @@ public  final class Rectangle extends
     return result;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -227,58 +227,58 @@ public  final class Rectangle extends
     return hash;
   }
 
-  public static com.hry.spring.grpc.stream.Rectangle parseFrom(
+  public static Rectangle parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.stream.Rectangle parseFrom(
+  public static Rectangle parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.Rectangle parseFrom(byte[] data)
+  public static Rectangle parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.stream.Rectangle parseFrom(
+  public static Rectangle parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.Rectangle parseFrom(java.io.InputStream input)
+  public static Rectangle parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.stream.Rectangle parseFrom(
+  public static Rectangle parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.Rectangle parseDelimitedFrom(java.io.InputStream input)
+  public static Rectangle parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.stream.Rectangle parseDelimitedFrom(
+  public static Rectangle parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.Rectangle parseFrom(
+  public static Rectangle parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.stream.Rectangle parseFrom(
+  public static Rectangle parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -290,7 +290,7 @@ public  final class Rectangle extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.hry.spring.grpc.stream.Rectangle prototype) {
+  public static Builder newBuilder(Rectangle prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -298,9 +298,9 @@ public  final class Rectangle extends
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -316,11 +316,11 @@ public  final class Rectangle extends
       return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_Rectangle_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_Rectangle_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.hry.spring.grpc.stream.Rectangle.class, com.hry.spring.grpc.stream.Rectangle.Builder.class);
+              Rectangle.class, Builder.class);
     }
 
     // Construct using com.hry.spring.grpc.stream.Rectangle.newBuilder()
@@ -329,7 +329,7 @@ public  final class Rectangle extends
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -360,20 +360,20 @@ public  final class Rectangle extends
       return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_Rectangle_descriptor;
     }
 
-    public com.hry.spring.grpc.stream.Rectangle getDefaultInstanceForType() {
-      return com.hry.spring.grpc.stream.Rectangle.getDefaultInstance();
+    public Rectangle getDefaultInstanceForType() {
+      return Rectangle.getDefaultInstance();
     }
 
-    public com.hry.spring.grpc.stream.Rectangle build() {
-      com.hry.spring.grpc.stream.Rectangle result = buildPartial();
+    public Rectangle build() {
+      Rectangle result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public com.hry.spring.grpc.stream.Rectangle buildPartial() {
-      com.hry.spring.grpc.stream.Rectangle result = new com.hry.spring.grpc.stream.Rectangle(this);
+    public Rectangle buildPartial() {
+      Rectangle result = new Rectangle(this);
       if (loBuilder_ == null) {
         result.lo_ = lo_;
       } else {
@@ -415,16 +415,16 @@ public  final class Rectangle extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.hry.spring.grpc.stream.Rectangle) {
-        return mergeFrom((com.hry.spring.grpc.stream.Rectangle)other);
+      if (other instanceof Rectangle) {
+        return mergeFrom((Rectangle)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.hry.spring.grpc.stream.Rectangle other) {
-      if (other == com.hry.spring.grpc.stream.Rectangle.getDefaultInstance()) return this;
+    public Builder mergeFrom(Rectangle other) {
+      if (other == Rectangle.getDefaultInstance()) return this;
       if (other.hasLo()) {
         mergeLo(other.getLo());
       }
@@ -443,11 +443,11 @@ public  final class Rectangle extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.hry.spring.grpc.stream.Rectangle parsedMessage = null;
+      Rectangle parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.hry.spring.grpc.stream.Rectangle) e.getUnfinishedMessage();
+        parsedMessage = (Rectangle) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -457,9 +457,9 @@ public  final class Rectangle extends
       return this;
     }
 
-    private com.hry.spring.grpc.stream.Point lo_ = null;
+    private Point lo_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.hry.spring.grpc.stream.Point, com.hry.spring.grpc.stream.Point.Builder, com.hry.spring.grpc.stream.PointOrBuilder> loBuilder_;
+        Point, Point.Builder, com.hry.spring.grpc.stream.PointOrBuilder> loBuilder_;
     /**
      * <pre>
      * 引入Message Point
@@ -477,9 +477,9 @@ public  final class Rectangle extends
      *
      * <code>optional .Point lo = 1;</code>
      */
-    public com.hry.spring.grpc.stream.Point getLo() {
+    public Point getLo() {
       if (loBuilder_ == null) {
-        return lo_ == null ? com.hry.spring.grpc.stream.Point.getDefaultInstance() : lo_;
+        return lo_ == null ? Point.getDefaultInstance() : lo_;
       } else {
         return loBuilder_.getMessage();
       }
@@ -491,7 +491,7 @@ public  final class Rectangle extends
      *
      * <code>optional .Point lo = 1;</code>
      */
-    public Builder setLo(com.hry.spring.grpc.stream.Point value) {
+    public Builder setLo(Point value) {
       if (loBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -512,7 +512,7 @@ public  final class Rectangle extends
      * <code>optional .Point lo = 1;</code>
      */
     public Builder setLo(
-        com.hry.spring.grpc.stream.Point.Builder builderForValue) {
+        Point.Builder builderForValue) {
       if (loBuilder_ == null) {
         lo_ = builderForValue.build();
         onChanged();
@@ -529,11 +529,11 @@ public  final class Rectangle extends
      *
      * <code>optional .Point lo = 1;</code>
      */
-    public Builder mergeLo(com.hry.spring.grpc.stream.Point value) {
+    public Builder mergeLo(Point value) {
       if (loBuilder_ == null) {
         if (lo_ != null) {
           lo_ =
-            com.hry.spring.grpc.stream.Point.newBuilder(lo_).mergeFrom(value).buildPartial();
+            Point.newBuilder(lo_).mergeFrom(value).buildPartial();
         } else {
           lo_ = value;
         }
@@ -569,7 +569,7 @@ public  final class Rectangle extends
      *
      * <code>optional .Point lo = 1;</code>
      */
-    public com.hry.spring.grpc.stream.Point.Builder getLoBuilder() {
+    public Point.Builder getLoBuilder() {
       
       onChanged();
       return getLoFieldBuilder().getBuilder();
@@ -586,7 +586,7 @@ public  final class Rectangle extends
         return loBuilder_.getMessageOrBuilder();
       } else {
         return lo_ == null ?
-            com.hry.spring.grpc.stream.Point.getDefaultInstance() : lo_;
+            Point.getDefaultInstance() : lo_;
       }
     }
     /**
@@ -597,11 +597,11 @@ public  final class Rectangle extends
      * <code>optional .Point lo = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.hry.spring.grpc.stream.Point, com.hry.spring.grpc.stream.Point.Builder, com.hry.spring.grpc.stream.PointOrBuilder> 
+        Point, Point.Builder, com.hry.spring.grpc.stream.PointOrBuilder>
         getLoFieldBuilder() {
       if (loBuilder_ == null) {
         loBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.hry.spring.grpc.stream.Point, com.hry.spring.grpc.stream.Point.Builder, com.hry.spring.grpc.stream.PointOrBuilder>(
+            Point, Point.Builder, com.hry.spring.grpc.stream.PointOrBuilder>(
                 getLo(),
                 getParentForChildren(),
                 isClean());
@@ -610,9 +610,9 @@ public  final class Rectangle extends
       return loBuilder_;
     }
 
-    private com.hry.spring.grpc.stream.Point hi_ = null;
+    private Point hi_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.hry.spring.grpc.stream.Point, com.hry.spring.grpc.stream.Point.Builder, com.hry.spring.grpc.stream.PointOrBuilder> hiBuilder_;
+        Point, Point.Builder, com.hry.spring.grpc.stream.PointOrBuilder> hiBuilder_;
     /**
      * <code>optional .Point hi = 2;</code>
      */
@@ -622,9 +622,9 @@ public  final class Rectangle extends
     /**
      * <code>optional .Point hi = 2;</code>
      */
-    public com.hry.spring.grpc.stream.Point getHi() {
+    public Point getHi() {
       if (hiBuilder_ == null) {
-        return hi_ == null ? com.hry.spring.grpc.stream.Point.getDefaultInstance() : hi_;
+        return hi_ == null ? Point.getDefaultInstance() : hi_;
       } else {
         return hiBuilder_.getMessage();
       }
@@ -632,7 +632,7 @@ public  final class Rectangle extends
     /**
      * <code>optional .Point hi = 2;</code>
      */
-    public Builder setHi(com.hry.spring.grpc.stream.Point value) {
+    public Builder setHi(Point value) {
       if (hiBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -649,7 +649,7 @@ public  final class Rectangle extends
      * <code>optional .Point hi = 2;</code>
      */
     public Builder setHi(
-        com.hry.spring.grpc.stream.Point.Builder builderForValue) {
+        Point.Builder builderForValue) {
       if (hiBuilder_ == null) {
         hi_ = builderForValue.build();
         onChanged();
@@ -662,11 +662,11 @@ public  final class Rectangle extends
     /**
      * <code>optional .Point hi = 2;</code>
      */
-    public Builder mergeHi(com.hry.spring.grpc.stream.Point value) {
+    public Builder mergeHi(Point value) {
       if (hiBuilder_ == null) {
         if (hi_ != null) {
           hi_ =
-            com.hry.spring.grpc.stream.Point.newBuilder(hi_).mergeFrom(value).buildPartial();
+            Point.newBuilder(hi_).mergeFrom(value).buildPartial();
         } else {
           hi_ = value;
         }
@@ -694,7 +694,7 @@ public  final class Rectangle extends
     /**
      * <code>optional .Point hi = 2;</code>
      */
-    public com.hry.spring.grpc.stream.Point.Builder getHiBuilder() {
+    public Point.Builder getHiBuilder() {
       
       onChanged();
       return getHiFieldBuilder().getBuilder();
@@ -707,18 +707,18 @@ public  final class Rectangle extends
         return hiBuilder_.getMessageOrBuilder();
       } else {
         return hi_ == null ?
-            com.hry.spring.grpc.stream.Point.getDefaultInstance() : hi_;
+            Point.getDefaultInstance() : hi_;
       }
     }
     /**
      * <code>optional .Point hi = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.hry.spring.grpc.stream.Point, com.hry.spring.grpc.stream.Point.Builder, com.hry.spring.grpc.stream.PointOrBuilder> 
+        Point, Point.Builder, com.hry.spring.grpc.stream.PointOrBuilder>
         getHiFieldBuilder() {
       if (hiBuilder_ == null) {
         hiBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.hry.spring.grpc.stream.Point, com.hry.spring.grpc.stream.Point.Builder, com.hry.spring.grpc.stream.PointOrBuilder>(
+            Point, Point.Builder, com.hry.spring.grpc.stream.PointOrBuilder>(
                 getHi(),
                 getParentForChildren(),
                 isClean());
@@ -741,12 +741,12 @@ public  final class Rectangle extends
   }
 
   // @@protoc_insertion_point(class_scope:Rectangle)
-  private static final com.hry.spring.grpc.stream.Rectangle DEFAULT_INSTANCE;
+  private static final Rectangle DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.hry.spring.grpc.stream.Rectangle();
+    DEFAULT_INSTANCE = new Rectangle();
   }
 
-  public static com.hry.spring.grpc.stream.Rectangle getDefaultInstance() {
+  public static Rectangle getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -764,12 +764,12 @@ public  final class Rectangle extends
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<Rectangle> getParserForType() {
     return PARSER;
   }
 
-  public com.hry.spring.grpc.stream.Rectangle getDefaultInstanceForType() {
+  public Rectangle getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

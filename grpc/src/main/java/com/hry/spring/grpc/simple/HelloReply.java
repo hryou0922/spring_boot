@@ -22,7 +22,7 @@ public  final class HelloReply extends
     message_ = "";
   }
 
-  @java.lang.Override
+  @Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
@@ -48,7 +48,7 @@ public  final class HelloReply extends
             break;
           }
           case 10: {
-            java.lang.String s = input.readStringRequireUtf8();
+            String s = input.readStringRequireUtf8();
 
             message_ = s;
             break;
@@ -69,26 +69,26 @@ public  final class HelloReply extends
     return com.hry.spring.grpc.simple.GreeterEntity.internal_static_HelloReply_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
     return com.hry.spring.grpc.simple.GreeterEntity.internal_static_HelloReply_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.hry.spring.grpc.simple.HelloReply.class, com.hry.spring.grpc.simple.HelloReply.Builder.class);
+            HelloReply.class, Builder.class);
   }
 
   public static final int MESSAGE_FIELD_NUMBER = 1;
-  private volatile java.lang.Object message_;
+  private volatile Object message_;
   /**
    * <code>optional string message = 1;</code>
    */
-  public java.lang.String getMessage() {
-    java.lang.Object ref = message_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  public String getMessage() {
+    Object ref = message_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       message_ = s;
       return s;
     }
@@ -98,11 +98,11 @@ public  final class HelloReply extends
    */
   public com.google.protobuf.ByteString
       getMessageBytes() {
-    java.lang.Object ref = message_;
-    if (ref instanceof java.lang.String) {
+    Object ref = message_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       message_ = b;
       return b;
     } else {
@@ -140,15 +140,15 @@ public  final class HelloReply extends
   }
 
   private static final long serialVersionUID = 0L;
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.hry.spring.grpc.simple.HelloReply)) {
+    if (!(obj instanceof HelloReply)) {
       return super.equals(obj);
     }
-    com.hry.spring.grpc.simple.HelloReply other = (com.hry.spring.grpc.simple.HelloReply) obj;
+    HelloReply other = (HelloReply) obj;
 
     boolean result = true;
     result = result && getMessage()
@@ -156,7 +156,7 @@ public  final class HelloReply extends
     return result;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -170,58 +170,58 @@ public  final class HelloReply extends
     return hash;
   }
 
-  public static com.hry.spring.grpc.simple.HelloReply parseFrom(
+  public static HelloReply parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.simple.HelloReply parseFrom(
+  public static HelloReply parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.simple.HelloReply parseFrom(byte[] data)
+  public static HelloReply parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.simple.HelloReply parseFrom(
+  public static HelloReply parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.simple.HelloReply parseFrom(java.io.InputStream input)
+  public static HelloReply parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.simple.HelloReply parseFrom(
+  public static HelloReply parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.simple.HelloReply parseDelimitedFrom(java.io.InputStream input)
+  public static HelloReply parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.simple.HelloReply parseDelimitedFrom(
+  public static HelloReply parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.simple.HelloReply parseFrom(
+  public static HelloReply parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.simple.HelloReply parseFrom(
+  public static HelloReply parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -233,7 +233,7 @@ public  final class HelloReply extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.hry.spring.grpc.simple.HelloReply prototype) {
+  public static Builder newBuilder(HelloReply prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -241,9 +241,9 @@ public  final class HelloReply extends
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -263,11 +263,11 @@ public  final class HelloReply extends
       return com.hry.spring.grpc.simple.GreeterEntity.internal_static_HelloReply_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.hry.spring.grpc.simple.GreeterEntity.internal_static_HelloReply_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.hry.spring.grpc.simple.HelloReply.class, com.hry.spring.grpc.simple.HelloReply.Builder.class);
+              HelloReply.class, Builder.class);
     }
 
     // Construct using com.hry.spring.grpc.simple.HelloReply.newBuilder()
@@ -276,7 +276,7 @@ public  final class HelloReply extends
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -297,20 +297,20 @@ public  final class HelloReply extends
       return com.hry.spring.grpc.simple.GreeterEntity.internal_static_HelloReply_descriptor;
     }
 
-    public com.hry.spring.grpc.simple.HelloReply getDefaultInstanceForType() {
-      return com.hry.spring.grpc.simple.HelloReply.getDefaultInstance();
+    public HelloReply getDefaultInstanceForType() {
+      return HelloReply.getDefaultInstance();
     }
 
-    public com.hry.spring.grpc.simple.HelloReply build() {
-      com.hry.spring.grpc.simple.HelloReply result = buildPartial();
+    public HelloReply build() {
+      HelloReply result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public com.hry.spring.grpc.simple.HelloReply buildPartial() {
-      com.hry.spring.grpc.simple.HelloReply result = new com.hry.spring.grpc.simple.HelloReply(this);
+    public HelloReply buildPartial() {
+      HelloReply result = new HelloReply(this);
       result.message_ = message_;
       onBuilt();
       return result;
@@ -343,16 +343,16 @@ public  final class HelloReply extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.hry.spring.grpc.simple.HelloReply) {
-        return mergeFrom((com.hry.spring.grpc.simple.HelloReply)other);
+      if (other instanceof HelloReply) {
+        return mergeFrom((HelloReply)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.hry.spring.grpc.simple.HelloReply other) {
-      if (other == com.hry.spring.grpc.simple.HelloReply.getDefaultInstance()) return this;
+    public Builder mergeFrom(HelloReply other) {
+      if (other == HelloReply.getDefaultInstance()) return this;
       if (!other.getMessage().isEmpty()) {
         message_ = other.message_;
         onChanged();
@@ -369,11 +369,11 @@ public  final class HelloReply extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.hry.spring.grpc.simple.HelloReply parsedMessage = null;
+      HelloReply parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.hry.spring.grpc.simple.HelloReply) e.getUnfinishedMessage();
+        parsedMessage = (HelloReply) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -383,20 +383,20 @@ public  final class HelloReply extends
       return this;
     }
 
-    private java.lang.Object message_ = "";
+    private Object message_ = "";
     /**
      * <code>optional string message = 1;</code>
      */
-    public java.lang.String getMessage() {
-      java.lang.Object ref = message_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getMessage() {
+      Object ref = message_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         message_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -404,11 +404,11 @@ public  final class HelloReply extends
      */
     public com.google.protobuf.ByteString
         getMessageBytes() {
-      java.lang.Object ref = message_;
+      Object ref = message_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         message_ = b;
         return b;
       } else {
@@ -419,7 +419,7 @@ public  final class HelloReply extends
      * <code>optional string message = 1;</code>
      */
     public Builder setMessage(
-        java.lang.String value) {
+        String value) {
       if (value == null) {
     throw new NullPointerException();
   }
@@ -466,12 +466,12 @@ public  final class HelloReply extends
   }
 
   // @@protoc_insertion_point(class_scope:HelloReply)
-  private static final com.hry.spring.grpc.simple.HelloReply DEFAULT_INSTANCE;
+  private static final HelloReply DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.hry.spring.grpc.simple.HelloReply();
+    DEFAULT_INSTANCE = new HelloReply();
   }
 
-  public static com.hry.spring.grpc.simple.HelloReply getDefaultInstance() {
+  public static HelloReply getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -489,12 +489,12 @@ public  final class HelloReply extends
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<HelloReply> getParserForType() {
     return PARSER;
   }
 
-  public com.hry.spring.grpc.simple.HelloReply getDefaultInstanceForType() {
+  public HelloReply getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

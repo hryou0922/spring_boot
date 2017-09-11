@@ -10,7 +10,7 @@ public interface FeatureOrBuilder extends
   /**
    * <code>optional string name = 1;</code>
    */
-  java.lang.String getName();
+  String getName();
   /**
    * <code>optional string name = 1;</code>
    */
@@ -24,9 +24,9 @@ public interface FeatureOrBuilder extends
   /**
    * <code>optional .Point location = 2;</code>
    */
-  com.hry.spring.grpc.stream.Point getLocation();
+  Point getLocation();
   /**
    * <code>optional .Point location = 2;</code>
    */
-  com.hry.spring.grpc.stream.PointOrBuilder getLocationOrBuilder();
+  PointOrBuilder getLocationOrBuilder();
 }

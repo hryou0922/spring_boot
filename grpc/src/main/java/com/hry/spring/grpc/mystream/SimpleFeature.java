@@ -18,7 +18,7 @@ public  final class SimpleFeature extends
     name_ = "";
   }
 
-  @java.lang.Override
+  @Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
@@ -44,17 +44,17 @@ public  final class SimpleFeature extends
             break;
           }
           case 10: {
-            java.lang.String s = input.readStringRequireUtf8();
+            String s = input.readStringRequireUtf8();
 
             name_ = s;
             break;
           }
           case 18: {
-            com.hry.spring.grpc.mystream.Simple.Builder subBuilder = null;
+            Simple.Builder subBuilder = null;
             if (location_ != null) {
               subBuilder = location_.toBuilder();
             }
-            location_ = input.readMessage(com.hry.spring.grpc.mystream.Simple.parser(), extensionRegistry);
+            location_ = input.readMessage(Simple.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(location_);
               location_ = subBuilder.buildPartial();
@@ -78,26 +78,26 @@ public  final class SimpleFeature extends
     return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_SimpleFeature_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
     return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_SimpleFeature_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.hry.spring.grpc.mystream.SimpleFeature.class, com.hry.spring.grpc.mystream.SimpleFeature.Builder.class);
+            SimpleFeature.class, Builder.class);
   }
 
   public static final int NAME_FIELD_NUMBER = 1;
-  private volatile java.lang.Object name_;
+  private volatile Object name_;
   /**
    * <code>optional string name = 1;</code>
    */
-  public java.lang.String getName() {
-    java.lang.Object ref = name_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  public String getName() {
+    Object ref = name_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       name_ = s;
       return s;
     }
@@ -107,11 +107,11 @@ public  final class SimpleFeature extends
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
-    java.lang.Object ref = name_;
-    if (ref instanceof java.lang.String) {
+    Object ref = name_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       name_ = b;
       return b;
     } else {
@@ -120,7 +120,7 @@ public  final class SimpleFeature extends
   }
 
   public static final int LOCATION_FIELD_NUMBER = 2;
-  private com.hry.spring.grpc.mystream.Simple location_;
+  private Simple location_;
   /**
    * <code>optional .Simple location = 2;</code>
    */
@@ -130,8 +130,8 @@ public  final class SimpleFeature extends
   /**
    * <code>optional .Simple location = 2;</code>
    */
-  public com.hry.spring.grpc.mystream.Simple getLocation() {
-    return location_ == null ? com.hry.spring.grpc.mystream.Simple.getDefaultInstance() : location_;
+  public Simple getLocation() {
+    return location_ == null ? Simple.getDefaultInstance() : location_;
   }
   /**
    * <code>optional .Simple location = 2;</code>
@@ -177,15 +177,15 @@ public  final class SimpleFeature extends
   }
 
   private static final long serialVersionUID = 0L;
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.hry.spring.grpc.mystream.SimpleFeature)) {
+    if (!(obj instanceof SimpleFeature)) {
       return super.equals(obj);
     }
-    com.hry.spring.grpc.mystream.SimpleFeature other = (com.hry.spring.grpc.mystream.SimpleFeature) obj;
+    SimpleFeature other = (SimpleFeature) obj;
 
     boolean result = true;
     result = result && getName()
@@ -198,7 +198,7 @@ public  final class SimpleFeature extends
     return result;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -216,58 +216,58 @@ public  final class SimpleFeature extends
     return hash;
   }
 
-  public static com.hry.spring.grpc.mystream.SimpleFeature parseFrom(
+  public static SimpleFeature parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.mystream.SimpleFeature parseFrom(
+  public static SimpleFeature parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.mystream.SimpleFeature parseFrom(byte[] data)
+  public static SimpleFeature parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.mystream.SimpleFeature parseFrom(
+  public static SimpleFeature parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.mystream.SimpleFeature parseFrom(java.io.InputStream input)
+  public static SimpleFeature parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.mystream.SimpleFeature parseFrom(
+  public static SimpleFeature parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.mystream.SimpleFeature parseDelimitedFrom(java.io.InputStream input)
+  public static SimpleFeature parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.mystream.SimpleFeature parseDelimitedFrom(
+  public static SimpleFeature parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.mystream.SimpleFeature parseFrom(
+  public static SimpleFeature parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.mystream.SimpleFeature parseFrom(
+  public static SimpleFeature parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -279,7 +279,7 @@ public  final class SimpleFeature extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.hry.spring.grpc.mystream.SimpleFeature prototype) {
+  public static Builder newBuilder(SimpleFeature prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -287,9 +287,9 @@ public  final class SimpleFeature extends
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -305,11 +305,11 @@ public  final class SimpleFeature extends
       return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_SimpleFeature_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_SimpleFeature_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.hry.spring.grpc.mystream.SimpleFeature.class, com.hry.spring.grpc.mystream.SimpleFeature.Builder.class);
+              SimpleFeature.class, Builder.class);
     }
 
     // Construct using com.hry.spring.grpc.mystream.SimpleFeature.newBuilder()
@@ -318,7 +318,7 @@ public  final class SimpleFeature extends
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -345,20 +345,20 @@ public  final class SimpleFeature extends
       return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_SimpleFeature_descriptor;
     }
 
-    public com.hry.spring.grpc.mystream.SimpleFeature getDefaultInstanceForType() {
-      return com.hry.spring.grpc.mystream.SimpleFeature.getDefaultInstance();
+    public SimpleFeature getDefaultInstanceForType() {
+      return SimpleFeature.getDefaultInstance();
     }
 
-    public com.hry.spring.grpc.mystream.SimpleFeature build() {
-      com.hry.spring.grpc.mystream.SimpleFeature result = buildPartial();
+    public SimpleFeature build() {
+      SimpleFeature result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public com.hry.spring.grpc.mystream.SimpleFeature buildPartial() {
-      com.hry.spring.grpc.mystream.SimpleFeature result = new com.hry.spring.grpc.mystream.SimpleFeature(this);
+    public SimpleFeature buildPartial() {
+      SimpleFeature result = new SimpleFeature(this);
       result.name_ = name_;
       if (locationBuilder_ == null) {
         result.location_ = location_;
@@ -396,16 +396,16 @@ public  final class SimpleFeature extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.hry.spring.grpc.mystream.SimpleFeature) {
-        return mergeFrom((com.hry.spring.grpc.mystream.SimpleFeature)other);
+      if (other instanceof SimpleFeature) {
+        return mergeFrom((SimpleFeature)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.hry.spring.grpc.mystream.SimpleFeature other) {
-      if (other == com.hry.spring.grpc.mystream.SimpleFeature.getDefaultInstance()) return this;
+    public Builder mergeFrom(SimpleFeature other) {
+      if (other == SimpleFeature.getDefaultInstance()) return this;
       if (!other.getName().isEmpty()) {
         name_ = other.name_;
         onChanged();
@@ -425,11 +425,11 @@ public  final class SimpleFeature extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.hry.spring.grpc.mystream.SimpleFeature parsedMessage = null;
+      SimpleFeature parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.hry.spring.grpc.mystream.SimpleFeature) e.getUnfinishedMessage();
+        parsedMessage = (SimpleFeature) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -439,20 +439,20 @@ public  final class SimpleFeature extends
       return this;
     }
 
-    private java.lang.Object name_ = "";
+    private Object name_ = "";
     /**
      * <code>optional string name = 1;</code>
      */
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getName() {
+      Object ref = name_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         name_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -460,11 +460,11 @@ public  final class SimpleFeature extends
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
-      java.lang.Object ref = name_;
+      Object ref = name_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         name_ = b;
         return b;
       } else {
@@ -475,7 +475,7 @@ public  final class SimpleFeature extends
      * <code>optional string name = 1;</code>
      */
     public Builder setName(
-        java.lang.String value) {
+        String value) {
       if (value == null) {
     throw new NullPointerException();
   }
@@ -508,9 +508,9 @@ public  final class SimpleFeature extends
       return this;
     }
 
-    private com.hry.spring.grpc.mystream.Simple location_ = null;
+    private Simple location_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.hry.spring.grpc.mystream.Simple, com.hry.spring.grpc.mystream.Simple.Builder, com.hry.spring.grpc.mystream.SimpleOrBuilder> locationBuilder_;
+        Simple, Simple.Builder, com.hry.spring.grpc.mystream.SimpleOrBuilder> locationBuilder_;
     /**
      * <code>optional .Simple location = 2;</code>
      */
@@ -520,9 +520,9 @@ public  final class SimpleFeature extends
     /**
      * <code>optional .Simple location = 2;</code>
      */
-    public com.hry.spring.grpc.mystream.Simple getLocation() {
+    public Simple getLocation() {
       if (locationBuilder_ == null) {
-        return location_ == null ? com.hry.spring.grpc.mystream.Simple.getDefaultInstance() : location_;
+        return location_ == null ? Simple.getDefaultInstance() : location_;
       } else {
         return locationBuilder_.getMessage();
       }
@@ -530,7 +530,7 @@ public  final class SimpleFeature extends
     /**
      * <code>optional .Simple location = 2;</code>
      */
-    public Builder setLocation(com.hry.spring.grpc.mystream.Simple value) {
+    public Builder setLocation(Simple value) {
       if (locationBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -547,7 +547,7 @@ public  final class SimpleFeature extends
      * <code>optional .Simple location = 2;</code>
      */
     public Builder setLocation(
-        com.hry.spring.grpc.mystream.Simple.Builder builderForValue) {
+        Simple.Builder builderForValue) {
       if (locationBuilder_ == null) {
         location_ = builderForValue.build();
         onChanged();
@@ -560,11 +560,11 @@ public  final class SimpleFeature extends
     /**
      * <code>optional .Simple location = 2;</code>
      */
-    public Builder mergeLocation(com.hry.spring.grpc.mystream.Simple value) {
+    public Builder mergeLocation(Simple value) {
       if (locationBuilder_ == null) {
         if (location_ != null) {
           location_ =
-            com.hry.spring.grpc.mystream.Simple.newBuilder(location_).mergeFrom(value).buildPartial();
+            Simple.newBuilder(location_).mergeFrom(value).buildPartial();
         } else {
           location_ = value;
         }
@@ -592,7 +592,7 @@ public  final class SimpleFeature extends
     /**
      * <code>optional .Simple location = 2;</code>
      */
-    public com.hry.spring.grpc.mystream.Simple.Builder getLocationBuilder() {
+    public Simple.Builder getLocationBuilder() {
       
       onChanged();
       return getLocationFieldBuilder().getBuilder();
@@ -605,18 +605,18 @@ public  final class SimpleFeature extends
         return locationBuilder_.getMessageOrBuilder();
       } else {
         return location_ == null ?
-            com.hry.spring.grpc.mystream.Simple.getDefaultInstance() : location_;
+            Simple.getDefaultInstance() : location_;
       }
     }
     /**
      * <code>optional .Simple location = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.hry.spring.grpc.mystream.Simple, com.hry.spring.grpc.mystream.Simple.Builder, com.hry.spring.grpc.mystream.SimpleOrBuilder> 
+        Simple, Simple.Builder, com.hry.spring.grpc.mystream.SimpleOrBuilder>
         getLocationFieldBuilder() {
       if (locationBuilder_ == null) {
         locationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.hry.spring.grpc.mystream.Simple, com.hry.spring.grpc.mystream.Simple.Builder, com.hry.spring.grpc.mystream.SimpleOrBuilder>(
+            Simple, Simple.Builder, com.hry.spring.grpc.mystream.SimpleOrBuilder>(
                 getLocation(),
                 getParentForChildren(),
                 isClean());
@@ -639,12 +639,12 @@ public  final class SimpleFeature extends
   }
 
   // @@protoc_insertion_point(class_scope:SimpleFeature)
-  private static final com.hry.spring.grpc.mystream.SimpleFeature DEFAULT_INSTANCE;
+  private static final SimpleFeature DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.hry.spring.grpc.mystream.SimpleFeature();
+    DEFAULT_INSTANCE = new SimpleFeature();
   }
 
-  public static com.hry.spring.grpc.mystream.SimpleFeature getDefaultInstance() {
+  public static SimpleFeature getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -662,12 +662,12 @@ public  final class SimpleFeature extends
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<SimpleFeature> getParserForType() {
     return PARSER;
   }
 
-  public com.hry.spring.grpc.mystream.SimpleFeature getDefaultInstanceForType() {
+  public SimpleFeature getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

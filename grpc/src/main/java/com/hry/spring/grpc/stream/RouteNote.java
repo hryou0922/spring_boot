@@ -18,7 +18,7 @@ public  final class RouteNote extends
     message_ = "";
   }
 
-  @java.lang.Override
+  @Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
@@ -44,11 +44,11 @@ public  final class RouteNote extends
             break;
           }
           case 10: {
-            com.hry.spring.grpc.stream.Point.Builder subBuilder = null;
+            Point.Builder subBuilder = null;
             if (location_ != null) {
               subBuilder = location_.toBuilder();
             }
-            location_ = input.readMessage(com.hry.spring.grpc.stream.Point.parser(), extensionRegistry);
+            location_ = input.readMessage(Point.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(location_);
               location_ = subBuilder.buildPartial();
@@ -57,7 +57,7 @@ public  final class RouteNote extends
             break;
           }
           case 18: {
-            java.lang.String s = input.readStringRequireUtf8();
+            String s = input.readStringRequireUtf8();
 
             message_ = s;
             break;
@@ -78,15 +78,15 @@ public  final class RouteNote extends
     return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_RouteNote_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
     return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_RouteNote_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.hry.spring.grpc.stream.RouteNote.class, com.hry.spring.grpc.stream.RouteNote.Builder.class);
+            RouteNote.class, Builder.class);
   }
 
   public static final int LOCATION_FIELD_NUMBER = 1;
-  private com.hry.spring.grpc.stream.Point location_;
+  private Point location_;
   /**
    * <code>optional .Point location = 1;</code>
    */
@@ -96,8 +96,8 @@ public  final class RouteNote extends
   /**
    * <code>optional .Point location = 1;</code>
    */
-  public com.hry.spring.grpc.stream.Point getLocation() {
-    return location_ == null ? com.hry.spring.grpc.stream.Point.getDefaultInstance() : location_;
+  public Point getLocation() {
+    return location_ == null ? Point.getDefaultInstance() : location_;
   }
   /**
    * <code>optional .Point location = 1;</code>
@@ -107,18 +107,18 @@ public  final class RouteNote extends
   }
 
   public static final int MESSAGE_FIELD_NUMBER = 2;
-  private volatile java.lang.Object message_;
+  private volatile Object message_;
   /**
    * <code>optional string message = 2;</code>
    */
-  public java.lang.String getMessage() {
-    java.lang.Object ref = message_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  public String getMessage() {
+    Object ref = message_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       message_ = s;
       return s;
     }
@@ -128,11 +128,11 @@ public  final class RouteNote extends
    */
   public com.google.protobuf.ByteString
       getMessageBytes() {
-    java.lang.Object ref = message_;
-    if (ref instanceof java.lang.String) {
+    Object ref = message_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       message_ = b;
       return b;
     } else {
@@ -177,15 +177,15 @@ public  final class RouteNote extends
   }
 
   private static final long serialVersionUID = 0L;
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.hry.spring.grpc.stream.RouteNote)) {
+    if (!(obj instanceof RouteNote)) {
       return super.equals(obj);
     }
-    com.hry.spring.grpc.stream.RouteNote other = (com.hry.spring.grpc.stream.RouteNote) obj;
+    RouteNote other = (RouteNote) obj;
 
     boolean result = true;
     result = result && (hasLocation() == other.hasLocation());
@@ -198,7 +198,7 @@ public  final class RouteNote extends
     return result;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -216,58 +216,58 @@ public  final class RouteNote extends
     return hash;
   }
 
-  public static com.hry.spring.grpc.stream.RouteNote parseFrom(
+  public static RouteNote parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.stream.RouteNote parseFrom(
+  public static RouteNote parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.RouteNote parseFrom(byte[] data)
+  public static RouteNote parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.stream.RouteNote parseFrom(
+  public static RouteNote parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.RouteNote parseFrom(java.io.InputStream input)
+  public static RouteNote parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.stream.RouteNote parseFrom(
+  public static RouteNote parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.RouteNote parseDelimitedFrom(java.io.InputStream input)
+  public static RouteNote parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.stream.RouteNote parseDelimitedFrom(
+  public static RouteNote parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.RouteNote parseFrom(
+  public static RouteNote parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.stream.RouteNote parseFrom(
+  public static RouteNote parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -279,7 +279,7 @@ public  final class RouteNote extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.hry.spring.grpc.stream.RouteNote prototype) {
+  public static Builder newBuilder(RouteNote prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -287,9 +287,9 @@ public  final class RouteNote extends
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -305,11 +305,11 @@ public  final class RouteNote extends
       return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_RouteNote_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_RouteNote_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.hry.spring.grpc.stream.RouteNote.class, com.hry.spring.grpc.stream.RouteNote.Builder.class);
+              RouteNote.class, Builder.class);
     }
 
     // Construct using com.hry.spring.grpc.stream.RouteNote.newBuilder()
@@ -318,7 +318,7 @@ public  final class RouteNote extends
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -345,20 +345,20 @@ public  final class RouteNote extends
       return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_RouteNote_descriptor;
     }
 
-    public com.hry.spring.grpc.stream.RouteNote getDefaultInstanceForType() {
-      return com.hry.spring.grpc.stream.RouteNote.getDefaultInstance();
+    public RouteNote getDefaultInstanceForType() {
+      return RouteNote.getDefaultInstance();
     }
 
-    public com.hry.spring.grpc.stream.RouteNote build() {
-      com.hry.spring.grpc.stream.RouteNote result = buildPartial();
+    public RouteNote build() {
+      RouteNote result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public com.hry.spring.grpc.stream.RouteNote buildPartial() {
-      com.hry.spring.grpc.stream.RouteNote result = new com.hry.spring.grpc.stream.RouteNote(this);
+    public RouteNote buildPartial() {
+      RouteNote result = new RouteNote(this);
       if (locationBuilder_ == null) {
         result.location_ = location_;
       } else {
@@ -396,16 +396,16 @@ public  final class RouteNote extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.hry.spring.grpc.stream.RouteNote) {
-        return mergeFrom((com.hry.spring.grpc.stream.RouteNote)other);
+      if (other instanceof RouteNote) {
+        return mergeFrom((RouteNote)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.hry.spring.grpc.stream.RouteNote other) {
-      if (other == com.hry.spring.grpc.stream.RouteNote.getDefaultInstance()) return this;
+    public Builder mergeFrom(RouteNote other) {
+      if (other == RouteNote.getDefaultInstance()) return this;
       if (other.hasLocation()) {
         mergeLocation(other.getLocation());
       }
@@ -425,11 +425,11 @@ public  final class RouteNote extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.hry.spring.grpc.stream.RouteNote parsedMessage = null;
+      RouteNote parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.hry.spring.grpc.stream.RouteNote) e.getUnfinishedMessage();
+        parsedMessage = (RouteNote) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -439,9 +439,9 @@ public  final class RouteNote extends
       return this;
     }
 
-    private com.hry.spring.grpc.stream.Point location_ = null;
+    private Point location_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.hry.spring.grpc.stream.Point, com.hry.spring.grpc.stream.Point.Builder, com.hry.spring.grpc.stream.PointOrBuilder> locationBuilder_;
+        Point, Point.Builder, com.hry.spring.grpc.stream.PointOrBuilder> locationBuilder_;
     /**
      * <code>optional .Point location = 1;</code>
      */
@@ -451,9 +451,9 @@ public  final class RouteNote extends
     /**
      * <code>optional .Point location = 1;</code>
      */
-    public com.hry.spring.grpc.stream.Point getLocation() {
+    public Point getLocation() {
       if (locationBuilder_ == null) {
-        return location_ == null ? com.hry.spring.grpc.stream.Point.getDefaultInstance() : location_;
+        return location_ == null ? Point.getDefaultInstance() : location_;
       } else {
         return locationBuilder_.getMessage();
       }
@@ -461,7 +461,7 @@ public  final class RouteNote extends
     /**
      * <code>optional .Point location = 1;</code>
      */
-    public Builder setLocation(com.hry.spring.grpc.stream.Point value) {
+    public Builder setLocation(Point value) {
       if (locationBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -478,7 +478,7 @@ public  final class RouteNote extends
      * <code>optional .Point location = 1;</code>
      */
     public Builder setLocation(
-        com.hry.spring.grpc.stream.Point.Builder builderForValue) {
+        Point.Builder builderForValue) {
       if (locationBuilder_ == null) {
         location_ = builderForValue.build();
         onChanged();
@@ -491,11 +491,11 @@ public  final class RouteNote extends
     /**
      * <code>optional .Point location = 1;</code>
      */
-    public Builder mergeLocation(com.hry.spring.grpc.stream.Point value) {
+    public Builder mergeLocation(Point value) {
       if (locationBuilder_ == null) {
         if (location_ != null) {
           location_ =
-            com.hry.spring.grpc.stream.Point.newBuilder(location_).mergeFrom(value).buildPartial();
+            Point.newBuilder(location_).mergeFrom(value).buildPartial();
         } else {
           location_ = value;
         }
@@ -523,7 +523,7 @@ public  final class RouteNote extends
     /**
      * <code>optional .Point location = 1;</code>
      */
-    public com.hry.spring.grpc.stream.Point.Builder getLocationBuilder() {
+    public Point.Builder getLocationBuilder() {
       
       onChanged();
       return getLocationFieldBuilder().getBuilder();
@@ -536,18 +536,18 @@ public  final class RouteNote extends
         return locationBuilder_.getMessageOrBuilder();
       } else {
         return location_ == null ?
-            com.hry.spring.grpc.stream.Point.getDefaultInstance() : location_;
+            Point.getDefaultInstance() : location_;
       }
     }
     /**
      * <code>optional .Point location = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.hry.spring.grpc.stream.Point, com.hry.spring.grpc.stream.Point.Builder, com.hry.spring.grpc.stream.PointOrBuilder> 
+        Point, Point.Builder, com.hry.spring.grpc.stream.PointOrBuilder>
         getLocationFieldBuilder() {
       if (locationBuilder_ == null) {
         locationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.hry.spring.grpc.stream.Point, com.hry.spring.grpc.stream.Point.Builder, com.hry.spring.grpc.stream.PointOrBuilder>(
+            Point, Point.Builder, com.hry.spring.grpc.stream.PointOrBuilder>(
                 getLocation(),
                 getParentForChildren(),
                 isClean());
@@ -556,20 +556,20 @@ public  final class RouteNote extends
       return locationBuilder_;
     }
 
-    private java.lang.Object message_ = "";
+    private Object message_ = "";
     /**
      * <code>optional string message = 2;</code>
      */
-    public java.lang.String getMessage() {
-      java.lang.Object ref = message_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getMessage() {
+      Object ref = message_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         message_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -577,11 +577,11 @@ public  final class RouteNote extends
      */
     public com.google.protobuf.ByteString
         getMessageBytes() {
-      java.lang.Object ref = message_;
+      Object ref = message_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         message_ = b;
         return b;
       } else {
@@ -592,7 +592,7 @@ public  final class RouteNote extends
      * <code>optional string message = 2;</code>
      */
     public Builder setMessage(
-        java.lang.String value) {
+        String value) {
       if (value == null) {
     throw new NullPointerException();
   }
@@ -639,12 +639,12 @@ public  final class RouteNote extends
   }
 
   // @@protoc_insertion_point(class_scope:RouteNote)
-  private static final com.hry.spring.grpc.stream.RouteNote DEFAULT_INSTANCE;
+  private static final RouteNote DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.hry.spring.grpc.stream.RouteNote();
+    DEFAULT_INSTANCE = new RouteNote();
   }
 
-  public static com.hry.spring.grpc.stream.RouteNote getDefaultInstance() {
+  public static RouteNote getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -662,12 +662,12 @@ public  final class RouteNote extends
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<RouteNote> getParserForType() {
     return PARSER;
   }
 
-  public com.hry.spring.grpc.stream.RouteNote getDefaultInstanceForType() {
+  public RouteNote getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

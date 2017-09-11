@@ -14,16 +14,16 @@ public interface RouteNoteOrBuilder extends
   /**
    * <code>optional .Point location = 1;</code>
    */
-  com.hry.spring.grpc.stream.Point getLocation();
+  Point getLocation();
   /**
    * <code>optional .Point location = 1;</code>
    */
-  com.hry.spring.grpc.stream.PointOrBuilder getLocationOrBuilder();
+  PointOrBuilder getLocationOrBuilder();
 
   /**
    * <code>optional string message = 2;</code>
    */
-  java.lang.String getMessage();
+  String getMessage();
   /**
    * <code>optional string message = 2;</code>
    */

@@ -19,7 +19,7 @@ public  final class Point extends
     longitude_ = 0;
   }
 
-  @java.lang.Override
+  @Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
@@ -70,11 +70,11 @@ public  final class Point extends
     return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_Point_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
     return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_Point_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.hry.spring.grpc.stream.Point.class, com.hry.spring.grpc.stream.Point.Builder.class);
+            Point.class, Builder.class);
   }
 
   public static final int LATITUDE_FIELD_NUMBER = 1;
@@ -133,15 +133,15 @@ public  final class Point extends
   }
 
   private static final long serialVersionUID = 0L;
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.hry.spring.grpc.stream.Point)) {
+    if (!(obj instanceof Point)) {
       return super.equals(obj);
     }
-    com.hry.spring.grpc.stream.Point other = (com.hry.spring.grpc.stream.Point) obj;
+    Point other = (Point) obj;
 
     boolean result = true;
     result = result && (getLatitude()
@@ -151,7 +151,7 @@ public  final class Point extends
     return result;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -167,58 +167,58 @@ public  final class Point extends
     return hash;
   }
 
-  public static com.hry.spring.grpc.stream.Point parseFrom(
+  public static Point parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.stream.Point parseFrom(
+  public static Point parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.Point parseFrom(byte[] data)
+  public static Point parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.stream.Point parseFrom(
+  public static Point parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.Point parseFrom(java.io.InputStream input)
+  public static Point parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.stream.Point parseFrom(
+  public static Point parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.Point parseDelimitedFrom(java.io.InputStream input)
+  public static Point parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.stream.Point parseDelimitedFrom(
+  public static Point parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.Point parseFrom(
+  public static Point parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.stream.Point parseFrom(
+  public static Point parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -230,7 +230,7 @@ public  final class Point extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.hry.spring.grpc.stream.Point prototype) {
+  public static Builder newBuilder(Point prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -238,9 +238,9 @@ public  final class Point extends
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -256,11 +256,11 @@ public  final class Point extends
       return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_Point_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_Point_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.hry.spring.grpc.stream.Point.class, com.hry.spring.grpc.stream.Point.Builder.class);
+              Point.class, Builder.class);
     }
 
     // Construct using com.hry.spring.grpc.stream.Point.newBuilder()
@@ -269,7 +269,7 @@ public  final class Point extends
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -292,20 +292,20 @@ public  final class Point extends
       return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_Point_descriptor;
     }
 
-    public com.hry.spring.grpc.stream.Point getDefaultInstanceForType() {
-      return com.hry.spring.grpc.stream.Point.getDefaultInstance();
+    public Point getDefaultInstanceForType() {
+      return Point.getDefaultInstance();
     }
 
-    public com.hry.spring.grpc.stream.Point build() {
-      com.hry.spring.grpc.stream.Point result = buildPartial();
+    public Point build() {
+      Point result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public com.hry.spring.grpc.stream.Point buildPartial() {
-      com.hry.spring.grpc.stream.Point result = new com.hry.spring.grpc.stream.Point(this);
+    public Point buildPartial() {
+      Point result = new Point(this);
       result.latitude_ = latitude_;
       result.longitude_ = longitude_;
       onBuilt();
@@ -339,16 +339,16 @@ public  final class Point extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.hry.spring.grpc.stream.Point) {
-        return mergeFrom((com.hry.spring.grpc.stream.Point)other);
+      if (other instanceof Point) {
+        return mergeFrom((Point)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.hry.spring.grpc.stream.Point other) {
-      if (other == com.hry.spring.grpc.stream.Point.getDefaultInstance()) return this;
+    public Builder mergeFrom(Point other) {
+      if (other == Point.getDefaultInstance()) return this;
       if (other.getLatitude() != 0) {
         setLatitude(other.getLatitude());
       }
@@ -367,11 +367,11 @@ public  final class Point extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.hry.spring.grpc.stream.Point parsedMessage = null;
+      Point parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.hry.spring.grpc.stream.Point) e.getUnfinishedMessage();
+        parsedMessage = (Point) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -447,12 +447,12 @@ public  final class Point extends
   }
 
   // @@protoc_insertion_point(class_scope:Point)
-  private static final com.hry.spring.grpc.stream.Point DEFAULT_INSTANCE;
+  private static final Point DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.hry.spring.grpc.stream.Point();
+    DEFAULT_INSTANCE = new Point();
   }
 
-  public static com.hry.spring.grpc.stream.Point getDefaultInstance() {
+  public static Point getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -470,12 +470,12 @@ public  final class Point extends
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<Point> getParserForType() {
     return PARSER;
   }
 
-  public com.hry.spring.grpc.stream.Point getDefaultInstanceForType() {
+  public Point getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

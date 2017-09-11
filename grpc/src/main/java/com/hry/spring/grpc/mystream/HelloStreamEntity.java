@@ -47,7 +47,7 @@ public final class HelloStreamEntity {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\nBsrc/main/resources/com/hry/spring/grpc" +
       "/mystream/hello_stream.proto\"#\n\006Simple\022\013" +
       "\n\003num\030\001 \001(\005\022\014\n\004name\030\002 \001(\t\")\n\nSimpleList\022" +
@@ -81,31 +81,31 @@ public final class HelloStreamEntity {
     internal_static_Simple_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Simple_descriptor,
-        new java.lang.String[] { "Num", "Name", });
+        new String[] { "Num", "Name", });
     internal_static_SimpleList_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_SimpleList_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SimpleList_descriptor,
-        new java.lang.String[] { "SimpleList", });
+        new String[] { "SimpleList", });
     internal_static_SimpleFeature_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_SimpleFeature_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SimpleFeature_descriptor,
-        new java.lang.String[] { "Name", "Location", });
+        new String[] { "Name", "Location", });
     internal_static_SimpleSummary_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_SimpleSummary_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SimpleSummary_descriptor,
-        new java.lang.String[] { "FeatureCount", });
+        new String[] { "FeatureCount", });
     internal_static_SimpleFeatureDatabase_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_SimpleFeatureDatabase_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SimpleFeatureDatabase_descriptor,
-        new java.lang.String[] { "Feature", });
+        new String[] { "Feature", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

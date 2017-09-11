@@ -11,7 +11,7 @@ public class FirstDemoTest {
 	@Test
 	public void testMyPerson() throws InvalidProtocolBufferException{
 		 //模拟将对象转成byte[]，方便传输
-        FirstDemo.Demo.Builder builder = Demo.newBuilder();
+        Demo.Builder builder = Demo.newBuilder();
         builder.setId(1);
         builder.setName("name");
         builder.setEmail("hryou0922@126.com");

@@ -22,7 +22,7 @@ public interface RectangleOrBuilder extends
    *
    * <code>optional .Point lo = 1;</code>
    */
-  com.hry.spring.grpc.stream.Point getLo();
+  Point getLo();
   /**
    * <pre>
    * 引入Message Point
@@ -30,7 +30,7 @@ public interface RectangleOrBuilder extends
    *
    * <code>optional .Point lo = 1;</code>
    */
-  com.hry.spring.grpc.stream.PointOrBuilder getLoOrBuilder();
+  PointOrBuilder getLoOrBuilder();
 
   /**
    * <code>optional .Point hi = 2;</code>
@@ -39,9 +39,9 @@ public interface RectangleOrBuilder extends
   /**
    * <code>optional .Point hi = 2;</code>
    */
-  com.hry.spring.grpc.stream.Point getHi();
+  Point getHi();
   /**
    * <code>optional .Point hi = 2;</code>
    */
-  com.hry.spring.grpc.stream.PointOrBuilder getHiOrBuilder();
+  PointOrBuilder getHiOrBuilder();
 }

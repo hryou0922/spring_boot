@@ -34,7 +34,7 @@ public final class MyPersonEntity {
      *
      * <code>optional string name = 2;</code>
      */
-    java.lang.String getName();
+    String getName();
     /**
      * <pre>
      *必须字段，在后面的使用中必须为该段设置值  
@@ -52,7 +52,7 @@ public final class MyPersonEntity {
      *
      * <code>optional string email = 3;</code>
      */
-    java.lang.String getEmail();
+    String getEmail();
     /**
      * <pre>
      *可选字段，在后面的使用中可以自由决定是否为该字段设置值
@@ -80,7 +80,7 @@ public final class MyPersonEntity {
       email_ = "";
     }
 
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
@@ -111,13 +111,13 @@ public final class MyPersonEntity {
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
 
               name_ = s;
               break;
             }
             case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
 
               email_ = s;
               break;
@@ -135,14 +135,14 @@ public final class MyPersonEntity {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.hry.spring.proto.simple.MyPersonEntity.internal_static_MyPerson_descriptor;
+      return MyPersonEntity.internal_static_MyPerson_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.hry.spring.proto.simple.MyPersonEntity.internal_static_MyPerson_fieldAccessorTable
+      return MyPersonEntity.internal_static_MyPerson_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.hry.spring.proto.simple.MyPersonEntity.MyPerson.class, com.hry.spring.proto.simple.MyPersonEntity.MyPerson.Builder.class);
+              MyPerson.class, Builder.class);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
@@ -159,7 +159,7 @@ public final class MyPersonEntity {
     }
 
     public static final int NAME_FIELD_NUMBER = 2;
-    private volatile java.lang.Object name_;
+    private volatile Object name_;
     /**
      * <pre>
      *必须字段，在后面的使用中必须为该段设置值  
@@ -167,14 +167,14 @@ public final class MyPersonEntity {
      *
      * <code>optional string name = 2;</code>
      */
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getName() {
+      Object ref = name_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         name_ = s;
         return s;
       }
@@ -188,11 +188,11 @@ public final class MyPersonEntity {
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
+      Object ref = name_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         name_ = b;
         return b;
       } else {
@@ -201,7 +201,7 @@ public final class MyPersonEntity {
     }
 
     public static final int EMAIL_FIELD_NUMBER = 3;
-    private volatile java.lang.Object email_;
+    private volatile Object email_;
     /**
      * <pre>
      *可选字段，在后面的使用中可以自由决定是否为该字段设置值
@@ -209,14 +209,14 @@ public final class MyPersonEntity {
      *
      * <code>optional string email = 3;</code>
      */
-    public java.lang.String getEmail() {
-      java.lang.Object ref = email_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getEmail() {
+      Object ref = email_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         email_ = s;
         return s;
       }
@@ -230,11 +230,11 @@ public final class MyPersonEntity {
      */
     public com.google.protobuf.ByteString
         getEmailBytes() {
-      java.lang.Object ref = email_;
-      if (ref instanceof java.lang.String) {
+      Object ref = email_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         email_ = b;
         return b;
       } else {
@@ -285,15 +285,15 @@ public final class MyPersonEntity {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.hry.spring.proto.simple.MyPersonEntity.MyPerson)) {
+      if (!(obj instanceof MyPerson)) {
         return super.equals(obj);
       }
-      com.hry.spring.proto.simple.MyPersonEntity.MyPerson other = (com.hry.spring.proto.simple.MyPersonEntity.MyPerson) obj;
+      MyPerson other = (MyPerson) obj;
 
       boolean result = true;
       result = result && (getId()
@@ -305,7 +305,7 @@ public final class MyPersonEntity {
       return result;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -323,58 +323,58 @@ public final class MyPersonEntity {
       return hash;
     }
 
-    public static com.hry.spring.proto.simple.MyPersonEntity.MyPerson parseFrom(
+    public static MyPerson parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.hry.spring.proto.simple.MyPersonEntity.MyPerson parseFrom(
+    public static MyPerson parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.hry.spring.proto.simple.MyPersonEntity.MyPerson parseFrom(byte[] data)
+    public static MyPerson parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.hry.spring.proto.simple.MyPersonEntity.MyPerson parseFrom(
+    public static MyPerson parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.hry.spring.proto.simple.MyPersonEntity.MyPerson parseFrom(java.io.InputStream input)
+    public static MyPerson parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.hry.spring.proto.simple.MyPersonEntity.MyPerson parseFrom(
+    public static MyPerson parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.hry.spring.proto.simple.MyPersonEntity.MyPerson parseDelimitedFrom(java.io.InputStream input)
+    public static MyPerson parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.hry.spring.proto.simple.MyPersonEntity.MyPerson parseDelimitedFrom(
+    public static MyPerson parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.hry.spring.proto.simple.MyPersonEntity.MyPerson parseFrom(
+    public static MyPerson parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.hry.spring.proto.simple.MyPersonEntity.MyPerson parseFrom(
+    public static MyPerson parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -386,7 +386,7 @@ public final class MyPersonEntity {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.hry.spring.proto.simple.MyPersonEntity.MyPerson prototype) {
+    public static Builder newBuilder(MyPerson prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -394,9 +394,9 @@ public final class MyPersonEntity {
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -406,17 +406,17 @@ public final class MyPersonEntity {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:MyPerson)
-        com.hry.spring.proto.simple.MyPersonEntity.MyPersonOrBuilder {
+        MyPersonOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.hry.spring.proto.simple.MyPersonEntity.internal_static_MyPerson_descriptor;
+        return MyPersonEntity.internal_static_MyPerson_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.hry.spring.proto.simple.MyPersonEntity.internal_static_MyPerson_fieldAccessorTable
+        return MyPersonEntity.internal_static_MyPerson_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.hry.spring.proto.simple.MyPersonEntity.MyPerson.class, com.hry.spring.proto.simple.MyPersonEntity.MyPerson.Builder.class);
+                MyPerson.class, Builder.class);
       }
 
       // Construct using com.hry.spring.proto.simple.MyPersonEntity.MyPerson.newBuilder()
@@ -425,7 +425,7 @@ public final class MyPersonEntity {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -447,23 +447,23 @@ public final class MyPersonEntity {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.hry.spring.proto.simple.MyPersonEntity.internal_static_MyPerson_descriptor;
+        return MyPersonEntity.internal_static_MyPerson_descriptor;
       }
 
-      public com.hry.spring.proto.simple.MyPersonEntity.MyPerson getDefaultInstanceForType() {
-        return com.hry.spring.proto.simple.MyPersonEntity.MyPerson.getDefaultInstance();
+      public MyPerson getDefaultInstanceForType() {
+        return MyPerson.getDefaultInstance();
       }
 
-      public com.hry.spring.proto.simple.MyPersonEntity.MyPerson build() {
-        com.hry.spring.proto.simple.MyPersonEntity.MyPerson result = buildPartial();
+      public MyPerson build() {
+        MyPerson result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.hry.spring.proto.simple.MyPersonEntity.MyPerson buildPartial() {
-        com.hry.spring.proto.simple.MyPersonEntity.MyPerson result = new com.hry.spring.proto.simple.MyPersonEntity.MyPerson(this);
+      public MyPerson buildPartial() {
+        MyPerson result = new MyPerson(this);
         result.id_ = id_;
         result.name_ = name_;
         result.email_ = email_;
@@ -498,16 +498,16 @@ public final class MyPersonEntity {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.hry.spring.proto.simple.MyPersonEntity.MyPerson) {
-          return mergeFrom((com.hry.spring.proto.simple.MyPersonEntity.MyPerson)other);
+        if (other instanceof MyPerson) {
+          return mergeFrom((MyPerson)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.hry.spring.proto.simple.MyPersonEntity.MyPerson other) {
-        if (other == com.hry.spring.proto.simple.MyPersonEntity.MyPerson.getDefaultInstance()) return this;
+      public Builder mergeFrom(MyPerson other) {
+        if (other == MyPerson.getDefaultInstance()) return this;
         if (other.getId() != 0) {
           setId(other.getId());
         }
@@ -531,11 +531,11 @@ public final class MyPersonEntity {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.hry.spring.proto.simple.MyPersonEntity.MyPerson parsedMessage = null;
+        MyPerson parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.hry.spring.proto.simple.MyPersonEntity.MyPerson) e.getUnfinishedMessage();
+          parsedMessage = (MyPerson) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -583,7 +583,7 @@ public final class MyPersonEntity {
         return this;
       }
 
-      private java.lang.Object name_ = "";
+      private Object name_ = "";
       /**
        * <pre>
        *必须字段，在后面的使用中必须为该段设置值  
@@ -591,16 +591,16 @@ public final class MyPersonEntity {
        *
        * <code>optional string name = 2;</code>
        */
-      public java.lang.String getName() {
-        java.lang.Object ref = name_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getName() {
+        Object ref = name_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           name_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -612,11 +612,11 @@ public final class MyPersonEntity {
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
-        java.lang.Object ref = name_;
+        Object ref = name_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           name_ = b;
           return b;
         } else {
@@ -631,7 +631,7 @@ public final class MyPersonEntity {
        * <code>optional string name = 2;</code>
        */
       public Builder setName(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -672,7 +672,7 @@ public final class MyPersonEntity {
         return this;
       }
 
-      private java.lang.Object email_ = "";
+      private Object email_ = "";
       /**
        * <pre>
        *可选字段，在后面的使用中可以自由决定是否为该字段设置值
@@ -680,16 +680,16 @@ public final class MyPersonEntity {
        *
        * <code>optional string email = 3;</code>
        */
-      public java.lang.String getEmail() {
-        java.lang.Object ref = email_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getEmail() {
+        Object ref = email_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           email_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -701,11 +701,11 @@ public final class MyPersonEntity {
        */
       public com.google.protobuf.ByteString
           getEmailBytes() {
-        java.lang.Object ref = email_;
+        Object ref = email_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           email_ = b;
           return b;
         } else {
@@ -720,7 +720,7 @@ public final class MyPersonEntity {
        * <code>optional string email = 3;</code>
        */
       public Builder setEmail(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -775,12 +775,12 @@ public final class MyPersonEntity {
     }
 
     // @@protoc_insertion_point(class_scope:MyPerson)
-    private static final com.hry.spring.proto.simple.MyPersonEntity.MyPerson DEFAULT_INSTANCE;
+    private static final MyPerson DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.hry.spring.proto.simple.MyPersonEntity.MyPerson();
+      DEFAULT_INSTANCE = new MyPerson();
     }
 
-    public static com.hry.spring.proto.simple.MyPersonEntity.MyPerson getDefaultInstance() {
+    public static MyPerson getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -798,12 +798,12 @@ public final class MyPersonEntity {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<MyPerson> getParserForType() {
       return PARSER;
     }
 
-    public com.hry.spring.proto.simple.MyPersonEntity.MyPerson getDefaultInstanceForType() {
+    public MyPerson getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -822,7 +822,7 @@ public final class MyPersonEntity {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\nBsrc/main/resources/com/hry/spring/prot" +
       "o/simple/person-entity.proto\"3\n\010MyPerson" +
       "\022\n\n\002id\030\001 \001(\005\022\014\n\004name\030\002 \001(\t\022\r\n\005email\030\003 \001(" +
@@ -846,7 +846,7 @@ public final class MyPersonEntity {
     internal_static_MyPerson_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MyPerson_descriptor,
-        new java.lang.String[] { "Id", "Name", "Email", });
+        new String[] { "Id", "Name", "Email", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

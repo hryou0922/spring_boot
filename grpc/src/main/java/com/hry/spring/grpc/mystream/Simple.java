@@ -19,7 +19,7 @@ public  final class Simple extends
     name_ = "";
   }
 
-  @java.lang.Override
+  @Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
@@ -50,7 +50,7 @@ public  final class Simple extends
             break;
           }
           case 18: {
-            java.lang.String s = input.readStringRequireUtf8();
+            String s = input.readStringRequireUtf8();
 
             name_ = s;
             break;
@@ -71,11 +71,11 @@ public  final class Simple extends
     return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_Simple_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
     return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_Simple_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.hry.spring.grpc.mystream.Simple.class, com.hry.spring.grpc.mystream.Simple.Builder.class);
+            Simple.class, Builder.class);
   }
 
   public static final int NUM_FIELD_NUMBER = 1;
@@ -88,18 +88,18 @@ public  final class Simple extends
   }
 
   public static final int NAME_FIELD_NUMBER = 2;
-  private volatile java.lang.Object name_;
+  private volatile Object name_;
   /**
    * <code>optional string name = 2;</code>
    */
-  public java.lang.String getName() {
-    java.lang.Object ref = name_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  public String getName() {
+    Object ref = name_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       name_ = s;
       return s;
     }
@@ -109,11 +109,11 @@ public  final class Simple extends
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
-    java.lang.Object ref = name_;
-    if (ref instanceof java.lang.String) {
+    Object ref = name_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       name_ = b;
       return b;
     } else {
@@ -158,15 +158,15 @@ public  final class Simple extends
   }
 
   private static final long serialVersionUID = 0L;
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.hry.spring.grpc.mystream.Simple)) {
+    if (!(obj instanceof Simple)) {
       return super.equals(obj);
     }
-    com.hry.spring.grpc.mystream.Simple other = (com.hry.spring.grpc.mystream.Simple) obj;
+    Simple other = (Simple) obj;
 
     boolean result = true;
     result = result && (getNum()
@@ -176,7 +176,7 @@ public  final class Simple extends
     return result;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -192,58 +192,58 @@ public  final class Simple extends
     return hash;
   }
 
-  public static com.hry.spring.grpc.mystream.Simple parseFrom(
+  public static Simple parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.mystream.Simple parseFrom(
+  public static Simple parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.mystream.Simple parseFrom(byte[] data)
+  public static Simple parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.mystream.Simple parseFrom(
+  public static Simple parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.mystream.Simple parseFrom(java.io.InputStream input)
+  public static Simple parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.mystream.Simple parseFrom(
+  public static Simple parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.mystream.Simple parseDelimitedFrom(java.io.InputStream input)
+  public static Simple parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.mystream.Simple parseDelimitedFrom(
+  public static Simple parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.mystream.Simple parseFrom(
+  public static Simple parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.mystream.Simple parseFrom(
+  public static Simple parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -255,7 +255,7 @@ public  final class Simple extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.hry.spring.grpc.mystream.Simple prototype) {
+  public static Builder newBuilder(Simple prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -263,9 +263,9 @@ public  final class Simple extends
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -281,11 +281,11 @@ public  final class Simple extends
       return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_Simple_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_Simple_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.hry.spring.grpc.mystream.Simple.class, com.hry.spring.grpc.mystream.Simple.Builder.class);
+              Simple.class, Builder.class);
     }
 
     // Construct using com.hry.spring.grpc.mystream.Simple.newBuilder()
@@ -294,7 +294,7 @@ public  final class Simple extends
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -317,20 +317,20 @@ public  final class Simple extends
       return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_Simple_descriptor;
     }
 
-    public com.hry.spring.grpc.mystream.Simple getDefaultInstanceForType() {
-      return com.hry.spring.grpc.mystream.Simple.getDefaultInstance();
+    public Simple getDefaultInstanceForType() {
+      return Simple.getDefaultInstance();
     }
 
-    public com.hry.spring.grpc.mystream.Simple build() {
-      com.hry.spring.grpc.mystream.Simple result = buildPartial();
+    public Simple build() {
+      Simple result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public com.hry.spring.grpc.mystream.Simple buildPartial() {
-      com.hry.spring.grpc.mystream.Simple result = new com.hry.spring.grpc.mystream.Simple(this);
+    public Simple buildPartial() {
+      Simple result = new Simple(this);
       result.num_ = num_;
       result.name_ = name_;
       onBuilt();
@@ -364,16 +364,16 @@ public  final class Simple extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.hry.spring.grpc.mystream.Simple) {
-        return mergeFrom((com.hry.spring.grpc.mystream.Simple)other);
+      if (other instanceof Simple) {
+        return mergeFrom((Simple)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.hry.spring.grpc.mystream.Simple other) {
-      if (other == com.hry.spring.grpc.mystream.Simple.getDefaultInstance()) return this;
+    public Builder mergeFrom(Simple other) {
+      if (other == Simple.getDefaultInstance()) return this;
       if (other.getNum() != 0) {
         setNum(other.getNum());
       }
@@ -393,11 +393,11 @@ public  final class Simple extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.hry.spring.grpc.mystream.Simple parsedMessage = null;
+      Simple parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.hry.spring.grpc.mystream.Simple) e.getUnfinishedMessage();
+        parsedMessage = (Simple) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -433,20 +433,20 @@ public  final class Simple extends
       return this;
     }
 
-    private java.lang.Object name_ = "";
+    private Object name_ = "";
     /**
      * <code>optional string name = 2;</code>
      */
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getName() {
+      Object ref = name_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         name_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -454,11 +454,11 @@ public  final class Simple extends
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
-      java.lang.Object ref = name_;
+      Object ref = name_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         name_ = b;
         return b;
       } else {
@@ -469,7 +469,7 @@ public  final class Simple extends
      * <code>optional string name = 2;</code>
      */
     public Builder setName(
-        java.lang.String value) {
+        String value) {
       if (value == null) {
     throw new NullPointerException();
   }
@@ -516,12 +516,12 @@ public  final class Simple extends
   }
 
   // @@protoc_insertion_point(class_scope:Simple)
-  private static final com.hry.spring.grpc.mystream.Simple DEFAULT_INSTANCE;
+  private static final Simple DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.hry.spring.grpc.mystream.Simple();
+    DEFAULT_INSTANCE = new Simple();
   }
 
-  public static com.hry.spring.grpc.mystream.Simple getDefaultInstance() {
+  public static Simple getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -539,12 +539,12 @@ public  final class Simple extends
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<Simple> getParserForType() {
     return PARSER;
   }
 
-  public com.hry.spring.grpc.mystream.Simple getDefaultInstanceForType() {
+  public Simple getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

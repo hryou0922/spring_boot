@@ -21,7 +21,7 @@ public  final class RouteSummary extends
     elapsedTime_ = 0;
   }
 
-  @java.lang.Override
+  @Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
@@ -82,11 +82,11 @@ public  final class RouteSummary extends
     return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_RouteSummary_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
     return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_RouteSummary_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.hry.spring.grpc.stream.RouteSummary.class, com.hry.spring.grpc.stream.RouteSummary.Builder.class);
+            RouteSummary.class, Builder.class);
   }
 
   public static final int POINT_COUNT_FIELD_NUMBER = 1;
@@ -177,15 +177,15 @@ public  final class RouteSummary extends
   }
 
   private static final long serialVersionUID = 0L;
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.hry.spring.grpc.stream.RouteSummary)) {
+    if (!(obj instanceof RouteSummary)) {
       return super.equals(obj);
     }
-    com.hry.spring.grpc.stream.RouteSummary other = (com.hry.spring.grpc.stream.RouteSummary) obj;
+    RouteSummary other = (RouteSummary) obj;
 
     boolean result = true;
     result = result && (getPointCount()
@@ -199,7 +199,7 @@ public  final class RouteSummary extends
     return result;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -219,58 +219,58 @@ public  final class RouteSummary extends
     return hash;
   }
 
-  public static com.hry.spring.grpc.stream.RouteSummary parseFrom(
+  public static RouteSummary parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.stream.RouteSummary parseFrom(
+  public static RouteSummary parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.RouteSummary parseFrom(byte[] data)
+  public static RouteSummary parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.stream.RouteSummary parseFrom(
+  public static RouteSummary parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.RouteSummary parseFrom(java.io.InputStream input)
+  public static RouteSummary parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.stream.RouteSummary parseFrom(
+  public static RouteSummary parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.RouteSummary parseDelimitedFrom(java.io.InputStream input)
+  public static RouteSummary parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.stream.RouteSummary parseDelimitedFrom(
+  public static RouteSummary parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.RouteSummary parseFrom(
+  public static RouteSummary parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.stream.RouteSummary parseFrom(
+  public static RouteSummary parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -282,7 +282,7 @@ public  final class RouteSummary extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.hry.spring.grpc.stream.RouteSummary prototype) {
+  public static Builder newBuilder(RouteSummary prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -290,9 +290,9 @@ public  final class RouteSummary extends
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -308,11 +308,11 @@ public  final class RouteSummary extends
       return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_RouteSummary_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_RouteSummary_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.hry.spring.grpc.stream.RouteSummary.class, com.hry.spring.grpc.stream.RouteSummary.Builder.class);
+              RouteSummary.class, Builder.class);
     }
 
     // Construct using com.hry.spring.grpc.stream.RouteSummary.newBuilder()
@@ -321,7 +321,7 @@ public  final class RouteSummary extends
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -348,20 +348,20 @@ public  final class RouteSummary extends
       return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_RouteSummary_descriptor;
     }
 
-    public com.hry.spring.grpc.stream.RouteSummary getDefaultInstanceForType() {
-      return com.hry.spring.grpc.stream.RouteSummary.getDefaultInstance();
+    public RouteSummary getDefaultInstanceForType() {
+      return RouteSummary.getDefaultInstance();
     }
 
-    public com.hry.spring.grpc.stream.RouteSummary build() {
-      com.hry.spring.grpc.stream.RouteSummary result = buildPartial();
+    public RouteSummary build() {
+      RouteSummary result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public com.hry.spring.grpc.stream.RouteSummary buildPartial() {
-      com.hry.spring.grpc.stream.RouteSummary result = new com.hry.spring.grpc.stream.RouteSummary(this);
+    public RouteSummary buildPartial() {
+      RouteSummary result = new RouteSummary(this);
       result.pointCount_ = pointCount_;
       result.featureCount_ = featureCount_;
       result.distance_ = distance_;
@@ -397,16 +397,16 @@ public  final class RouteSummary extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.hry.spring.grpc.stream.RouteSummary) {
-        return mergeFrom((com.hry.spring.grpc.stream.RouteSummary)other);
+      if (other instanceof RouteSummary) {
+        return mergeFrom((RouteSummary)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.hry.spring.grpc.stream.RouteSummary other) {
-      if (other == com.hry.spring.grpc.stream.RouteSummary.getDefaultInstance()) return this;
+    public Builder mergeFrom(RouteSummary other) {
+      if (other == RouteSummary.getDefaultInstance()) return this;
       if (other.getPointCount() != 0) {
         setPointCount(other.getPointCount());
       }
@@ -431,11 +431,11 @@ public  final class RouteSummary extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.hry.spring.grpc.stream.RouteSummary parsedMessage = null;
+      RouteSummary parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.hry.spring.grpc.stream.RouteSummary) e.getUnfinishedMessage();
+        parsedMessage = (RouteSummary) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -563,12 +563,12 @@ public  final class RouteSummary extends
   }
 
   // @@protoc_insertion_point(class_scope:RouteSummary)
-  private static final com.hry.spring.grpc.stream.RouteSummary DEFAULT_INSTANCE;
+  private static final RouteSummary DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.hry.spring.grpc.stream.RouteSummary();
+    DEFAULT_INSTANCE = new RouteSummary();
   }
 
-  public static com.hry.spring.grpc.stream.RouteSummary getDefaultInstance() {
+  public static RouteSummary getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -586,12 +586,12 @@ public  final class RouteSummary extends
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<RouteSummary> getParserForType() {
     return PARSER;
   }
 
-  public com.hry.spring.grpc.stream.RouteSummary getDefaultInstanceForType() {
+  public RouteSummary getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

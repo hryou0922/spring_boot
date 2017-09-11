@@ -18,7 +18,7 @@ public  final class SimpleList extends
     simpleList_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
@@ -45,11 +45,11 @@ public  final class SimpleList extends
           }
           case 10: {
             if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-              simpleList_ = new java.util.ArrayList<com.hry.spring.grpc.mystream.Simple>();
+              simpleList_ = new java.util.ArrayList<Simple>();
               mutable_bitField0_ |= 0x00000001;
             }
             simpleList_.add(
-                input.readMessage(com.hry.spring.grpc.mystream.Simple.parser(), extensionRegistry));
+                input.readMessage(Simple.parser(), extensionRegistry));
             break;
           }
         }
@@ -71,19 +71,19 @@ public  final class SimpleList extends
     return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_SimpleList_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
     return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_SimpleList_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.hry.spring.grpc.mystream.SimpleList.class, com.hry.spring.grpc.mystream.SimpleList.Builder.class);
+            SimpleList.class, Builder.class);
   }
 
   public static final int SIMPLELIST_FIELD_NUMBER = 1;
-  private java.util.List<com.hry.spring.grpc.mystream.Simple> simpleList_;
+  private java.util.List<Simple> simpleList_;
   /**
    * <code>repeated .Simple simpleList = 1;</code>
    */
-  public java.util.List<com.hry.spring.grpc.mystream.Simple> getSimpleListList() {
+  public java.util.List<Simple> getSimpleListList() {
     return simpleList_;
   }
   /**
@@ -102,7 +102,7 @@ public  final class SimpleList extends
   /**
    * <code>repeated .Simple simpleList = 1;</code>
    */
-  public com.hry.spring.grpc.mystream.Simple getSimpleList(int index) {
+  public Simple getSimpleList(int index) {
     return simpleList_.get(index);
   }
   /**
@@ -144,15 +144,15 @@ public  final class SimpleList extends
   }
 
   private static final long serialVersionUID = 0L;
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.hry.spring.grpc.mystream.SimpleList)) {
+    if (!(obj instanceof SimpleList)) {
       return super.equals(obj);
     }
-    com.hry.spring.grpc.mystream.SimpleList other = (com.hry.spring.grpc.mystream.SimpleList) obj;
+    SimpleList other = (SimpleList) obj;
 
     boolean result = true;
     result = result && getSimpleListList()
@@ -160,7 +160,7 @@ public  final class SimpleList extends
     return result;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -176,58 +176,58 @@ public  final class SimpleList extends
     return hash;
   }
 
-  public static com.hry.spring.grpc.mystream.SimpleList parseFrom(
+  public static SimpleList parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.mystream.SimpleList parseFrom(
+  public static SimpleList parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.mystream.SimpleList parseFrom(byte[] data)
+  public static SimpleList parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.mystream.SimpleList parseFrom(
+  public static SimpleList parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.mystream.SimpleList parseFrom(java.io.InputStream input)
+  public static SimpleList parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.mystream.SimpleList parseFrom(
+  public static SimpleList parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.mystream.SimpleList parseDelimitedFrom(java.io.InputStream input)
+  public static SimpleList parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.mystream.SimpleList parseDelimitedFrom(
+  public static SimpleList parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.mystream.SimpleList parseFrom(
+  public static SimpleList parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.mystream.SimpleList parseFrom(
+  public static SimpleList parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -239,7 +239,7 @@ public  final class SimpleList extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.hry.spring.grpc.mystream.SimpleList prototype) {
+  public static Builder newBuilder(SimpleList prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -247,9 +247,9 @@ public  final class SimpleList extends
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -265,11 +265,11 @@ public  final class SimpleList extends
       return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_SimpleList_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_SimpleList_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.hry.spring.grpc.mystream.SimpleList.class, com.hry.spring.grpc.mystream.SimpleList.Builder.class);
+              SimpleList.class, Builder.class);
     }
 
     // Construct using com.hry.spring.grpc.mystream.SimpleList.newBuilder()
@@ -278,7 +278,7 @@ public  final class SimpleList extends
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -304,20 +304,20 @@ public  final class SimpleList extends
       return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_SimpleList_descriptor;
     }
 
-    public com.hry.spring.grpc.mystream.SimpleList getDefaultInstanceForType() {
-      return com.hry.spring.grpc.mystream.SimpleList.getDefaultInstance();
+    public SimpleList getDefaultInstanceForType() {
+      return SimpleList.getDefaultInstance();
     }
 
-    public com.hry.spring.grpc.mystream.SimpleList build() {
-      com.hry.spring.grpc.mystream.SimpleList result = buildPartial();
+    public SimpleList build() {
+      SimpleList result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public com.hry.spring.grpc.mystream.SimpleList buildPartial() {
-      com.hry.spring.grpc.mystream.SimpleList result = new com.hry.spring.grpc.mystream.SimpleList(this);
+    public SimpleList buildPartial() {
+      SimpleList result = new SimpleList(this);
       int from_bitField0_ = bitField0_;
       if (simpleListBuilder_ == null) {
         if (((bitField0_ & 0x00000001) == 0x00000001)) {
@@ -359,16 +359,16 @@ public  final class SimpleList extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.hry.spring.grpc.mystream.SimpleList) {
-        return mergeFrom((com.hry.spring.grpc.mystream.SimpleList)other);
+      if (other instanceof SimpleList) {
+        return mergeFrom((SimpleList)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.hry.spring.grpc.mystream.SimpleList other) {
-      if (other == com.hry.spring.grpc.mystream.SimpleList.getDefaultInstance()) return this;
+    public Builder mergeFrom(SimpleList other) {
+      if (other == SimpleList.getDefaultInstance()) return this;
       if (simpleListBuilder_ == null) {
         if (!other.simpleList_.isEmpty()) {
           if (simpleList_.isEmpty()) {
@@ -407,11 +407,11 @@ public  final class SimpleList extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.hry.spring.grpc.mystream.SimpleList parsedMessage = null;
+      SimpleList parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.hry.spring.grpc.mystream.SimpleList) e.getUnfinishedMessage();
+        parsedMessage = (SimpleList) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -422,22 +422,22 @@ public  final class SimpleList extends
     }
     private int bitField0_;
 
-    private java.util.List<com.hry.spring.grpc.mystream.Simple> simpleList_ =
+    private java.util.List<Simple> simpleList_ =
       java.util.Collections.emptyList();
     private void ensureSimpleListIsMutable() {
       if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-        simpleList_ = new java.util.ArrayList<com.hry.spring.grpc.mystream.Simple>(simpleList_);
+        simpleList_ = new java.util.ArrayList<Simple>(simpleList_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.hry.spring.grpc.mystream.Simple, com.hry.spring.grpc.mystream.Simple.Builder, com.hry.spring.grpc.mystream.SimpleOrBuilder> simpleListBuilder_;
+        Simple, Simple.Builder, com.hry.spring.grpc.mystream.SimpleOrBuilder> simpleListBuilder_;
 
     /**
      * <code>repeated .Simple simpleList = 1;</code>
      */
-    public java.util.List<com.hry.spring.grpc.mystream.Simple> getSimpleListList() {
+    public java.util.List<Simple> getSimpleListList() {
       if (simpleListBuilder_ == null) {
         return java.util.Collections.unmodifiableList(simpleList_);
       } else {
@@ -457,7 +457,7 @@ public  final class SimpleList extends
     /**
      * <code>repeated .Simple simpleList = 1;</code>
      */
-    public com.hry.spring.grpc.mystream.Simple getSimpleList(int index) {
+    public Simple getSimpleList(int index) {
       if (simpleListBuilder_ == null) {
         return simpleList_.get(index);
       } else {
@@ -468,7 +468,7 @@ public  final class SimpleList extends
      * <code>repeated .Simple simpleList = 1;</code>
      */
     public Builder setSimpleList(
-        int index, com.hry.spring.grpc.mystream.Simple value) {
+        int index, Simple value) {
       if (simpleListBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -485,7 +485,7 @@ public  final class SimpleList extends
      * <code>repeated .Simple simpleList = 1;</code>
      */
     public Builder setSimpleList(
-        int index, com.hry.spring.grpc.mystream.Simple.Builder builderForValue) {
+        int index, Simple.Builder builderForValue) {
       if (simpleListBuilder_ == null) {
         ensureSimpleListIsMutable();
         simpleList_.set(index, builderForValue.build());
@@ -498,7 +498,7 @@ public  final class SimpleList extends
     /**
      * <code>repeated .Simple simpleList = 1;</code>
      */
-    public Builder addSimpleList(com.hry.spring.grpc.mystream.Simple value) {
+    public Builder addSimpleList(Simple value) {
       if (simpleListBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -515,7 +515,7 @@ public  final class SimpleList extends
      * <code>repeated .Simple simpleList = 1;</code>
      */
     public Builder addSimpleList(
-        int index, com.hry.spring.grpc.mystream.Simple value) {
+        int index, Simple value) {
       if (simpleListBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -532,7 +532,7 @@ public  final class SimpleList extends
      * <code>repeated .Simple simpleList = 1;</code>
      */
     public Builder addSimpleList(
-        com.hry.spring.grpc.mystream.Simple.Builder builderForValue) {
+        Simple.Builder builderForValue) {
       if (simpleListBuilder_ == null) {
         ensureSimpleListIsMutable();
         simpleList_.add(builderForValue.build());
@@ -546,7 +546,7 @@ public  final class SimpleList extends
      * <code>repeated .Simple simpleList = 1;</code>
      */
     public Builder addSimpleList(
-        int index, com.hry.spring.grpc.mystream.Simple.Builder builderForValue) {
+        int index, Simple.Builder builderForValue) {
       if (simpleListBuilder_ == null) {
         ensureSimpleListIsMutable();
         simpleList_.add(index, builderForValue.build());
@@ -560,7 +560,7 @@ public  final class SimpleList extends
      * <code>repeated .Simple simpleList = 1;</code>
      */
     public Builder addAllSimpleList(
-        java.lang.Iterable<? extends com.hry.spring.grpc.mystream.Simple> values) {
+        Iterable<? extends Simple> values) {
       if (simpleListBuilder_ == null) {
         ensureSimpleListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -600,7 +600,7 @@ public  final class SimpleList extends
     /**
      * <code>repeated .Simple simpleList = 1;</code>
      */
-    public com.hry.spring.grpc.mystream.Simple.Builder getSimpleListBuilder(
+    public Simple.Builder getSimpleListBuilder(
         int index) {
       return getSimpleListFieldBuilder().getBuilder(index);
     }
@@ -628,31 +628,31 @@ public  final class SimpleList extends
     /**
      * <code>repeated .Simple simpleList = 1;</code>
      */
-    public com.hry.spring.grpc.mystream.Simple.Builder addSimpleListBuilder() {
+    public Simple.Builder addSimpleListBuilder() {
       return getSimpleListFieldBuilder().addBuilder(
-          com.hry.spring.grpc.mystream.Simple.getDefaultInstance());
+          Simple.getDefaultInstance());
     }
     /**
      * <code>repeated .Simple simpleList = 1;</code>
      */
-    public com.hry.spring.grpc.mystream.Simple.Builder addSimpleListBuilder(
+    public Simple.Builder addSimpleListBuilder(
         int index) {
       return getSimpleListFieldBuilder().addBuilder(
-          index, com.hry.spring.grpc.mystream.Simple.getDefaultInstance());
+          index, Simple.getDefaultInstance());
     }
     /**
      * <code>repeated .Simple simpleList = 1;</code>
      */
-    public java.util.List<com.hry.spring.grpc.mystream.Simple.Builder> 
+    public java.util.List<Simple.Builder>
          getSimpleListBuilderList() {
       return getSimpleListFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.hry.spring.grpc.mystream.Simple, com.hry.spring.grpc.mystream.Simple.Builder, com.hry.spring.grpc.mystream.SimpleOrBuilder> 
+        Simple, Simple.Builder, com.hry.spring.grpc.mystream.SimpleOrBuilder>
         getSimpleListFieldBuilder() {
       if (simpleListBuilder_ == null) {
         simpleListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.hry.spring.grpc.mystream.Simple, com.hry.spring.grpc.mystream.Simple.Builder, com.hry.spring.grpc.mystream.SimpleOrBuilder>(
+            Simple, Simple.Builder, com.hry.spring.grpc.mystream.SimpleOrBuilder>(
                 simpleList_,
                 ((bitField0_ & 0x00000001) == 0x00000001),
                 getParentForChildren(),
@@ -676,12 +676,12 @@ public  final class SimpleList extends
   }
 
   // @@protoc_insertion_point(class_scope:SimpleList)
-  private static final com.hry.spring.grpc.mystream.SimpleList DEFAULT_INSTANCE;
+  private static final SimpleList DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.hry.spring.grpc.mystream.SimpleList();
+    DEFAULT_INSTANCE = new SimpleList();
   }
 
-  public static com.hry.spring.grpc.mystream.SimpleList getDefaultInstance() {
+  public static SimpleList getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -699,12 +699,12 @@ public  final class SimpleList extends
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<SimpleList> getParserForType() {
     return PARSER;
   }
 
-  public com.hry.spring.grpc.mystream.SimpleList getDefaultInstanceForType() {
+  public SimpleList getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -15,7 +15,7 @@ public interface SimpleOrBuilder extends
   /**
    * <code>optional string name = 2;</code>
    */
-  java.lang.String getName();
+  String getName();
   /**
    * <code>optional string name = 2;</code>
    */

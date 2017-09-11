@@ -28,41 +28,41 @@ public final class RouteGuideGrpc {
 
   // Static method descriptors that strictly reflect the proto.
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<com.hry.spring.grpc.stream.Point,
-      com.hry.spring.grpc.stream.Feature> METHOD_GET_FEATURE =
+  public static final io.grpc.MethodDescriptor<Point,
+      Feature> METHOD_GET_FEATURE =
       io.grpc.MethodDescriptor.create(
           io.grpc.MethodDescriptor.MethodType.UNARY,
           generateFullMethodName(
               "RouteGuide", "GetFeature"),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.hry.spring.grpc.stream.Point.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.hry.spring.grpc.stream.Feature.getDefaultInstance()));
+          io.grpc.protobuf.ProtoUtils.marshaller(Point.getDefaultInstance()),
+          io.grpc.protobuf.ProtoUtils.marshaller(Feature.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<com.hry.spring.grpc.stream.Rectangle,
-      com.hry.spring.grpc.stream.Feature> METHOD_LIST_FEATURES =
+  public static final io.grpc.MethodDescriptor<Rectangle,
+      Feature> METHOD_LIST_FEATURES =
       io.grpc.MethodDescriptor.create(
           io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING,
           generateFullMethodName(
               "RouteGuide", "ListFeatures"),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.hry.spring.grpc.stream.Rectangle.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.hry.spring.grpc.stream.Feature.getDefaultInstance()));
+          io.grpc.protobuf.ProtoUtils.marshaller(Rectangle.getDefaultInstance()),
+          io.grpc.protobuf.ProtoUtils.marshaller(Feature.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<com.hry.spring.grpc.stream.Point,
-      com.hry.spring.grpc.stream.RouteSummary> METHOD_RECORD_ROUTE =
+  public static final io.grpc.MethodDescriptor<Point,
+      RouteSummary> METHOD_RECORD_ROUTE =
       io.grpc.MethodDescriptor.create(
           io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING,
           generateFullMethodName(
               "RouteGuide", "RecordRoute"),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.hry.spring.grpc.stream.Point.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.hry.spring.grpc.stream.RouteSummary.getDefaultInstance()));
+          io.grpc.protobuf.ProtoUtils.marshaller(Point.getDefaultInstance()),
+          io.grpc.protobuf.ProtoUtils.marshaller(RouteSummary.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<com.hry.spring.grpc.stream.RouteNote,
-      com.hry.spring.grpc.stream.RouteNote> METHOD_ROUTE_CHAT =
+  public static final io.grpc.MethodDescriptor<RouteNote,
+      RouteNote> METHOD_ROUTE_CHAT =
       io.grpc.MethodDescriptor.create(
           io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING,
           generateFullMethodName(
               "RouteGuide", "RouteChat"),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.hry.spring.grpc.stream.RouteNote.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.hry.spring.grpc.stream.RouteNote.getDefaultInstance()));
+          io.grpc.protobuf.ProtoUtils.marshaller(RouteNote.getDefaultInstance()),
+          io.grpc.protobuf.ProtoUtils.marshaller(RouteNote.getDefaultInstance()));
 
   /**
    * Creates a new async stub that supports all call types for the service
@@ -96,8 +96,8 @@ public final class RouteGuideGrpc {
      * A simple RPC.
      * </pre>
      */
-    public void getFeature(com.hry.spring.grpc.stream.Point request,
-        io.grpc.stub.StreamObserver<com.hry.spring.grpc.stream.Feature> responseObserver) {
+    public void getFeature(Point request,
+        io.grpc.stub.StreamObserver<Feature> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_GET_FEATURE, responseObserver);
     }
 
@@ -106,8 +106,8 @@ public final class RouteGuideGrpc {
      * A server-to-client streaming RPC.
      * </pre>
      */
-    public void listFeatures(com.hry.spring.grpc.stream.Rectangle request,
-        io.grpc.stub.StreamObserver<com.hry.spring.grpc.stream.Feature> responseObserver) {
+    public void listFeatures(Rectangle request,
+        io.grpc.stub.StreamObserver<Feature> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_LIST_FEATURES, responseObserver);
     }
 
@@ -116,8 +116,8 @@ public final class RouteGuideGrpc {
      * A client-to-server streaming RPC.
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<com.hry.spring.grpc.stream.Point> recordRoute(
-        io.grpc.stub.StreamObserver<com.hry.spring.grpc.stream.RouteSummary> responseObserver) {
+    public io.grpc.stub.StreamObserver<Point> recordRoute(
+        io.grpc.stub.StreamObserver<RouteSummary> responseObserver) {
       return asyncUnimplementedStreamingCall(METHOD_RECORD_ROUTE, responseObserver);
     }
 
@@ -126,40 +126,40 @@ public final class RouteGuideGrpc {
      * A Bidirectional streaming RPC.
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<com.hry.spring.grpc.stream.RouteNote> routeChat(
-        io.grpc.stub.StreamObserver<com.hry.spring.grpc.stream.RouteNote> responseObserver) {
+    public io.grpc.stub.StreamObserver<RouteNote> routeChat(
+        io.grpc.stub.StreamObserver<RouteNote> responseObserver) {
       return asyncUnimplementedStreamingCall(METHOD_ROUTE_CHAT, responseObserver);
     }
 
-    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
+    @Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             METHOD_GET_FEATURE,
             asyncUnaryCall(
               new MethodHandlers<
-                com.hry.spring.grpc.stream.Point,
-                com.hry.spring.grpc.stream.Feature>(
+                Point,
+                Feature>(
                   this, METHODID_GET_FEATURE)))
           .addMethod(
             METHOD_LIST_FEATURES,
             asyncServerStreamingCall(
               new MethodHandlers<
-                com.hry.spring.grpc.stream.Rectangle,
-                com.hry.spring.grpc.stream.Feature>(
+                Rectangle,
+                Feature>(
                   this, METHODID_LIST_FEATURES)))
           .addMethod(
             METHOD_RECORD_ROUTE,
             asyncClientStreamingCall(
               new MethodHandlers<
-                com.hry.spring.grpc.stream.Point,
-                com.hry.spring.grpc.stream.RouteSummary>(
+                Point,
+                RouteSummary>(
                   this, METHODID_RECORD_ROUTE)))
           .addMethod(
             METHOD_ROUTE_CHAT,
             asyncBidiStreamingCall(
               new MethodHandlers<
-                com.hry.spring.grpc.stream.RouteNote,
-                com.hry.spring.grpc.stream.RouteNote>(
+                RouteNote,
+                RouteNote>(
                   this, METHODID_ROUTE_CHAT)))
           .build();
     }
@@ -177,7 +177,7 @@ public final class RouteGuideGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected RouteGuideStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new RouteGuideStub(channel, callOptions);
@@ -188,8 +188,8 @@ public final class RouteGuideGrpc {
      * A simple RPC.
      * </pre>
      */
-    public void getFeature(com.hry.spring.grpc.stream.Point request,
-        io.grpc.stub.StreamObserver<com.hry.spring.grpc.stream.Feature> responseObserver) {
+    public void getFeature(Point request,
+        io.grpc.stub.StreamObserver<Feature> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_FEATURE, getCallOptions()), request, responseObserver);
     }
@@ -199,8 +199,8 @@ public final class RouteGuideGrpc {
      * A server-to-client streaming RPC.
      * </pre>
      */
-    public void listFeatures(com.hry.spring.grpc.stream.Rectangle request,
-        io.grpc.stub.StreamObserver<com.hry.spring.grpc.stream.Feature> responseObserver) {
+    public void listFeatures(Rectangle request,
+        io.grpc.stub.StreamObserver<Feature> responseObserver) {
       asyncServerStreamingCall(
           getChannel().newCall(METHOD_LIST_FEATURES, getCallOptions()), request, responseObserver);
     }
@@ -210,8 +210,8 @@ public final class RouteGuideGrpc {
      * A client-to-server streaming RPC.
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<com.hry.spring.grpc.stream.Point> recordRoute(
-        io.grpc.stub.StreamObserver<com.hry.spring.grpc.stream.RouteSummary> responseObserver) {
+    public io.grpc.stub.StreamObserver<Point> recordRoute(
+        io.grpc.stub.StreamObserver<RouteSummary> responseObserver) {
       return asyncClientStreamingCall(
           getChannel().newCall(METHOD_RECORD_ROUTE, getCallOptions()), responseObserver);
     }
@@ -221,8 +221,8 @@ public final class RouteGuideGrpc {
      * A Bidirectional streaming RPC.
      * </pre>
      */
-    public io.grpc.stub.StreamObserver<com.hry.spring.grpc.stream.RouteNote> routeChat(
-        io.grpc.stub.StreamObserver<com.hry.spring.grpc.stream.RouteNote> responseObserver) {
+    public io.grpc.stub.StreamObserver<RouteNote> routeChat(
+        io.grpc.stub.StreamObserver<RouteNote> responseObserver) {
       return asyncBidiStreamingCall(
           getChannel().newCall(METHOD_ROUTE_CHAT, getCallOptions()), responseObserver);
     }
@@ -240,7 +240,7 @@ public final class RouteGuideGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected RouteGuideBlockingStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new RouteGuideBlockingStub(channel, callOptions);
@@ -251,7 +251,7 @@ public final class RouteGuideGrpc {
      * A simple RPC.
      * </pre>
      */
-    public com.hry.spring.grpc.stream.Feature getFeature(com.hry.spring.grpc.stream.Point request) {
+    public Feature getFeature(Point request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_FEATURE, getCallOptions(), request);
     }
@@ -261,8 +261,8 @@ public final class RouteGuideGrpc {
      * A server-to-client streaming RPC.
      * </pre>
      */
-    public java.util.Iterator<com.hry.spring.grpc.stream.Feature> listFeatures(
-        com.hry.spring.grpc.stream.Rectangle request) {
+    public java.util.Iterator<Feature> listFeatures(
+        Rectangle request) {
       return blockingServerStreamingCall(
           getChannel(), METHOD_LIST_FEATURES, getCallOptions(), request);
     }
@@ -280,7 +280,7 @@ public final class RouteGuideGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected RouteGuideFutureStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new RouteGuideFutureStub(channel, callOptions);
@@ -291,8 +291,8 @@ public final class RouteGuideGrpc {
      * A simple RPC.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.hry.spring.grpc.stream.Feature> getFeature(
-        com.hry.spring.grpc.stream.Point request) {
+    public com.google.common.util.concurrent.ListenableFuture<Feature> getFeature(
+        Point request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_FEATURE, getCallOptions()), request);
     }
@@ -316,34 +316,34 @@ public final class RouteGuideGrpc {
       this.methodId = methodId;
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_GET_FEATURE:
-          serviceImpl.getFeature((com.hry.spring.grpc.stream.Point) request,
-              (io.grpc.stub.StreamObserver<com.hry.spring.grpc.stream.Feature>) responseObserver);
+          serviceImpl.getFeature((Point) request,
+              (io.grpc.stub.StreamObserver<Feature>) responseObserver);
           break;
         case METHODID_LIST_FEATURES:
-          serviceImpl.listFeatures((com.hry.spring.grpc.stream.Rectangle) request,
-              (io.grpc.stub.StreamObserver<com.hry.spring.grpc.stream.Feature>) responseObserver);
+          serviceImpl.listFeatures((Rectangle) request,
+              (io.grpc.stub.StreamObserver<Feature>) responseObserver);
           break;
         default:
           throw new AssertionError();
       }
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_RECORD_ROUTE:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.recordRoute(
-              (io.grpc.stub.StreamObserver<com.hry.spring.grpc.stream.RouteSummary>) responseObserver);
+              (io.grpc.stub.StreamObserver<RouteSummary>) responseObserver);
         case METHODID_ROUTE_CHAT:
           return (io.grpc.stub.StreamObserver<Req>) serviceImpl.routeChat(
-              (io.grpc.stub.StreamObserver<com.hry.spring.grpc.stream.RouteNote>) responseObserver);
+              (io.grpc.stub.StreamObserver<RouteNote>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -351,7 +351,7 @@ public final class RouteGuideGrpc {
   }
 
   private static final class RouteGuideDescriptorSupplier implements io.grpc.protobuf.ProtoFileDescriptorSupplier {
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
       return com.hry.spring.grpc.stream.RouteGuideEntity.getDescriptor();
     }

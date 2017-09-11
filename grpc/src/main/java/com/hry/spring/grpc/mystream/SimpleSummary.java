@@ -18,7 +18,7 @@ public  final class SimpleSummary extends
     featureCount_ = 0;
   }
 
-  @java.lang.Override
+  @Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
@@ -64,11 +64,11 @@ public  final class SimpleSummary extends
     return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_SimpleSummary_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
     return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_SimpleSummary_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.hry.spring.grpc.mystream.SimpleSummary.class, com.hry.spring.grpc.mystream.SimpleSummary.Builder.class);
+            SimpleSummary.class, Builder.class);
   }
 
   public static final int FEATURE_COUNT_FIELD_NUMBER = 2;
@@ -111,15 +111,15 @@ public  final class SimpleSummary extends
   }
 
   private static final long serialVersionUID = 0L;
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.hry.spring.grpc.mystream.SimpleSummary)) {
+    if (!(obj instanceof SimpleSummary)) {
       return super.equals(obj);
     }
-    com.hry.spring.grpc.mystream.SimpleSummary other = (com.hry.spring.grpc.mystream.SimpleSummary) obj;
+    SimpleSummary other = (SimpleSummary) obj;
 
     boolean result = true;
     result = result && (getFeatureCount()
@@ -127,7 +127,7 @@ public  final class SimpleSummary extends
     return result;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -141,58 +141,58 @@ public  final class SimpleSummary extends
     return hash;
   }
 
-  public static com.hry.spring.grpc.mystream.SimpleSummary parseFrom(
+  public static SimpleSummary parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.mystream.SimpleSummary parseFrom(
+  public static SimpleSummary parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.mystream.SimpleSummary parseFrom(byte[] data)
+  public static SimpleSummary parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.mystream.SimpleSummary parseFrom(
+  public static SimpleSummary parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.mystream.SimpleSummary parseFrom(java.io.InputStream input)
+  public static SimpleSummary parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.mystream.SimpleSummary parseFrom(
+  public static SimpleSummary parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.mystream.SimpleSummary parseDelimitedFrom(java.io.InputStream input)
+  public static SimpleSummary parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.mystream.SimpleSummary parseDelimitedFrom(
+  public static SimpleSummary parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.mystream.SimpleSummary parseFrom(
+  public static SimpleSummary parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.mystream.SimpleSummary parseFrom(
+  public static SimpleSummary parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -204,7 +204,7 @@ public  final class SimpleSummary extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.hry.spring.grpc.mystream.SimpleSummary prototype) {
+  public static Builder newBuilder(SimpleSummary prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -212,9 +212,9 @@ public  final class SimpleSummary extends
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -230,11 +230,11 @@ public  final class SimpleSummary extends
       return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_SimpleSummary_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_SimpleSummary_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.hry.spring.grpc.mystream.SimpleSummary.class, com.hry.spring.grpc.mystream.SimpleSummary.Builder.class);
+              SimpleSummary.class, Builder.class);
     }
 
     // Construct using com.hry.spring.grpc.mystream.SimpleSummary.newBuilder()
@@ -243,7 +243,7 @@ public  final class SimpleSummary extends
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -264,20 +264,20 @@ public  final class SimpleSummary extends
       return com.hry.spring.grpc.mystream.HelloStreamEntity.internal_static_SimpleSummary_descriptor;
     }
 
-    public com.hry.spring.grpc.mystream.SimpleSummary getDefaultInstanceForType() {
-      return com.hry.spring.grpc.mystream.SimpleSummary.getDefaultInstance();
+    public SimpleSummary getDefaultInstanceForType() {
+      return SimpleSummary.getDefaultInstance();
     }
 
-    public com.hry.spring.grpc.mystream.SimpleSummary build() {
-      com.hry.spring.grpc.mystream.SimpleSummary result = buildPartial();
+    public SimpleSummary build() {
+      SimpleSummary result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public com.hry.spring.grpc.mystream.SimpleSummary buildPartial() {
-      com.hry.spring.grpc.mystream.SimpleSummary result = new com.hry.spring.grpc.mystream.SimpleSummary(this);
+    public SimpleSummary buildPartial() {
+      SimpleSummary result = new SimpleSummary(this);
       result.featureCount_ = featureCount_;
       onBuilt();
       return result;
@@ -310,16 +310,16 @@ public  final class SimpleSummary extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.hry.spring.grpc.mystream.SimpleSummary) {
-        return mergeFrom((com.hry.spring.grpc.mystream.SimpleSummary)other);
+      if (other instanceof SimpleSummary) {
+        return mergeFrom((SimpleSummary)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.hry.spring.grpc.mystream.SimpleSummary other) {
-      if (other == com.hry.spring.grpc.mystream.SimpleSummary.getDefaultInstance()) return this;
+    public Builder mergeFrom(SimpleSummary other) {
+      if (other == SimpleSummary.getDefaultInstance()) return this;
       if (other.getFeatureCount() != 0) {
         setFeatureCount(other.getFeatureCount());
       }
@@ -335,11 +335,11 @@ public  final class SimpleSummary extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.hry.spring.grpc.mystream.SimpleSummary parsedMessage = null;
+      SimpleSummary parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.hry.spring.grpc.mystream.SimpleSummary) e.getUnfinishedMessage();
+        parsedMessage = (SimpleSummary) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -389,12 +389,12 @@ public  final class SimpleSummary extends
   }
 
   // @@protoc_insertion_point(class_scope:SimpleSummary)
-  private static final com.hry.spring.grpc.mystream.SimpleSummary DEFAULT_INSTANCE;
+  private static final SimpleSummary DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.hry.spring.grpc.mystream.SimpleSummary();
+    DEFAULT_INSTANCE = new SimpleSummary();
   }
 
-  public static com.hry.spring.grpc.mystream.SimpleSummary getDefaultInstance() {
+  public static SimpleSummary getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -412,12 +412,12 @@ public  final class SimpleSummary extends
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<SimpleSummary> getParserForType() {
     return PARSER;
   }
 
-  public com.hry.spring.grpc.mystream.SimpleSummary getDefaultInstanceForType() {
+  public SimpleSummary getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

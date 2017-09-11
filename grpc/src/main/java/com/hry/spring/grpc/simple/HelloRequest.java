@@ -22,7 +22,7 @@ public  final class HelloRequest extends
     name_ = "";
   }
 
-  @java.lang.Override
+  @Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
@@ -48,7 +48,7 @@ public  final class HelloRequest extends
             break;
           }
           case 10: {
-            java.lang.String s = input.readStringRequireUtf8();
+            String s = input.readStringRequireUtf8();
 
             name_ = s;
             break;
@@ -69,26 +69,26 @@ public  final class HelloRequest extends
     return com.hry.spring.grpc.simple.GreeterEntity.internal_static_HelloRequest_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
     return com.hry.spring.grpc.simple.GreeterEntity.internal_static_HelloRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.hry.spring.grpc.simple.HelloRequest.class, com.hry.spring.grpc.simple.HelloRequest.Builder.class);
+            HelloRequest.class, Builder.class);
   }
 
   public static final int NAME_FIELD_NUMBER = 1;
-  private volatile java.lang.Object name_;
+  private volatile Object name_;
   /**
    * <code>optional string name = 1;</code>
    */
-  public java.lang.String getName() {
-    java.lang.Object ref = name_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
+  public String getName() {
+    Object ref = name_;
+    if (ref instanceof String) {
+      return (String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
+      String s = bs.toStringUtf8();
       name_ = s;
       return s;
     }
@@ -98,11 +98,11 @@ public  final class HelloRequest extends
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
-    java.lang.Object ref = name_;
-    if (ref instanceof java.lang.String) {
+    Object ref = name_;
+    if (ref instanceof String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
+              (String) ref);
       name_ = b;
       return b;
     } else {
@@ -140,15 +140,15 @@ public  final class HelloRequest extends
   }
 
   private static final long serialVersionUID = 0L;
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.hry.spring.grpc.simple.HelloRequest)) {
+    if (!(obj instanceof HelloRequest)) {
       return super.equals(obj);
     }
-    com.hry.spring.grpc.simple.HelloRequest other = (com.hry.spring.grpc.simple.HelloRequest) obj;
+    HelloRequest other = (HelloRequest) obj;
 
     boolean result = true;
     result = result && getName()
@@ -156,7 +156,7 @@ public  final class HelloRequest extends
     return result;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -170,58 +170,58 @@ public  final class HelloRequest extends
     return hash;
   }
 
-  public static com.hry.spring.grpc.simple.HelloRequest parseFrom(
+  public static HelloRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.simple.HelloRequest parseFrom(
+  public static HelloRequest parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.simple.HelloRequest parseFrom(byte[] data)
+  public static HelloRequest parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.simple.HelloRequest parseFrom(
+  public static HelloRequest parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.simple.HelloRequest parseFrom(java.io.InputStream input)
+  public static HelloRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.simple.HelloRequest parseFrom(
+  public static HelloRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.simple.HelloRequest parseDelimitedFrom(java.io.InputStream input)
+  public static HelloRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.simple.HelloRequest parseDelimitedFrom(
+  public static HelloRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.simple.HelloRequest parseFrom(
+  public static HelloRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.simple.HelloRequest parseFrom(
+  public static HelloRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -233,7 +233,7 @@ public  final class HelloRequest extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.hry.spring.grpc.simple.HelloRequest prototype) {
+  public static Builder newBuilder(HelloRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -241,9 +241,9 @@ public  final class HelloRequest extends
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -263,11 +263,11 @@ public  final class HelloRequest extends
       return com.hry.spring.grpc.simple.GreeterEntity.internal_static_HelloRequest_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.hry.spring.grpc.simple.GreeterEntity.internal_static_HelloRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.hry.spring.grpc.simple.HelloRequest.class, com.hry.spring.grpc.simple.HelloRequest.Builder.class);
+              HelloRequest.class, Builder.class);
     }
 
     // Construct using com.hry.spring.grpc.simple.HelloRequest.newBuilder()
@@ -276,7 +276,7 @@ public  final class HelloRequest extends
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -297,20 +297,20 @@ public  final class HelloRequest extends
       return com.hry.spring.grpc.simple.GreeterEntity.internal_static_HelloRequest_descriptor;
     }
 
-    public com.hry.spring.grpc.simple.HelloRequest getDefaultInstanceForType() {
-      return com.hry.spring.grpc.simple.HelloRequest.getDefaultInstance();
+    public HelloRequest getDefaultInstanceForType() {
+      return HelloRequest.getDefaultInstance();
     }
 
-    public com.hry.spring.grpc.simple.HelloRequest build() {
-      com.hry.spring.grpc.simple.HelloRequest result = buildPartial();
+    public HelloRequest build() {
+      HelloRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public com.hry.spring.grpc.simple.HelloRequest buildPartial() {
-      com.hry.spring.grpc.simple.HelloRequest result = new com.hry.spring.grpc.simple.HelloRequest(this);
+    public HelloRequest buildPartial() {
+      HelloRequest result = new HelloRequest(this);
       result.name_ = name_;
       onBuilt();
       return result;
@@ -343,16 +343,16 @@ public  final class HelloRequest extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.hry.spring.grpc.simple.HelloRequest) {
-        return mergeFrom((com.hry.spring.grpc.simple.HelloRequest)other);
+      if (other instanceof HelloRequest) {
+        return mergeFrom((HelloRequest)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.hry.spring.grpc.simple.HelloRequest other) {
-      if (other == com.hry.spring.grpc.simple.HelloRequest.getDefaultInstance()) return this;
+    public Builder mergeFrom(HelloRequest other) {
+      if (other == HelloRequest.getDefaultInstance()) return this;
       if (!other.getName().isEmpty()) {
         name_ = other.name_;
         onChanged();
@@ -369,11 +369,11 @@ public  final class HelloRequest extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.hry.spring.grpc.simple.HelloRequest parsedMessage = null;
+      HelloRequest parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.hry.spring.grpc.simple.HelloRequest) e.getUnfinishedMessage();
+        parsedMessage = (HelloRequest) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -383,20 +383,20 @@ public  final class HelloRequest extends
       return this;
     }
 
-    private java.lang.Object name_ = "";
+    private Object name_ = "";
     /**
      * <code>optional string name = 1;</code>
      */
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
-      if (!(ref instanceof java.lang.String)) {
+    public String getName() {
+      Object ref = name_;
+      if (!(ref instanceof String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         name_ = s;
         return s;
       } else {
-        return (java.lang.String) ref;
+        return (String) ref;
       }
     }
     /**
@@ -404,11 +404,11 @@ public  final class HelloRequest extends
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
-      java.lang.Object ref = name_;
+      Object ref = name_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         name_ = b;
         return b;
       } else {
@@ -419,7 +419,7 @@ public  final class HelloRequest extends
      * <code>optional string name = 1;</code>
      */
     public Builder setName(
-        java.lang.String value) {
+        String value) {
       if (value == null) {
     throw new NullPointerException();
   }
@@ -466,12 +466,12 @@ public  final class HelloRequest extends
   }
 
   // @@protoc_insertion_point(class_scope:HelloRequest)
-  private static final com.hry.spring.grpc.simple.HelloRequest DEFAULT_INSTANCE;
+  private static final HelloRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.hry.spring.grpc.simple.HelloRequest();
+    DEFAULT_INSTANCE = new HelloRequest();
   }
 
-  public static com.hry.spring.grpc.simple.HelloRequest getDefaultInstance() {
+  public static HelloRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -489,12 +489,12 @@ public  final class HelloRequest extends
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<HelloRequest> getParserForType() {
     return PARSER;
   }
 
-  public com.hry.spring.grpc.simple.HelloRequest getDefaultInstanceForType() {
+  public HelloRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

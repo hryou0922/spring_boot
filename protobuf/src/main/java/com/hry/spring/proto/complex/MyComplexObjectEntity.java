@@ -42,7 +42,7 @@ public final class MyComplexObjectEntity {
 
     public final int getNumber() {
       if (this == UNRECOGNIZED) {
-        throw new java.lang.IllegalArgumentException(
+        throw new IllegalArgumentException(
             "Can't get the number of an unknown enum value.");
       }
       return value;
@@ -51,7 +51,7 @@ public final class MyComplexObjectEntity {
     /**
      * @deprecated Use {@link #forNumber(int)} instead.
      */
-    @java.lang.Deprecated
+    @Deprecated
     public static Gender valueOf(int value) {
       return forNumber(value);
     }
@@ -86,7 +86,7 @@ public final class MyComplexObjectEntity {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return com.hry.spring.proto.complex.MyComplexObjectEntity.getDescriptor().getEnumTypes().get(0);
+      return MyComplexObjectEntity.getDescriptor().getEnumTypes().get(0);
     }
 
     private static final Gender[] VALUES = values();
@@ -94,7 +94,7 @@ public final class MyComplexObjectEntity {
     public static Gender valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
-        throw new java.lang.IllegalArgumentException(
+        throw new IllegalArgumentException(
           "EnumValueDescriptor is not for this type.");
       }
       if (desc.getIndex() == -1) {
@@ -132,7 +132,7 @@ public final class MyComplexObjectEntity {
      *
      * <code>optional string name = 2;</code>
      */
-    java.lang.String getName();
+    String getName();
     /**
      * <pre>
      * 
@@ -149,7 +149,7 @@ public final class MyComplexObjectEntity {
      *
      * <code>optional string email = 3;</code>
      */
-    java.lang.String getEmail();
+    String getEmail();
     /**
      * <pre>
      * </pre>
@@ -166,7 +166,7 @@ public final class MyComplexObjectEntity {
      *
      * <code>repeated string sons = 4;</code>
      */
-    java.util.List<java.lang.String>
+    java.util.List<String>
         getSonsList();
     /**
      * <pre>
@@ -183,7 +183,7 @@ public final class MyComplexObjectEntity {
      *
      * <code>repeated string sons = 4;</code>
      */
-    java.lang.String getSons(int index);
+    String getSons(int index);
     /**
      * <pre>
      * repeated 列表
@@ -209,7 +209,7 @@ public final class MyComplexObjectEntity {
      *
      * <code>optional .Gender gender = 5;</code>
      */
-    com.hry.spring.proto.complex.MyComplexObjectEntity.Gender getGender();
+    Gender getGender();
 
     /**
      * <pre>
@@ -218,7 +218,7 @@ public final class MyComplexObjectEntity {
      *
      * <code>repeated .Result result = 6;</code>
      */
-    java.util.List<com.hry.spring.proto.complex.MyComplexObjectEntity.Result> 
+    java.util.List<Result>
         getResultList();
     /**
      * <pre>
@@ -227,7 +227,7 @@ public final class MyComplexObjectEntity {
      *
      * <code>repeated .Result result = 6;</code>
      */
-    com.hry.spring.proto.complex.MyComplexObjectEntity.Result getResult(int index);
+    Result getResult(int index);
     /**
      * <pre>
      * 新的对象List
@@ -243,7 +243,7 @@ public final class MyComplexObjectEntity {
      *
      * <code>repeated .Result result = 6;</code>
      */
-    java.util.List<? extends com.hry.spring.proto.complex.MyComplexObjectEntity.ResultOrBuilder> 
+    java.util.List<? extends ResultOrBuilder>
         getResultOrBuilderList();
     /**
      * <pre>
@@ -252,8 +252,8 @@ public final class MyComplexObjectEntity {
      *
      * <code>repeated .Result result = 6;</code>
      */
-    com.hry.spring.proto.complex.MyComplexObjectEntity.ResultOrBuilder getResultOrBuilder(
-        int index);
+    ResultOrBuilder getResultOrBuilder(
+            int index);
 
     /**
      * <pre>
@@ -297,7 +297,7 @@ public final class MyComplexObjectEntity {
      * <code>repeated .google.protobuf.Any any = 7;</code>
      */
     com.google.protobuf.AnyOrBuilder getAnyOrBuilder(
-        int index);
+            int index);
 
     /**
      * <pre>
@@ -315,12 +315,12 @@ public final class MyComplexObjectEntity {
      * <code>map&lt;string, .MapVaule&gt; map = 8;</code>
      */
     boolean containsMap(
-        java.lang.String key);
+            String key);
     /**
      * Use {@link #getMapMap()} instead.
      */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule>
+    @Deprecated
+    java.util.Map<String, MapVaule>
     getMap();
     /**
      * <pre>
@@ -329,7 +329,7 @@ public final class MyComplexObjectEntity {
      *
      * <code>map&lt;string, .MapVaule&gt; map = 8;</code>
      */
-    java.util.Map<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule>
+    java.util.Map<String, MapVaule>
     getMapMap();
     /**
      * <pre>
@@ -339,9 +339,9 @@ public final class MyComplexObjectEntity {
      * <code>map&lt;string, .MapVaule&gt; map = 8;</code>
      */
 
-    com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule getMapOrDefault(
-        java.lang.String key,
-        com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule defaultValue);
+    MapVaule getMapOrDefault(
+            String key,
+            MapVaule defaultValue);
     /**
      * <pre>
      * 定义Map对象
@@ -350,8 +350,8 @@ public final class MyComplexObjectEntity {
      * <code>map&lt;string, .MapVaule&gt; map = 8;</code>
      */
 
-    com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule getMapOrThrow(
-        java.lang.String key);
+    MapVaule getMapOrThrow(
+            String key);
   }
   /**
    * Protobuf type {@code ComplexObject}
@@ -374,7 +374,7 @@ public final class MyComplexObjectEntity {
       any_ = java.util.Collections.emptyList();
     }
 
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
@@ -405,19 +405,19 @@ public final class MyComplexObjectEntity {
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
 
               name_ = s;
               break;
             }
             case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
 
               email_ = s;
               break;
             }
             case 34: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
               if (!((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
                 sons_ = new com.google.protobuf.LazyStringArrayList();
                 mutable_bitField0_ |= 0x00000008;
@@ -433,11 +433,11 @@ public final class MyComplexObjectEntity {
             }
             case 50: {
               if (!((mutable_bitField0_ & 0x00000020) == 0x00000020)) {
-                result_ = new java.util.ArrayList<com.hry.spring.proto.complex.MyComplexObjectEntity.Result>();
+                result_ = new java.util.ArrayList<Result>();
                 mutable_bitField0_ |= 0x00000020;
               }
               result_.add(
-                  input.readMessage(com.hry.spring.proto.complex.MyComplexObjectEntity.Result.parser(), extensionRegistry));
+                  input.readMessage(Result.parser(), extensionRegistry));
               break;
             }
             case 58: {
@@ -455,7 +455,7 @@ public final class MyComplexObjectEntity {
                     MapDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000080;
               }
-              com.google.protobuf.MapEntry<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule>
+              com.google.protobuf.MapEntry<String, MapVaule>
               map = input.readMessage(
                   MapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               map_.getMutableMap().put(map.getKey(), map.getValue());
@@ -483,7 +483,7 @@ public final class MyComplexObjectEntity {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.hry.spring.proto.complex.MyComplexObjectEntity.internal_static_ComplexObject_descriptor;
+      return MyComplexObjectEntity.internal_static_ComplexObject_descriptor;
     }
 
     @SuppressWarnings({"rawtypes"})
@@ -497,11 +497,11 @@ public final class MyComplexObjectEntity {
               "Invalid map field number: " + number);
       }
     }
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.hry.spring.proto.complex.MyComplexObjectEntity.internal_static_ComplexObject_fieldAccessorTable
+      return MyComplexObjectEntity.internal_static_ComplexObject_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject.class, com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject.Builder.class);
+              ComplexObject.class, Builder.class);
     }
 
     private int bitField0_;
@@ -519,7 +519,7 @@ public final class MyComplexObjectEntity {
     }
 
     public static final int NAME_FIELD_NUMBER = 2;
-    private volatile java.lang.Object name_;
+    private volatile Object name_;
     /**
      * <pre>
      * 
@@ -527,14 +527,14 @@ public final class MyComplexObjectEntity {
      *
      * <code>optional string name = 2;</code>
      */
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getName() {
+      Object ref = name_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         name_ = s;
         return s;
       }
@@ -548,11 +548,11 @@ public final class MyComplexObjectEntity {
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
-      java.lang.Object ref = name_;
-      if (ref instanceof java.lang.String) {
+      Object ref = name_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         name_ = b;
         return b;
       } else {
@@ -561,21 +561,21 @@ public final class MyComplexObjectEntity {
     }
 
     public static final int EMAIL_FIELD_NUMBER = 3;
-    private volatile java.lang.Object email_;
+    private volatile Object email_;
     /**
      * <pre>
      * </pre>
      *
      * <code>optional string email = 3;</code>
      */
-    public java.lang.String getEmail() {
-      java.lang.Object ref = email_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getEmail() {
+      Object ref = email_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         email_ = s;
         return s;
       }
@@ -588,11 +588,11 @@ public final class MyComplexObjectEntity {
      */
     public com.google.protobuf.ByteString
         getEmailBytes() {
-      java.lang.Object ref = email_;
-      if (ref instanceof java.lang.String) {
+      Object ref = email_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         email_ = b;
         return b;
       } else {
@@ -630,7 +630,7 @@ public final class MyComplexObjectEntity {
      *
      * <code>repeated string sons = 4;</code>
      */
-    public java.lang.String getSons(int index) {
+    public String getSons(int index) {
       return sons_.get(index);
     }
     /**
@@ -664,13 +664,13 @@ public final class MyComplexObjectEntity {
      *
      * <code>optional .Gender gender = 5;</code>
      */
-    public com.hry.spring.proto.complex.MyComplexObjectEntity.Gender getGender() {
-      com.hry.spring.proto.complex.MyComplexObjectEntity.Gender result = com.hry.spring.proto.complex.MyComplexObjectEntity.Gender.valueOf(gender_);
-      return result == null ? com.hry.spring.proto.complex.MyComplexObjectEntity.Gender.UNRECOGNIZED : result;
+    public Gender getGender() {
+      Gender result = Gender.valueOf(gender_);
+      return result == null ? Gender.UNRECOGNIZED : result;
     }
 
     public static final int RESULT_FIELD_NUMBER = 6;
-    private java.util.List<com.hry.spring.proto.complex.MyComplexObjectEntity.Result> result_;
+    private java.util.List<Result> result_;
     /**
      * <pre>
      * 新的对象List
@@ -678,7 +678,7 @@ public final class MyComplexObjectEntity {
      *
      * <code>repeated .Result result = 6;</code>
      */
-    public java.util.List<com.hry.spring.proto.complex.MyComplexObjectEntity.Result> getResultList() {
+    public java.util.List<Result> getResultList() {
       return result_;
     }
     /**
@@ -688,7 +688,7 @@ public final class MyComplexObjectEntity {
      *
      * <code>repeated .Result result = 6;</code>
      */
-    public java.util.List<? extends com.hry.spring.proto.complex.MyComplexObjectEntity.ResultOrBuilder> 
+    public java.util.List<? extends ResultOrBuilder>
         getResultOrBuilderList() {
       return result_;
     }
@@ -709,7 +709,7 @@ public final class MyComplexObjectEntity {
      *
      * <code>repeated .Result result = 6;</code>
      */
-    public com.hry.spring.proto.complex.MyComplexObjectEntity.Result getResult(int index) {
+    public Result getResult(int index) {
       return result_.get(index);
     }
     /**
@@ -719,7 +719,7 @@ public final class MyComplexObjectEntity {
      *
      * <code>repeated .Result result = 6;</code>
      */
-    public com.hry.spring.proto.complex.MyComplexObjectEntity.ResultOrBuilder getResultOrBuilder(
+    public ResultOrBuilder getResultOrBuilder(
         int index) {
       return result_.get(index);
     }
@@ -782,18 +782,18 @@ public final class MyComplexObjectEntity {
     public static final int MAP_FIELD_NUMBER = 8;
     private static final class MapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
-          java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule> defaultEntry =
+          String, MapVaule> defaultEntry =
               com.google.protobuf.MapEntry
-              .<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule>newDefaultInstance(
-                  com.hry.spring.proto.complex.MyComplexObjectEntity.internal_static_ComplexObject_MapEntry_descriptor, 
+              .<String, MapVaule>newDefaultInstance(
+                  MyComplexObjectEntity.internal_static_ComplexObject_MapEntry_descriptor,
                   com.google.protobuf.WireFormat.FieldType.STRING,
                   "",
                   com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                  com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule.getDefaultInstance());
+                  MapVaule.getDefaultInstance());
     }
     private com.google.protobuf.MapField<
-        java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule> map_;
-    private com.google.protobuf.MapField<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule>
+        String, MapVaule> map_;
+    private com.google.protobuf.MapField<String, MapVaule>
     internalGetMap() {
       if (map_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
@@ -814,15 +814,15 @@ public final class MyComplexObjectEntity {
      */
 
     public boolean containsMap(
-        java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
+        String key) {
+      if (key == null) { throw new NullPointerException(); }
       return internalGetMap().getMap().containsKey(key);
     }
     /**
      * Use {@link #getMapMap()} instead.
      */
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule> getMap() {
+    @Deprecated
+    public java.util.Map<String, MapVaule> getMap() {
       return getMapMap();
     }
     /**
@@ -833,7 +833,7 @@ public final class MyComplexObjectEntity {
      * <code>map&lt;string, .MapVaule&gt; map = 8;</code>
      */
 
-    public java.util.Map<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule> getMapMap() {
+    public java.util.Map<String, MapVaule> getMapMap() {
       return internalGetMap().getMap();
     }
     /**
@@ -844,11 +844,11 @@ public final class MyComplexObjectEntity {
      * <code>map&lt;string, .MapVaule&gt; map = 8;</code>
      */
 
-    public com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule getMapOrDefault(
-        java.lang.String key,
-        com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule defaultValue) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
-      java.util.Map<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule> map =
+    public MapVaule getMapOrDefault(
+        String key,
+        MapVaule defaultValue) {
+      if (key == null) { throw new NullPointerException(); }
+      java.util.Map<String, MapVaule> map =
           internalGetMap().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
@@ -860,13 +860,13 @@ public final class MyComplexObjectEntity {
      * <code>map&lt;string, .MapVaule&gt; map = 8;</code>
      */
 
-    public com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule getMapOrThrow(
-        java.lang.String key) {
-      if (key == null) { throw new java.lang.NullPointerException(); }
-      java.util.Map<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule> map =
+    public MapVaule getMapOrThrow(
+        String key) {
+      if (key == null) { throw new NullPointerException(); }
+      java.util.Map<String, MapVaule> map =
           internalGetMap().getMap();
       if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
+        throw new IllegalArgumentException();
       }
       return map.get(key);
     }
@@ -895,7 +895,7 @@ public final class MyComplexObjectEntity {
       for (int i = 0; i < sons_.size(); i++) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, sons_.getRaw(i));
       }
-      if (gender_ != com.hry.spring.proto.complex.MyComplexObjectEntity.Gender.MAN.getNumber()) {
+      if (gender_ != Gender.MAN.getNumber()) {
         output.writeEnum(5, gender_);
       }
       for (int i = 0; i < result_.size(); i++) {
@@ -904,9 +904,9 @@ public final class MyComplexObjectEntity {
       for (int i = 0; i < any_.size(); i++) {
         output.writeMessage(7, any_.get(i));
       }
-      for (java.util.Map.Entry<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule> entry
+      for (java.util.Map.Entry<String, MapVaule> entry
            : internalGetMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule>
+        com.google.protobuf.MapEntry<String, MapVaule>
         map = MapDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
@@ -938,7 +938,7 @@ public final class MyComplexObjectEntity {
         size += dataSize;
         size += 1 * getSonsList().size();
       }
-      if (gender_ != com.hry.spring.proto.complex.MyComplexObjectEntity.Gender.MAN.getNumber()) {
+      if (gender_ != Gender.MAN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(5, gender_);
       }
@@ -950,9 +950,9 @@ public final class MyComplexObjectEntity {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(7, any_.get(i));
       }
-      for (java.util.Map.Entry<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule> entry
+      for (java.util.Map.Entry<String, MapVaule> entry
            : internalGetMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule>
+        com.google.protobuf.MapEntry<String, MapVaule>
         map = MapDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
@@ -965,15 +965,15 @@ public final class MyComplexObjectEntity {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject)) {
+      if (!(obj instanceof ComplexObject)) {
         return super.equals(obj);
       }
-      com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject other = (com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject) obj;
+      ComplexObject other = (ComplexObject) obj;
 
       boolean result = true;
       result = result && (getId()
@@ -994,7 +994,7 @@ public final class MyComplexObjectEntity {
       return result;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -1030,58 +1030,58 @@ public final class MyComplexObjectEntity {
       return hash;
     }
 
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject parseFrom(
+    public static ComplexObject parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject parseFrom(
+    public static ComplexObject parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject parseFrom(byte[] data)
+    public static ComplexObject parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject parseFrom(
+    public static ComplexObject parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject parseFrom(java.io.InputStream input)
+    public static ComplexObject parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject parseFrom(
+    public static ComplexObject parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject parseDelimitedFrom(java.io.InputStream input)
+    public static ComplexObject parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject parseDelimitedFrom(
+    public static ComplexObject parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject parseFrom(
+    public static ComplexObject parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject parseFrom(
+    public static ComplexObject parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1093,7 +1093,7 @@ public final class MyComplexObjectEntity {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject prototype) {
+    public static Builder newBuilder(ComplexObject prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -1101,9 +1101,9 @@ public final class MyComplexObjectEntity {
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -1113,10 +1113,10 @@ public final class MyComplexObjectEntity {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:ComplexObject)
-        com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObjectOrBuilder {
+        ComplexObjectOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.hry.spring.proto.complex.MyComplexObjectEntity.internal_static_ComplexObject_descriptor;
+        return MyComplexObjectEntity.internal_static_ComplexObject_descriptor;
       }
 
       @SuppressWarnings({"rawtypes"})
@@ -1141,11 +1141,11 @@ public final class MyComplexObjectEntity {
                 "Invalid map field number: " + number);
         }
       }
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.hry.spring.proto.complex.MyComplexObjectEntity.internal_static_ComplexObject_fieldAccessorTable
+        return MyComplexObjectEntity.internal_static_ComplexObject_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject.class, com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject.Builder.class);
+                ComplexObject.class, Builder.class);
       }
 
       // Construct using com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject.newBuilder()
@@ -1154,7 +1154,7 @@ public final class MyComplexObjectEntity {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1195,23 +1195,23 @@ public final class MyComplexObjectEntity {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.hry.spring.proto.complex.MyComplexObjectEntity.internal_static_ComplexObject_descriptor;
+        return MyComplexObjectEntity.internal_static_ComplexObject_descriptor;
       }
 
-      public com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject getDefaultInstanceForType() {
-        return com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject.getDefaultInstance();
+      public ComplexObject getDefaultInstanceForType() {
+        return ComplexObject.getDefaultInstance();
       }
 
-      public com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject build() {
-        com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject result = buildPartial();
+      public ComplexObject build() {
+        ComplexObject result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject buildPartial() {
-        com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject result = new com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject(this);
+      public ComplexObject buildPartial() {
+        ComplexObject result = new ComplexObject(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         result.id_ = id_;
@@ -1275,16 +1275,16 @@ public final class MyComplexObjectEntity {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject) {
-          return mergeFrom((com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject)other);
+        if (other instanceof ComplexObject) {
+          return mergeFrom((ComplexObject)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject other) {
-        if (other == com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject.getDefaultInstance()) return this;
+      public Builder mergeFrom(ComplexObject other) {
+        if (other == ComplexObject.getDefaultInstance()) return this;
         if (other.getId() != 0) {
           setId(other.getId());
         }
@@ -1375,11 +1375,11 @@ public final class MyComplexObjectEntity {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject parsedMessage = null;
+        ComplexObject parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject) e.getUnfinishedMessage();
+          parsedMessage = (ComplexObject) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1428,7 +1428,7 @@ public final class MyComplexObjectEntity {
         return this;
       }
 
-      private java.lang.Object name_ = "";
+      private Object name_ = "";
       /**
        * <pre>
        * 
@@ -1436,16 +1436,16 @@ public final class MyComplexObjectEntity {
        *
        * <code>optional string name = 2;</code>
        */
-      public java.lang.String getName() {
-        java.lang.Object ref = name_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getName() {
+        Object ref = name_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           name_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -1457,11 +1457,11 @@ public final class MyComplexObjectEntity {
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
-        java.lang.Object ref = name_;
+        Object ref = name_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           name_ = b;
           return b;
         } else {
@@ -1476,7 +1476,7 @@ public final class MyComplexObjectEntity {
        * <code>optional string name = 2;</code>
        */
       public Builder setName(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1517,23 +1517,23 @@ public final class MyComplexObjectEntity {
         return this;
       }
 
-      private java.lang.Object email_ = "";
+      private Object email_ = "";
       /**
        * <pre>
        * </pre>
        *
        * <code>optional string email = 3;</code>
        */
-      public java.lang.String getEmail() {
-        java.lang.Object ref = email_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getEmail() {
+        Object ref = email_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           email_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -1544,11 +1544,11 @@ public final class MyComplexObjectEntity {
        */
       public com.google.protobuf.ByteString
           getEmailBytes() {
-        java.lang.Object ref = email_;
+        Object ref = email_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           email_ = b;
           return b;
         } else {
@@ -1562,7 +1562,7 @@ public final class MyComplexObjectEntity {
        * <code>optional string email = 3;</code>
        */
       public Builder setEmail(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1636,7 +1636,7 @@ public final class MyComplexObjectEntity {
        *
        * <code>repeated string sons = 4;</code>
        */
-      public java.lang.String getSons(int index) {
+      public String getSons(int index) {
         return sons_.get(index);
       }
       /**
@@ -1658,7 +1658,7 @@ public final class MyComplexObjectEntity {
        * <code>repeated string sons = 4;</code>
        */
       public Builder setSons(
-          int index, java.lang.String value) {
+          int index, String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1675,7 +1675,7 @@ public final class MyComplexObjectEntity {
        * <code>repeated string sons = 4;</code>
        */
       public Builder addSons(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1692,7 +1692,7 @@ public final class MyComplexObjectEntity {
        * <code>repeated string sons = 4;</code>
        */
       public Builder addAllSons(
-          java.lang.Iterable<java.lang.String> values) {
+          Iterable<String> values) {
         ensureSonsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
             values, sons_);
@@ -1761,9 +1761,9 @@ public final class MyComplexObjectEntity {
        *
        * <code>optional .Gender gender = 5;</code>
        */
-      public com.hry.spring.proto.complex.MyComplexObjectEntity.Gender getGender() {
-        com.hry.spring.proto.complex.MyComplexObjectEntity.Gender result = com.hry.spring.proto.complex.MyComplexObjectEntity.Gender.valueOf(gender_);
-        return result == null ? com.hry.spring.proto.complex.MyComplexObjectEntity.Gender.UNRECOGNIZED : result;
+      public Gender getGender() {
+        Gender result = Gender.valueOf(gender_);
+        return result == null ? Gender.UNRECOGNIZED : result;
       }
       /**
        * <pre>
@@ -1772,7 +1772,7 @@ public final class MyComplexObjectEntity {
        *
        * <code>optional .Gender gender = 5;</code>
        */
-      public Builder setGender(com.hry.spring.proto.complex.MyComplexObjectEntity.Gender value) {
+      public Builder setGender(Gender value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -1795,17 +1795,17 @@ public final class MyComplexObjectEntity {
         return this;
       }
 
-      private java.util.List<com.hry.spring.proto.complex.MyComplexObjectEntity.Result> result_ =
+      private java.util.List<Result> result_ =
         java.util.Collections.emptyList();
       private void ensureResultIsMutable() {
         if (!((bitField0_ & 0x00000020) == 0x00000020)) {
-          result_ = new java.util.ArrayList<com.hry.spring.proto.complex.MyComplexObjectEntity.Result>(result_);
+          result_ = new java.util.ArrayList<Result>(result_);
           bitField0_ |= 0x00000020;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.hry.spring.proto.complex.MyComplexObjectEntity.Result, com.hry.spring.proto.complex.MyComplexObjectEntity.Result.Builder, com.hry.spring.proto.complex.MyComplexObjectEntity.ResultOrBuilder> resultBuilder_;
+          Result, Result.Builder, ResultOrBuilder> resultBuilder_;
 
       /**
        * <pre>
@@ -1814,7 +1814,7 @@ public final class MyComplexObjectEntity {
        *
        * <code>repeated .Result result = 6;</code>
        */
-      public java.util.List<com.hry.spring.proto.complex.MyComplexObjectEntity.Result> getResultList() {
+      public java.util.List<Result> getResultList() {
         if (resultBuilder_ == null) {
           return java.util.Collections.unmodifiableList(result_);
         } else {
@@ -1842,7 +1842,7 @@ public final class MyComplexObjectEntity {
        *
        * <code>repeated .Result result = 6;</code>
        */
-      public com.hry.spring.proto.complex.MyComplexObjectEntity.Result getResult(int index) {
+      public Result getResult(int index) {
         if (resultBuilder_ == null) {
           return result_.get(index);
         } else {
@@ -1857,7 +1857,7 @@ public final class MyComplexObjectEntity {
        * <code>repeated .Result result = 6;</code>
        */
       public Builder setResult(
-          int index, com.hry.spring.proto.complex.MyComplexObjectEntity.Result value) {
+          int index, Result value) {
         if (resultBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1878,7 +1878,7 @@ public final class MyComplexObjectEntity {
        * <code>repeated .Result result = 6;</code>
        */
       public Builder setResult(
-          int index, com.hry.spring.proto.complex.MyComplexObjectEntity.Result.Builder builderForValue) {
+          int index, Result.Builder builderForValue) {
         if (resultBuilder_ == null) {
           ensureResultIsMutable();
           result_.set(index, builderForValue.build());
@@ -1895,7 +1895,7 @@ public final class MyComplexObjectEntity {
        *
        * <code>repeated .Result result = 6;</code>
        */
-      public Builder addResult(com.hry.spring.proto.complex.MyComplexObjectEntity.Result value) {
+      public Builder addResult(Result value) {
         if (resultBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1916,7 +1916,7 @@ public final class MyComplexObjectEntity {
        * <code>repeated .Result result = 6;</code>
        */
       public Builder addResult(
-          int index, com.hry.spring.proto.complex.MyComplexObjectEntity.Result value) {
+          int index, Result value) {
         if (resultBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1937,7 +1937,7 @@ public final class MyComplexObjectEntity {
        * <code>repeated .Result result = 6;</code>
        */
       public Builder addResult(
-          com.hry.spring.proto.complex.MyComplexObjectEntity.Result.Builder builderForValue) {
+          Result.Builder builderForValue) {
         if (resultBuilder_ == null) {
           ensureResultIsMutable();
           result_.add(builderForValue.build());
@@ -1955,7 +1955,7 @@ public final class MyComplexObjectEntity {
        * <code>repeated .Result result = 6;</code>
        */
       public Builder addResult(
-          int index, com.hry.spring.proto.complex.MyComplexObjectEntity.Result.Builder builderForValue) {
+          int index, Result.Builder builderForValue) {
         if (resultBuilder_ == null) {
           ensureResultIsMutable();
           result_.add(index, builderForValue.build());
@@ -1973,7 +1973,7 @@ public final class MyComplexObjectEntity {
        * <code>repeated .Result result = 6;</code>
        */
       public Builder addAllResult(
-          java.lang.Iterable<? extends com.hry.spring.proto.complex.MyComplexObjectEntity.Result> values) {
+          Iterable<? extends Result> values) {
         if (resultBuilder_ == null) {
           ensureResultIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2025,7 +2025,7 @@ public final class MyComplexObjectEntity {
        *
        * <code>repeated .Result result = 6;</code>
        */
-      public com.hry.spring.proto.complex.MyComplexObjectEntity.Result.Builder getResultBuilder(
+      public Result.Builder getResultBuilder(
           int index) {
         return getResultFieldBuilder().getBuilder(index);
       }
@@ -2036,7 +2036,7 @@ public final class MyComplexObjectEntity {
        *
        * <code>repeated .Result result = 6;</code>
        */
-      public com.hry.spring.proto.complex.MyComplexObjectEntity.ResultOrBuilder getResultOrBuilder(
+      public ResultOrBuilder getResultOrBuilder(
           int index) {
         if (resultBuilder_ == null) {
           return result_.get(index);  } else {
@@ -2050,7 +2050,7 @@ public final class MyComplexObjectEntity {
        *
        * <code>repeated .Result result = 6;</code>
        */
-      public java.util.List<? extends com.hry.spring.proto.complex.MyComplexObjectEntity.ResultOrBuilder> 
+      public java.util.List<? extends ResultOrBuilder>
            getResultOrBuilderList() {
         if (resultBuilder_ != null) {
           return resultBuilder_.getMessageOrBuilderList();
@@ -2065,9 +2065,9 @@ public final class MyComplexObjectEntity {
        *
        * <code>repeated .Result result = 6;</code>
        */
-      public com.hry.spring.proto.complex.MyComplexObjectEntity.Result.Builder addResultBuilder() {
+      public Result.Builder addResultBuilder() {
         return getResultFieldBuilder().addBuilder(
-            com.hry.spring.proto.complex.MyComplexObjectEntity.Result.getDefaultInstance());
+            Result.getDefaultInstance());
       }
       /**
        * <pre>
@@ -2076,10 +2076,10 @@ public final class MyComplexObjectEntity {
        *
        * <code>repeated .Result result = 6;</code>
        */
-      public com.hry.spring.proto.complex.MyComplexObjectEntity.Result.Builder addResultBuilder(
+      public Result.Builder addResultBuilder(
           int index) {
         return getResultFieldBuilder().addBuilder(
-            index, com.hry.spring.proto.complex.MyComplexObjectEntity.Result.getDefaultInstance());
+            index, Result.getDefaultInstance());
       }
       /**
        * <pre>
@@ -2088,16 +2088,16 @@ public final class MyComplexObjectEntity {
        *
        * <code>repeated .Result result = 6;</code>
        */
-      public java.util.List<com.hry.spring.proto.complex.MyComplexObjectEntity.Result.Builder> 
+      public java.util.List<Result.Builder>
            getResultBuilderList() {
         return getResultFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.hry.spring.proto.complex.MyComplexObjectEntity.Result, com.hry.spring.proto.complex.MyComplexObjectEntity.Result.Builder, com.hry.spring.proto.complex.MyComplexObjectEntity.ResultOrBuilder> 
+          Result, Result.Builder, ResultOrBuilder>
           getResultFieldBuilder() {
         if (resultBuilder_ == null) {
           resultBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.hry.spring.proto.complex.MyComplexObjectEntity.Result, com.hry.spring.proto.complex.MyComplexObjectEntity.Result.Builder, com.hry.spring.proto.complex.MyComplexObjectEntity.ResultOrBuilder>(
+              Result, Result.Builder, ResultOrBuilder>(
                   result_,
                   ((bitField0_ & 0x00000020) == 0x00000020),
                   getParentForChildren(),
@@ -2285,7 +2285,7 @@ public final class MyComplexObjectEntity {
        * <code>repeated .google.protobuf.Any any = 7;</code>
        */
       public Builder addAllAny(
-          java.lang.Iterable<? extends com.google.protobuf.Any> values) {
+          Iterable<? extends com.google.protobuf.Any> values) {
         if (anyBuilder_ == null) {
           ensureAnyIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2420,8 +2420,8 @@ public final class MyComplexObjectEntity {
       }
 
       private com.google.protobuf.MapField<
-          java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule> map_;
-      private com.google.protobuf.MapField<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule>
+          String, MapVaule> map_;
+      private com.google.protobuf.MapField<String, MapVaule>
       internalGetMap() {
         if (map_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
@@ -2429,7 +2429,7 @@ public final class MyComplexObjectEntity {
         }
         return map_;
       }
-      private com.google.protobuf.MapField<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule>
+      private com.google.protobuf.MapField<String, MapVaule>
       internalGetMutableMap() {
         onChanged();;
         if (map_ == null) {
@@ -2454,15 +2454,15 @@ public final class MyComplexObjectEntity {
        */
 
       public boolean containsMap(
-          java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+          String key) {
+        if (key == null) { throw new NullPointerException(); }
         return internalGetMap().getMap().containsKey(key);
       }
       /**
        * Use {@link #getMapMap()} instead.
        */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule> getMap() {
+      @Deprecated
+      public java.util.Map<String, MapVaule> getMap() {
         return getMapMap();
       }
       /**
@@ -2473,7 +2473,7 @@ public final class MyComplexObjectEntity {
        * <code>map&lt;string, .MapVaule&gt; map = 8;</code>
        */
 
-      public java.util.Map<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule> getMapMap() {
+      public java.util.Map<String, MapVaule> getMapMap() {
         return internalGetMap().getMap();
       }
       /**
@@ -2484,11 +2484,11 @@ public final class MyComplexObjectEntity {
        * <code>map&lt;string, .MapVaule&gt; map = 8;</code>
        */
 
-      public com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule getMapOrDefault(
-          java.lang.String key,
-          com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule defaultValue) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
-        java.util.Map<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule> map =
+      public MapVaule getMapOrDefault(
+          String key,
+          MapVaule defaultValue) {
+        if (key == null) { throw new NullPointerException(); }
+        java.util.Map<String, MapVaule> map =
             internalGetMap().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
@@ -2500,13 +2500,13 @@ public final class MyComplexObjectEntity {
        * <code>map&lt;string, .MapVaule&gt; map = 8;</code>
        */
 
-      public com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule getMapOrThrow(
-          java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
-        java.util.Map<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule> map =
+      public MapVaule getMapOrThrow(
+          String key) {
+        if (key == null) { throw new NullPointerException(); }
+        java.util.Map<String, MapVaule> map =
             internalGetMap().getMap();
         if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
+          throw new IllegalArgumentException();
         }
         return map.get(key);
       }
@@ -2524,16 +2524,16 @@ public final class MyComplexObjectEntity {
        */
 
       public Builder removeMap(
-          java.lang.String key) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
+          String key) {
+        if (key == null) { throw new NullPointerException(); }
         getMutableMap().remove(key);
         return this;
       }
       /**
        * Use alternate mutation accessors instead.
        */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule>
+      @Deprecated
+      public java.util.Map<String, MapVaule>
       getMutableMap() {
         return internalGetMutableMap().getMutableMap();
       }
@@ -2545,10 +2545,10 @@ public final class MyComplexObjectEntity {
        * <code>map&lt;string, .MapVaule&gt; map = 8;</code>
        */
       public Builder putMap(
-          java.lang.String key,
-          com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule value) {
-        if (key == null) { throw new java.lang.NullPointerException(); }
-        if (value == null) { throw new java.lang.NullPointerException(); }
+          String key,
+          MapVaule value) {
+        if (key == null) { throw new NullPointerException(); }
+        if (value == null) { throw new NullPointerException(); }
         getMutableMap().put(key, value);
         return this;
       }
@@ -2561,7 +2561,7 @@ public final class MyComplexObjectEntity {
        */
 
       public Builder putAllMap(
-          java.util.Map<java.lang.String, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule> values) {
+          java.util.Map<String, MapVaule> values) {
         getMutableMap().putAll(values);
         return this;
       }
@@ -2580,12 +2580,12 @@ public final class MyComplexObjectEntity {
     }
 
     // @@protoc_insertion_point(class_scope:ComplexObject)
-    private static final com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject DEFAULT_INSTANCE;
+    private static final ComplexObject DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject();
+      DEFAULT_INSTANCE = new ComplexObject();
     }
 
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject getDefaultInstance() {
+    public static ComplexObject getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2603,12 +2603,12 @@ public final class MyComplexObjectEntity {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<ComplexObject> getParserForType() {
       return PARSER;
     }
 
-    public com.hry.spring.proto.complex.MyComplexObjectEntity.ComplexObject getDefaultInstanceForType() {
+    public ComplexObject getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2621,7 +2621,7 @@ public final class MyComplexObjectEntity {
     /**
      * <code>optional string url = 1;</code>
      */
-    java.lang.String getUrl();
+    String getUrl();
     /**
      * <code>optional string url = 1;</code>
      */
@@ -2631,7 +2631,7 @@ public final class MyComplexObjectEntity {
     /**
      * <code>optional string title = 2;</code>
      */
-    java.lang.String getTitle();
+    String getTitle();
     /**
      * <code>optional string title = 2;</code>
      */
@@ -2641,7 +2641,7 @@ public final class MyComplexObjectEntity {
     /**
      * <code>repeated string snippets = 3;</code>
      */
-    java.util.List<java.lang.String>
+    java.util.List<String>
         getSnippetsList();
     /**
      * <code>repeated string snippets = 3;</code>
@@ -2650,7 +2650,7 @@ public final class MyComplexObjectEntity {
     /**
      * <code>repeated string snippets = 3;</code>
      */
-    java.lang.String getSnippets(int index);
+    String getSnippets(int index);
     /**
      * <code>repeated string snippets = 3;</code>
      */
@@ -2678,7 +2678,7 @@ public final class MyComplexObjectEntity {
       snippets_ = com.google.protobuf.LazyStringArrayList.EMPTY;
     }
 
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
@@ -2704,19 +2704,19 @@ public final class MyComplexObjectEntity {
               break;
             }
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
 
               url_ = s;
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
 
               title_ = s;
               break;
             }
             case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
               if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
                 snippets_ = new com.google.protobuf.LazyStringArrayList();
                 mutable_bitField0_ |= 0x00000004;
@@ -2740,30 +2740,30 @@ public final class MyComplexObjectEntity {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.hry.spring.proto.complex.MyComplexObjectEntity.internal_static_Result_descriptor;
+      return MyComplexObjectEntity.internal_static_Result_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.hry.spring.proto.complex.MyComplexObjectEntity.internal_static_Result_fieldAccessorTable
+      return MyComplexObjectEntity.internal_static_Result_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.hry.spring.proto.complex.MyComplexObjectEntity.Result.class, com.hry.spring.proto.complex.MyComplexObjectEntity.Result.Builder.class);
+              Result.class, Builder.class);
     }
 
     private int bitField0_;
     public static final int URL_FIELD_NUMBER = 1;
-    private volatile java.lang.Object url_;
+    private volatile Object url_;
     /**
      * <code>optional string url = 1;</code>
      */
-    public java.lang.String getUrl() {
-      java.lang.Object ref = url_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getUrl() {
+      Object ref = url_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         url_ = s;
         return s;
       }
@@ -2773,11 +2773,11 @@ public final class MyComplexObjectEntity {
      */
     public com.google.protobuf.ByteString
         getUrlBytes() {
-      java.lang.Object ref = url_;
-      if (ref instanceof java.lang.String) {
+      Object ref = url_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         url_ = b;
         return b;
       } else {
@@ -2786,18 +2786,18 @@ public final class MyComplexObjectEntity {
     }
 
     public static final int TITLE_FIELD_NUMBER = 2;
-    private volatile java.lang.Object title_;
+    private volatile Object title_;
     /**
      * <code>optional string title = 2;</code>
      */
-    public java.lang.String getTitle() {
-      java.lang.Object ref = title_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getTitle() {
+      Object ref = title_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         title_ = s;
         return s;
       }
@@ -2807,11 +2807,11 @@ public final class MyComplexObjectEntity {
      */
     public com.google.protobuf.ByteString
         getTitleBytes() {
-      java.lang.Object ref = title_;
-      if (ref instanceof java.lang.String) {
+      Object ref = title_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         title_ = b;
         return b;
       } else {
@@ -2837,7 +2837,7 @@ public final class MyComplexObjectEntity {
     /**
      * <code>repeated string snippets = 3;</code>
      */
-    public java.lang.String getSnippets(int index) {
+    public String getSnippets(int index) {
       return snippets_.get(index);
     }
     /**
@@ -2895,15 +2895,15 @@ public final class MyComplexObjectEntity {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.hry.spring.proto.complex.MyComplexObjectEntity.Result)) {
+      if (!(obj instanceof Result)) {
         return super.equals(obj);
       }
-      com.hry.spring.proto.complex.MyComplexObjectEntity.Result other = (com.hry.spring.proto.complex.MyComplexObjectEntity.Result) obj;
+      Result other = (Result) obj;
 
       boolean result = true;
       result = result && getUrl()
@@ -2915,7 +2915,7 @@ public final class MyComplexObjectEntity {
       return result;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -2935,58 +2935,58 @@ public final class MyComplexObjectEntity {
       return hash;
     }
 
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.Result parseFrom(
+    public static Result parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.Result parseFrom(
+    public static Result parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.Result parseFrom(byte[] data)
+    public static Result parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.Result parseFrom(
+    public static Result parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.Result parseFrom(java.io.InputStream input)
+    public static Result parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.Result parseFrom(
+    public static Result parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.Result parseDelimitedFrom(java.io.InputStream input)
+    public static Result parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.Result parseDelimitedFrom(
+    public static Result parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.Result parseFrom(
+    public static Result parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.Result parseFrom(
+    public static Result parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2998,7 +2998,7 @@ public final class MyComplexObjectEntity {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.hry.spring.proto.complex.MyComplexObjectEntity.Result prototype) {
+    public static Builder newBuilder(Result prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -3006,9 +3006,9 @@ public final class MyComplexObjectEntity {
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -3022,17 +3022,17 @@ public final class MyComplexObjectEntity {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Result)
-        com.hry.spring.proto.complex.MyComplexObjectEntity.ResultOrBuilder {
+        ResultOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.hry.spring.proto.complex.MyComplexObjectEntity.internal_static_Result_descriptor;
+        return MyComplexObjectEntity.internal_static_Result_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.hry.spring.proto.complex.MyComplexObjectEntity.internal_static_Result_fieldAccessorTable
+        return MyComplexObjectEntity.internal_static_Result_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.hry.spring.proto.complex.MyComplexObjectEntity.Result.class, com.hry.spring.proto.complex.MyComplexObjectEntity.Result.Builder.class);
+                Result.class, Builder.class);
       }
 
       // Construct using com.hry.spring.proto.complex.MyComplexObjectEntity.Result.newBuilder()
@@ -3041,7 +3041,7 @@ public final class MyComplexObjectEntity {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -3063,23 +3063,23 @@ public final class MyComplexObjectEntity {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.hry.spring.proto.complex.MyComplexObjectEntity.internal_static_Result_descriptor;
+        return MyComplexObjectEntity.internal_static_Result_descriptor;
       }
 
-      public com.hry.spring.proto.complex.MyComplexObjectEntity.Result getDefaultInstanceForType() {
-        return com.hry.spring.proto.complex.MyComplexObjectEntity.Result.getDefaultInstance();
+      public Result getDefaultInstanceForType() {
+        return Result.getDefaultInstance();
       }
 
-      public com.hry.spring.proto.complex.MyComplexObjectEntity.Result build() {
-        com.hry.spring.proto.complex.MyComplexObjectEntity.Result result = buildPartial();
+      public Result build() {
+        Result result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.hry.spring.proto.complex.MyComplexObjectEntity.Result buildPartial() {
-        com.hry.spring.proto.complex.MyComplexObjectEntity.Result result = new com.hry.spring.proto.complex.MyComplexObjectEntity.Result(this);
+      public Result buildPartial() {
+        Result result = new Result(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         result.url_ = url_;
@@ -3121,16 +3121,16 @@ public final class MyComplexObjectEntity {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.hry.spring.proto.complex.MyComplexObjectEntity.Result) {
-          return mergeFrom((com.hry.spring.proto.complex.MyComplexObjectEntity.Result)other);
+        if (other instanceof Result) {
+          return mergeFrom((Result)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.hry.spring.proto.complex.MyComplexObjectEntity.Result other) {
-        if (other == com.hry.spring.proto.complex.MyComplexObjectEntity.Result.getDefaultInstance()) return this;
+      public Builder mergeFrom(Result other) {
+        if (other == Result.getDefaultInstance()) return this;
         if (!other.getUrl().isEmpty()) {
           url_ = other.url_;
           onChanged();
@@ -3161,11 +3161,11 @@ public final class MyComplexObjectEntity {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.hry.spring.proto.complex.MyComplexObjectEntity.Result parsedMessage = null;
+        Result parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.hry.spring.proto.complex.MyComplexObjectEntity.Result) e.getUnfinishedMessage();
+          parsedMessage = (Result) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -3176,20 +3176,20 @@ public final class MyComplexObjectEntity {
       }
       private int bitField0_;
 
-      private java.lang.Object url_ = "";
+      private Object url_ = "";
       /**
        * <code>optional string url = 1;</code>
        */
-      public java.lang.String getUrl() {
-        java.lang.Object ref = url_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getUrl() {
+        Object ref = url_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           url_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -3197,11 +3197,11 @@ public final class MyComplexObjectEntity {
        */
       public com.google.protobuf.ByteString
           getUrlBytes() {
-        java.lang.Object ref = url_;
+        Object ref = url_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           url_ = b;
           return b;
         } else {
@@ -3212,7 +3212,7 @@ public final class MyComplexObjectEntity {
        * <code>optional string url = 1;</code>
        */
       public Builder setUrl(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -3245,20 +3245,20 @@ public final class MyComplexObjectEntity {
         return this;
       }
 
-      private java.lang.Object title_ = "";
+      private Object title_ = "";
       /**
        * <code>optional string title = 2;</code>
        */
-      public java.lang.String getTitle() {
-        java.lang.Object ref = title_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getTitle() {
+        Object ref = title_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           title_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -3266,11 +3266,11 @@ public final class MyComplexObjectEntity {
        */
       public com.google.protobuf.ByteString
           getTitleBytes() {
-        java.lang.Object ref = title_;
+        Object ref = title_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           title_ = b;
           return b;
         } else {
@@ -3281,7 +3281,7 @@ public final class MyComplexObjectEntity {
        * <code>optional string title = 2;</code>
        */
       public Builder setTitle(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -3337,7 +3337,7 @@ public final class MyComplexObjectEntity {
       /**
        * <code>repeated string snippets = 3;</code>
        */
-      public java.lang.String getSnippets(int index) {
+      public String getSnippets(int index) {
         return snippets_.get(index);
       }
       /**
@@ -3351,7 +3351,7 @@ public final class MyComplexObjectEntity {
        * <code>repeated string snippets = 3;</code>
        */
       public Builder setSnippets(
-          int index, java.lang.String value) {
+          int index, String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -3364,7 +3364,7 @@ public final class MyComplexObjectEntity {
        * <code>repeated string snippets = 3;</code>
        */
       public Builder addSnippets(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -3377,7 +3377,7 @@ public final class MyComplexObjectEntity {
        * <code>repeated string snippets = 3;</code>
        */
       public Builder addAllSnippets(
-          java.lang.Iterable<java.lang.String> values) {
+          Iterable<String> values) {
         ensureSnippetsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
             values, snippets_);
@@ -3422,12 +3422,12 @@ public final class MyComplexObjectEntity {
     }
 
     // @@protoc_insertion_point(class_scope:Result)
-    private static final com.hry.spring.proto.complex.MyComplexObjectEntity.Result DEFAULT_INSTANCE;
+    private static final Result DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.hry.spring.proto.complex.MyComplexObjectEntity.Result();
+      DEFAULT_INSTANCE = new Result();
     }
 
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.Result getDefaultInstance() {
+    public static Result getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3445,12 +3445,12 @@ public final class MyComplexObjectEntity {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<Result> getParserForType() {
       return PARSER;
     }
 
-    public com.hry.spring.proto.complex.MyComplexObjectEntity.Result getDefaultInstanceForType() {
+    public Result getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3463,7 +3463,7 @@ public final class MyComplexObjectEntity {
     /**
      * <code>optional string mapValue = 1;</code>
      */
-    java.lang.String getMapValue();
+    String getMapValue();
     /**
      * <code>optional string mapValue = 1;</code>
      */
@@ -3489,7 +3489,7 @@ public final class MyComplexObjectEntity {
       mapValue_ = "";
     }
 
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
@@ -3515,7 +3515,7 @@ public final class MyComplexObjectEntity {
               break;
             }
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
 
               mapValue_ = s;
               break;
@@ -3533,29 +3533,29 @@ public final class MyComplexObjectEntity {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.hry.spring.proto.complex.MyComplexObjectEntity.internal_static_MapVaule_descriptor;
+      return MyComplexObjectEntity.internal_static_MapVaule_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.hry.spring.proto.complex.MyComplexObjectEntity.internal_static_MapVaule_fieldAccessorTable
+      return MyComplexObjectEntity.internal_static_MapVaule_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule.class, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule.Builder.class);
+              MapVaule.class, Builder.class);
     }
 
     public static final int MAPVALUE_FIELD_NUMBER = 1;
-    private volatile java.lang.Object mapValue_;
+    private volatile Object mapValue_;
     /**
      * <code>optional string mapValue = 1;</code>
      */
-    public java.lang.String getMapValue() {
-      java.lang.Object ref = mapValue_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getMapValue() {
+      Object ref = mapValue_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         mapValue_ = s;
         return s;
       }
@@ -3565,11 +3565,11 @@ public final class MyComplexObjectEntity {
      */
     public com.google.protobuf.ByteString
         getMapValueBytes() {
-      java.lang.Object ref = mapValue_;
-      if (ref instanceof java.lang.String) {
+      Object ref = mapValue_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         mapValue_ = b;
         return b;
       } else {
@@ -3607,15 +3607,15 @@ public final class MyComplexObjectEntity {
     }
 
     private static final long serialVersionUID = 0L;
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule)) {
+      if (!(obj instanceof MapVaule)) {
         return super.equals(obj);
       }
-      com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule other = (com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule) obj;
+      MapVaule other = (MapVaule) obj;
 
       boolean result = true;
       result = result && getMapValue()
@@ -3623,7 +3623,7 @@ public final class MyComplexObjectEntity {
       return result;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -3637,58 +3637,58 @@ public final class MyComplexObjectEntity {
       return hash;
     }
 
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule parseFrom(
+    public static MapVaule parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule parseFrom(
+    public static MapVaule parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule parseFrom(byte[] data)
+    public static MapVaule parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule parseFrom(
+    public static MapVaule parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule parseFrom(java.io.InputStream input)
+    public static MapVaule parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule parseFrom(
+    public static MapVaule parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule parseDelimitedFrom(java.io.InputStream input)
+    public static MapVaule parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule parseDelimitedFrom(
+    public static MapVaule parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule parseFrom(
+    public static MapVaule parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule parseFrom(
+    public static MapVaule parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3700,7 +3700,7 @@ public final class MyComplexObjectEntity {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule prototype) {
+    public static Builder newBuilder(MapVaule prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -3708,9 +3708,9 @@ public final class MyComplexObjectEntity {
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -3724,17 +3724,17 @@ public final class MyComplexObjectEntity {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:MapVaule)
-        com.hry.spring.proto.complex.MyComplexObjectEntity.MapVauleOrBuilder {
+        MapVauleOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.hry.spring.proto.complex.MyComplexObjectEntity.internal_static_MapVaule_descriptor;
+        return MyComplexObjectEntity.internal_static_MapVaule_descriptor;
       }
 
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.hry.spring.proto.complex.MyComplexObjectEntity.internal_static_MapVaule_fieldAccessorTable
+        return MyComplexObjectEntity.internal_static_MapVaule_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule.class, com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule.Builder.class);
+                MapVaule.class, Builder.class);
       }
 
       // Construct using com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule.newBuilder()
@@ -3743,7 +3743,7 @@ public final class MyComplexObjectEntity {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -3761,23 +3761,23 @@ public final class MyComplexObjectEntity {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.hry.spring.proto.complex.MyComplexObjectEntity.internal_static_MapVaule_descriptor;
+        return MyComplexObjectEntity.internal_static_MapVaule_descriptor;
       }
 
-      public com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule getDefaultInstanceForType() {
-        return com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule.getDefaultInstance();
+      public MapVaule getDefaultInstanceForType() {
+        return MapVaule.getDefaultInstance();
       }
 
-      public com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule build() {
-        com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule result = buildPartial();
+      public MapVaule build() {
+        MapVaule result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule buildPartial() {
-        com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule result = new com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule(this);
+      public MapVaule buildPartial() {
+        MapVaule result = new MapVaule(this);
         result.mapValue_ = mapValue_;
         onBuilt();
         return result;
@@ -3810,16 +3810,16 @@ public final class MyComplexObjectEntity {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule) {
-          return mergeFrom((com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule)other);
+        if (other instanceof MapVaule) {
+          return mergeFrom((MapVaule)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule other) {
-        if (other == com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule.getDefaultInstance()) return this;
+      public Builder mergeFrom(MapVaule other) {
+        if (other == MapVaule.getDefaultInstance()) return this;
         if (!other.getMapValue().isEmpty()) {
           mapValue_ = other.mapValue_;
           onChanged();
@@ -3836,11 +3836,11 @@ public final class MyComplexObjectEntity {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule parsedMessage = null;
+        MapVaule parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule) e.getUnfinishedMessage();
+          parsedMessage = (MapVaule) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -3850,20 +3850,20 @@ public final class MyComplexObjectEntity {
         return this;
       }
 
-      private java.lang.Object mapValue_ = "";
+      private Object mapValue_ = "";
       /**
        * <code>optional string mapValue = 1;</code>
        */
-      public java.lang.String getMapValue() {
-        java.lang.Object ref = mapValue_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getMapValue() {
+        Object ref = mapValue_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           mapValue_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -3871,11 +3871,11 @@ public final class MyComplexObjectEntity {
        */
       public com.google.protobuf.ByteString
           getMapValueBytes() {
-        java.lang.Object ref = mapValue_;
+        Object ref = mapValue_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           mapValue_ = b;
           return b;
         } else {
@@ -3886,7 +3886,7 @@ public final class MyComplexObjectEntity {
        * <code>optional string mapValue = 1;</code>
        */
       public Builder setMapValue(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -3933,12 +3933,12 @@ public final class MyComplexObjectEntity {
     }
 
     // @@protoc_insertion_point(class_scope:MapVaule)
-    private static final com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule DEFAULT_INSTANCE;
+    private static final MapVaule DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule();
+      DEFAULT_INSTANCE = new MapVaule();
     }
 
-    public static com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule getDefaultInstance() {
+    public static MapVaule getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3956,12 +3956,12 @@ public final class MyComplexObjectEntity {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<MapVaule> getParserForType() {
       return PARSER;
     }
 
-    public com.hry.spring.proto.complex.MyComplexObjectEntity.MapVaule getDefaultInstanceForType() {
+    public MapVaule getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3995,7 +3995,7 @@ public final class MyComplexObjectEntity {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\nCsrc/main/resources/com/hry/spring/prot" +
       "o/complex/complexObject.proto\032\031google/pr" +
       "otobuf/any.proto\"\224\002\n\rComplexObject\022\n\n\002id" +
@@ -4029,25 +4029,25 @@ public final class MyComplexObjectEntity {
     internal_static_ComplexObject_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ComplexObject_descriptor,
-        new java.lang.String[] { "Id", "Name", "Email", "Sons", "Gender", "Result", "Any", "Map", });
+        new String[] { "Id", "Name", "Email", "Sons", "Gender", "Result", "Any", "Map", });
     internal_static_ComplexObject_MapEntry_descriptor =
       internal_static_ComplexObject_descriptor.getNestedTypes().get(0);
     internal_static_ComplexObject_MapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ComplexObject_MapEntry_descriptor,
-        new java.lang.String[] { "Key", "Value", });
+        new String[] { "Key", "Value", });
     internal_static_Result_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_Result_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Result_descriptor,
-        new java.lang.String[] { "Url", "Title", "Snippets", });
+        new String[] { "Url", "Title", "Snippets", });
     internal_static_MapVaule_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_MapVaule_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MapVaule_descriptor,
-        new java.lang.String[] { "MapValue", });
+        new String[] { "MapValue", });
     com.google.protobuf.AnyProto.getDescriptor();
   }
 

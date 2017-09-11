@@ -10,12 +10,12 @@ public interface SimpleListOrBuilder extends
   /**
    * <code>repeated .Simple simpleList = 1;</code>
    */
-  java.util.List<com.hry.spring.grpc.mystream.Simple> 
+  java.util.List<Simple>
       getSimpleListList();
   /**
    * <code>repeated .Simple simpleList = 1;</code>
    */
-  com.hry.spring.grpc.mystream.Simple getSimpleList(int index);
+  Simple getSimpleList(int index);
   /**
    * <code>repeated .Simple simpleList = 1;</code>
    */
@@ -23,11 +23,11 @@ public interface SimpleListOrBuilder extends
   /**
    * <code>repeated .Simple simpleList = 1;</code>
    */
-  java.util.List<? extends com.hry.spring.grpc.mystream.SimpleOrBuilder> 
+  java.util.List<? extends SimpleOrBuilder>
       getSimpleListOrBuilderList();
   /**
    * <code>repeated .Simple simpleList = 1;</code>
    */
-  com.hry.spring.grpc.mystream.SimpleOrBuilder getSimpleListOrBuilder(
-      int index);
+  SimpleOrBuilder getSimpleListOrBuilder(
+          int index);
 }

@@ -10,7 +10,7 @@ public interface ITimedTaskService{
 	 * @param executeTime 执行的时间
 	 * @param value
 	 */
-	<T extends ITimedTaskModel> T add(String keySuffix, final Date executeTime,final T value);
+	<T extends ITimedTaskModel> T add(String keySuffix, final Date executeTime, final T value);
 
 	/**
 	 * 批量删除已经执行的定时任务

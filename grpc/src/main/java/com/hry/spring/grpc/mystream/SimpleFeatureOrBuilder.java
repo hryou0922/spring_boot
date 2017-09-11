@@ -10,7 +10,7 @@ public interface SimpleFeatureOrBuilder extends
   /**
    * <code>optional string name = 1;</code>
    */
-  java.lang.String getName();
+  String getName();
   /**
    * <code>optional string name = 1;</code>
    */
@@ -24,9 +24,9 @@ public interface SimpleFeatureOrBuilder extends
   /**
    * <code>optional .Simple location = 2;</code>
    */
-  com.hry.spring.grpc.mystream.Simple getLocation();
+  Simple getLocation();
   /**
    * <code>optional .Simple location = 2;</code>
    */
-  com.hry.spring.grpc.mystream.SimpleOrBuilder getLocationOrBuilder();
+  SimpleOrBuilder getLocationOrBuilder();
 }

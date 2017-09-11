@@ -1,3 +1,6 @@
+# 更新说明
+- 20170911 20170911之前的博客里的代码，为了保证能够正确运行，请使用[git代码tag0.1](https://github.com/hryou0922/spring_boot/tree/v0.1)
+
 # spring boot
 spring boot的测试代码存储到这里
 

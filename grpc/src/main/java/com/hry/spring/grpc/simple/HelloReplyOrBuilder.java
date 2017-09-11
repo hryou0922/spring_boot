@@ -10,7 +10,7 @@ public interface HelloReplyOrBuilder extends
   /**
    * <code>optional string message = 1;</code>
    */
-  java.lang.String getMessage();
+  String getMessage();
   /**
    * <code>optional string message = 1;</code>
    */

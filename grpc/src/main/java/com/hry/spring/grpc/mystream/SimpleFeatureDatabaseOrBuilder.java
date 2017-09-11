@@ -10,12 +10,12 @@ public interface SimpleFeatureDatabaseOrBuilder extends
   /**
    * <code>repeated .SimpleFeature feature = 1;</code>
    */
-  java.util.List<com.hry.spring.grpc.mystream.SimpleFeature> 
+  java.util.List<SimpleFeature>
       getFeatureList();
   /**
    * <code>repeated .SimpleFeature feature = 1;</code>
    */
-  com.hry.spring.grpc.mystream.SimpleFeature getFeature(int index);
+  SimpleFeature getFeature(int index);
   /**
    * <code>repeated .SimpleFeature feature = 1;</code>
    */
@@ -23,11 +23,11 @@ public interface SimpleFeatureDatabaseOrBuilder extends
   /**
    * <code>repeated .SimpleFeature feature = 1;</code>
    */
-  java.util.List<? extends com.hry.spring.grpc.mystream.SimpleFeatureOrBuilder> 
+  java.util.List<? extends SimpleFeatureOrBuilder>
       getFeatureOrBuilderList();
   /**
    * <code>repeated .SimpleFeature feature = 1;</code>
    */
-  com.hry.spring.grpc.mystream.SimpleFeatureOrBuilder getFeatureOrBuilder(
-      int index);
+  SimpleFeatureOrBuilder getFeatureOrBuilder(
+          int index);
 }

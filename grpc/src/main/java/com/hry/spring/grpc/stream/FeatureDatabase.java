@@ -22,7 +22,7 @@ public  final class FeatureDatabase extends
     feature_ = java.util.Collections.emptyList();
   }
 
-  @java.lang.Override
+  @Override
   public final com.google.protobuf.UnknownFieldSet
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
@@ -49,11 +49,11 @@ public  final class FeatureDatabase extends
           }
           case 10: {
             if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-              feature_ = new java.util.ArrayList<com.hry.spring.grpc.stream.Feature>();
+              feature_ = new java.util.ArrayList<Feature>();
               mutable_bitField0_ |= 0x00000001;
             }
             feature_.add(
-                input.readMessage(com.hry.spring.grpc.stream.Feature.parser(), extensionRegistry));
+                input.readMessage(Feature.parser(), extensionRegistry));
             break;
           }
         }
@@ -75,19 +75,19 @@ public  final class FeatureDatabase extends
     return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_FeatureDatabase_descriptor;
   }
 
-  protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+  protected FieldAccessorTable
       internalGetFieldAccessorTable() {
     return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_FeatureDatabase_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.hry.spring.grpc.stream.FeatureDatabase.class, com.hry.spring.grpc.stream.FeatureDatabase.Builder.class);
+            FeatureDatabase.class, Builder.class);
   }
 
   public static final int FEATURE_FIELD_NUMBER = 1;
-  private java.util.List<com.hry.spring.grpc.stream.Feature> feature_;
+  private java.util.List<Feature> feature_;
   /**
    * <code>repeated .Feature feature = 1;</code>
    */
-  public java.util.List<com.hry.spring.grpc.stream.Feature> getFeatureList() {
+  public java.util.List<Feature> getFeatureList() {
     return feature_;
   }
   /**
@@ -106,7 +106,7 @@ public  final class FeatureDatabase extends
   /**
    * <code>repeated .Feature feature = 1;</code>
    */
-  public com.hry.spring.grpc.stream.Feature getFeature(int index) {
+  public Feature getFeature(int index) {
     return feature_.get(index);
   }
   /**
@@ -148,15 +148,15 @@ public  final class FeatureDatabase extends
   }
 
   private static final long serialVersionUID = 0L;
-  @java.lang.Override
-  public boolean equals(final java.lang.Object obj) {
+  @Override
+  public boolean equals(final Object obj) {
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.hry.spring.grpc.stream.FeatureDatabase)) {
+    if (!(obj instanceof FeatureDatabase)) {
       return super.equals(obj);
     }
-    com.hry.spring.grpc.stream.FeatureDatabase other = (com.hry.spring.grpc.stream.FeatureDatabase) obj;
+    FeatureDatabase other = (FeatureDatabase) obj;
 
     boolean result = true;
     result = result && getFeatureList()
@@ -164,7 +164,7 @@ public  final class FeatureDatabase extends
     return result;
   }
 
-  @java.lang.Override
+  @Override
   public int hashCode() {
     if (memoizedHashCode != 0) {
       return memoizedHashCode;
@@ -180,58 +180,58 @@ public  final class FeatureDatabase extends
     return hash;
   }
 
-  public static com.hry.spring.grpc.stream.FeatureDatabase parseFrom(
+  public static FeatureDatabase parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.stream.FeatureDatabase parseFrom(
+  public static FeatureDatabase parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.FeatureDatabase parseFrom(byte[] data)
+  public static FeatureDatabase parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.hry.spring.grpc.stream.FeatureDatabase parseFrom(
+  public static FeatureDatabase parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.FeatureDatabase parseFrom(java.io.InputStream input)
+  public static FeatureDatabase parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.stream.FeatureDatabase parseFrom(
+  public static FeatureDatabase parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.FeatureDatabase parseDelimitedFrom(java.io.InputStream input)
+  public static FeatureDatabase parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.stream.FeatureDatabase parseDelimitedFrom(
+  public static FeatureDatabase parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.hry.spring.grpc.stream.FeatureDatabase parseFrom(
+  public static FeatureDatabase parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.hry.spring.grpc.stream.FeatureDatabase parseFrom(
+  public static FeatureDatabase parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -243,7 +243,7 @@ public  final class FeatureDatabase extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.hry.spring.grpc.stream.FeatureDatabase prototype) {
+  public static Builder newBuilder(FeatureDatabase prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -251,9 +251,9 @@ public  final class FeatureDatabase extends
         ? new Builder() : new Builder().mergeFrom(this);
   }
 
-  @java.lang.Override
+  @Override
   protected Builder newBuilderForType(
-      com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      BuilderParent parent) {
     Builder builder = new Builder(parent);
     return builder;
   }
@@ -273,11 +273,11 @@ public  final class FeatureDatabase extends
       return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_FeatureDatabase_descriptor;
     }
 
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_FeatureDatabase_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.hry.spring.grpc.stream.FeatureDatabase.class, com.hry.spring.grpc.stream.FeatureDatabase.Builder.class);
+              FeatureDatabase.class, Builder.class);
     }
 
     // Construct using com.hry.spring.grpc.stream.FeatureDatabase.newBuilder()
@@ -286,7 +286,7 @@ public  final class FeatureDatabase extends
     }
 
     private Builder(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       super(parent);
       maybeForceBuilderInitialization();
     }
@@ -312,20 +312,20 @@ public  final class FeatureDatabase extends
       return com.hry.spring.grpc.stream.RouteGuideEntity.internal_static_FeatureDatabase_descriptor;
     }
 
-    public com.hry.spring.grpc.stream.FeatureDatabase getDefaultInstanceForType() {
-      return com.hry.spring.grpc.stream.FeatureDatabase.getDefaultInstance();
+    public FeatureDatabase getDefaultInstanceForType() {
+      return FeatureDatabase.getDefaultInstance();
     }
 
-    public com.hry.spring.grpc.stream.FeatureDatabase build() {
-      com.hry.spring.grpc.stream.FeatureDatabase result = buildPartial();
+    public FeatureDatabase build() {
+      FeatureDatabase result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public com.hry.spring.grpc.stream.FeatureDatabase buildPartial() {
-      com.hry.spring.grpc.stream.FeatureDatabase result = new com.hry.spring.grpc.stream.FeatureDatabase(this);
+    public FeatureDatabase buildPartial() {
+      FeatureDatabase result = new FeatureDatabase(this);
       int from_bitField0_ = bitField0_;
       if (featureBuilder_ == null) {
         if (((bitField0_ & 0x00000001) == 0x00000001)) {
@@ -367,16 +367,16 @@ public  final class FeatureDatabase extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.hry.spring.grpc.stream.FeatureDatabase) {
-        return mergeFrom((com.hry.spring.grpc.stream.FeatureDatabase)other);
+      if (other instanceof FeatureDatabase) {
+        return mergeFrom((FeatureDatabase)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.hry.spring.grpc.stream.FeatureDatabase other) {
-      if (other == com.hry.spring.grpc.stream.FeatureDatabase.getDefaultInstance()) return this;
+    public Builder mergeFrom(FeatureDatabase other) {
+      if (other == FeatureDatabase.getDefaultInstance()) return this;
       if (featureBuilder_ == null) {
         if (!other.feature_.isEmpty()) {
           if (feature_.isEmpty()) {
@@ -415,11 +415,11 @@ public  final class FeatureDatabase extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.hry.spring.grpc.stream.FeatureDatabase parsedMessage = null;
+      FeatureDatabase parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.hry.spring.grpc.stream.FeatureDatabase) e.getUnfinishedMessage();
+        parsedMessage = (FeatureDatabase) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -430,22 +430,22 @@ public  final class FeatureDatabase extends
     }
     private int bitField0_;
 
-    private java.util.List<com.hry.spring.grpc.stream.Feature> feature_ =
+    private java.util.List<Feature> feature_ =
       java.util.Collections.emptyList();
     private void ensureFeatureIsMutable() {
       if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-        feature_ = new java.util.ArrayList<com.hry.spring.grpc.stream.Feature>(feature_);
+        feature_ = new java.util.ArrayList<Feature>(feature_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.hry.spring.grpc.stream.Feature, com.hry.spring.grpc.stream.Feature.Builder, com.hry.spring.grpc.stream.FeatureOrBuilder> featureBuilder_;
+        Feature, Feature.Builder, com.hry.spring.grpc.stream.FeatureOrBuilder> featureBuilder_;
 
     /**
      * <code>repeated .Feature feature = 1;</code>
      */
-    public java.util.List<com.hry.spring.grpc.stream.Feature> getFeatureList() {
+    public java.util.List<Feature> getFeatureList() {
       if (featureBuilder_ == null) {
         return java.util.Collections.unmodifiableList(feature_);
       } else {
@@ -465,7 +465,7 @@ public  final class FeatureDatabase extends
     /**
      * <code>repeated .Feature feature = 1;</code>
      */
-    public com.hry.spring.grpc.stream.Feature getFeature(int index) {
+    public Feature getFeature(int index) {
       if (featureBuilder_ == null) {
         return feature_.get(index);
       } else {
@@ -476,7 +476,7 @@ public  final class FeatureDatabase extends
      * <code>repeated .Feature feature = 1;</code>
      */
     public Builder setFeature(
-        int index, com.hry.spring.grpc.stream.Feature value) {
+        int index, Feature value) {
       if (featureBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -493,7 +493,7 @@ public  final class FeatureDatabase extends
      * <code>repeated .Feature feature = 1;</code>
      */
     public Builder setFeature(
-        int index, com.hry.spring.grpc.stream.Feature.Builder builderForValue) {
+        int index, Feature.Builder builderForValue) {
       if (featureBuilder_ == null) {
         ensureFeatureIsMutable();
         feature_.set(index, builderForValue.build());
@@ -506,7 +506,7 @@ public  final class FeatureDatabase extends
     /**
      * <code>repeated .Feature feature = 1;</code>
      */
-    public Builder addFeature(com.hry.spring.grpc.stream.Feature value) {
+    public Builder addFeature(Feature value) {
       if (featureBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -523,7 +523,7 @@ public  final class FeatureDatabase extends
      * <code>repeated .Feature feature = 1;</code>
      */
     public Builder addFeature(
-        int index, com.hry.spring.grpc.stream.Feature value) {
+        int index, Feature value) {
       if (featureBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -540,7 +540,7 @@ public  final class FeatureDatabase extends
      * <code>repeated .Feature feature = 1;</code>
      */
     public Builder addFeature(
-        com.hry.spring.grpc.stream.Feature.Builder builderForValue) {
+        Feature.Builder builderForValue) {
       if (featureBuilder_ == null) {
         ensureFeatureIsMutable();
         feature_.add(builderForValue.build());
@@ -554,7 +554,7 @@ public  final class FeatureDatabase extends
      * <code>repeated .Feature feature = 1;</code>
      */
     public Builder addFeature(
-        int index, com.hry.spring.grpc.stream.Feature.Builder builderForValue) {
+        int index, Feature.Builder builderForValue) {
       if (featureBuilder_ == null) {
         ensureFeatureIsMutable();
         feature_.add(index, builderForValue.build());
@@ -568,7 +568,7 @@ public  final class FeatureDatabase extends
      * <code>repeated .Feature feature = 1;</code>
      */
     public Builder addAllFeature(
-        java.lang.Iterable<? extends com.hry.spring.grpc.stream.Feature> values) {
+        Iterable<? extends Feature> values) {
       if (featureBuilder_ == null) {
         ensureFeatureIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -608,7 +608,7 @@ public  final class FeatureDatabase extends
     /**
      * <code>repeated .Feature feature = 1;</code>
      */
-    public com.hry.spring.grpc.stream.Feature.Builder getFeatureBuilder(
+    public Feature.Builder getFeatureBuilder(
         int index) {
       return getFeatureFieldBuilder().getBuilder(index);
     }
@@ -636,31 +636,31 @@ public  final class FeatureDatabase extends
     /**
      * <code>repeated .Feature feature = 1;</code>
      */
-    public com.hry.spring.grpc.stream.Feature.Builder addFeatureBuilder() {
+    public Feature.Builder addFeatureBuilder() {
       return getFeatureFieldBuilder().addBuilder(
-          com.hry.spring.grpc.stream.Feature.getDefaultInstance());
+          Feature.getDefaultInstance());
     }
     /**
      * <code>repeated .Feature feature = 1;</code>
      */
-    public com.hry.spring.grpc.stream.Feature.Builder addFeatureBuilder(
+    public Feature.Builder addFeatureBuilder(
         int index) {
       return getFeatureFieldBuilder().addBuilder(
-          index, com.hry.spring.grpc.stream.Feature.getDefaultInstance());
+          index, Feature.getDefaultInstance());
     }
     /**
      * <code>repeated .Feature feature = 1;</code>
      */
-    public java.util.List<com.hry.spring.grpc.stream.Feature.Builder> 
+    public java.util.List<Feature.Builder>
          getFeatureBuilderList() {
       return getFeatureFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.hry.spring.grpc.stream.Feature, com.hry.spring.grpc.stream.Feature.Builder, com.hry.spring.grpc.stream.FeatureOrBuilder> 
+        Feature, Feature.Builder, com.hry.spring.grpc.stream.FeatureOrBuilder>
         getFeatureFieldBuilder() {
       if (featureBuilder_ == null) {
         featureBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.hry.spring.grpc.stream.Feature, com.hry.spring.grpc.stream.Feature.Builder, com.hry.spring.grpc.stream.FeatureOrBuilder>(
+            Feature, Feature.Builder, com.hry.spring.grpc.stream.FeatureOrBuilder>(
                 feature_,
                 ((bitField0_ & 0x00000001) == 0x00000001),
                 getParentForChildren(),
@@ -684,12 +684,12 @@ public  final class FeatureDatabase extends
   }
 
   // @@protoc_insertion_point(class_scope:FeatureDatabase)
-  private static final com.hry.spring.grpc.stream.FeatureDatabase DEFAULT_INSTANCE;
+  private static final FeatureDatabase DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.hry.spring.grpc.stream.FeatureDatabase();
+    DEFAULT_INSTANCE = new FeatureDatabase();
   }
 
-  public static com.hry.spring.grpc.stream.FeatureDatabase getDefaultInstance() {
+  public static FeatureDatabase getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -707,12 +707,12 @@ public  final class FeatureDatabase extends
     return PARSER;
   }
 
-  @java.lang.Override
+  @Override
   public com.google.protobuf.Parser<FeatureDatabase> getParserForType() {
     return PARSER;
   }
 
-  public com.hry.spring.grpc.stream.FeatureDatabase getDefaultInstanceForType() {
+  public FeatureDatabase getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

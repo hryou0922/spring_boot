@@ -24,13 +24,13 @@ public final class GreeterGrpc {
   // Static method descriptors that strictly reflect the proto.
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static final io.grpc.MethodDescriptor<com.hry.spring.grpc.simple.HelloRequest,
-      com.hry.spring.grpc.simple.HelloReply> METHOD_SAY_HELLO =
+      HelloReply> METHOD_SAY_HELLO =
       io.grpc.MethodDescriptor.create(
           io.grpc.MethodDescriptor.MethodType.UNARY,
           generateFullMethodName(
               "Greeter", "SayHello"),
           io.grpc.protobuf.ProtoUtils.marshaller(com.hry.spring.grpc.simple.HelloRequest.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.hry.spring.grpc.simple.HelloReply.getDefaultInstance()));
+          io.grpc.protobuf.ProtoUtils.marshaller(HelloReply.getDefaultInstance()));
 
   /**
    * Creates a new async stub that supports all call types for the service
@@ -68,18 +68,18 @@ public final class GreeterGrpc {
      * </pre>
      */
     public void sayHello(com.hry.spring.grpc.simple.HelloRequest request,
-        io.grpc.stub.StreamObserver<com.hry.spring.grpc.simple.HelloReply> responseObserver) {
+        io.grpc.stub.StreamObserver<HelloReply> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_SAY_HELLO, responseObserver);
     }
 
-    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
+    @Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             METHOD_SAY_HELLO,
             asyncUnaryCall(
               new MethodHandlers<
                 com.hry.spring.grpc.simple.HelloRequest,
-                com.hry.spring.grpc.simple.HelloReply>(
+                HelloReply>(
                   this, METHODID_SAY_HELLO)))
           .build();
     }
@@ -100,7 +100,7 @@ public final class GreeterGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected GreeterStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new GreeterStub(channel, callOptions);
@@ -112,7 +112,7 @@ public final class GreeterGrpc {
      * </pre>
      */
     public void sayHello(com.hry.spring.grpc.simple.HelloRequest request,
-        io.grpc.stub.StreamObserver<com.hry.spring.grpc.simple.HelloReply> responseObserver) {
+        io.grpc.stub.StreamObserver<HelloReply> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_SAY_HELLO, getCallOptions()), request, responseObserver);
     }
@@ -133,7 +133,7 @@ public final class GreeterGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected GreeterBlockingStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new GreeterBlockingStub(channel, callOptions);
@@ -144,7 +144,7 @@ public final class GreeterGrpc {
      * Sends a greeting
      * </pre>
      */
-    public com.hry.spring.grpc.simple.HelloReply sayHello(com.hry.spring.grpc.simple.HelloRequest request) {
+    public HelloReply sayHello(com.hry.spring.grpc.simple.HelloRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_SAY_HELLO, getCallOptions(), request);
     }
@@ -165,7 +165,7 @@ public final class GreeterGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected GreeterFutureStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new GreeterFutureStub(channel, callOptions);
@@ -176,7 +176,7 @@ public final class GreeterGrpc {
      * Sends a greeting
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.hry.spring.grpc.simple.HelloReply> sayHello(
+    public com.google.common.util.concurrent.ListenableFuture<HelloReply> sayHello(
         com.hry.spring.grpc.simple.HelloRequest request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_SAY_HELLO, getCallOptions()), request);
@@ -198,21 +198,21 @@ public final class GreeterGrpc {
       this.methodId = methodId;
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_SAY_HELLO:
           serviceImpl.sayHello((com.hry.spring.grpc.simple.HelloRequest) request,
-              (io.grpc.stub.StreamObserver<com.hry.spring.grpc.simple.HelloReply>) responseObserver);
+              (io.grpc.stub.StreamObserver<HelloReply>) responseObserver);
           break;
         default:
           throw new AssertionError();
       }
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
@@ -223,7 +223,7 @@ public final class GreeterGrpc {
   }
 
   private static final class GreeterDescriptorSupplier implements io.grpc.protobuf.ProtoFileDescriptorSupplier {
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
       return com.hry.spring.grpc.simple.GreeterEntity.getDescriptor();
     }

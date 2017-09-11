@@ -13,11 +13,11 @@ public class MyPersonEntityTest {
 	@Test
 	public void testMyPerson() throws InvalidProtocolBufferException{
 		 //模拟将对象转成byte[]，方便传输
-        MyPersonEntity.MyPerson.Builder builder = MyPersonEntity.MyPerson.newBuilder();
+        MyPerson.Builder builder = MyPerson.newBuilder();
         builder.setId(1);
         builder.setName("name");
         builder.setEmail("hryou0922@126.com");
-        MyPersonEntity.MyPerson person = builder.build();
+        MyPerson person = builder.build();
         System.out.println("before :"+ person.toString());
 
         System.out.println("===========Person Byte==========");

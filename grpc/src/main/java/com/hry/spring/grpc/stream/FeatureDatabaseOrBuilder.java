@@ -10,12 +10,12 @@ public interface FeatureDatabaseOrBuilder extends
   /**
    * <code>repeated .Feature feature = 1;</code>
    */
-  java.util.List<com.hry.spring.grpc.stream.Feature> 
+  java.util.List<Feature>
       getFeatureList();
   /**
    * <code>repeated .Feature feature = 1;</code>
    */
-  com.hry.spring.grpc.stream.Feature getFeature(int index);
+  Feature getFeature(int index);
   /**
    * <code>repeated .Feature feature = 1;</code>
    */
@@ -23,11 +23,11 @@ public interface FeatureDatabaseOrBuilder extends
   /**
    * <code>repeated .Feature feature = 1;</code>
    */
-  java.util.List<? extends com.hry.spring.grpc.stream.FeatureOrBuilder> 
+  java.util.List<? extends FeatureOrBuilder>
       getFeatureOrBuilderList();
   /**
    * <code>repeated .Feature feature = 1;</code>
    */
-  com.hry.spring.grpc.stream.FeatureOrBuilder getFeatureOrBuilder(
-      int index);
+  FeatureOrBuilder getFeatureOrBuilder(
+          int index);
 }
