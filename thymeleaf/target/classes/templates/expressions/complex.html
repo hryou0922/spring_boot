@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+=================== 调用对象的成员变量的属性  ===============================<br/>
+<!-- 获取family的成员变量father的属性 -->
+${family.father.name} --> <input type="text" name="userName" th:value="${family.father.name}" /> <br />
+<br />
+
+=================== 调用Map的对象的属性  ===============================<br/>
+<!-- 通过map的key从hashMap获取对象的属性name值: 可以使用"."或者使用"[]"获取对象值 -->
+${hashMap.hashMapKey.name} --> <input type="text" name="userName" th:value="${hashMap.hashMapKey.name}" /> <br />
+等价于这条语句：
+${hashMap['hashMapKey'].name} --> <input type="text" name="userName" th:value="${hashMap['hashMapKey'].name}" /> <br />
+<br />
+
+=================== 调用List的对象的属性  ===============================<br/>
+<!-- 通过[0]获取List的第一个对象的属性name值 -->
+${family.childList[0].name} --> <input type="text" name="userName" th:value="${family.childList[0].name}" /> <br />
+<br />
+
+=================== 调用属性的方法  ===============================<br/>
+<!-- 调用属性的方法 -->
+${family.father.name.toUpperCase()} --> <input type="text" name="userName" th:value="${family.father.name.toUpperCase()}" /> <br />
+<br />
+
+=================== 使用ctx对象： Base objects  context object  ===============================<br/>
+<!-- #ctx是org.thymeleaf.context.IContext -->
+${#ctx.locale} --> <input type="text" name="userName" th:value="${#ctx.locale}" /> <br />
+
+<!-- #ctx获取ctx的变量中的一个的值  -->
+${#ctx.variables.hashMap} --> <input th:value="${#ctx.variables.hashMap}" ></input> <br />
+
+<!-- vars变量中值的一个的值，等价于#ctx.variables -->
+${#ctx.variables.hashMap} --> <input th:value="${#vars.hashMap}" ></input> <br />
+
+<!-- 以下#ctx是org.thymeleaf.context.IWebContext的一个实例，他也是IContext的子类 -->
+<!-- #request -->
+${#ctx.httpServletRequest} --> <input th:value="${#ctx.httpServletRequest}" ></input> <br />
+
+<!-- #response -->
+${#ctx.httpServletResponse} --> <input th:value="${#ctx.httpServletResponse}" ></input> <br />
+
+<!-- #session -->
+${#ctx.httpSession} --> <input th:value="${#ctx.httpSession}" ></input> <br />
+
+<!-- #servletContext -->
+${#ctx.servletContext} --> <input th:value="${#ctx.servletContext}" ></input> <br />
+
+================= param：获取request的请求参数  ===============================<br/>
+<!-- param是org.thymeleaf.context.WebRequestParamsVariablesMap的子类 -->
+<!-- 如果 ：http://localhost:8080/expressions/complex?id=1，此时有有一个参数输出1 -->
+${param.size()} --> <input th:value="${param.size()}" ></input> <br />
+${param.containsKey('id')} --> <input th:value="${param.containsKey('id')}" ></input> <br />
+
+${param.get('id')[0]} --> <input th:value="${param.get('id')[0]}" ></input> <br />
+等价于：<br/>
+${#ctx.httpServletRequest.getParameter('id')} --> <input th:value="${#ctx.httpServletRequest.getParameter('id')}" ></input> <br />
+
+================= session:获取session的属性值  ===============================<br/>
+<!-- session是org.thymeleaf.context.WebSessionVariablesMap的子类 -->
+${session.size()} --> <input th:value="${session.size()}" ></input> <br />
+
+================= application：获取application的属性值  ========================<br/>
+<!-- application是org.thymeleaf.context.WebServletContextVariablesMap的子类 -->
+${application.size()} --> <input th:value="${application.size()}" ></input> <br />
+
+</body>
+</html>

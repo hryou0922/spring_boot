@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<meta charset="UTF-8" />
+<body>
+  	<!-- th:fragment 定义用于加载的块 -->
+    <span th:fragment="copy"> 2017 hry loaded by fragment=copy</span>
+    
+    <span id="copy-section"> 2017 hry loaded by id=copy-section</span>
+  	
+  	<!-- 定义模板时，可以传入参数 -->
+  	<span th:fragment="frag(month, date) "> <span th:text="'welcome hry come in ' + ${month} + '-' + ${date}"></span></span>
+  	
+  </body>
+  
+</html>

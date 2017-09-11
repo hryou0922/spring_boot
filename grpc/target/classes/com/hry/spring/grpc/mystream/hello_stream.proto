@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.hry.spring.grpc.mystream";
+option java_outer_classname = "HelloStreamEntity";
+
+service HelloStream {
+  // A simple RPC.
+  rpc simpleRpc(Simple) returns (SimpleFeature) {}
+
+  // A server-to-client streaming RPC.
+  rpc server2ClientRpc(SimpleList) returns (stream SimpleFeature) {}
+
+  // A client-to-server streaming RPC.
+  rpc client2ServerRpc(stream Simple) returns (SimpleSummary) {}
+
+  // A Bidirectional streaming RPC.
+  rpc bindirectionalStreamRpc(stream Simple) returns (stream Simple) {}
+}
+
+
+message Simple {
+  int32 num = 1;
+  string name = 2;
+}
+
+message SimpleList {
+  repeated Simple simpleList = 1;
+}
+
+message SimpleFeature {
+  string name = 1;
+  Simple location = 2;
+}
+
+message SimpleSummary {
+  int32 feature_count = 2;
+}
+
+// 测试类
+message SimpleFeatureDatabase {
+  repeated SimpleFeature feature = 1;
+}
