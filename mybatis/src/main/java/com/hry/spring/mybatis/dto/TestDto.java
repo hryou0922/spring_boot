@@ -1,4 +1,4 @@
-package com.hry.spring.pagehelper.dto;
+package com.hry.spring.mybatis.dto;
 
 import java.util.Date;
 

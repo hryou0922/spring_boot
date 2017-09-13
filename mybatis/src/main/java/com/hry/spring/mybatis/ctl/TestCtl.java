@@ -1,9 +1,10 @@
-package com.hry.spring.pagehelper.ctl;
+package com.hry.spring.mybatis.ctl;
 
-import com.hry.spring.pagehelper.dto.TestDto;
-import com.hry.spring.pagehelper.qry.TestQry;
-import com.hry.spring.pagehelper.service.ITestService;
-import com.hry.spring.pagehelper.util.Model2DtoUtil;
+import com.hry.spring.mybatis.model.TestModel;
+import com.hry.spring.mybatis.dto.TestDto;
+import com.hry.spring.mybatis.qry.TestQry;
+import com.hry.spring.mybatis.service.ITestService;
+import com.hry.spring.mybatis.util.Model2DtoUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -28,12 +29,11 @@ public class TestCtl {
     @RequestMapping(value = "insert-selective", method = RequestMethod.POST)
     public int insertSelective(@RequestBody TestDto dto){
         // 参数验证略
-        SimpleModel record = new SimpleModel();
+        TestModel record = new TestModel();
         record.setId(dto.getId());
-        record.setCreateTime(new Date());
-        record.setEditTime(new Date());
-        record.setProdCode(dto.getProdCode());
-        record.setUserAccount(dto.getUserAccount());
+        record.setAge(dto.getAge()));
+        record.setCreate(new Date());
+        record.setName(dto.getName());
         return testService.insertSelective(record);
     }
 
@@ -45,12 +45,12 @@ public class TestCtl {
 
     @RequestMapping(value = "select-all", method = {RequestMethod.POST })
     public List<TestDto> selectAll(@RequestBody TestQry qry){
-        return Model2DtoUtil.model2Dto(testService.selectAll(qry), SimpleDto.class);
+        return Model2DtoUtil.model2Dto(testService.selectAll(qry), TestDto.class);
     }
 
     @RequestMapping(value = "select-all-with-page", method = {RequestMethod.POST })
-    public MyPage<SimpleDto> selectAllWithPage(@RequestBody SimpleQry qry){
-        MyPage<SimpleDto> page = Model2DtoUtil.model2Dto(testService.selectAllWithPage(qry), SimpleDto.class);
+    public MyPage<TestDto> selectAllWithPage(@RequestBody TestQry qry){
+        MyPage<TestDto> page = Model2DtoUtil.model2Dto(testService.selectAllWithPage(qry), TestDto.class);
         page.setMessage(getLocalInfo());
         return page;
     }

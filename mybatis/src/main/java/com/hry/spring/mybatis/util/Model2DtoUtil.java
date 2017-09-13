@@ -1,4 +1,4 @@
-package com.hry.spring.pagehelper.util;
+package com.hry.spring.mybatis.util;
 
 import im.yixin.icc.common.utils.CommonBeanUtils;
 import im.yixin.icc.domain.common.page.MyPage;

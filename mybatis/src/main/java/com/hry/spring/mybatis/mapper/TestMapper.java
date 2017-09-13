@@ -1,6 +1,6 @@
-package com.hry.spring.pagehelper.mapper;
+package com.hry.spring.mybatis.mapper;
 
-import com.hry.spring.pagehelper.model.TestModel;
+import com.hry.spring.mybatis.model.TestModel;
 
 public interface TestMapper {
     int deleteByPrimaryKey(Integer id);

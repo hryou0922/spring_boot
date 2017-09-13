@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/grpc/grpc.iml" filepath="$PROJECT_DIR$/grpc/grpc.iml" />
       <module fileurl="file://$PROJECT_DIR$/log/log.iml" filepath="$PROJECT_DIR$/log/log.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvc/mvc.iml" filepath="$PROJECT_DIR$/mvc/mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/mybatis/mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent/parent.iml" filepath="$PROJECT_DIR$/parent/parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/protobuf/protobuf.iml" filepath="$PROJECT_DIR$/protobuf/protobuf.iml" />
       <module fileurl="file://$PROJECT_DIR$/redis/redis.iml" filepath="$PROJECT_DIR$/redis/redis.iml" />

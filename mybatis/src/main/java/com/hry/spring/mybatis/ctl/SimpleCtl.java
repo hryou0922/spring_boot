@@ -1,4 +1,4 @@
-package com.hry.spring.pagehelper.ctl;
+package com.hry.spring.mybatis.ctl;
 
 import im.yixin.icc.database.pagehelper.Model2DtoUtil;
 import im.yixin.icc.demoservice.model.SimpleModel;

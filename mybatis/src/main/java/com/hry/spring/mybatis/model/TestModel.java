@@ -1,4 +1,4 @@
-package com.hry.spring.pagehelper.model;
+package com.hry.spring.mybatis.model;
 
 import java.util.Date;
 

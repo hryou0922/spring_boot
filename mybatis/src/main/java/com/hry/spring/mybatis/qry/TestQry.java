@@ -1,4 +1,4 @@
-package com.hry.spring.pagehelper.qry;
+package com.hry.spring.mybatis.qry;
 
 /**
  * 传入的查询的条件

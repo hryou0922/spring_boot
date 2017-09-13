@@ -1,9 +1,9 @@
-package com.hry.spring.pagehelper.service.impl;
+package com.hry.spring.mybatis.service.impl;
 
-import com.hry.spring.pagehelper.mapper.TestMapper;
-import com.hry.spring.pagehelper.model.TestModel;
-import com.hry.spring.pagehelper.qry.TestQry;
-import com.hry.spring.pagehelper.service.ITestService;
+import com.hry.spring.mybatis.mapper.TestMapper;
+import com.hry.spring.mybatis.model.TestModel;
+import com.hry.spring.mybatis.qry.TestQry;
+import com.hry.spring.mybatis.service.ITestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
@@ -30,6 +30,11 @@ public class TestServiceImpl implements ITestService{
     @Override
     public TestModel selectByPrimaryKey(Integer id) {
         Assert.notNull(id, "id can't be null!");
+        return null;
+    }
+
+    @Override
+    public List<TestModel> selectAll(TestQry qry) {
         return null;
     }
 

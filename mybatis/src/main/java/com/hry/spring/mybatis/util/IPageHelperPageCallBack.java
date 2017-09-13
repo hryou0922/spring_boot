@@ -1,4 +1,4 @@
-package com.hry.spring.pagehelper.util;
+package com.hry.spring.mybatis.util;
 
 import java.util.List;
 

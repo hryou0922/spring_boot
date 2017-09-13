@@ -54,7 +54,7 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <!-- 配置扫描Mapper XML的位置 -->
-        <property name="mapperLocations" value="classpath:com/hry/spring/pagehelper/mapper/*.xml"/>
+        <property name="mapperLocations" value="classpath:com/hry/spring/mybatis/mapper/*.xml"/>
         <!-- 配置mybatis配置文件的位置 -->
         <property name="configLocation" value="classpath:config/spring/mybatis_config.xml"/>
        
@@ -62,7 +62,7 @@
 
     <!-- 配置扫描Mapper接口的包路径 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-    	<property name="basePackage" value="com.hry.spring.pagehelper.mapper"/>
+    	<property name="basePackage" value="com.hry.spring.mybatis.mybatis"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
 
@@ -84,7 +84,7 @@
         </tx:attributes>
     </tx:advice>
     <aop:config >
-        <aop:pointcut id="pt" expression="execution(* com.hry.spring.pagehelper.service..*.*(..))" />
+        <aop:pointcut id="pt" expression="execution(* com.hry.spring.mybatis.service..*.*(..))" />
         <aop:advisor pointcut-ref="pt" advice-ref="txAdvice"/>
     </aop:config> 
     <!-- ### Mybatis和事物配置  end ###-->

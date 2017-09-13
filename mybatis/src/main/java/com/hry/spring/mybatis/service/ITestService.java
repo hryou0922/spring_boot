@@ -1,7 +1,7 @@
-package com.hry.spring.pagehelper.service;
+package com.hry.spring.mybatis.service;
 
-import com.hry.spring.pagehelper.model.TestModel;
-import com.hry.spring.pagehelper.qry.TestQry;
+import com.hry.spring.mybatis.model.TestModel;
+import com.hry.spring.mybatis.qry.TestQry;
 
 import java.util.List;
 
