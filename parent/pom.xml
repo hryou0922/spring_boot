@@ -16,6 +16,7 @@
         <module>../redis</module>
         <module>../taskExecutionAndScheduling</module>
         <module>../thymeleaf</module>
+        <module>../pagehelper</module>
     </modules>
     <packaging>pom</packaging>
 
