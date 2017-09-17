@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5e919bd-dc58-447c-91c2-6adb47c75d5a" name="Default" comment="修改IDE从eclipse到intellij idea" />
+    <list default="true" id="b5e919bd-dc58-447c-91c2-6adb47c75d5a" name="Default" comment="修改IDE从eclipse到intellij idea">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
     <ignored path="$PROJECT_DIR$/parent/target/" />
     <ignored path="$PROJECT_DIR$/core/target/" />
     <ignored path="$PROJECT_DIR$/docker/target/" />
@@ -119,8 +121,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="189">
-                <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+              <first_editor relative-caret-position="27">
+                <caret line="1" column="190" lean-forward="false" selection-start-line="1" selection-start-column="190" selection-end-line="1" selection-end-column="190" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -189,7 +191,6 @@
         <option value="$PROJECT_DIR$/mybatis/src/main/resources/applicaion.yml" />
         <option value="$PROJECT_DIR$/mybatis/src/main/java/com/hry/spring/mybatis/mapper/TestSimpleMapper.java" />
         <option value="$PROJECT_DIR$/parent/pom.xml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/mybatis/src/main/resources/config/spring/spring_mybatis.xml" />
         <option value="$PROJECT_DIR$/mybatis/src/main/resources/testsql/test.sql" />
         <option value="$PROJECT_DIR$/mybatis/src/main/java/com/hry/spring/mybatis/mapper/TestMapper.java" />
@@ -201,6 +202,7 @@
         <option value="$PROJECT_DIR$/mybatis/src/main/java/com/hry/spring/mybatis/model/TestModel.java" />
         <option value="$PROJECT_DIR$/mybatis/src/main/java/com/hry/spring/mybatis/dto/TestDto.java" />
         <option value="$PROJECT_DIR$/mybatis/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -832,7 +834,7 @@
       <workItem from="1505143291973" duration="8004000" />
       <workItem from="1505431246954" duration="1082000" />
       <workItem from="1505432371471" duration="3585000" />
-      <workItem from="1505553952750" duration="14890000" />
+      <workItem from="1505553952750" duration="15632000" />
     </task>
     <task id="LOCAL-00001" summary="修改IDE从eclipse到intellij idea">
       <created>1505144412608</created>
@@ -863,7 +865,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27561000" />
+    <option name="totallyTimeSpent" value="28303000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1392,8 +1394,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="189">
-            <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+          <first_editor relative-caret-position="27">
+            <caret line="1" column="190" lean-forward="false" selection-start-line="1" selection-start-column="190" selection-end-line="1" selection-end-column="190" />
             <folding />
           </first_editor>
           <second_editor />
