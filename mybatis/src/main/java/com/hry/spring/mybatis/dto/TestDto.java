@@ -13,8 +13,6 @@ public class TestDto {
 
     private String name;
 
-    private Date create;
-
     public Integer getId() {
         return id;
     }
@@ -39,11 +37,4 @@ public class TestDto {
         this.name = name;
     }
 
-    public Date getCreate() {
-        return create;
-    }
-
-    public void setCreate(Date create) {
-        this.create = create;
-    }
 }

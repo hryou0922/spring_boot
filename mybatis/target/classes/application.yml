@@ -1,7 +1,7 @@
 
 # 分页配置： https://github.com/pagehelper/Mybatis-PageHelper/blob/master/wikis/zh/HowToUse.md
 pagehelper:
-    helperDialect: oracle
+    helperDialect: mysql
     reasonable: true
     supportMethodsArguments: true
     params: count=countSql

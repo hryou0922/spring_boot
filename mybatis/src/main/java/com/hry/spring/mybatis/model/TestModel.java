@@ -1,8 +1,5 @@
 package com.hry.spring.mybatis.model;
 
-import java.sql.Timestamp;
-import java.util.Date;
-
 public class TestModel {
     private Integer id;
 
