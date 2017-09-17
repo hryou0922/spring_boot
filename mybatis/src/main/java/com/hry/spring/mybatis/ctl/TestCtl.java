@@ -2,20 +2,23 @@ package com.hry.spring.mybatis.ctl;
 
 import com.hry.spring.mybatis.model.TestModel;
 import com.hry.spring.mybatis.dto.TestDto;
+import com.hry.spring.mybatis.page.MyPage;
 import com.hry.spring.mybatis.qry.TestQry;
 import com.hry.spring.mybatis.service.ITestService;
 import com.hry.spring.mybatis.util.Model2DtoUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.sql.Timestamp;
 import java.util.Date;
 import java.util.List;
 
+@RestController
+@RequestMapping(value = "/simple")
+@EnableSwagger2
 public class TestCtl {
     @Autowired
     private ITestService testService;
@@ -31,16 +34,15 @@ public class TestCtl {
         // 参数验证略
         TestModel record = new TestModel();
         record.setId(dto.getId());
-        record.setAge(dto.getAge()));
-        record.setCreate(new Date());
+        record.setAge(dto.getAge());
         record.setName(dto.getName());
         return testService.insertSelective(record);
     }
 
-    @RequestMapping(value = "select-by-primary-key", method = RequestMethod.POST)
-    public TestDto selectByPrimaryKey(@RequestBody TestQry qry){
+    @RequestMapping(value = "select-by-primary-key/{id}", method = RequestMethod.POST)
+    public TestDto selectByPrimaryKey(@PathVariable("id") String id){
         // 参数验证略
-        return Model2DtoUtil.model2Dto(testService.selectByPrimaryKey(Integer.parseInt(qry.getId())), SimpleDto.class);
+        return Model2DtoUtil.model2Dto(testService.selectByPrimaryKey(Integer.parseInt(id)), TestDto.class);
     }
 
     @RequestMapping(value = "select-all", method = {RequestMethod.POST })

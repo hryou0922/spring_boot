@@ -11,6 +11,7 @@
         <module name="grpc" />
         <module name="log" />
         <module name="mvc" />
+        <module name="mybatis" />
         <module name="pagehelper" />
         <module name="protobuf" />
         <module name="redis" />
@@ -24,6 +25,7 @@
       <module name="grpc" target="1.8" />
       <module name="log" target="1.8" />
       <module name="mvc" target="1.8" />
+      <module name="mybatis" target="1.8" />
       <module name="pagehelper" target="1.8" />
       <module name="parent" target="1.8" />
       <module name="protobuf" target="1.8" />

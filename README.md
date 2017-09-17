@@ -21,6 +21,7 @@
 - 演示pagehlper在spring boot中的用法
 - 演示spring boot集成mybatis
 - 演示Model转化为dto
+- 测试页面：http://127.0.0.1:8080/swagger-ui.html
 
 # log  
 - 显示logback+sl4j的用法

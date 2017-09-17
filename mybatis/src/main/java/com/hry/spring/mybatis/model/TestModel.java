@@ -1,5 +1,6 @@
 package com.hry.spring.mybatis.model;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 public class TestModel {
@@ -8,8 +9,6 @@ public class TestModel {
     private Integer age;
 
     private String name;
-
-    private Date create;
 
     public Integer getId() {
         return id;
@@ -35,11 +34,4 @@ public class TestModel {
         this.name = name == null ? null : name.trim();
     }
 
-    public Date getCreate() {
-        return create;
-    }
-
-    public void setCreate(Date create) {
-        this.create = create;
-    }
 }

@@ -1,7 +1,6 @@
 package com.hry.spring.mybatis.util;
 
-import im.yixin.icc.common.utils.CommonBeanUtils;
-import im.yixin.icc.domain.common.page.MyPage;
+import com.hry.spring.mybatis.page.MyPage;
 import org.springframework.beans.factory.BeanCreationException;
 import org.springframework.util.Assert;
 
