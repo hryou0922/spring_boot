@@ -4,7 +4,13 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/parent/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/spring-mvc/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager">

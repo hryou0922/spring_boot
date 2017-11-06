@@ -15,6 +15,7 @@
         <module name="pagehelper" />
         <module name="protobuf" />
         <module name="redis" />
+        <module name="spring-mvc" />
         <module name="taskExecutionAndScheduling" />
         <module name="thymeleaf" />
       </profile>
@@ -30,6 +31,7 @@
       <module name="parent" target="1.8" />
       <module name="protobuf" target="1.8" />
       <module name="redis" target="1.8" />
+      <module name="spring-mvc" target="1.8" />
       <module name="taskExecutionAndScheduling" target="1.8" />
       <module name="thymeleaf" target="1.8" />
     </bytecodeTargetLevel>
