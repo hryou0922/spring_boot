@@ -2,7 +2,7 @@
 - 博客[IntelliJ IDEA工具 - 使用IntelliJ IDEA导入Github工程](http://blog.csdn.net/hry2015/article/details/77984399): 本博客的代码全部存储在Github在，为了方便大家在本地创建工程,本博客演示如何从Github中加载代码到本地工程中以及加载tag分支代码到本地工程中
 
 # 更新说明
-- 2017-09-17 博客[Spring Boot系列八 spring boot集成jsp、restful接口、springmvc基本功能](http://blog.csdn.net/hry2015/article/details/78462512)对应的git代码为[tagv0.3](https://github.com/hryou0922/spring_boot/tree/v0.3/mvc/src/main/java/com/hry/spring/mvc)
+- 2017-11-06 博客[Spring Boot系列八 spring boot集成jsp、restful接口、springmvc基本功能](http://blog.csdn.net/hry2015/article/details/78462512)对应的git代码为[tagv0.3](https://github.com/hryou0922/spring_boot/tree/v0.3/mvc/src/main/java/com/hry/spring/mvc)
 - 2017-09-17 博客[ Spring Boot系列六 Spring boot集成mybatis、分页插件pagehelper](http://blog.csdn.net/hry2015/article/details/78010502)对应的git代码为[tagv0.2](https://github.com/hryou0922/spring_boot/tree/v0.2)
 - 2017-09-11 20170911之前的博客里的代码，为了保证能够正确运行，请使用[git代码tagv0.1](https://github.com/hryou0922/spring_boot/tree/v0.1)
 - 2017-07-27 博客[Redis系列四 - 在springboot中通过Lua脚本在redis中实现定时任务](http://blog.csdn.net/hry2015/article/details/76167016)对应[git代码tag v0.1](https://github.com/hryou0922/spring_boot/tree/v0.1/redis/src/main/java/com/hry/spring/redis/timedtask)
