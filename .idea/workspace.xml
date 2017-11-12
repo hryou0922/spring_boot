@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5e919bd-dc58-447c-91c2-6adb47c75d5a" name="Default" comment="修改IDE从eclipse到intellij idea">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/pojo/ModelAttributeVO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/pojo/VO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/reqparameter/RequestParameterController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/reqparameter/URITemplate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/resparameter/InitBinderController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/resparameter/ModelAttributeController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/resparameter/ResponseParameterController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/resparameter/SessionAttributesController.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mvc/src/main/resources/META-INF/resources/WEB-INF/page/uritemplate/common.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mvc/src/main/resources/META-INF/resources/WEB-INF/page/uritemplate/form.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mvc/target/classes/META-INF/resources/WEB-INF/page/uritemplate/common.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mvc/target/classes/META-INF/resources/WEB-INF/page/uritemplate/form.jsp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/target/classes/META-INF/resources/WEB-INF/page/login/home.jsp" afterPath="$PROJECT_DIR$/mvc/target/classes/META-INF/resources/WEB-INF/page/login/home.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/parent/target/" />
     <ignored path="$PROJECT_DIR$/core/target/" />
@@ -26,11 +39,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="MvcApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/MvcApplication.java">
+      <file leaf-file-name="ModelAttributeVO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/pojo/ModelAttributeVO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="37" selection-end-column="1" />
+            <state relative-caret-position="27">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="7" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/pojo/VO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-54">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="7" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestParameterController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/reqparameter/RequestParameterController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="182" column="0" lean-forward="true" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,85 +71,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/login/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="35" column="38" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/src/main/resources/META-INF/resources/WEB-INF/page/login/form.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="17" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/src/main/resources/META-INF/resources/WEB-INF/page/login/home.jsp">
+      <file leaf-file-name="URITemplate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/reqparameter/URITemplate.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="243">
-              <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="17" />
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="162">
-                <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/pom.xml">
+      <file leaf-file-name="ResponseParameterController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/resparameter/ResponseParameterController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="79" column="17" lean-forward="false" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="succ.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/src/main/resources/META-INF/resources/WEB-INF/page/login/succ.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="14" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FirstControl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/first/FirstControl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RestControllerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/json/RestControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="251">
+              <caret line="33" column="5" lean-forward="false" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+              <folding>
+                <element signature="e#944#945#0" expanded="true" />
+                <element signature="e#974#975#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,6 +113,7 @@
       <find>dbcTyp在</find>
       <find>create</find>
       <find>resource</find>
+      <find>@PathVariable</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -156,13 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pagehelper/src/main/java/com/hry/spring/pagehelper/service/ISimpleService.java" />
-        <option value="$PROJECT_DIR$/pagehelper/src/main/java/com/hry/spring/pagehelper/service/ITestService.java" />
-        <option value="$PROJECT_DIR$/pagehelper/src/main/java/com/hry/spring/pagehelper/dto/TestDto.java" />
-        <option value="$PROJECT_DIR$/pagehelper/src/main/java/com/hry/spring/pagehelper/qry/TestQry.java" />
-        <option value="$PROJECT_DIR$/pagehelper/src/main/java/com/hry/spring/pagehelper/service/impl/TestServiceImpl.java" />
-        <option value="$PROJECT_DIR$/pagehelper/src/main/resources/com/hry/spring/pagehelper/mapper/TestMapper.xml" />
-        <option value="$PROJECT_DIR$/pagehelper/src/main/java/com/hry/spring/pagehelper/ctl/SimpleCtl.java" />
         <option value="$PROJECT_DIR$/pagehelper/pom.xml" />
         <option value="$PROJECT_DIR$/pagehelper/src/main/java/com/hry/spring/pagehelper/ctl/TestCtl.java" />
         <option value="$PROJECT_DIR$/mybatis/src/main/java/com/hry/spring/mybatis/util/PageCallBackUtil.java" />
@@ -195,7 +162,6 @@
         <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/simple/URITemplate.java" />
         <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/exceptionhandling/EmployeeExController.java" />
         <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/exceptionhandling/GlobalExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/reqparameter/RequestParameterController.java" />
         <option value="$PROJECT_DIR$/mvc/readme.txt" />
         <option value="$PROJECT_DIR$/mvc/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/validation/validator/EmployeeFormValidator.java" />
@@ -207,6 +173,14 @@
         <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/MvcApplication.java" />
         <option value="$PROJECT_DIR$/mvc/src/main/resources/META-INF/resources/WEB-INF/page/login/home.jsp" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/mvc/src/main/resources/META-INF/resources/WEB-INF/page/reqparameter/httpEntityForm.jsp" />
+        <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/reqparameter/RequestParameterController.java" />
+        <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/pojo/ModelAttributeVO.java" />
+        <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/resparameter/SessionAttributesController.java" />
+        <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/resparameter/InitBinderController.java" />
+        <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/resparameter/ModelAttributeController.java" />
+        <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/reqparameter/URITemplate.java" />
+        <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/resparameter/ResponseParameterController.java" />
       </list>
     </option>
   </component>
@@ -235,10 +209,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="660" />
-    <option name="y" value="81" />
-    <option name="width" value="1456" />
-    <option name="height" value="886" />
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="980" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -297,6 +271,43 @@
               <item name="mvc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="reqparameter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="resparameter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="resparameter" type="462c0819:PsiDirectoryNode" />
+              <item name="InitBinderController.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="spring_boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -315,6 +326,101 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="reqparameter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="resparameter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="spring_boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:4.3.10.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="spring_boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:4.3.10.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-context-4.3.10.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:4.3.10.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-context-4.3.10.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:4.3.10.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-context-4.3.10.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.10.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="spring_boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.10.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.10.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.10.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.10.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.10.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.10.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.10.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.10.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="bind" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.10.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.10.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="bind" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -339,15 +445,15 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="SearchEverywhereHistoryKey" value="ResourceProperties&#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.web.ResourceProperties&#10;ClassPathMapperScanner&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/mybatis/mybatis-spring/1.2.3/mybatis-spring-1.2.3-sources.jar!/org/mybatis/spring/mapper/ClassPathMapperScanner.java&#10;com.hry.spring.mybatis.mapper&#9;PSI&#9;JAVA://com.hry.spring.mybatis.mapper.TestMapper" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../spring_cloud" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\git\spring_boot\spring_boot\mvc\src\main\java\com\hry\spring\mvc\resparameter" />
+      <recent name="D:\project\git\spring_boot\spring_boot\mvc\src\main\java\com\hry\spring\mvc\reqparameter" />
       <recent name="D:\project\git\spring_boot\spring_boot\mvc\src\main\resources" />
       <recent name="D:\project\git\spring_boot\spring_boot\mvc\src\main\java\com\hry\spring\mvc" />
       <recent name="D:\project\git\spring_boot\spring_boot\mvc\src\main\java\com\hry\spring\mvc\first" />
-      <recent name="D:\project\git\spring_boot\spring_boot\mvc\src\main\resources\META-INF\resources\WEB-INF\page" />
-      <recent name="D:\project\git\spring_boot\spring_boot\mvc\src\main\resources\META-INF\resources\WEB-INF\jsp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.hry.spring.mvc.first" />
@@ -578,7 +684,7 @@
       <workItem from="1506693593634" duration="1590000" />
       <workItem from="1507634088736" duration="1212000" />
       <workItem from="1509881131369" duration="12621000" />
-      <workItem from="1509896705943" duration="4951000" />
+      <workItem from="1509896705943" duration="16122000" />
     </task>
     <task id="LOCAL-00001" summary="修改IDE从eclipse到intellij idea">
       <created>1505144412608</created>
@@ -609,7 +715,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59490000" />
+    <option name="totallyTimeSpent" value="70661000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -640,7 +746,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25902864" sideWeight="0.49460045" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1867995" sideWeight="0.49460045" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33045357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -699,8 +805,14 @@
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/resparameter/ResponseParameterController.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
@@ -710,96 +822,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mvc/src/main/resources/META-INF/resources/index.jsp" />
-    <entry file="jar://D:/dev_tool/maven/repository/org/springframework/boot/spring-boot/1.5.6.RELEASE/spring-boot-1.5.6.RELEASE-sources.jar!/org/springframework/boot/builder/SpringApplicationBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="63" column="13" lean-forward="false" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/src/main/resources/WEB-INF/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/src/main/resources/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/dev_tool/maven/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/thymeleaf/ThymeleafProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="170" column="16" lean-forward="false" selection-start-line="170" selection-start-column="16" selection-end-line="170" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/src/main/resources/static/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/json/JsonCtrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/json/JsonVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/src/main/webapp/WEB-INF/jsp/helloJsp.jsp" />
-    <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/HelloController.java" />
-    <entry file="file://$PROJECT_DIR$/spring-mvc/src/main/java/com/hry/spring/springmvc/SpringMvcApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mvc/spring-mvc.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-mvc/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/mvc.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/src/main/webapp/templates/index.html" />
     <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/SampleWebJspApplication.java" />
     <entry file="file://$PROJECT_DIR$/mvc/src/main/resources/templates/index.html" />
     <entry file="file://$PROJECT_DIR$/mvc/src/main/resources/META-INF/resources/a" />
@@ -849,14 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
           <caret line="56" column="14" lean-forward="false" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/reqparameter/RequestParameterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="261" column="60" lean-forward="false" selection-start-line="261" selection-start-column="60" selection-end-line="261" selection-end-column="60" />
           <folding />
         </state>
       </provider>
@@ -987,16 +1001,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/MvcApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="37" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/first/FirstControl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -1017,14 +1021,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="14" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/login/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="35" column="38" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -1056,11 +1052,162 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="162">
-            <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <first_editor relative-caret-position="189">
+            <caret line="4" column="115" lean-forward="true" selection-start-line="4" selection-start-column="115" selection-end-line="4" selection-end-column="115" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/MvcApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="37" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/login/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/src/main/resources/META-INF/resources/WEB-INF/page/reqparameter/httpEntityForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/src/main/resources/META-INF/resources/WEB-INF/page/reqparameter/formModel.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-243">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/dev_tool/maven/repository/org/springframework/spring-web/4.3.10.RELEASE/spring-web-4.3.10.RELEASE-sources.jar!/org/springframework/web/bind/annotation/RequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="80" column="12" lean-forward="false" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/src/main/resources/META-INF/resources/WEB-INF/page/uritemplate/form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/src/main/resources/META-INF/resources/WEB-INF/page/uritemplate/common.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/dev_tool/maven/repository/org/springframework/spring-context/4.3.10.RELEASE/spring-context-4.3.10.RELEASE.jar!/org/springframework/validation/DataBinder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="341" column="16" lean-forward="false" selection-start-line="341" selection-start-column="16" selection-end-line="341" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/resparameter/InitBinderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="31" column="6" lean-forward="false" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/src/main/resources/META-INF/resources/WEB-INF/page/resparameter/modelAttributeShow.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/src/main/resources/META-INF/resources/WEB-INF/page/resparameter/sessionAttributeShow.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-81">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/resparameter/ModelAttributeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1323">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/resparameter/SessionAttributesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="23" column="52" lean-forward="false" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/pojo/ModelAttributeVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/pojo/VO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/reqparameter/RequestParameterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="182" column="0" lean-forward="true" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/reqparameter/URITemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/resparameter/ResponseParameterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="33" column="5" lean-forward="false" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding>
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
