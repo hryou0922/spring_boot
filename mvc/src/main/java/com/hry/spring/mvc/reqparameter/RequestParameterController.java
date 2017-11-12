@@ -70,42 +70,7 @@ public class RequestParameterController {
 	// =================== Matrix Variables end =============================
 	
 	
-	// =============== Request Parameters and Header Values ================
-	/**
-	 * 要进入这个方法，必须带上myParam=myValue
-	 * 	http://127.0.0.1:8080/request/reqparameters/1?myParam=myValue
-	 * 而以下URL无法进入方法
-	 * 	http://127.0.0.1:8080/request/reqparameters/1
-	 * 其他条件，也可以这样：
-	 * 	 "myParam", "!myParam", or "myParam=myValue"
-	 * @param ownerId
-	 * @param model
-	 * @return
-	 */
-	@RequestMapping(value="/reqparameters/{ownerId}", method = RequestMethod.GET, params="myParam=myValue")
-	public String reqParameters(@PathVariable String ownerId, Model model){
-		Map<String,Object> map = new HashMap<String,Object>();
-		map.put("ownerId", ownerId);
-		model.addAttribute("map", map);
-		return "reqparameter/showInput";
-	}
-	
-	/**
-	 * 请求头里必须带上myParam，且值为myValue
-	 * 	http://127.0.0.1:8080/request/reqparameters/1
-	 * 
-	 * @param ownerId
-	 * @param model
-	 * @return
-	 */
-	@RequestMapping(value="/reqparameters/{ownerId}", method = RequestMethod.GET, headers="myParam=myValue")
-	public String headerParameters(@PathVariable String ownerId, Model model){
-		Map<String,Object> map = new HashMap<String,Object>();
-		map.put("ownerId", ownerId);
-		model.addAttribute("map", map);
-		return "reqparameter/showInput";
-	}
-	// =============== Request Parameters and Header Values end ================
+
 	
 	// =================== @RequestParam =============================
 	/**
@@ -311,7 +276,43 @@ public class RequestParameterController {
 		
 	}
 	// ===================HttpServletRequest + HttpServletResponse end=============================
-	
+
+	// =============== Request Parameters and Header Values ================
+	/**
+	 * 要进入这个方法，必须带上myParam=myValue
+	 * 	http://127.0.0.1:8080/request/reqparameters/1?myParam=myValue
+	 * 而以下URL无法进入方法
+	 * 	http://127.0.0.1:8080/request/reqparameters/1
+	 * 其他条件，也可以这样：
+	 * 	 "myParam", "!myParam", or "myParam=myValue"
+	 * @param ownerId
+	 * @param model
+	 * @return
+	 */
+	@RequestMapping(value="/reqparameters/{ownerId}", method = RequestMethod.GET, params="myParam=myValue")
+	public String reqParameters(@PathVariable String ownerId, Model model){
+		Map<String,Object> map = new HashMap<String,Object>();
+		map.put("ownerId", ownerId);
+		model.addAttribute("map", map);
+		return "reqparameter/showInput";
+	}
+
+	/**
+	 * 请求头里必须带上myParam，且值为myValue
+	 * 	http://127.0.0.1:8080/request/reqparameters/1
+	 *
+	 * @param ownerId
+	 * @param model
+	 * @return
+	 */
+	@RequestMapping(value="/reqparameters/{ownerId}", method = RequestMethod.GET, headers="myParam=myValue")
+	public String headerParameters(@PathVariable String ownerId, Model model){
+		Map<String,Object> map = new HashMap<String,Object>();
+		map.put("ownerId", ownerId);
+		model.addAttribute("map", map);
+		return "reqparameter/showInput";
+	}
+	// =============== Request Parameters and Header Values end ================
 }
 
 

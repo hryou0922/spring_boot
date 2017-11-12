@@ -46,7 +46,7 @@ public class ResponseParameterController {
 	
 	// =================== @ResponseBody end ================================
 	
-	// =============== HttpEntity ================
+	// =============== ResponseEntity ================
 	/**
 	 * http://127.0.0.1:8080/response/responseEntity
 	 * @return
@@ -58,7 +58,7 @@ public class ResponseParameterController {
 	    responseHeaders.set("MyResponseHeader", "MyValue");
 	    return new ResponseEntity<String>("Hello World", responseHeaders, HttpStatus.CREATED);
 	}
-	// ===================HttpEntity end=============================
+	// ===================ResponseEntity end=============================
 	
 	// =============== ModelAndView ================
 	/**
