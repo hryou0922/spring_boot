@@ -30,8 +30,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="162">
-                <caret line="4" column="227" lean-forward="false" selection-start-line="4" selection-start-column="122" selection-end-line="4" selection-end-column="227" />
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -515,7 +515,7 @@
       <workItem from="1509896705943" duration="24537000" />
       <workItem from="1511013849298" duration="400000" />
       <workItem from="1513248584703" duration="184000" />
-      <workItem from="1513248796624" duration="15831000" />
+      <workItem from="1513248796624" duration="15963000" />
     </task>
     <task id="LOCAL-00001" summary="修改IDE从eclipse到intellij idea">
       <created>1505144412608</created>
@@ -546,7 +546,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95491000" />
+    <option name="totallyTimeSpent" value="95623000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1110,8 +1110,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="162">
-            <caret line="4" column="227" lean-forward="false" selection-start-line="4" selection-start-column="122" selection-end-line="4" selection-end-column="227" />
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
             <folding />
           </first_editor>
           <second_editor />

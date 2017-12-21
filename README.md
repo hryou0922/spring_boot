@@ -1,3 +1,4 @@
+# 如果您觉得本代码对您有所帮助，请点击页面右上方"Star"鼓励一下作者，谢谢
 # 说明
 - 博客[IntelliJ IDEA工具 - 使用IntelliJ IDEA导入Github工程](http://blog.csdn.net/hry2015/article/details/77984399): 本博客的代码全部存储在Github在，为了方便大家在本地创建工程,本博客演示如何从Github中加载代码到本地工程中以及加载tag分支代码到本地工程中
 
