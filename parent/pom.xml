@@ -17,6 +17,7 @@
         <module>../taskExecutionAndScheduling</module>
         <module>../thymeleaf</module>
         <module>../mybatis</module>
+        <module>../rabbitmq</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -14,6 +14,7 @@
         <module name="mybatis" />
         <module name="pagehelper" />
         <module name="protobuf" />
+        <module name="rabbitmq" />
         <module name="redis" />
         <module name="taskExecutionAndScheduling" />
         <module name="thymeleaf" />
@@ -29,6 +30,7 @@
       <module name="pagehelper" target="1.8" />
       <module name="parent" target="1.8" />
       <module name="protobuf" target="1.8" />
+      <module name="rabbitmq" target="1.8" />
       <module name="redis" target="1.8" />
       <module name="spring-mvc" target="1.8" />
       <module name="taskExecutionAndScheduling" target="1.8" />
