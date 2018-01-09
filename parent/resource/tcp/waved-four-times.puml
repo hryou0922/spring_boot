@@ -1,0 +1,16 @@
+@startuml
+hnote over 客户端  :ESTABLISHED
+hnote over 服务端  :ESTABLISHED
+客户端 --> 服务端: [FIN ACK] seq=X ack=Y
+hnote over 客户端  :FIN_WAIT_1
+hnote over 服务端  :CLOSE_WAIT
+服务端 --> 客户端: [ACK] seq=Y ack=X+1
+hnote over 客户端  :FIN_WAIT_2
+hnote over 服务端  :LAST_ACK
+服务端 --> 客户端: [FIN] seq=Y ack=X+1
+hnote over 客户端  :TIME_WAIT
+客户端 --> 服务端: [ACK] seq=X+1, ack=Y+1,
+hnote over 客户端  :2MSL
+hnote over 服务端  :CLOSE
+hnote over 客户端  :CLOSE
+@enduml

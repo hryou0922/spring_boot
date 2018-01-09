@@ -36,6 +36,9 @@ public class EmployeeExController {
 	 * http://127.0.0.1:8080/emp/4
 	 * 	演示全局配置定义拦截捕获EmployeeExJsonException，并返回一个JSON字符串
 	 *
+	 * 	http://127.0.0.1:8080/emp/5
+	 * 	演示@ResponseStatus另一种用法：捕获NotAcceptedException，抛出406
+	 *
 	 * http://127.0.0.1:8080/emp/10
 	 * 	演示正常的情况，返回一个字符串
 	 *
@@ -58,6 +61,8 @@ public class EmployeeExController {
 			throw new IOException("IOException, id=" + id);
 		} else if (id == 4) {
 			throw new EmployeeExJsonException(id);
+		} else if( id==5){
+			throw new NotAcceptedException(5);
 		} else if (id == 10) {
 			EmployeeEx emp = new EmployeeEx();
 			emp.setName("Pankaj");
