@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5e919bd-dc58-447c-91c2-6adb47c75d5a" name="Default" comment="修改IDE从eclipse到intellij idea">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/Test.java" />
-    </list>
+    <list default="true" id="b5e919bd-dc58-447c-91c2-6adb47c75d5a" name="Default" comment="修改IDE从eclipse到intellij idea" />
     <ignored path="$PROJECT_DIR$/parent/target/" />
     <ignored path="$PROJECT_DIR$/core/target/" />
     <ignored path="$PROJECT_DIR$/docker/target/" />
@@ -535,7 +533,7 @@
       <workItem from="1513248584703" duration="184000" />
       <workItem from="1513248796624" duration="17674000" />
       <workItem from="1514873524323" duration="26862000" />
-      <workItem from="1515478842056" duration="929000" />
+      <workItem from="1515478842056" duration="1527000" />
     </task>
     <task id="LOCAL-00001" summary="修改IDE从eclipse到intellij idea">
       <created>1505144412608</created>
@@ -566,7 +564,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125125000" />
+    <option name="totallyTimeSpent" value="125723000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
