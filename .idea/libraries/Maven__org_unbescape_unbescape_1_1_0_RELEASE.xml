@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.unbescape:unbescape:1.1.0.RELEASE">
     <CLASSES>
-      <root url="jar://D:/dev_tool/maven/repository/org/unbescape/unbescape/1.1.0.RELEASE/unbescape-1.1.0.RELEASE.jar!/" />
+      <root url="jar://D:/mvnrepository_study/org/unbescape/unbescape/1.1.0.RELEASE/unbescape-1.1.0.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://D:/dev_tool/maven/repository/org/unbescape/unbescape/1.1.0.RELEASE/unbescape-1.1.0.RELEASE-javadoc.jar!/" />
+      <root url="jar://D:/mvnrepository_study/org/unbescape/unbescape/1.1.0.RELEASE/unbescape-1.1.0.RELEASE-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://D:/dev_tool/maven/repository/org/unbescape/unbescape/1.1.0.RELEASE/unbescape-1.1.0.RELEASE-sources.jar!/" />
+      <root url="jar://D:/mvnrepository_study/org/unbescape/unbescape/1.1.0.RELEASE/unbescape-1.1.0.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
