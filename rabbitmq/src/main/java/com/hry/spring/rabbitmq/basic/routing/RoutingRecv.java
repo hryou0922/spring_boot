@@ -7,7 +7,8 @@ import java.io.IOException;
 public class RoutingRecv {
     private static final String EXCHANGE_NAME = "direct_logs";
 
-    public static void execute(String host, String userName, String password, String[] severitys){
+    public static void execute(String host, String userName, String password, String[] colours){
+        // 配置连接工厂
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost(host);
         // 需要在管理后台增加一个hry帐号
@@ -17,14 +18,17 @@ public class RoutingRecv {
         Connection connection = null;
         Channel channel = null;
         try {
+            // 建立TCP连接
             connection = factory.newConnection();
+            // 在TCP连接的基础上创建通道
             channel = connection.createChannel();
-
+            // 声明一个direct交换机
             channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT);
+            // 声明一个临时队列
             String queueName = channel.queueDeclare().getQueue();
-
-            for (String severity : severitys) {
-                channel.queueBind(queueName, EXCHANGE_NAME, severity);
+            // 绑定路由，同一个队列可以绑定多个值
+            for (String colour : colours) {
+                channel.queueBind(queueName, EXCHANGE_NAME, colour);
             }
             System.out.println(" [RoutingRecv] Waiting for messages.");
 

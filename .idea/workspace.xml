@@ -15,21 +15,14 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/RabiitHelloWorld.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/T.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/helloworld/HelloworldRecv.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/helloworld/HelloworldSend.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/publishsubscribe/Publish.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/publishsubscribe/Subscribe.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingRecv.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingSend.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/rpc/RpcRecv.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/rpc/RpcSend.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/topics/TopicsRecv.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/topics/TopicsSend.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/workqueues/WorkQueuesRecv.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/workqueues/WorkQueuesSend.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/main/resources/application-basic.yml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/main/resources/application-boot.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/test/java/com/hry/spring/rabbitmq/basic/BasicTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_31.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_31.xml" />
@@ -156,6 +149,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rabbitmq/pom.xml" afterPath="$PROJECT_DIR$/rabbitmq/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rabbitmq/rabbitmq.iml" afterPath="$PROJECT_DIR$/rabbitmq/rabbitmq.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/publishsubscribe/Publish.java" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/publishsubscribe/Publish.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/publishsubscribe/Subscribe.java" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/publishsubscribe/Subscribe.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingRecv.java" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingRecv.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingSend.java" afterPath="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingSend.java" />
     </list>
     <ignored path="$PROJECT_DIR$/parent/target/" />
     <ignored path="$PROJECT_DIR$/core/target/" />
@@ -181,11 +178,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WorkQueuesRecv.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/workqueues/WorkQueuesRecv.java">
+      <file leaf-file-name="RoutingRecv.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingRecv.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="52" column="31" lean-forward="false" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+            <state relative-caret-position="380">
+              <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -194,98 +191,48 @@
       <file leaf-file-name="Channel.java" pinned="false" current-in-tab="false">
         <entry file="jar://D:/mvnrepository_study/com/rabbitmq/amqp-client/5.1.1/amqp-client-5.1.1-sources.jar!/com/rabbitmq/client/Channel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="772" column="9" lean-forward="false" selection-start-line="772" selection-start-column="9" selection-end-line="772" selection-end-column="9" />
+            <state relative-caret-position="204">
+              <caret line="668" column="17" lean-forward="false" selection-start-line="668" selection-start-column="17" selection-end-line="668" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractOwnableSynchronizer.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/DEV_TOOLS/jdk1.8.0_66/src.zip!/java/util/concurrent/locks/AbstractOwnableSynchronizer.java">
+      <file leaf-file-name="Subscribe.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/publishsubscribe/Subscribe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="63" column="50" lean-forward="true" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
+            <state relative-caret-position="247">
+              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractQueuedSynchronizer.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/DEV_TOOLS/jdk1.8.0_66/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
+      <file leaf-file-name="Publish.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/publishsubscribe/Publish.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="502" column="9" lean-forward="false" selection-start-line="502" selection-start-column="9" selection-end-line="502" selection-end-column="9" />
-              <folding>
-                <element signature="e#32644#32645#0" expanded="true" />
-                <element signature="e#32694#32695#0" expanded="true" />
-                <element signature="e#41392#41393#0" expanded="true" />
-                <element signature="e#41449#41450#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReentrantLock.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/DEV_TOOLS/jdk1.8.0_66/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="210" column="0" lean-forward="true" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
-              <folding>
-                <element signature="e#6849#6850#0" expanded="true" />
-                <element signature="e#6907#6908#0" expanded="true" />
-                <element signature="e#7116#7117#0" expanded="true" />
-                <element signature="e#7150#7151#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AMQP.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/mvnrepository_study/com/rabbitmq/amqp-client/5.1.1/amqp-client-5.1.1-sources.jar!/com/rabbitmq/client/AMQP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="1609" column="24" lean-forward="false" selection-start-line="1609" selection-start-column="24" selection-end-line="1609" selection-end-column="24" />
+            <state relative-caret-position="342">
+              <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/com/hry/spring/rabbitmq/basic/BasicTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="57" column="23" lean-forward="false" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WorkQueuesSend.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/workqueues/WorkQueuesSend.java">
+      <file leaf-file-name="RoutingSend.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingSend.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
-              <caret line="37" column="28" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+              <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloworldSend.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/helloworld/HelloworldSend.java">
+      <file leaf-file-name="BuiltinExchangeType.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/mvnrepository_study/com/rabbitmq/amqp-client/5.1.1/amqp-client-5.1.1-sources.jar!/com/rabbitmq/client/BuiltinExchangeType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="37" column="37" lean-forward="true" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelloworldRecv.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/helloworld/HelloworldRecv.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="44" column="49" lean-forward="false" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="49" />
+            <state relative-caret-position="133">
+              <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -385,16 +332,16 @@
         <option value="$PROJECT_DIR$/rabbitmq/src/main/resources/application-boot.yml" />
         <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/rpc/RpcRecv.java" />
         <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/topics/TopicsRecv.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingSend.java" />
         <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/topics/TopicsSend.java" />
+        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/helloworld/HelloworldSend.java" />
+        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/workqueues/WorkQueuesSend.java" />
+        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/workqueues/WorkQueuesRecv.java" />
+        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/helloworld/HelloworldRecv.java" />
         <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/publishsubscribe/Publish.java" />
+        <option value="$PROJECT_DIR$/rabbitmq/src/test/java/com/hry/spring/rabbitmq/basic/BasicTest.java" />
         <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/publishsubscribe/Subscribe.java" />
         <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingRecv.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/helloworld/HelloworldSend.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/helloworld/HelloworldRecv.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/workqueues/WorkQueuesSend.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/test/java/com/hry/spring/rabbitmq/basic/BasicTest.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/workqueues/WorkQueuesRecv.java" />
+        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingSend.java" />
       </list>
     </option>
   </component>
@@ -638,6 +585,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="rabbit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring_boot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.springframework.amqp:spring-rabbit:1.7.3.RELEASE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-rabbit-1.7.3.RELEASE.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rabbit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="support" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1648,7 +1621,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="SearchEverywhereHistoryKey" value="AbstractOwn&#9;PSI&#9;JAVA://java.util.concurrent.locks.AbstractOwnableSynchronizer&#10;PropertyPlaceholderConfigurer&#9;PSI&#9;JAVA://org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&#10;AddressResolver &#9;PSI&#9;JAVA://com.rabbitmq.client.AddressResolver&#10;AmqpTemplate &#9;PSI&#9;JAVA://org.springframework.amqp.core.AmqpTemplate&#10;AmqpAdmin&#9;PSI&#9;JAVA://org.springframework.amqp.core.AmqpAdmin&#10;disp&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java&#10;dispa&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java&#10;ExceptionHandlerExceptionResolver&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ExceptionHandlerExceptionResolver.java&#10;DefaultHandlerExceptionResolver&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/support/DefaultHandlerExceptionResolver.java&#10;Dis&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java&#10;ResponseStatusExceptionResolver&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/annotation/ResponseStatusExceptionResolver.java&#10;HandlerExceptionResolverComposite&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/handler/HandlerExceptionResolverComposite.java&#10;DispatcherServlet&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java&#10;ResponseEntityExceptionHandler&#9;PSI&#9;JAVA://org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler&#10;HandlerException&#9;FILE&#9;file://D:/project/git/spring_boot/spring_boot/mvc/src/main/java/com/hry/spring/mvc/exceptionhandling/MySimpleHandlerExceptionResolver.java&#10;Disp&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java&#10;exceptionhand&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ExceptionHandlerExceptionResolver.java&#10;default&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/DefaultErrorAttributes.java&#10;dis&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java&#10;SimpleMappingExceptionResolver&#9;FILE&#9;file://D:/project/git/spring_boot/spring_boot/mvc/src/main/java/com/hry/spring/mvc/exceptionhandling/MySimpleMappingExceptionResolver.java&#10;SimpleMappingExceptionResolver &#9;PSI&#9;JAVA://com.hry.spring.mvc.exceptionhandling.MySimpleMappingExceptionResolver&#10;ErrorController&#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.web.ErrorController&#10;ResourceProperties&#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.web.ResourceProperties&#10;ClassPathMapperScanner&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/mybatis/mybatis-spring/1.2.3/mybatis-spring-1.2.3-sources.jar!/org/mybatis/spring/mapper/ClassPathMapperScanner.java&#10;com.hry.spring.mybatis.mapper&#9;PSI&#9;JAVA://com.hry.spring.mybatis.mapper.TestMapper" />
+    <property name="SearchEverywhereHistoryKey" value="aqs&#9;FILE&#9;jar://D:/DEV_TOOLS/jdk1.8.0_66/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java&#10;AbstractOwn&#9;PSI&#9;JAVA://java.util.concurrent.locks.AbstractOwnableSynchronizer&#10;PropertyPlaceholderConfigurer&#9;PSI&#9;JAVA://org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&#10;AddressResolver &#9;PSI&#9;JAVA://com.rabbitmq.client.AddressResolver&#10;AmqpTemplate &#9;PSI&#9;JAVA://org.springframework.amqp.core.AmqpTemplate&#10;AmqpAdmin&#9;PSI&#9;JAVA://org.springframework.amqp.core.AmqpAdmin&#10;disp&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java&#10;dispa&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java&#10;ExceptionHandlerExceptionResolver&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ExceptionHandlerExceptionResolver.java&#10;DefaultHandlerExceptionResolver&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/support/DefaultHandlerExceptionResolver.java&#10;Dis&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java&#10;ResponseStatusExceptionResolver&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/annotation/ResponseStatusExceptionResolver.java&#10;HandlerExceptionResolverComposite&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/handler/HandlerExceptionResolverComposite.java&#10;DispatcherServlet&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java&#10;ResponseEntityExceptionHandler&#9;PSI&#9;JAVA://org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler&#10;HandlerException&#9;FILE&#9;file://D:/project/git/spring_boot/spring_boot/mvc/src/main/java/com/hry/spring/mvc/exceptionhandling/MySimpleHandlerExceptionResolver.java&#10;Disp&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java&#10;exceptionhand&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ExceptionHandlerExceptionResolver.java&#10;default&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/DefaultErrorAttributes.java&#10;dis&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java&#10;SimpleMappingExceptionResolver&#9;FILE&#9;file://D:/project/git/spring_boot/spring_boot/mvc/src/main/java/com/hry/spring/mvc/exceptionhandling/MySimpleMappingExceptionResolver.java&#10;SimpleMappingExceptionResolver &#9;PSI&#9;JAVA://com.hry.spring.mvc.exceptionhandling.MySimpleMappingExceptionResolver&#10;ErrorController&#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.web.ErrorController&#10;ResourceProperties&#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.web.ResourceProperties&#10;ClassPathMapperScanner&#9;FILE&#9;jar://D:/dev_tool/maven/repository/org/mybatis/mybatis-spring/1.2.3/mybatis-spring-1.2.3-sources.jar!/org/mybatis/spring/mapper/ClassPathMapperScanner.java&#10;com.hry.spring.mybatis.mapper&#9;PSI&#9;JAVA://com.hry.spring.mybatis.mapper.TestMapper" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -1682,7 +1655,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BasicTest.workqueues">
+  <component name="RunManager" selected="JUnit.BasicTest.publishsubscribe">
     <configuration default="false" name="BasicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -2282,8 +2255,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BasicTest.workqueues" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BasicTest.publishsubscribe" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BasicTest.publishsubscribe" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BasicTest.workqueues" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.BasicTest.helloworld" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.BasicTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.BasicTest.routing" />
@@ -2321,7 +2294,7 @@
       <workItem from="1513248796624" duration="17674000" />
       <workItem from="1514873524323" duration="26862000" />
       <workItem from="1515478842056" duration="308000" />
-      <workItem from="1515479374208" duration="43919000" />
+      <workItem from="1515479374208" duration="53785000" />
     </task>
     <task id="LOCAL-00001" summary="修改IDE从eclipse到intellij idea">
       <created>1505144412608</created>
@@ -2341,39 +2314,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BasicTest_workqueues - 2018.01.11 at 11h 10m 48s.xml">
+    <history-entry file="BasicTest_publishsubscribe - 2018.01.12 at 11h 17m 34s.xml">
+      <configuration name="BasicTest.publishsubscribe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasicTest_publishsubscribe - 2018.01.12 at 14h 23m 20s.xml">
+      <configuration name="BasicTest.publishsubscribe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasicTest_publishsubscribe - 2018.01.12 at 14h 48m 44s.xml">
+      <configuration name="BasicTest.publishsubscribe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasicTest_publishsubscribe - 2018.01.12 at 14h 49m 03s.xml">
+      <configuration name="BasicTest.publishsubscribe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasicTest_publishsubscribe - 2018.01.12 at 14h 56m 06s.xml">
+      <configuration name="BasicTest.publishsubscribe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasicTest_publishsubscribe - 2018.01.12 at 14h 56m 22s.xml">
+      <configuration name="BasicTest.publishsubscribe" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasicTest_workqueues - 2018.01.12 at 14h 23m 37s.xml">
       <configuration name="BasicTest.workqueues" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasicTest_workqueues - 2018.01.11 at 16h 37m 06s.xml">
+    <history-entry file="BasicTest_workqueues - 2018.01.12 at 14h 24m 13s.xml">
       <configuration name="BasicTest.workqueues" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasicTest_workqueues - 2018.01.11 at 16h 37m 26s.xml">
+    <history-entry file="BasicTest_workqueues - 2018.01.12 at 14h 24m 44s.xml">
       <configuration name="BasicTest.workqueues" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasicTest_workqueues - 2018.01.11 at 16h 38m 30s.xml">
-      <configuration name="BasicTest.workqueues" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BasicTest_workqueues - 2018.01.11 at 16h 39m 07s.xml">
-      <configuration name="BasicTest.workqueues" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BasicTest_workqueues - 2018.01.11 at 16h 39m 23s.xml">
-      <configuration name="BasicTest.workqueues" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BasicTest_workqueues - 2018.01.11 at 16h 39m 36s.xml">
-      <configuration name="BasicTest.workqueues" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BasicTest_workqueues - 2018.01.11 at 16h 40m 01s.xml">
-      <configuration name="BasicTest.workqueues" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BasicTest_workqueues - 2018.01.11 at 16h 43m 37s.xml">
-      <configuration name="BasicTest.workqueues" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BasicTest_workqueues - 2018.01.11 at 16h 44m 02s.xml">
+    <history-entry file="BasicTest_workqueues - 2018.01.12 at 14h 25m 43s.xml">
       <configuration name="BasicTest.workqueues" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168423000" />
+    <option name="totallyTimeSpent" value="178289000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2386,6 +2359,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39092872" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2403,13 +2377,13 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52120537" sideWeight="0.49568033" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13058035" sideWeight="0.49352053" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37611607" sideWeight="0.49352053" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3203125" sideWeight="0.4924406" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2857143" sideWeight="0.4924406" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19189766" sideWeight="0.49335864" order="0" side_tool="false" content_ui="combo" />
@@ -2538,55 +2512,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/resources/application-basic.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/mvnrepository_study/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/amqp/RabbitProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="45" column="19" lean-forward="false" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-          <folding>
-            <element signature="e#3125#3126#0" expanded="false" />
-            <element signature="e#3148#3149#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/resources/application-boot.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/mvnrepository_study/com/rabbitmq/amqp-client/5.1.1/amqp-client-5.1.1-sources.jar!/com/rabbitmq/client/AddressResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#1153#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/mvnrepository_study/com/rabbitmq/amqp-client/5.1.1/amqp-client-5.1.1-sources.jar!/com/rabbitmq/client/LongString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#2268#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/mvnrepository_study/com/rabbitmq/amqp-client/5.1.1/amqp-client-5.1.1-sources.jar!/com/rabbitmq/client/ListAddressResolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -2744,30 +2669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/publishsubscribe/Subscribe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="23" column="73" lean-forward="false" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/topics/TopicsRecv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/publishsubscribe/Publish.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="27" column="59" lean-forward="false" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/rpc/RpcRecv.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -2854,22 +2755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingRecv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="41" column="18" lean-forward="true" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingSend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="36" column="35" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/topics/TopicsSend.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
@@ -2886,30 +2771,6 @@
             <element signature="e#0#3476#0" expanded="false" />
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/mvnrepository_study/com/rabbitmq/amqp-client/5.1.1/amqp-client-5.1.1-sources.jar!/com/rabbitmq/client/AMQP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="1609" column="24" lean-forward="false" selection-start-line="1609" selection-start-column="24" selection-end-line="1609" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/helloworld/HelloworldSend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="37" column="37" lean-forward="true" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/helloworld/HelloworldRecv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="44" column="49" lean-forward="false" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2934,19 +2795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/DEV_TOOLS/jdk1.8.0_66/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="502" column="9" lean-forward="false" selection-start-line="502" selection-start-column="9" selection-end-line="502" selection-end-column="9" />
-          <folding>
-            <element signature="e#32644#32645#0" expanded="true" />
-            <element signature="e#32694#32695#0" expanded="true" />
-            <element signature="e#41392#41393#0" expanded="true" />
-            <element signature="e#41449#41450#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/workqueues/WorkQueuesSend.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -2955,26 +2803,141 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/com/hry/spring/rabbitmq/basic/BasicTest.java">
+    <entry file="jar://D:/mvnrepository_study/org/springframework/amqp/spring-rabbit/1.7.3.RELEASE/spring-rabbit-1.7.3.RELEASE-sources.jar!/org/springframework/amqp/rabbit/support/PublisherCallbackChannelImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="57" column="23" lean-forward="false" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+        <state relative-caret-position="194">
+          <caret line="320" column="36" lean-forward="false" selection-start-line="320" selection-start-column="36" selection-end-line="320" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/mvnrepository_study/com/rabbitmq/amqp-client/5.1.1/amqp-client-5.1.1-sources.jar!/com/rabbitmq/client/Channel.java">
+    <entry file="jar://D:/mvnrepository_study/org/springframework/amqp/spring-rabbit/1.7.3.RELEASE/spring-rabbit-1.7.3.RELEASE-sources.jar!/org/springframework/amqp/rabbit/core/RabbitAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="234" column="40" lean-forward="true" selection-start-line="234" selection-start-column="40" selection-end-line="234" selection-end-column="40" />
+          <folding>
+            <element signature="e#7282#7445#0" expanded="false" />
+            <element signature="e#7444#7445#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/topics/TopicsRecv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/mvnrepository_study/com/rabbitmq/amqp-client/5.1.1/amqp-client-5.1.1-sources.jar!/com/rabbitmq/client/impl/AMQImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1634" column="19" lean-forward="false" selection-start-line="1634" selection-start-column="19" selection-end-line="1634" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/mvnrepository_study/com/rabbitmq/amqp-client/5.1.1/amqp-client-5.1.1-sources.jar!/com/rabbitmq/client/AMQP.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
-          <caret line="772" column="9" lean-forward="false" selection-start-line="772" selection-start-column="9" selection-end-line="772" selection-end-column="9" />
+          <caret line="873" column="25" lean-forward="false" selection-start-line="873" selection-start-column="25" selection-end-line="873" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/DEV_TOOLS/jdk1.8.0_66/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="288" column="48" lean-forward="false" selection-start-line="288" selection-start-column="22" selection-end-line="288" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/DEV_TOOLS/jdk1.8.0_66/src.zip!/java/util/concurrent/CountDownLatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="172" column="27" lean-forward="false" selection-start-line="172" selection-start-column="27" selection-end-line="172" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/workqueues/WorkQueuesRecv.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="52" column="31" lean-forward="false" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+        <state relative-caret-position="628">
+          <caret line="72" column="5" lean-forward="true" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/helloworld/HelloworldRecv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="44" column="26" lean-forward="false" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/helloworld/HelloworldSend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/com/hry/spring/rabbitmq/basic/BasicTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="90" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/publishsubscribe/Publish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/publishsubscribe/Subscribe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/mvnrepository_study/com/rabbitmq/amqp-client/5.1.1/amqp-client-5.1.1-sources.jar!/com/rabbitmq/client/BuiltinExchangeType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/mvnrepository_study/com/rabbitmq/amqp-client/5.1.1/amqp-client-5.1.1-sources.jar!/com/rabbitmq/client/Channel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="668" column="17" lean-forward="false" selection-start-line="668" selection-start-column="17" selection-end-line="668" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingSend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingRecv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
           <folding />
         </state>
       </provider>
