@@ -178,11 +178,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RoutingRecv.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RoutingRecv.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingRecv.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+            <state relative-caret-position="323">
+              <caret line="40" column="17" lean-forward="true" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/com/hry/spring/rabbitmq/basic/BasicTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="109" column="29" lean-forward="true" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -2294,7 +2304,7 @@
       <workItem from="1513248796624" duration="17674000" />
       <workItem from="1514873524323" duration="26862000" />
       <workItem from="1515478842056" duration="308000" />
-      <workItem from="1515479374208" duration="53785000" />
+      <workItem from="1515479374208" duration="55641000" />
     </task>
     <task id="LOCAL-00001" summary="修改IDE从eclipse到intellij idea">
       <created>1505144412608</created>
@@ -2346,7 +2356,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178289000" />
+    <option name="totallyTimeSpent" value="180145000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2358,7 +2368,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39092872" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2886,14 +2896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/com/hry/spring/rabbitmq/basic/BasicTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="90" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/publishsubscribe/Publish.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -2936,8 +2938,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingRecv.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+        <state relative-caret-position="323">
+          <caret line="40" column="17" lean-forward="true" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/com/hry/spring/rabbitmq/basic/BasicTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="109" column="29" lean-forward="true" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
           <folding />
         </state>
       </provider>
