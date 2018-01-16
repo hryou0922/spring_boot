@@ -3,6 +3,7 @@ package com.hry.spring.rabbitmq.basic.routing;
 import com.rabbitmq.client.*;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 public class RoutingRecv {
     private static final String EXCHANGE_NAME = "direct_logs";
@@ -30,27 +31,21 @@ public class RoutingRecv {
             for (String colour : colours) {
                 channel.queueBind(queueName, EXCHANGE_NAME, colour);
             }
-            System.out.println(" [RoutingRecv] Waiting for messages.");
-
+            System.out.println(" [RoutingRecv-" + Arrays.toString(colours) + "] Waiting for messages.");
+            // 定义消息的回调处理类
             Consumer consumer = new DefaultConsumer(channel) {
                 @Override
                 public void handleDelivery(String consumerTag, Envelope envelope,
                                            AMQP.BasicProperties properties, byte[] body) throws IOException {
                     String message = new String(body, "UTF-8");
-                    System.out.println(" [RoutingRecv] Received '" + envelope.getRoutingKey() + "':'" + message + "'");
+                    System.out.println(" [RoutingRecv-" + Arrays.toString(colours) + "] Received '" + envelope.getRoutingKey() + "':'" + message + "'");
                 }
             };
+            // 接收消息
             channel.basicConsume(queueName, true, consumer);
         }catch (Exception e){
             e.printStackTrace();
         }finally {
-            try {
-                // 空值判断，为了代码简洁略
-                channel.close();
-                connection.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
         }
     }
 }

@@ -11,16 +11,11 @@ import com.rabbitmq.client.Envelope;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
-public class RpcRecv {
+public class RpcServer {
     private static final String RPC_QUEUE_NAME = "rpc_queue";
 
-    private static int fib(int n) {
-        if (n ==0) return 0;
-        if (n == 1) return 1;
-        return fib(n-1) + fib(n-2);
-    }
-
-    public static void execute(String host, String userName, String password, int id){
+    public static void execute(String host, String userName, String password){
+        // 配置连接工厂
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost(host);
         // 需要在管理后台增加一个hry帐号
@@ -29,48 +24,39 @@ public class RpcRecv {
 
         Connection connection = null;
         try {
-            connection      = factory.newConnection();
+            // 建立TCP连接
+            connection = factory.newConnection();
+            // 在TCP连接的基础上创建通道
             final Channel channel = connection.createChannel();
-
+            // 声明一个临时队列
             channel.queueDeclare(RPC_QUEUE_NAME, false, false, false, null);
-
+            // 设置同时最多只能获取一个消息
             channel.basicQos(1);
-
-            System.out.println(" [x] Awaiting RPC requests");
-
+            System.out.println(" [RpcServer] Awaiting RPC requests");
+            // 定义消息的回调处理类
             Consumer consumer = new DefaultConsumer(channel) {
                 @Override
                 public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body) throws IOException {
+                    // 生成返回的结果，关键是设置correlationId值
                     AMQP.BasicProperties replyProps = new AMQP.BasicProperties
                             .Builder()
                             .correlationId(properties.getCorrelationId())
                             .build();
-
-                    String response = "";
-
-                    try {
-                        String message = new String(body,"UTF-8");
-                        int n = Integer.parseInt(message);
-
-                        System.out.println(" [.] fib(" + message + ")");
-                        response += fib(n);
-                    }
-                    catch (RuntimeException e){
-                        System.out.println(" [.] " + e.toString());
-                    }
-                    finally {
-                        channel.basicPublish( "", properties.getReplyTo(), replyProps, response.getBytes("UTF-8"));
-                        channel.basicAck(envelope.getDeliveryTag(), false);
-                        // RabbitMq consumer worker thread notifies the RPC server owner thread
-                        synchronized(this) {
-                            this.notify();
-                        }
+                    // 生成返回
+                    String response = generateResponse(body);
+                    // 回复消息，通知已经收到请求
+                    channel.basicPublish( "", properties.getReplyTo(), replyProps, response.getBytes("UTF-8"));
+                    // 对消息进行应答
+                    channel.basicAck(envelope.getDeliveryTag(), false);
+                    // 唤醒正在消费者所有的线程
+                    synchronized(this) {
+                        this.notify();
                     }
                 }
             };
-
+            // 消费消息
             channel.basicConsume(RPC_QUEUE_NAME, false, consumer);
-            // Wait and be prepared to consume the message from RPC client.
+            // 在收到消息前，本线程进入等待状态
             while (true) {
                 synchronized(consumer) {
                     try {
@@ -80,14 +66,31 @@ public class RpcRecv {
                     }
                 }
             }
-        } catch (IOException | TimeoutException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         finally {
-            if (connection != null)
-                try {
-                    connection.close();
-                } catch (IOException _ignore) {}
+            try {
+                // 空值判断，为了代码简洁略
+                connection.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
+    }
+
+    /**
+     * 暂停10s，并返回结果
+     * @param body
+     * @return
+     */
+    private static String generateResponse(byte[] body) {
+        System.out.println(" [RpcServer] receive requests: " + new String(body));
+        try {
+            Thread.sleep(1000 *1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "response:" + new String(body) + "-" + System.currentTimeMillis();
     }
 }
