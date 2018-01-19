@@ -28,7 +28,7 @@ public class TopicsSend {
             String message = "Topics-" + System.currentTimeMillis();
             // 发送消息，并配置消息的路由键
             channel.basicPublish(EXCHANGE_NAME, routingKey, null, message.getBytes("UTF-8"));
-            System.out.println(" [TopicsSend] Sent '" + routingKey + "':'" + message + "'");
+            System.out.println(" [HeaderSend] Sent '" + routingKey + "':'" + message + "'");
         }
         catch  (Exception e) {
             e.printStackTrace();

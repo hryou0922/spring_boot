@@ -28,7 +28,7 @@ public class RpcServer {
             connection = factory.newConnection();
             // 在TCP连接的基础上创建通道
             final Channel channel = connection.createChannel();
-            // 声明一个临时队列
+            // 声明一个rpc_queue队列
             channel.queueDeclare(RPC_QUEUE_NAME, false, false, false, null);
             // 设置同时最多只能获取一个消息
             channel.basicQos(1);
