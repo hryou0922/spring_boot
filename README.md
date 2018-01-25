@@ -2,6 +2,7 @@
 - 博客[IntelliJ IDEA工具 - 使用IntelliJ IDEA导入Github工程](http://blog.csdn.net/hry2015/article/details/77984399): 本博客的代码全部存储在Github在，为了方便大家在本地创建工程,本博客演示如何从Github中加载代码到本地工程中以及加载tag分支代码到本地工程中
 
 # 更新说明
+- 2018-01-25 博客[中间件系列五 RabbitMQ之Direct exchange（直连交换机）和路由](http://blog.csdn.net/hry2015/article/details/79165734)对应的git代码为[tagv0.9](https://github.com/hryou0922/spring_boot/tree/v0.9/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing)
 - 2018-01-24 博客[中间件系列四 RabbitMQ之Fanout exchange（扇型交换机）之发布订阅](http://blog.csdn.net/hry2015/article/details/79144038)对应的git代码为[tagv0.8](https://github.com/hryou0922/spring_boot/tree/v0.8/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/publishsubscribe)
 - 2018-01-16 博客[中间件系列二 RabbitMQ之消息持久性、确认机制、拒绝、预取数量、分配策略](http://blog.csdn.net/hry2015/article/details/79078312)对应的git代码为[tagv0.7](https://github.com/hryou0922/spring_boot/tree/v0.7/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/workqueues)
 - 2018-01-11 博客[中间件系列一 RabbitMQ之安装和Hello World Demo](http://blog.csdn.net/hry2015/article/details/79016854)对应的git代码为[tagv0.6](https://github.com/hryou0922/spring_boot/tree/v0.6/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/helloworld)

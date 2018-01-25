@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09679439-c67f-4a25-9cde-ed91f3f341a1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/parent/target/" />
@@ -28,11 +27,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="RoutingRecv.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingRecv.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoutingSend.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingSend.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BasicTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/com/hry/spring/rabbitmq/basic/BasicTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="55" column="26" lean-forward="false" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="26" />
+            <state relative-caret-position="433">
+              <caret line="101" column="25" lean-forward="false" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -43,7 +62,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="162">
-                <caret line="4" column="184" lean-forward="false" selection-start-line="4" selection-start-column="184" selection-end-line="4" selection-end-column="184" />
+                <caret line="4" column="140" lean-forward="true" selection-start-line="4" selection-start-column="140" selection-end-line="4" selection-end-column="140" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -253,6 +272,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="routing" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring_boot" type="b2602c69:ProjectViewProjectNode" />
@@ -972,7 +1001,7 @@
       <workItem from="1515478842056" duration="308000" />
       <workItem from="1515479374208" duration="56240000" />
       <workItem from="1515980772949" duration="33415000" />
-      <workItem from="1516796079168" duration="555000" />
+      <workItem from="1516796079168" duration="2839000" />
     </task>
     <task id="LOCAL-00001" summary="修改IDE从eclipse到intellij idea">
       <created>1505144412608</created>
@@ -1024,7 +1053,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214731000" />
+    <option name="totallyTimeSpent" value="217015000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1051,7 +1080,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1971831" sideWeight="0.49335864" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26814735" sideWeight="0.49335864" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27060738" sideWeight="0.5066414" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1284,23 +1313,7 @@
     <entry file="jar://D:/mvnrepository_study/com/rabbitmq/amqp-client/5.1.1/amqp-client-5.1.1-sources.jar!/com/rabbitmq/client/DefaultConsumer.java" />
     <entry file="jar://D:/mvnrepository_study/com/rabbitmq/amqp-client/5.1.1/amqp-client-5.1.1-sources.jar!/com/rabbitmq/client/Consumer.java" />
     <entry file="jar://D:/DEV_TOOLS/jdk1.8.0_66/src.zip!/java/util/concurrent/BlockingQueue.java" />
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingSend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/mvnrepository_study/com/rabbitmq/amqp-client/5.1.1/amqp-client-5.1.1-sources.jar!/com/rabbitmq/client/RpcClient.java" />
-    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingRecv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/rpc/RpcServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-95">
@@ -1387,10 +1400,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingRecv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing/RoutingSend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rabbitmq/src/test/java/com/hry/spring/rabbitmq/basic/BasicTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="55" column="26" lean-forward="false" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="26" />
+        <state relative-caret-position="433">
+          <caret line="101" column="25" lean-forward="false" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1399,7 +1428,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="162">
-            <caret line="4" column="184" lean-forward="false" selection-start-line="4" selection-start-column="184" selection-end-line="4" selection-end-column="184" />
+            <caret line="4" column="140" lean-forward="true" selection-start-line="4" selection-start-column="140" selection-end-line="4" selection-end-column="140" />
             <folding />
           </first_editor>
           <second_editor />
