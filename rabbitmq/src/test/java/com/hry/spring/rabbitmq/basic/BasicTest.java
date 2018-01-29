@@ -1,5 +1,6 @@
 package com.hry.spring.rabbitmq.basic;
 
+import com.hry.spring.rabbitmq.BaseTest;
 import com.hry.spring.rabbitmq.basic.header.HeaderRecv;
 import com.hry.spring.rabbitmq.basic.header.HeaderSend;
 import com.hry.spring.rabbitmq.basic.helloworld.HelloworldRecv;
@@ -25,16 +26,8 @@ import java.util.concurrent.Executors;
 /**
  * Created by huangrongyou@yixin.im on 2018/1/10.
  */
-public class BasicTest {
-    // 测试线程池
-    private ExecutorService executorService = Executors.newFixedThreadPool(10);
+public class BasicTest extends BaseTest {
 
-    // rabbitmq的IP地址
-    private final String rabbitmq_host = "10.240.80.147";
-    // rabbitmq的用户名称
-    private final String rabbitmq_user = "hry";
-    // rabbitmq的用户密码
-    private final String rabbitmq_pwd = "hry";
 
     @Test
     public void helloworld() throws InterruptedException {
