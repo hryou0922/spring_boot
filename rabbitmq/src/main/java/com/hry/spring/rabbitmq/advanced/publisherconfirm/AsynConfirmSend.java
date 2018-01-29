@@ -31,14 +31,6 @@ public class AsynConfirmSend {
             channel.queueDeclare(QUEUE_NAME, true, false, false, null);
             String message = "Transactional!" + System.currentTimeMillis();
 
-            // 开启confirm模式：
-            channel.confirmSelect();
-            // 发送消息
-            while(num-- > 0) {
-                // 消息属性持久化
-                channel.basicPublish("", QUEUE_NAME, MessageProperties.PERSISTENT_TEXT_PLAIN, message.getBytes("UTF-8"));
-                System.out.println(" [TransactionalSend] Sent '" + message + "'");
-            }
             // 添加回调对象，处理返回值
             channel.addConfirmListener(new ConfirmListener(){
                 @Override
@@ -50,6 +42,16 @@ public class AsynConfirmSend {
                     System.out.println("[AsynConfirmSend] handleNack : deliveryTag = " + deliveryTag + " multiple = " + multiple);
                 }
             });
+
+            // 开启confirm模式：
+            channel.confirmSelect();
+            // 发送消息
+            while(num-- > 0) {
+                // 消息属性持久化
+                channel.basicPublish("", QUEUE_NAME, MessageProperties.PERSISTENT_TEXT_PLAIN, message.getBytes("UTF-8"));
+                System.out.println(" [TransactionalSend] Sent '" + message + "'");
+            }
+
             Thread.sleep(10 * 1000);
         }catch (Exception e){
             e.printStackTrace();
