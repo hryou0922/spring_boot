@@ -42,7 +42,7 @@ public class SimpleConfirmSend {
                 System.out.println(" [SimpleConfirmSend] Sent '" + message + "'");
             }
             // 批量等待确认
-            channel.waitForConfirmsOrDie();
+            channel.waitForConfirms();
         }catch (Exception e){
             e.printStackTrace();
             /**
