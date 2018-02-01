@@ -286,7 +286,7 @@ public class RouteGuideClient {
   }
 
   /**
-   * Only used for unit test, as we do not want to introduce randomness in unit test.
+   * Only used for unit consumer, as we do not want to introduce randomness in unit consumer.
    */
   @VisibleForTesting
   void setRandom(Random random) {
@@ -294,7 +294,7 @@ public class RouteGuideClient {
   }
 
   /**
-   * Only used for helping unit test.
+   * Only used for helping unit consumer.
    */
   @VisibleForTesting
   interface TestHelper {

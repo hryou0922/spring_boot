@@ -11,9 +11,9 @@ import java.util.concurrent.TimeoutException;
  * Created by huangrongyou@yixin.im on 2018/1/29.
  */
 public class TransactionalSend {
-    private final static String QUEUE_NAME = "publisherconfirm";
+    private final static String EXCHANGE_NAME = "publisherconfirm-exchange";
 
-    public static void execute(String host, String userName, String password,int num) {
+    public static void execute(String host, String userName, String password,String routingKey, int num) {
         // 配置连接工厂
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost(host);
@@ -26,25 +26,24 @@ public class TransactionalSend {
             connection = factory.newConnection();
             // 在TCP连接的基础上创建通道
             channel = connection.createChannel();
-            // 声明一个持久化队列
-            channel.queueDeclare(QUEUE_NAME, true, false, false, null);
-            String message = "Transactional!" + System.currentTimeMillis();
-
+            // 声明一个direct交换机
+            channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT);
+            String message = "TransactionalSend!" + System.currentTimeMillis();
 
             try {
                 // 开启事物
                 channel.txSelect();
                 // 发送消息
                 while(num-- > 0) {
-                    channel.basicPublish("", QUEUE_NAME, null, message.getBytes("UTF-8"));
+                    // 发送一个持久化消息到特定的交换机
+                    channel.basicPublish(EXCHANGE_NAME, routingKey, MessageProperties.PERSISTENT_TEXT_PLAIN, message.getBytes("UTF-8"));
                     System.out.println(" [TransactionalSend] Sent + [" + num + "] '" + message + "'");
                 }
 
                 // 不注解下面语句，可以进入channel.txRollback()逻辑
 //                if(true){
-//                    throw new IOException("test channel.txRollback() ");
+//                    throw new IOException("consumer channel.txRollback() ");
 //                }
-                // 注解掉下面一行可以模拟不进行提交
                 // 提交事物
                 channel.txCommit();
             }catch(IOException e){

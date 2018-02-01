@@ -15,7 +15,7 @@ public class SessionAttributesController {
 	// ========================================================
 	/**
 	 * 
-	 * 在类级别上使用@SessionAttributes("test"),它的作用是在controller共享 model 属性,
+	 * 在类级别上使用@SessionAttributes("consumer"),它的作用是在controller共享 model 属性,
 	 * 直到调用org.springframework.web.bind.support.SessionStatus#setComplete会清除此session值.
 	 * 否则长期保留(session过期,这个值也不再保留).
 	 * 因此先调用/user/test1,再调用/user/test2.在test2方法能得到test1方法put进去的值.

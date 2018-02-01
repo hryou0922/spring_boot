@@ -17,10 +17,10 @@ import io.grpc.inprocess.InProcessServerBuilder;
 
 /**
  * Unit tests for {@link HelloWorldServer}.
- * For demonstrating how to write gRPC unit test only.
- * Not intended to provide a high code coverage or to test every major usecase.
+ * For demonstrating how to write gRPC unit consumer only.
+ * Not intended to provide a high code coverage or to consumer every major usecase.
  *
- * <p>For more unit test examples see {@link io.grpc.examples.routeguide.RouteGuideClientTest} and
+ * <p>For more unit consumer examples see {@link io.grpc.examples.routeguide.RouteGuideClientTest} and
  * {@link io.grpc.examples.routeguide.RouteGuideServerTest}.
  */
 @RunWith(JUnit4.class)
@@ -51,13 +51,13 @@ public class HelloWorldServerTest {
   }
 
   /**
-   * To test the server, make calls with a real stub using the in-process channel, and verify
+   * To consumer the server, make calls with a real stub using the in-process channel, and verify
    * behaviors or state changes from the client side.
    */
   @Test
   public void greeterImpl_replyMessage() throws Exception {
     GreeterGrpc.GreeterBlockingStub blockingStub = GreeterGrpc.newBlockingStub(inProcessChannel);
-    String testName = "test name";
+    String testName = "consumer name";
 
     HelloReply reply = blockingStub.sayHello(HelloRequest.newBuilder().setName(testName).build());
 
