@@ -41,10 +41,10 @@ import io.grpc.util.MutableHandlerRegistry;
 
 /**
  * Unit tests for {@link RouteGuideClient}.
- * For demonstrating how to write gRPC unit test only.
- * Not intended to provide a high code coverage or to test every major usecase.
+ * For demonstrating how to write gRPC unit consumer only.
+ * Not intended to provide a high code coverage or to consumer every major usecase.
  *
- * <p>For basic unit test examples see {@link io.grpc.examples.helloworld.HelloWorldClientTest} and
+ * <p>For basic unit consumer examples see {@link io.grpc.examples.helloworld.HelloWorldClientTest} and
  * {@link io.grpc.examples.helloworld.HelloWorldServerTest}.
  */
 @RunWith(JUnit4.class)
@@ -75,7 +75,7 @@ public class RouteGuideClientTest {
   public void setUp() throws Exception {
     String uniqueServerName = "fake server for " + getClass();
 
-    // use a mutable service registry for later registering the service impl for each test case.
+    // use a mutable service registry for later registering the service impl for each consumer case.
     fakeServer = InProcessServerBuilder.forName(uniqueServerName)
         .fallbackHandlerRegistry(serviceRegistry).directExecutor().build().start();
     client =

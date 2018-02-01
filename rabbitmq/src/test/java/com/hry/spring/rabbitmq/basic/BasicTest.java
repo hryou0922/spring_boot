@@ -193,7 +193,7 @@ public class BasicTest extends BaseTest {
 
         // rpc客户端
         executorService.submit(() -> {
-            RpcClient.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, "rpc test");
+            RpcClient.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, "rpc consumer");
         });
 
         // sleep 10s
@@ -266,4 +266,5 @@ public class BasicTest extends BaseTest {
         // sleep 10s
         Thread.sleep(10 * 1000);
     }
+
 }

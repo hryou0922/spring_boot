@@ -19,10 +19,10 @@ import io.grpc.stub.StreamObserver;
 
 /**
  * Unit tests for {@link HelloWorldClient}.
- * For demonstrating how to write gRPC unit test only.
- * Not intended to provide a high code coverage or to test every major usecase.
+ * For demonstrating how to write gRPC unit consumer only.
+ * Not intended to provide a high code coverage or to consumer every major usecase.
  *
- * <p>For more unit test examples see {@link io.grpc.examples.routeguide.RouteGuideClientTest} and
+ * <p>For more unit consumer examples see {@link io.grpc.examples.routeguide.RouteGuideClientTest} and
  * {@link io.grpc.examples.routeguide.RouteGuideServerTest}.
  */
 @RunWith(JUnit4.class)
@@ -55,13 +55,13 @@ public class HelloWorldClientTest {
   }
 
   /**
-   * To test the client, call from the client against the fake server, and verify behaviors or state
+   * To consumer the client, call from the client against the fake server, and verify behaviors or state
    * changes from the server side.
    */
   @Test
   public void greet_messageDeliveredToServer() {
     ArgumentCaptor<HelloRequest> requestCaptor = ArgumentCaptor.forClass(HelloRequest.class);
-    String testName = "test name";
+    String testName = "consumer name";
 
     client.greet(testName);
 

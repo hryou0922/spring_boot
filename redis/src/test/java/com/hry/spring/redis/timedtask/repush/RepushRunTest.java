@@ -34,7 +34,7 @@ public class RepushRunTest {
 			model.setContent("这是第"+ newCount + "次执行定时任务 CDRS！");
 			model.setPushNextTime(executeTime);
 			model.setType(RetryPushEnum.CDRS.getType());
-			model.setUrl("http://127.0.0.1:test");
+			model.setUrl("http://127.0.0.1:consumer");
 			model.setPushTime(0);
 			
 			retryPushService.save(model);
@@ -58,7 +58,7 @@ public class RepushRunTest {
 			model.setContent("这是第"+ newCount + "次执行定时任务 CDRS！");
 			model.setPushNextTime(executeTime);
 			model.setType(RetryPushEnum.SMS.getType());
-			model.setUrl("http://127.0.0.1:test");
+			model.setUrl("http://127.0.0.1:consumer");
 			model.setPushTime(0);
 			
 			retryPushService.save(model);

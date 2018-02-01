@@ -37,10 +37,10 @@ import io.grpc.stub.StreamObserver;
 
 /**
  * Unit tests for {@link RouteGuideServer}.
- * For demonstrating how to write gRPC unit test only.
- * Not intended to provide a high code coverage or to test every major usecase.
+ * For demonstrating how to write gRPC unit consumer only.
+ * Not intended to provide a high code coverage or to consumer every major usecase.
  *
- * <p>For basic unit test examples see {@link io.grpc.examples.helloworld.HelloWorldClientTest} and
+ * <p>For basic unit consumer examples see {@link io.grpc.examples.helloworld.HelloWorldClientTest} and
  * {@link io.grpc.examples.helloworld.HelloWorldServerTest}.
  */
 @RunWith(JUnit4.class)
@@ -54,7 +54,7 @@ public class RouteGuideServerTest {
     String uniqueServerName = "in-process server for " + getClass();
     features = new ArrayList<Feature>();
     // use directExecutor for both InProcessServerBuilder and InProcessChannelBuilder can reduce the
-    // usage timeouts and latches in test. But we still add timeout and latches where they would be
+    // usage timeouts and latches in consumer. But we still add timeout and latches where they would be
     // needed if no directExecutor were used, just for demo purpose.
     server = new RouteGuideServer(
         InProcessServerBuilder.forName(uniqueServerName).directExecutor(), 0, features);

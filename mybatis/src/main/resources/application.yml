@@ -12,8 +12,8 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     username: root
     password: root
-    url: jdbc:mysql://127.0.0.1:3306/test?zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2b8&useSSL=true
-    # url: jdbc:mysql://127.0.0.1:3306/test
+    url: jdbc:mysql://127.0.0.1:3306/consumer?zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2b8&useSSL=true
+    # url: jdbc:mysql://127.0.0.1:3306/consumer
     driverClassName: com.mysql.cj.jdbc.Driver
     # driverClassName: oracle.jdbc.driver.OracleDriver
     # 下面为连接池的补充设置，应用到上面所有数据源中# 初始化大小，最小，最大
