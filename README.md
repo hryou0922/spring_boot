@@ -2,6 +2,7 @@
 - 博客[IntelliJ IDEA工具 - 使用IntelliJ IDEA导入Github工程](http://blog.csdn.net/hry2015/article/details/77984399): 本博客的代码全部存储在Github在，为了方便大家在本地创建工程,本博客演示如何从Github中加载代码到本地工程中以及加载tag分支代码到本地工程中
 
 # 更新说明
+- 2018-01-29 博客[中间件系列八 RabbitMQ之实现RPC模式](http://blog.csdn.net/hry2015/article/details/79199294)对应的git代码为[tagv0.12](https://github.com/hryou0922/spring_boot/tree/v0.12/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/rpc)
 - 2018-01-28 博客[中间件系列七 RabbitMQ之header exchange(头交换机)用法](http://blog.csdn.net/hry2015/article/details/79188615)对应的git代码为[tagv0.11](https://github.com/hryou0922/spring_boot/tree/v0.11/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/header)
 - 2018-01-27 博客[中间件系列六 RabbitMQ之Topic exchange 用法](http://blog.csdn.net/hry2015/article/details/79183941)对应的git代码为[tagv0.10](https://github.com/hryou0922/spring_boot/tree/v0.10/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/topics)
 - 2018-01-25 博客[中间件系列五 RabbitMQ之Direct exchange（直连交换机）和路由](http://blog.csdn.net/hry2015/article/details/79165734)对应的git代码为[tagv0.9](https://github.com/hryou0922/spring_boot/tree/v0.9/rabbitmq/src/main/java/com/hry/spring/rabbitmq/basic/routing)
