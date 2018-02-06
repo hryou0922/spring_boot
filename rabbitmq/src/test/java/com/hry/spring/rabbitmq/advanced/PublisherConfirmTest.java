@@ -22,7 +22,7 @@ public class PublisherConfirmTest extends BaseTest {
         });
         Thread.sleep(5* 100);
 
-        // 接收端
+        // 消费端
         executorService.submit(() -> {
             PublisherConfirmRecv.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, routingKey);
         });
@@ -39,7 +39,7 @@ public class PublisherConfirmTest extends BaseTest {
             TransactionalSend.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, routingKey,1);
         });
         Thread.sleep(5* 100);
-//        // 接收端
+//        // 消费端
 //        executorService.submit(() -> {
 //            ConsumerRecv.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, routingKey);
 //        });
@@ -58,7 +58,7 @@ public class PublisherConfirmTest extends BaseTest {
         });
         Thread.sleep(5* 100);
 
-//        // 接收端
+//        // 消费端
 //        executorService.submit(() -> {
 //            ConsumerRecv.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, routingKey);
 //        });
@@ -70,7 +70,7 @@ public class PublisherConfirmTest extends BaseTest {
 
     @Test
     public void publisherconfirm_simpleConfirm_onlySend() throws InterruptedException {
-//        // 接收端
+//        // 消费端
 //        executorService.submit(() -> {
 //            ConsumerRecv.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd);
 //        });
@@ -91,7 +91,7 @@ public class PublisherConfirmTest extends BaseTest {
             AsynConfirmSend.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, routingKey, 10);
         });
 
-        // 接收端
+        // 消费端
         executorService.submit(() -> {
             ConsumerRecv.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, routingKey);
         });
@@ -108,7 +108,7 @@ public class PublisherConfirmTest extends BaseTest {
             ConsumerSend.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, routingKey, 1);
         });
         Thread.sleep(2* 100);
-        // 接收端
+        // 消费端
         executorService.submit(() -> {
             ConsumerRecv.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, routingKey);
         });
