@@ -1,0 +1,68 @@
+@startuml
+=== TCP的建立连接的三次握手 ===
+Publisher -> RabbitMQ : 三次握手建立连接
+== RabbitMQ服务端和客户端协商使用的协议及版本 ==
+Publisher -> RabbitMQ : 告知客户端使用的通信协议(AMQP)和版本
+RabbitMQ -> Publisher : ACK应答
+== RabbitMQ服务端和客户端建立连接，并约定参数 ==
+RabbitMQ -> Publisher : Connection.Start
+Publisher -> RabbitMQ : Connection.Start-Ok 带上连接使用的帐号和密码
+RabbitMQ -> Publisher : Connection.Tune
+Publisher -> RabbitMQ : Connection.Tune-Ok
+Publisher -> RabbitMQ : Connection.Open vhost=/ 本次使用vhost
+RabbitMQ -> Publisher : ACK应答
+RabbitMQ -> Publisher : Connection.Open-Ok
+== 创建通道 ==
+Publisher -> RabbitMQ : Channel.Open
+RabbitMQ -> Publisher : Channel.Open-Ok
+==  创建Exchange ==
+Publisher -> RabbitMQ : Exchange.Declare x=publisherconfirm-exchange
+RabbitMQ -> Publisher : Exchange.Declare-Ok
+==  客户端开始发送消息 ==
+Publisher -> RabbitMQ : Basic.Publish x=publisherconfirm-exchange rk= ...
+== 关闭通关，关闭连接，回收资源 ==
+Publisher -> RabbitMQ : Channel.Close reply=OK
+RabbitMQ -> Publisher : Channel.Close-Ok
+Publisher -> RabbitMQ : Connection.Close reply=OK
+RabbitMQ -> Publisher : Connection.Close-Ok
+== TCP四次挥手关闭连接 ==
+Publisher -> RabbitMQ : TCP四次挥手关闭连接
+@enduml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

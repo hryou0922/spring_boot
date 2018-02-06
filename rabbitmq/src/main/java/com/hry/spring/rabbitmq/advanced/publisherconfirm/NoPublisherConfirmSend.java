@@ -24,6 +24,9 @@ public class NoPublisherConfirmSend {
             connection = factory.newConnection();
             // 在TCP连接的基础上创建通道
             channel = connection.createChannel();
+            connection.createChannel();
+            connection.createChannel();
+            connection.createChannel();
             // 声明一个direct交换机
             channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT);
             String message = "ConsumerSend!" + System.currentTimeMillis();

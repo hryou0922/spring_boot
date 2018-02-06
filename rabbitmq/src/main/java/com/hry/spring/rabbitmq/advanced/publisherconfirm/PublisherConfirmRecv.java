@@ -44,13 +44,14 @@ public class PublisherConfirmRecv {
             channel.basicConsume(QUEUE_NAME, true, consumer);
             // 暂停5s
             Thread.sleep(5 * 1000);
+
+            channel.close();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
             // 不能执行关闭，如果关闭链接，则后续消息无法收到。无法模拟后续接收消息的情况
             try {
-             //   channel.close();
-                connection.close();
+             connection.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
