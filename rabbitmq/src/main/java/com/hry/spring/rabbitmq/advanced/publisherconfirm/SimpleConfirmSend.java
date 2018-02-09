@@ -29,7 +29,7 @@ public class SimpleConfirmSend {
             channel = connection.createChannel();
             // 声明一个direct交换机
             channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT);
-            String message = "SimpleConfirmSend!" + System.currentTimeMillis();
+            String message = "ConsumerConfirmSend!" + System.currentTimeMillis();
 
             // 开启confirm模式：
             channel.confirmSelect();
@@ -39,7 +39,7 @@ public class SimpleConfirmSend {
 //            while(num-- > 0) {
 //                // 发送一个持久化消息到特定的交换机
 //                channel.basicPublish(EXCHANGE_NAME, routingKey, MessageProperties.PERSISTENT_TEXT_PLAIN, message.getBytes("UTF-8"));
-//                System.out.println(" [SimpleConfirmSend] Sent '" + message + "'");
+//                System.out.println(" [ConsumerConfirmSend] Sent '" + message + "'");
 //                // 等待服务端返回Basic.Ack后，才执行下一个循环
 //                if(!channel.waitForConfirms()){
 //                    System.out.println("message haven't arrived broker");
@@ -55,7 +55,7 @@ public class SimpleConfirmSend {
             while(num-- > 0) {
                 // 发送一个持久化消息到特定的交换机
                 channel.basicPublish(EXCHANGE_NAME, routingKey, MessageProperties.PERSISTENT_TEXT_PLAIN, message.getBytes("UTF-8"));
-                System.out.println(" [SimpleConfirmSend] Sent '" + message + "'");
+                System.out.println(" [ConsumerConfirmSend] Sent '" + message + "'");
             }
             // 批量等待确认: 返回true: 如果所有的消息都收到有确认应答，没有消息被拒绝
             if(!channel.waitForConfirms()){
