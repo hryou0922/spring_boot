@@ -35,16 +35,11 @@ public class ConsumerConfirmTest extends BaseTest {
 
     @Test
     public void publisherconfirm_noPublisherConfirmSend2() throws InterruptedException {
-
         // 生产者端
-
-            ConsumerConfirmSend.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, routingKey,1);
-
+ //       ConsumerConfirmSend.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, routingKey,1);
 
         // 消费者端
-
-            ConsumerConfirmRecv.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, routingKey);
-
+        ConsumerConfirmRecv.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, routingKey);
 
         Thread.sleep(90 * 1000);
     }

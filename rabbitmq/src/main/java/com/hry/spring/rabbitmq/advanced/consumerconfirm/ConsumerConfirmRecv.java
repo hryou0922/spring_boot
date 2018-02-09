@@ -40,7 +40,7 @@ public class ConsumerConfirmRecv {
                     // 消息正向确认
                   //  channel.basicAck(envelope.getDeliveryTag(),true);
                     // 消息否定确认:
-                    channel.basicNack(envelope.getDeliveryTag(),true, true);
+                    channel.basicNack(envelope.getDeliveryTag(),true, false);
                 }
             };
             // 接收消息：设置非自动确认
