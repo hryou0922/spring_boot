@@ -1,1 +1,9 @@
-rabbitmq.
+
+
+spring:
+  # 配置rabbitMQspring:
+  rabbitmq:
+    host: 10.240.80.147
+    username: spring-boot
+    password: spring-boot
+    virtual-host: spring-boot-vhost
