@@ -16,7 +16,7 @@ public class ConsumerConfirmTest extends BaseTest {
     private static final String routingKey = "consumer-confirm";
 
     @Test
-    public void publisherconfirm_noPublisherConfirmSend() throws InterruptedException {
+    public void ConsumerConfirmRecv() throws InterruptedException {
 
         // 生产者端
         executorService.submit(() -> {
@@ -33,14 +33,14 @@ public class ConsumerConfirmTest extends BaseTest {
         Thread.sleep(10 * 1000);
     }
 
-    @Test
-    public void publisherconfirm_noPublisherConfirmSend2() throws InterruptedException {
-        // 生产者端
- //       ConsumerConfirmSend.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, routingKey,1);
-
-        // 消费者端
-        ConsumerConfirmRecv.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, routingKey);
-
-        Thread.sleep(90 * 1000);
-    }
+//    @Test
+//    public void ConsumerConfirmRecv2() throws InterruptedException {
+//        // 生产者端
+// //       ConsumerConfirmSend.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, routingKey,1);
+//
+//        // 消费者端
+//        ConsumerConfirmRecv.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, routingKey);
+//
+//        Thread.sleep(90 * 1000);
+//    }
 }

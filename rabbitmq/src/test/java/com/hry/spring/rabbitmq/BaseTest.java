@@ -11,7 +11,7 @@ public class BaseTest {
     protected ExecutorService executorService = Executors.newFixedThreadPool(10);
 
     // rabbitmq的IP地址
-    protected final String rabbitmq_host = "10.240.80.147";
+    protected final String rabbitmq_host = "10.240.80.134";
     // rabbitmq的用户名称
     protected final String rabbitmq_user = "hry";
     // rabbitmq的用户密码
