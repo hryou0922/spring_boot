@@ -30,7 +30,7 @@ public class ExpressionsCtl {
 		User user = new User("simple_name");
 		user.setAge(new Random().nextInt(100));
 		map.put("user", user);
-		return "expressions/simple";
+		return "expressions/simple2";
 	} 
 	
 	/**

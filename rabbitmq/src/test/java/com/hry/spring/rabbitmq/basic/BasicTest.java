@@ -160,22 +160,22 @@ public class BasicTest extends BaseTest {
             TopicsRecv.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, bindingKeys);
         });
 
-        // 消费者2：绑定  "*.*.simple" 和 "lazy.#"值
+        // 消费者2：绑定  "*.*.simple2" 和 "lazy.#"值
         executorService.submit(() -> {
-            String[] bindingKeys = {"*.*.simple", "lazy.#"};
+            String[] bindingKeys = {"*.*.simple2", "lazy.#"};
             TopicsRecv.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, bindingKeys);
         });
 
         Thread.sleep(5* 100);
         // 生产者1 ： 发送 black，所有的接收端都会收到
         executorService.submit(() -> {
-            String routing = "quick.orange.simple";
+            String routing = "quick.orange.simple2";
             TopicsSend.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, routing);
         });
 
         // 生产者2 ： 发送 green，所有的接收端都不会收到
         executorService.submit(() -> {
-            String routing = "lazy.pink.simple";
+            String routing = "lazy.pink.simple2";
             TopicsSend.execute(rabbitmq_host, rabbitmq_user, rabbitmq_pwd, routing);
         });
 

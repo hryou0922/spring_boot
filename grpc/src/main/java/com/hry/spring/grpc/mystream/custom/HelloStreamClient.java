@@ -65,8 +65,8 @@ public class HelloStreamClient {
 	 */
 	public void server2ClientRpc(int num1, int num2) {
 		logger.info("request server2ClientRpc num1={}, num2={}", num1, num2);
-		Simple simple = Simple.newBuilder().setName("simple" + num1).setNum(num1).build();
-		Simple simple2 = Simple.newBuilder().setName("simple" + num2).setNum(num2).build();
+		Simple simple = Simple.newBuilder().setName("simple2" + num1).setNum(num1).build();
+		Simple simple2 = Simple.newBuilder().setName("simple2" + num2).setNum(num2).build();
 
 		SimpleList simpleList = SimpleList.newBuilder().addSimpleList(simple).addSimpleList(simple2).build();
 		Iterator<SimpleFeature> simpleFeatureIter = blockingStub.server2ClientRpc(simpleList);
@@ -106,7 +106,7 @@ public class HelloStreamClient {
 		StreamObserver<Simple> requestObserver = asyncStub.client2ServerRpc(responseObserver);
 		try {
 			for (int i = 0; i < count; i++) {
-				logger.info("simple : {}", i);
+				logger.info("simple2 : {}", i);
 				Simple simple = Simple.newBuilder().setName("client2ServerRpc" + i).setNum(i).build();
 				requestObserver.onNext(simple);
 				Thread.sleep(random.nextInt(200) + 50);
@@ -179,7 +179,7 @@ public class HelloStreamClient {
 //		SLF4JBridgeHandler.install();
 		logger.debug("--------------------sssssssssss-------------");
 		try {
-			// simple rpc
+			// simple2 rpc
 			client.simpleRpc(1);
 
 			// server2ClientRpc
@@ -198,7 +198,7 @@ public class HelloStreamClient {
 
 	// 创建Simple对象
 	private Simple newSimple(int num) {
-		return Simple.newBuilder().setName("simple" + num).setNum(num).build();
+		return Simple.newBuilder().setName("simple2" + num).setNum(num).build();
 	}
 
 }

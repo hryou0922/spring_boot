@@ -93,7 +93,7 @@ public final class HelloStreamGrpc {
 
     /**
      * <pre>
-     * A simple RPC.
+     * A simple2 RPC.
      * </pre>
      */
     public void simpleRpc(Simple request,
@@ -185,7 +185,7 @@ public final class HelloStreamGrpc {
 
     /**
      * <pre>
-     * A simple RPC.
+     * A simple2 RPC.
      * </pre>
      */
     public void simpleRpc(Simple request,
@@ -248,7 +248,7 @@ public final class HelloStreamGrpc {
 
     /**
      * <pre>
-     * A simple RPC.
+     * A simple2 RPC.
      * </pre>
      */
     public SimpleFeature simpleRpc(Simple request) {
@@ -288,7 +288,7 @@ public final class HelloStreamGrpc {
 
     /**
      * <pre>
-     * A simple RPC.
+     * A simple2 RPC.
      * </pre>
      */
     public com.google.common.util.concurrent.ListenableFuture<SimpleFeature> simpleRpc(

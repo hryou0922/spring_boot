@@ -441,7 +441,7 @@ public class RouteGuideClientTest {
         ),
         locationsDelivered);
 
-    // Let the server send out two simple response messages
+    // Let the server send out two simple2 response messages
     // and verify that the client receives them.
     // Allow some timeout for verify() if not using directExecutor
     responseObserverRef.get().onNext(fakeResponse1);

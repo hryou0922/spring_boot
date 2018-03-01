@@ -1,4 +1,4 @@
-package com.hry.spring.rabbitmq.boot.simple;
+package com.hry.spring.rabbitmq.boot.msgconvert;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
@@ -6,7 +6,8 @@ import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.core.TopicExchange;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
-import org.springframework.amqp.rabbit.listener.adapter.MessageListenerAdapter;
+import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
+import org.springframework.amqp.support.converter.MessageConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -16,18 +17,19 @@ import org.springframework.context.annotation.Configuration;
  * Created by huangrongyou@yixin.im on 2018/2/11.
  */
 @Configuration
-public class RabbitConfigure {
+public class RabbitMsgConvertConfigure {
 
     // 队列名称
-    public final static String SPRING_BOOT_QUEUE = "spring-boot-queue";
+    public final static String SPRING_BOOT_QUEUE = "spring-boot-queue-msg-convert";
     // 交换机名称
-    public final static String SPRING_BOOT_EXCHANGE = "spring-boot-exchange";
+    public final static String SPRING_BOOT_EXCHANGE = "spring-boot-exchange-msg-convert";
     // 绑定的值
-    public static final String SPRING_BOOT_BIND_KEY = "spring-boot-bind-key";
+    public static final String SPRING_BOOT_BIND_KEY = "spring-boot-bind-key-msg-convert";
 
 
+    // === 在RabbitMQ上创建queue,exchange,binding 方法一：通过@Bean实现 begin ===
     /**
-     * 定义队列
+     * 定义队列：
      * @return
      */
     @Bean
@@ -52,18 +54,28 @@ public class RabbitConfigure {
      */
     @Bean
     Binding binding(Queue queue, TopicExchange exchange) {
-        return BindingBuilder.bind(queue).to(exchange).with(SPRING_BOOT_BIND_KEY);
+        return BindingBuilder.bind(queue).to(exchange).with(SPRING_BOOT_BIND_KEY );
     }
 
+    /**
+     * 定义消息转换实例
+     * @return
+     */
+    @Bean
+    MessageConverter jackson2JsonMessageConverter() {
+        return new Jackson2JsonMessageConverter();
+    }
+
+    // === 如果默认的SimpleMessageListenerContainer不符合我们的要求，我们也可以通过如下的方式创建新的SimpleMessageListenerContainer===
 //    @Bean
-//    SimpleMessageListenerContainer container(ConnectionFactory connectionFactory,
-//                                             MessageListenerAdapter listenerAdapter) {
+//    SimpleMessageListenerContainer container(ConnectionFactory connectionFactory) {
 //        SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
 //        container.setConnectionFactory(connectionFactory);
-//        container.setQueueNames(SFG_MESSAGE_QUEUE);
-//        container.setMessageListener(listenerAdapter);
+//        container.setMessageConverter().
+//        container.setConcurrentConsumers(10);
 //        return container;
 //    }
+
 
 //    @Bean
 //    MessageListenerAdapter listenerAdapter(ProductMessageListener receiver) {

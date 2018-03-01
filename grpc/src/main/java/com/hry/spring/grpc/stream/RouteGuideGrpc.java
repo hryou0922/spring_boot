@@ -93,7 +93,7 @@ public final class RouteGuideGrpc {
 
     /**
      * <pre>
-     * A simple RPC.
+     * A simple2 RPC.
      * </pre>
      */
     public void getFeature(Point request,
@@ -185,7 +185,7 @@ public final class RouteGuideGrpc {
 
     /**
      * <pre>
-     * A simple RPC.
+     * A simple2 RPC.
      * </pre>
      */
     public void getFeature(Point request,
@@ -248,7 +248,7 @@ public final class RouteGuideGrpc {
 
     /**
      * <pre>
-     * A simple RPC.
+     * A simple2 RPC.
      * </pre>
      */
     public Feature getFeature(Point request) {
@@ -288,7 +288,7 @@ public final class RouteGuideGrpc {
 
     /**
      * <pre>
-     * A simple RPC.
+     * A simple2 RPC.
      * </pre>
      */
     public com.google.common.util.concurrent.ListenableFuture<Feature> getFeature(
