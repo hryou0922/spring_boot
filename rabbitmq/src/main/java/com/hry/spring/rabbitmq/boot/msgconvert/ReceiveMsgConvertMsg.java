@@ -32,15 +32,15 @@ public class ReceiveMsgConvertMsg {
         System.out.println("[ReceiveMsgConvertMsg-MsgContent2] receive receiveMsgContent2 msg: " + msgContent2);
     }
 
-    @RabbitHandler
-    public void receiveString(@Payload String content) {
-        // ...
-        System.out.println("[ReceiveMsgConvertMsg-MsgContent2] receive msg: " + content);
-    }
-
-    @RabbitHandler
-    public void receiveStringb(byte[] content) {
-        // ...
-        System.out.println("[ReceiveMsgConvertMsg-MsgContent2] receive msg: " + content);
-    }
+//    @RabbitHandler
+//    public void receiveString(@Payload String content) {
+//        // ...
+//        System.out.println("[ReceiveMsgConvertMsg-MsgContent2] receive msg: " + content);
+//    }
+//
+//    @RabbitHandler
+//    public void receiveStringb(byte[] content) {
+//        // ...
+//        System.out.println("[ReceiveMsgConvertMsg-MsgContent2] receive msg: " + content);
+//    }
 }

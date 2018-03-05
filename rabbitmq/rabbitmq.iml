@@ -16,8 +16,6 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: com.rabbitmq:amqp-client:5.1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-amqp:1.5.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-messaging:4.3.10.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.10.RELEASE" level="project" />
@@ -33,6 +31,7 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.9" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.9" level="project" />
+    <orderEntry type="library" name="Maven: com.rabbitmq:amqp-client:4.0.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.retry:spring-retry:1.2.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.amqp:spring-amqp:1.7.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.3.10.RELEASE" level="project" />
@@ -62,6 +61,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:4.3.10.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.1.11" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.1.11" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.25" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.34" level="project" />
   </component>
