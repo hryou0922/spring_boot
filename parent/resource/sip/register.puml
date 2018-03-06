@@ -1,0 +1,6 @@
+@startuml
+1008 -> freeswitch : 第一次Register消息
+freeswitch -> 1008: 401 Unauthorized
+1008 -> freeswitch : 第二次带认证消息Register消息
+freeswitch -> 1008: 200 注册成功
+@enduml
