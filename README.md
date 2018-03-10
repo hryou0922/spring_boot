@@ -2,6 +2,7 @@
 - 博客[IntelliJ IDEA工具 - 使用IntelliJ IDEA导入Github工程](http://blog.csdn.net/hry2015/article/details/77984399): 本博客的代码全部存储在Github在，为了方便大家在本地创建工程,本博客演示如何从Github中加载代码到本地工程中以及加载tag分支代码到本地工程中
 
 # 更新说明
+- 2018-03-10 博客[中间件系列十一 RabbitMQ之发送者端的消息确认机制](http://blog.csdn.net/hry2015/article/details/79462887)对应的git代码为[tagv0.15](https://github.com/hryou0922/spring_boot/tree/v0.16/rabbitmq/src/main/java/com/hry/spring/rabbitmq/advanced/publisherconfirm)
 - 2018-03-01 博客[中间件系列十 消费者端的消息确认机制](http://blog.csdn.net/hry2015/article/details/79416540)对应的git代码为[tagv0.15](https://github.com/hryou0922/spring_boot/tree/v0.15/rabbitmq/src/main/java/com/hry/spring/rabbitmq/advanced/consumerconfirm)
 - 2018-02-06 博客[中间件系列九 RabbmtiMQ 通过wireshark抓包学习AMQP协议](http://blog.csdn.net/hry2015/article/details/79273772)对应的git代码为[tagv0.14](https://github.com/hryou0922/spring_boot/tree/v0.14/rabbitmq/src/main/java/com/hry/spring/rabbitmq/advanced/publisherconfirm)
 - 2018-02-01 博客[Spring Boot系列十二 Spring Boot通过redis实现分布式系统的Session同步及从源码分析其原理](http://blog.csdn.net/hry2015/article/details/79232348)对应的git代码为[tagv0.13](https://github.com/hryou0922/spring_boot/tree/v0.13/redis/src/main/java/com/hry/spring/redis/session)
