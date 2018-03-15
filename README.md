@@ -2,6 +2,7 @@
 - 博客[IntelliJ IDEA工具 - 使用IntelliJ IDEA导入Github工程](http://blog.csdn.net/hry2015/article/details/77984399): 本博客的代码全部存储在Github在，为了方便大家在本地创建工程,本博客演示如何从Github中加载代码到本地工程中以及加载tag分支代码到本地工程中
 
 # 更新说明
+- 2018-03-15 博客[Spring Boot系列十三 Spring Boot集成RabbitMQ](http://blog.csdn.net/hry2015/article/details/79572713)对应的git代码为[tagv0.18](https://github.com/hryou0922/spring_boot/tree/v0.18/mvc/src/main/java/com/hry/spring/mvc/validation)
 - 2018-03-13 博客[Spring Boot系列十三 Spring Boot集成RabbitMQ](http://blog.csdn.net/hry2015/article/details/79545157)对应的git代码为[tagv0.17](https://github.com/hryou0922/spring_boot/tree/v0.17/rabbitmq/src/main/java/com/hry/spring/rabbitmq/boot)
 - 2018-03-01 博客[中间件系列十 消费者端的消息确认机制](http://blog.csdn.net/hry2015/article/details/79416540)对应的git代码为[tagv0.15](https://github.com/hryou0922/spring_boot/tree/v0.15/rabbitmq/src/main/java/com/hry/spring/rabbitmq/advanced/consumerconfirm)
 - 2018-02-06 博客[中间件系列九 RabbmtiMQ 通过wireshark抓包学习AMQP协议](http://blog.csdn.net/hry2015/article/details/79273772)对应的git代码为[tagv0.14](https://github.com/hryou0922/spring_boot/tree/v0.14/rabbitmq/src/main/java/com/hry/spring/rabbitmq/advanced/publisherconfirm)
