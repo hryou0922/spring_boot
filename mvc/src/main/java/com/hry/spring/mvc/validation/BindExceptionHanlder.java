@@ -23,7 +23,7 @@ public class BindExceptionHanlder {
         // ex.getFieldError():随机返回一个对象属性的异常信息。如果要一次性返回所有对象属性异常信息，则调用ex.getAllErrors()
         FieldError fieldError = ex.getFieldError();
                     StringBuilder sb = new StringBuilder();
-            sb.append("[").append(fieldError.getField()).append("]")
+            sb.append(fieldError.getField()).append("=[").append(fieldError.getRejectedValue()).append("]")
                     .append(fieldError.getDefaultMessage());
         // 生成返回结果
         Result errorResult = new Result();
@@ -31,15 +31,4 @@ public class BindExceptionHanlder {
         errorResult.setMessage(sb.toString());
         return errorResult;
     }
-
-
-//    //只需要加上下面这段即可，注意不能忘记注解
-//    @InitBinder
-//    public void initBinder(WebDataBinder binder, WebRequest request) {
-//
-//        //转换日期
-//        DateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-//        binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, true));// CustomDateEditor为自定义日期编辑器
-//    }
-
 }

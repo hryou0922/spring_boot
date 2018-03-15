@@ -18,7 +18,12 @@ public class ValidationCtrl {
 
     /**
      * 正确的请求：
-     *  http://127.0.0.1:8080//validation/save?name=name&email=126@126.com&age=18&gender=MALE&birthday=2/22/1985&phone=13989467001
+     *  http://127.0.0.1:8080//validation/save?name=name&email=126@126.com&age=18&gender=MALE&birthday=2/22/1985
+     *  http://127.0.0.1:8080//validation/save?name=name&email=126@126.com&age=18&gender=MALE&birthday=2/22/1985&phone=13589567201
+     * 验证@Size
+     *  http://127.0.0.1:8080//validation/save?name=n&email=126@126.com&age=18&gender=MALE&birthday=2/22/1985
+     * 验证Eamil为空，输出自定义异常
+     *  http://127.0.0.1:8080//validation/save?name=name&email=&age=18&gender=MALE&birthday=2/22/1985&phone=13589567201
      *
         @Valid是javax.validation里的。
         @Validated是@Valid 的一次封装，是spring提供的校验机制使用，有分组验证功能。@Valid不提供分组功能

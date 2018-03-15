@@ -17,7 +17,8 @@ public class Customer {
     @Size(min=2, max=30)
     private String name;
 
-    @NotEmpty
+    // 自定义错误信息
+    @NotEmpty(message = "自定义错误信息，Email不能为空")
     @Email
     private String email;
 
@@ -32,9 +33,8 @@ public class Customer {
     @NotNull @Past
     private Date birthday;
 
-    // 自定义错误信息
-    @NotNull(message = "自定义错误信息，手机不能为空")
-    @PhoneValidation("a")
+    // 自定义规则注解
+    @PhoneValidation
     private String phone;
 
     public enum Gender {
