@@ -13,7 +13,7 @@ import java.util.Date;
  *
  * Created by huangrongyou@yixin.im on 2018/3/14.
  */
-public class Customer {
+public class CustomerDto {
     @Size(min=2, max=30)
     private String name;
 

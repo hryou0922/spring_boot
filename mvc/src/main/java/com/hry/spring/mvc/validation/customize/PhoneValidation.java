@@ -8,11 +8,11 @@ import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
- * 自定义规则验证的类
+ * 自定义规则校验的类
  * Created by huangrongyou@yixin.im on 2018/3/14.
  */
 @Documented
-// 指定验证规则的类
+// 指定真正实现校验规则的类
 @Constraint(validatedBy = PhoneValidationValidator.class)
 @Target( { ElementType.METHOD, ElementType.FIELD })
 @Retention(RetentionPolicy.RUNTIME)

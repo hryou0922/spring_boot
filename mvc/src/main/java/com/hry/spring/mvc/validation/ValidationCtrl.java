@@ -32,7 +32,7 @@ public class ValidationCtrl {
      * @return
      */
     @RequestMapping(value = "/validation/save", method = RequestMethod.GET)
-    public Result saveCustomerPage(@Validated Customer model) {
+    public Result saveCustomerPage(@Validated CustomerDto model) {
         logger.info("Good" + model.getBirthday());
         Result okResult = new Result();
         okResult.setCode(200);

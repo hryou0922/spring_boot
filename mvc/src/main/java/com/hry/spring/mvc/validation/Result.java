@@ -1,7 +1,5 @@
 package com.hry.spring.mvc.validation;
 
-import java.util.List;
-
 /**
  * Created by huangrongyou@yixin.im on 2018/3/14.
  */
