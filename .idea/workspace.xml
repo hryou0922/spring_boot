@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e5b6565-d529-4354-845d-980d9489fec6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/async/DeferredResultController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/formtag/FormTagController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/formtag/Preferences.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/formtag/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/i18n/I18nControl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/interceptor/InterceptorController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/interceptor/InterfaceHandlerInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/interceptor/MyHandlerInterceptorAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/interceptor/WebConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/upload/UploadController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/resources/messages_zh_CN.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/main/resources/com/hry/spring/rabbitmq/boot/spring-boot-rabbitmq-RabbitListenerAnnotationBeanPostProcessor.puml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rabbitmq/src/main/resources/com/hry/spring/rabbitmq/boot/spring-boot-rabbitmq-src.puml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/src/main/resources/META-INF/resources/WEB-INF/page/i18n/i18n.jsp" afterPath="$PROJECT_DIR$/mvc/src/main/resources/META-INF/resources/WEB-INF/page/i18n/i18n.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mvc/src/main/resources/message.properties" afterPath="$PROJECT_DIR$/mvc/src/main/resources/messages.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mvc/src/main/resources/message_en.properties" afterPath="$PROJECT_DIR$/mvc/src/main/resources/messages_en.properties" />
-    </list>
+    <list default="true" id="2e5b6565-d529-4354-845d-980d9489fec6" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/docker/target/" />
     <ignored path="$PROJECT_DIR$/grpc/target/" />
     <ignored path="$PROJECT_DIR$/core/target/" />
@@ -1244,7 +1226,7 @@
       <workItem from="1520220906418" duration="17376000" />
       <workItem from="1520685345375" duration="278000" />
       <workItem from="1521028004549" duration="5572000" />
-      <workItem from="1521286863294" duration="15406000" />
+      <workItem from="1521286863294" duration="16262000" />
     </task>
     <servers />
   </component>
@@ -1281,7 +1263,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123017000" />
+    <option name="totallyTimeSpent" value="123873000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
