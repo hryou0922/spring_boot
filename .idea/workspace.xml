@@ -1,34 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e5b6565-d529-4354-845d-980d9489fec6" name="Default" comment="" />
-    <ignored path="$PROJECT_DIR$/docker/target/" />
-    <ignored path="$PROJECT_DIR$/grpc/target/" />
-    <ignored path="$PROJECT_DIR$/core/target/" />
-    <ignored path="$PROJECT_DIR$/log/target/" />
-    <ignored path="$PROJECT_DIR$/parent/target/" />
-    <ignored path="$PROJECT_DIR$/protobuf/target/" />
-    <ignored path="$PROJECT_DIR$/mvc/target/" />
-    <ignored path="$PROJECT_DIR$/taskExecutionAndScheduling/target/" />
-    <ignored path="$PROJECT_DIR$/thymeleaf/target/" />
-    <ignored path="$PROJECT_DIR$/mybatis/target/" />
-    <ignored path="$PROJECT_DIR$/rabbitmq/target/" />
-    <ignored path="$PROJECT_DIR$/redis/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="47fadb16-8fcf-4afb-8003-a63391ff28de" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/test/java/com/hry/spring/java/JavaClassTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/validation/BindExceptionHanlder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/validation/CustomerDto.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/validation/Result.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/validation/ValidationCtrl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/validation/customize/PhoneValidation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/validation/customize/PhoneValidationValidator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/exceptionhandling/MySimpleHandlerExceptionResolver.java" afterPath="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/exceptionhandling/MySimpleHandlerExceptionResolver.java" />
+    </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -36,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/i18n/I18nControl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="318">
-              <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+              <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -46,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/upload/UploadController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="35" />
+              <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -66,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/interceptor/InterfaceHandlerInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1215">
-              <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+              <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -88,7 +77,7 @@
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.10.RELEASE/spring-context-4.3.10.RELEASE.jar!/org/springframework/context/annotation/Configuration.class">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -139,139 +128,11 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="UML Sequence" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>接收端</find>
-      <find>consumerconfirm</find>
-      <find>consumerconfirm-exchange</find>
-      <find>ConnectionFactory</find>
-      <find>sendAndReceive</find>
-      <find>JmsListenerContainerFactory</find>
-      <find>DefaultJmsListenerContainerFactory</find>
-      <find>SimpleMessageListenerContainer</find>
-      <find>SimpleRabbitListenerContainerFactory</find>
-      <find>connectionFactory</find>
-      <find>SimpleRabbitListenerContainerFactoryConfigurer</find>
-      <find>RabbitListenerContainerFactory</find>
-      <find>@RabbitListener</find>
-      <find>createContainerInstance</find>
-      <find>createListenerContainer</find>
-      <find>EnableRabbit</find>
-      <find>@EnableRabbit</find>
-      <find>RabbitListenerEndpointRegistrar</find>
-      <find>endpointRegistry</find>
-      <find>registrar</find>
-      <find>com.rabbitmq.client.ConnectionFactory</find>
-      <find>rabbitConnectionFactory</find>
-      <find>Channel</find>
-      <find>ChannelCachingConnectionProxy</find>
-      <find>RabbitAnnotationDrivenConfiguration</find>
-      <find>RabbitListenerAnnotationBeanPostProcessor</find>
-      <find>RabbitBootstrapConfiguration</find>
-      <find>RabbitAutoConfiguration</find>
-      <find>spring.factories</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-    <dirStrings>
-      <dir>C:\Users\hry\.m2\repository\org\springframework\amqp\spring-rabbit\1.7.3.RELEASE\spring-rabbit-1.7.3.RELEASE.jar!\org\springframework\amqp\rabbit</dir>
-    </dirStrings>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
-  <component name="HierarchyBrowserManager">
-    <option name="SCOPE" value="All" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/rabbitmq/src/test/java/com/hry/spring/boot/simple/RawTest.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/boot/raw/RabbitRawConfigure.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/boot/raw/SendRawMsg.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/boot/simple1/RabbitConfigure1.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/boot/msgconvert/SendMsg1.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/boot/msgconvert/SpringBootRabbitMsgConvertApplication.java" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/1.7.3.RELEASE/spring-rabbit-1.7.3.RELEASE-sources.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.java" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/1.7.3.RELEASE/spring-rabbit-1.7.3.RELEASE-sources.jar!/org/springframework/amqp/rabbit/support/RabbitExceptionTranslator.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/boot/msgconvert/SendMsgConvertMsg.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/test/java/com/hry/spring/boot/simple/MsgConvertTest.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/boot/msgconvert/pojo/MsgContent2.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/boot/msgconvert/pojo/MsgContent1.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/boot/msgconvert/RabbitMsgConvertConfigure.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/test/java/com/hry/spring/rabbitmq/advanced/ConsumerConfirmTest.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/test/java/com/hry/spring/rabbitmq/BaseTest.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/test/java/com/hry/spring/Test.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/test/java/com/hry/spring/Test2.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/pom.xml" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/1.7.3.RELEASE/spring-rabbit-1.7.3.RELEASE-sources.jar!/org/springframework/amqp/rabbit/listener/RabbitListenerEndpointRegistrar.java" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/java/com/hry/spring/rabbitmq/boot/msgconvert/ReceiveMsgConvertMsg.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE.jar!/org/springframework/boot/autoconfigure/amqp/RabbitAutoConfiguration.class" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE.jar!/org/springframework/boot/autoconfigure/amqp/RabbitAnnotationDrivenConfiguration.class" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/amqp/RabbitAnnotationDrivenConfiguration.java" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/amqp/RabbitAutoConfiguration.java" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/amqp/RabbitProperties.java" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/amqp/SimpleRabbitListenerContainerFactoryConfigurer.java" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE.jar!/META-INF/spring.factories" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE.jar!/META-INF/spring-autoconfigure-metadata.properties" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.10.RELEASE/spring-core-4.3.10.RELEASE.jar!/org/springframework/core/io/support/SpringFactoriesLoader.class" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/AutoConfigurationImportSelector.java" />
-        <option value="$MAVEN_REPOSITORY$/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar!/javassist/Loader.class" />
-        <option value="$MAVEN_REPOSITORY$/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar!/javassist/tools/reflect/Loader.class" />
-        <option value="$MAVEN_REPOSITORY$/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar!/javassist/tools/web/Viewer.class" />
-        <option value="$MAVEN_REPOSITORY$/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar!/javassist/CodeConverter.class" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/resources/com/hry/spring/rabbitmq/boot/spring_boot_rabbitmq_src.puml" />
-        <option value="$PROJECT_DIR$/rabbitmq/src/main/resources/com/hry/spring/rabbitmq/boot/spring-boot-rabbitmq-RabbitListenerAnnotationBeanPostProcessor.puml" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.10.RELEASE/spring-web-4.3.10.RELEASE.jar!/org/springframework/web/context/request/async/DeferredResult.class" />
-        <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/async/DeferredResultController.java" />
-        <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/i18n/I18nControl.java" />
-        <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/simple/URITemplate.java" />
-        <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/formtag/FormTagController.java" />
-        <option value="$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.16/tomcat-embed-core-8.5.16.jar!/org/apache/tomcat/util/threads/TaskThread.class" />
-        <option value="$PROJECT_DIR$/mvc/src/main/resources/message_zh_CN.properties" />
-        <option value="$PROJECT_DIR$/mvc/src/main/resources/META-INF/resources/WEB-INF/page/i18n/i18n.jsp" />
-        <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/interceptor/InterceptorController.java" />
-        <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/interceptor/WebConfig.java" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.10.RELEASE/spring-context-4.3.10.RELEASE.jar!/org/springframework/context/annotation/Configuration.class" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE.jar!/org/springframework/web/servlet/handler/HandlerInterceptorAdapter.class" />
-        <option value="$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.10.RELEASE/spring-webmvc-4.3.10.RELEASE.jar!/org/springframework/web/servlet/AsyncHandlerInterceptor.class" />
-        <option value="$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/upload/UploadController.java" />
-      </list>
-    </option>
-  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState />
-  </component>
-  <component name="NamedScopeManager">
-    <scope name="java" pattern="lib:java*.*" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-10" />
@@ -589,37 +450,6 @@
       <pane id="Scope" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="SimpleMessageListenerContainer&#9;FILE&#9;jar://C:/Users/hry/.m2/repository/org/springframework/amqp/spring-rabbit/1.7.3.RELEASE/spring-rabbit-1.7.3.RELEASE-sources.jar!/org/springframework/amqp/rabbit/listener/SimpleMessageListenerContainer.java&#10;SimpleRabbitListenerContainerFactory&#9;PSI&#9;JAVA://org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory&#10;Classloader&#9;PSI&#9;JAVA://java.lang.ClassLoader&#10;RabbitListenerAnnotationBeanPostProcessor&#9;PSI&#9;JAVA://org.springframework.amqp.rabbit.annotation.RabbitListenerAnnotationBeanPostProcessor&#10;RabbitBootstrapConfiguration&#9;PSI&#9;JAVA://org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration&#10;RabbitAnnotationDrivenConfiguration&#9;FILE&#9;jar://C:/Users/hry/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/amqp/RabbitAnnotationDrivenConfiguration.java&#10;RabbitListenerContainer&#9;PSI&#9;JAVA://org.springframework.amqp.rabbit.listener.RabbitListenerContainerFactory&#10;CachingConnectionFactory &#9;PSI&#9;JAVA://org.springframework.amqp.rabbit.connection.CachingConnectionFactory&#10;RabbitAutoConfiguration &#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.amqp.RabbitAutoConfiguration&#10;AbstractMessageConverter&#9;PSI&#9;JAVA://org.springframework.amqp.support.converter.AbstractMessageConverter&#10;RabbitListenerEndpoint &#9;PSI&#9;JAVA://org.springframework.amqp.rabbit.listener.RabbitListenerEndpoint&#10;RabbitListenerEndpointRegistry &#9;PSI&#9;JAVA://org.springframework.amqp.rabbit.listener.RabbitListenerEndpointRegistry&#10;RabbitListenerEndpointRegistry&#9;PSI&#9;JAVA://org.springframework.amqp.rabbit.listener.RabbitListenerEndpointRegistry&#10;SimpleRabbitListenerContainerFactory &#9;PSI&#9;JAVA://org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory&#10;RabbitAutoConfiguration&#9;FILE&#9;jar://C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/amqp/RabbitAutoConfiguration.java&#10;QueueingConsumer&#9;PSI&#9;JAVA://org.springframework.amqp.rabbit.core.RabbitTemplate#createQueueingConsumer&#10;RabbitListenerContainerFactory&#9;FILE&#9;jar://C:/Users/Administrator/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/amqp/SimpleRabbitListenerContainerFactoryConfigurer.java&#10;DefaultJmsListenerContainerFactoryConfigurer &#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.jms.DefaultJmsListenerContainerFactoryConfigurer&#10;JmsListenerContainerFactory &#9;PSI&#9;JAVA://org.springframework.boot.autoconfigure.jms.JmsAnnotationDrivenConfiguration#jmsListenerContainerFactory&#10;CachingConnectionFactory&#9;PSI&#9;JAVA://org.springframework.amqp.rabbit.connection.CachingConnectionFactory" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.1484375" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="RequestMappingsPanelOrder2" value="2" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.hry.spring.rabbitmq.boot.msgconvert.pojo" />
-      <recent name="com.hry.spring.boot.simple" />
-      <recent name="com.hry.spring.rabbitmq.boot.raw" />
-      <recent name="com.hry.spring.rabbitmq.boot.simple2" />
-      <recent name="com.hry.spring.rabbitmq.boot" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\project\git\spring_boot\spring_boot\mvc\src\main\resources" />
-      <recent name="D:\project\git\spring_boot\spring_boot\mvc\src\main\java\com\hry\spring\mvc\upload" />
-      <recent name="D:\project\git\spring_boot\spring_boot\mvc\src\main\java\com\hry\spring\mvc\simple" />
-      <recent name="D:\project\git\spring_boot\spring_boot\mvc\src\main\java\com\hry\spring\mvc\interceptor" />
-      <recent name="D:\project\git\spring_boot\spring_boot\mvc\src\main\java\com\hry\spring\mvc\i18n" />
-    </key>
-  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -632,168 +462,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MvcApplication">
-    <configuration name="ConsumerConfirmTest.ConsumerConfirmRecv" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.hry.spring.rabbitmq.advanced.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="rabbitmq" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hry.spring.rabbitmq.advanced" />
-      <option name="MAIN_CLASS_NAME" value="com.hry.spring.rabbitmq.advanced.ConsumerConfirmTest" />
-      <option name="METHOD_NAME" value="ConsumerConfirmRecv" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="DockerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hry.spring.DockerApplication" />
-      <module name="docker" />
-      <envs />
-    </configuration>
-    <configuration name="GrpcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hry.spring.GrpcApplication" />
-      <module name="grpc" />
-      <envs />
-    </configuration>
-    <configuration name="LogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hry.spring.log.LogApplication" />
-      <module name="log" />
-      <envs />
-    </configuration>
-    <configuration name="MsgConvertTest.sendMsgContent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.hry.spring.boot.simple.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="rabbitmq" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hry.spring.boot.simple" />
-      <option name="MAIN_CLASS_NAME" value="com.hry.spring.boot.simple.MsgConvertTest" />
-      <option name="METHOD_NAME" value="sendMsgContent" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="MvcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hry.spring.mvc.MvcApplication" />
-      <module name="mvc" />
-      <envs />
-    </configuration>
-    <configuration name="ProtobufApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hry.spring.ProtobufApplication" />
-      <module name="protobuf" />
-      <envs />
-    </configuration>
-    <configuration name="SimpleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.hry.spring.boot.simple.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="rabbitmq" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hry.spring.boot.simple" />
-      <option name="MAIN_CLASS_NAME" value="com.hry.spring.boot.simple.SimpleTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="SimpleTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.hry.spring.boot.simple.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="rabbitmq" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hry.spring.boot.simple" />
-      <option name="MAIN_CLASS_NAME" value="com.hry.spring.boot.simple.SimpleTest2" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="SimpleTest2.sendAndReceive_2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.hry.spring.boot.simple.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="rabbitmq" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hry.spring.boot.simple" />
-      <option name="MAIN_CLASS_NAME" value="com.hry.spring.boot.simple.SimpleTest2" />
-      <option name="METHOD_NAME" value="sendAndReceive_2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="ThymeleafApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hry.spring.ThymeleafApplication" />
-      <module name="thymeleaf" />
-      <envs />
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -815,22 +484,6 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="passParentEnv" value="true" />
-      <setting name="launchBrowser" value="true" />
-      <setting name="launchBrowserUrl" value="" />
-      <setting name="depsClasspath" value="false" />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -850,18 +503,6 @@
       </option>
       <envs />
       <patterns />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="docker" />
-      <envs />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -903,379 +544,19 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
-      <module name="" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
-        <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
-        <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
-      </Profilers>
-      <method />
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SCRATCH_FILE_ID" value="0" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
-      <method />
-    </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
-      <method />
-    </configuration>
-    <list size="11">
-      <item index="0" class="java.lang.String" itemvalue="Spring Boot.DockerApplication" />
-      <item index="1" class="java.lang.String" itemvalue="Spring Boot.GrpcApplication" />
-      <item index="2" class="java.lang.String" itemvalue="Spring Boot.LogApplication" />
-      <item index="3" class="java.lang.String" itemvalue="Spring Boot.ProtobufApplication" />
-      <item index="4" class="java.lang.String" itemvalue="Spring Boot.ThymeleafApplication" />
-      <item index="5" class="java.lang.String" itemvalue="Spring Boot.MvcApplication" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.MsgConvertTest.sendMsgContent" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.ConsumerConfirmTest.ConsumerConfirmRecv" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.SimpleTest2.sendAndReceive_2" />
-      <item index="9" class="java.lang.String" itemvalue="JUnit.SimpleTest" />
-      <item index="10" class="java.lang.String" itemvalue="JUnit.SimpleTest2" />
-    </list>
-    <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MsgConvertTest.sendMsgContent" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.SimpleTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.SimpleTest2" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.SimpleTest2.sendAndReceive_2" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ConsumerConfirmTest.ConsumerConfirmRecv" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="2e5b6565-d529-4354-845d-980d9489fec6" name="Default" comment="" />
-      <created>1517884151636</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1517884151636</updated>
-      <workItem from="1517884152974" duration="34631000" />
-      <workItem from="1518314022829" duration="10607000" />
-      <workItem from="1519368912400" duration="1762000" />
-      <workItem from="1519440864892" duration="37385000" />
-      <workItem from="1520220906418" duration="17376000" />
-      <workItem from="1520685345375" duration="278000" />
-      <workItem from="1521028004549" duration="5572000" />
-      <workItem from="1521286863294" duration="16262000" />
-    </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="MsgConvertTest_sendMsgContent - 2018.03.05 at 17h 23m 24s.xml">
-      <configuration name="MsgConvertTest.sendMsgContent" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MsgConvertTest_sendMsgContent - 2018.03.18 at 00h 17m 18s.xml">
-      <configuration name="MsgConvertTest.sendMsgContent" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MsgConvertTest_sendMsgContent - 2018.03.18 at 00h 19m 24s.xml">
-      <configuration name="MsgConvertTest.sendMsgContent" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SimpleTest - 2018.03.05 at 17h 07m 27s.xml">
-      <configuration name="SimpleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SimpleTest - 2018.03.05 at 17h 07m 36s.xml">
-      <configuration name="SimpleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SimpleTest - 2018.03.05 at 17h 08m 43s.xml">
-      <configuration name="SimpleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SimpleTest - 2018.03.05 at 17h 21m 18s.xml">
-      <configuration name="SimpleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SimpleTest2 - 2018.03.05 at 17h 09m 49s.xml">
-      <configuration name="SimpleTest2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SimpleTest2 - 2018.03.05 at 17h 10m 07s.xml">
-      <configuration name="SimpleTest2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SimpleTest2_sendAndReceive_2 - 2018.03.05 at 17h 06m 58s.xml">
-      <configuration name="SimpleTest2.sendAndReceive_2" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123873000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="3000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="0" width="1936" height="1030" extended-state="0" />
+    <frame x="-10" y="0" width="1936" height="1030" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33044422" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32552955" sideWeight="0.5042644" order="7" side_tool="true" content_ui="tabs" />
@@ -1297,7 +578,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24778761" sideWeight="0.49573562" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27573133" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27573133" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28318584" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1351,12 +632,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -1405,10 +680,6 @@
       <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/1.7.3.RELEASE/spring-rabbit-1.7.3.RELEASE-sources.jar!/org/springframework/amqp/rabbit/annotation/RabbitListenerAnnotationBeanPostProcessor.java">
@@ -1767,7 +1038,7 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.10.RELEASE/spring-context-4.3.10.RELEASE.jar!/org/springframework/context/annotation/Configuration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1799,7 +1070,7 @@
     <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/interceptor/InterfaceHandlerInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1215">
-          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1815,7 +1086,7 @@
     <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/i18n/I18nControl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
-          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1823,7 +1094,7 @@
     <entry file="file://$PROJECT_DIR$/mvc/src/main/java/com/hry/spring/mvc/upload/UploadController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="35" />
+          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1838,97 +1109,5 @@
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>mvc:war exploded</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>rabbitmq</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:1.1.11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <last-edited>java</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-          <order>
-            <scope name="java" />
-          </order>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

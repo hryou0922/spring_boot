@@ -24,7 +24,7 @@ public class MySimpleHandlerExceptionResolver implements HandlerExceptionResolve
 	@Override
 	public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, Object handler,
 			Exception ex) {
-		logger.info("url = {}, exception message = {}", request.getRequestURI(), ex.getMessage());
+		logger.info("url = {}, exception={}, exception message = {}", request.getRequestURI(), ex.getClass().getCanonicalName(), ex.getMessage());
 		// 返回null，让后面HandlerExceptionResolver继续进行处理；如果不让后面的HandlerExceptionResolver进行处理，则这里返回一个ModelAndView对象即可
 		return null;
 	}
