@@ -7,7 +7,7 @@
 <title><spring:message code="label.title" /></title>
 </head>
 <body>
-	<form method="post" action="login">
+	<form method="post" action="/i18n">
 		<table>
 			<tr>
 				<td><label> <strong><spring:message
