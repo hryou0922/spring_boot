@@ -1,0 +1,37 @@
+
+# 分页配置： https://github.com/pagehelper/Mybatis-PageHelper/blob/master/wikis/zh/HowToUse.md
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+# 数据库配置
+spring:
+  datasource:
+    #### Datasource 配置 ####
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/consumer?zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2b8&useSSL=true
+    # url: jdbc:mysql://127.0.0.1:3306/consumer
+    driverClassName: com.mysql.cj.jdbc.Driver
+    # driverClassName: oracle.jdbc.driver.OracleDriver
+    # 下面为连接池的补充设置，应用到上面所有数据源中# 初始化大小，最小，最大
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    # 配置获取连接等待超时的时间
+    maxWait: 30000
+    # 配置一个连接在池中最小生存的时间，单位是毫秒
+    minEvictableIdleTimeMillis: 300000
+    timeBetweenEvictionRunsMillis: 60000
+    validationQuery: SELECT 1 FROM DUAL
+    # 打开PSCache，并且指定每个连接上PSCache的大小
+    poolPreparedStatements: false
+    maxPoolPreparedStatementPerConnectionSize: 20
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+    filters: log4j
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000

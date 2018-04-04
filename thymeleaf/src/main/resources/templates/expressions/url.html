@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Expression Utility Objects</title>
+</head>
+<body>
+==================== 动态生成URL ===============================<br/>
+<!-- th:href生成的值替换<a>的href值; (orderId=${id})做为url的请求参数 -->
+http://localhost:8080/gtvg/order/details?orderId=123 --> <a href="details.html" 
+   th:href="@{http://localhost:8080/gtvg/order/details(orderId=${id})}">view</a> <br />
+
+<!-- 生成：/order/details?orderId=123 -->
+/order/details?orderId=123 --> <a href="details.html" th:href="@{/order/details(orderId=${id})}">view</a> <br />
+
+<!-- 替换url中变量值，生成/order/123/details -->
+/order/123/details --> <a href="details.html" th:href="@{/order/{orderId}/details(orderId=${id})}">view</a> <br />
+
+
+
+</body>
+</html>

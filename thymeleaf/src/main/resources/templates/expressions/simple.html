@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+==================== 变量表达式(Variable Expressions) ===============================<br/>
+<!-- 变量表达式(Variable Expressions)-->
+${user.name} --> <input type="text" name="userName" value="James Carrot" th:value="${user.name}" /> <br />
+<!-- 变量值和字符串拼接  -->
+'The name of the user is ' + ${user.name} --> <span th:text="'The name of the user is ' + ${user.name}" ></span> <br />
+<br />
+
+=====================消息表达式：Message Expressions =================================<br/>
+<!-- 消息表达式：Message Expressions -->
+<!-- 直接从属性文件中获取值 -->
+#{home.welcome} --> <span th:text="#{home.welcome}">Welcome to our grocery store!</span> <br />
+<!-- 从属性文件中获取值，并替换占位符  -->
+#{home.welcome.replace(${user.name})} --> <span th:text="#{home.welcome.replace(${user.name})}"></span> <br />
+<br />
+
+========================== Literals =======================================<br/>
+<!-- 文本 Text literals: Text literals are just character strings specified between single quotes -->
+<div>
+  Now you are looking at a <span th:text="'working web application'">template file</span>.
+</div>
+
+<!-- 数字 Number literals: 0, 34, 3.0, 12.3,… -->
+<div>仅仅输出数字 th:text="2013" --> <span th:text="2013">1492</span>.</div>
+<div>数字计算 th:text="2013 + 2" --> <span th:text="2013 + 2">1494</span>.</div>
+
+<!-- 布尔值： Boolean literals: true, false -->
+${user.isAdmin()} == false --> <span th:if="${user.isAdmin()} == false"> false </span> <br />
+
+<!-- Null值： Null literal: null -->
+${user.other} == null --> <span th:if="${user.other} == null"> null</span>
+<br />
+
+========================== 文本操作符： Text operations ==================================<br/>
+<!-- +:字符串拼接字体串 -->
+'The name of the user is ' + ${user.name} + '_' + ${user.age} --> <span th:text="'The name of the user is ' + ${user.name} + '_' + ${user.age}"> </span> <br/>
+<!-- 简化字符中拼接操作： Literal substitutions（使用"|"包围字符串，不需要对字符串使用"'"） -->
+|Welcome to our application, ${user.name}!| --> <span th:text="|Welcome to our application, ${user.name}!|"></span> <br />
+等价于这条语句：<br />
+'Welcome to our application, ' + ${user.name} + '!' --> <span th:text="'Welcome to our application, ' + ${user.name} + '!'"> </span>
+<br />
+
+========================== 算术表达式：Arithmetic operations ==================================<br/>
+<!-- 二进制运算符: Binary operators: +, -, *, /, %  -->
+${user.age} % 2 == 0 --> <span th:text="${user.age} % 2 == 0"> </span> <br />
+
+<!-- Boolean operations: true,false, !, not  -->
+true --> <span th:text="true"> </span> <br />
+!(${user.age} % 2 == 0 --> <span th:text="!(${user.age} % 2 == 0)"> </span> <br />
+
+<!-- Binary operators: and, or -->
+(${user.age} % 2 == 0) and true --> <span th:text="(${user.age} % 2 == 0) and true"> </span><br />
+
+========================== 比较操作符：Comparisons and equality ==================================<br/>
+<!-- Comparators: >, <, >=, <= (gt, lt, ge, le) -->
+${user.age} &gt; 18 --> <span th:if="${user.age} &gt; 18"> 大人 </span> <br />
+<!-- Equality operators: ==, != (eq, ne) -->
+${user.age} != 18 --> <span th:if="${user.age} != 18"> 大人_no_equality </span> <br />
+<br />
+
+========================== 条件操作符： Conditional operators ==================================<br/>
+<!-- If-then: (if) ? (then) -->
+${user.age}%2==0 ? 'even' --> <span th:text="${user.age}%2==0 ? 'even'"> </span> <br />
+<!-- If-then-else: (if) ? (then) : (else)  -->
+${user.age}%2==0 ? 'even' : 'odd' --> <span th:text="${user.age}%2==0 ? 'even' : 'odd'"> </span> <br />
+<!-- 如果null值，则使用？:后面的值: Default: (value) ?: (defaultvalue) -->
+${user.age} ?:'18' --> <span th:text="${user.age} ?:'18'"> </span> <br />
+
+</body>
+</html>

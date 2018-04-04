@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/docker/docker.iml" filepath="$PROJECT_DIR$/docker/docker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc/grpc.iml" filepath="$PROJECT_DIR$/grpc/grpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/log/log.iml" filepath="$PROJECT_DIR$/log/log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvc/mvc.iml" filepath="$PROJECT_DIR$/mvc/mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/mybatis/mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/protobuf/protobuf.iml" filepath="$PROJECT_DIR$/protobuf/protobuf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq/rabbitmq.iml" filepath="$PROJECT_DIR$/rabbitmq/rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redis/redis.iml" filepath="$PROJECT_DIR$/redis/redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot.iml" filepath="$PROJECT_DIR$/spring-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taskExecutionAndScheduling/taskExecutionAndScheduling.iml" filepath="$PROJECT_DIR$/taskExecutionAndScheduling/taskExecutionAndScheduling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thymeleaf/thymeleaf.iml" filepath="$PROJECT_DIR$/thymeleaf/thymeleaf.iml" />
+    </modules>
+  </component>
+</project>

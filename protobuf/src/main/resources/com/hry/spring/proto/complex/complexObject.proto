@@ -1,0 +1,43 @@
+// 如果使用此注释，则使用proto3; 否则使用proto2
+syntax = "proto3";
+
+// 引入外部的proto对象
+import "google/protobuf/any.proto";
+
+// 生成类的包名
+option java_package = "com.hry.spring.proto.complex";
+//生成的数据访问类的类名  
+option java_outer_classname = "MyComplexObjectEntity";
+
+message ComplexObject {  
+	// Message里每个成员变量都有一个唯一的数字标志(	Assigning Tags)
+  	int32 id = 1;//  singular, 默认值，表示成员只有0个或者1个
+  	string name = 2;// 
+ 	string email = 3;//
+  	repeated string sons = 4; // repeated 列表
+  	Gender gender = 5; // Enum值
+  	repeated Result result = 6; // 新的对象List
+  	repeated google.protobuf.Any any = 7; // Any对象
+  	map<string, MapVaule> map = 8; // 定义Map对象
+  	
+  	// reserved
+  	reserved 12, 15, 9 to 11; // 预留将来使用的Assigning Tags,
+	reserved "foo", "bar"; // 预留将来使用的filed name
+} 
+
+enum Gender {
+  MAN = 0;
+  WOMAN = 1;
+}
+
+// 定义一个新的对象
+message Result {
+  string url = 1;
+  string title = 2;
+  repeated string snippets = 3;
+}
+
+// 定义Map的value值
+message MapVaule {
+  string mapValue = 1;
+}

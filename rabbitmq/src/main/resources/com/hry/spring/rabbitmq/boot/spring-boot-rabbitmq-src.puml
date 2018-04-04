@@ -1,0 +1,31 @@
+@startuml
+RabbitAutoConfiguration -> RabbitProperties: @EnableConfigurationProperties
+
+
+RabbitAutoConfiguration -> CachingConnectionFactory: RabbitConnectionFactoryCreator : rabbitConnectionFactory()
+
+RabbitAutoConfiguration -> RabbitTemplate : RabbitTemplateConfiguration : rabbitTemplate(ConnectionFactory)
+
+RabbitAutoConfiguration -> AmqpAdmin   : RabbitTemplateConfiguration : amqpAdmin(ConnectionFactory)
+
+RabbitAutoConfiguration -> RabbitMessagingTemplate  : MessagingTemplateConfiguration  :  rabbitMessagingTemplate( RabbitTemplate)
+
+====
+
+RabbitAutoConfiguration -> RabbitAnnotationDrivenConfiguration: @Import
+
+RabbitAnnotationDrivenConfiguration -> SimpleRabbitListenerContainerFactoryConfigurer : rabbitListenerContainerFactoryConfigurer()
+
+RabbitAnnotationDrivenConfiguration -> SimpleRabbitListenerContainerFactory :  rabbitListenerContainerFactory( SimpleRabbitListenerContainerFactoryConfigurer, ConnectionFactory)
+
+RabbitAnnotationDrivenConfiguration -> @EnableRabbit : @EnableRabbit
+
+====
+
+@EnableRabbit  -> 	RabbitBootstrapConfiguration : @Import
+
+RabbitBootstrapConfiguration  -> RabbitListenerAnnotationBeanPostProcessor  :  rabbitListenerAnnotationProcessor()
+
+RabbitBootstrapConfiguration  -> RabbitListenerEndpointRegistry  :defaultRabbitListenerEndpointRegistry()
+
+@enduml

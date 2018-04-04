@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>programming</title>
+</head>
+<body>
+	================ Iteration =================== <br />
+	<!-- 常用的迭代 th:each 用法 -->
+	<table border="2">
+		<thead>
+			 <tr>
+			 	<th>name</th>
+			 	<th>age</th>
+			 	<th>isAdmin</th>
+			 </tr>
+		</thead>
+		<tbody>
+			<!-- 常用的迭代 th:each 用法 -->
+			<tr th:each="user : ${userList}">
+				<td th:text="${user.name}"></td>
+				<td th:text="${user.age}"></td>
+				<td th:text="${user.isAdmin}"></td>
+			</tr>
+		</tbody>
+	</table>
+
+	
+	<table border="2">
+		<thead>
+			 <tr>
+			 	<th>迭代索引</th>
+			 	<th>元素所处的位置索引</th>
+			 	<th>奇偶行</th>
+			 	<th>name</th>
+			 	<th>age</th>
+			 	<th>isAdmin</th>
+			 </tr>
+		</thead>
+		<tbody>
+			<!-- 获取迭代的中间的状态，定义在iterStat中-->
+			<tr th:each="user,iterStat : ${userList}">
+				<!-- index: 当前迭代的索引 -->
+				<td th:text="${iterStat.index }"></td>
+				<!-- first: 当前元素是第一个元素; last: 当前元素是最后个元素 -->
+				<td th:text="${iterStat.first } ? '这是第一个元素':(${iterStat.last} ? '这是最后一个元素':'')" ></td>
+				<!--  -->
+				<td th:text="${iterStat.odd} ? 'odd' : 'even'" ></td>
+				<td th:text="${user.name}"></td>
+				<td th:text="${user.age}"></td>
+				<td th:text="${user.isAdmin}"></td>
+				
+			</tr>
+		</tbody>
+	</table>
+	
+	================ Simple conditionals: “if” and “unless” =================== <br />
+	<!-- th:if：如果值是true，则打印<span>整个节点  -->
+	<span th:if="${user.isAdmin}" th:text="${user.name} + '是管理员'">  </span><br />
+	<!-- th:unless: 和th:if是相反功能，如果值为false,则打印<span>整个节点  -->
+ 	<span th:unless="not ${user.isAdmin}" th:text="${user.name} + '是管理员'">  </span><br />
+ 	<!-- 
+	<span th:unless="${#lists.isEmpty(userList)}" th:text="${user.name} + '是管理员'">  </span><br />
+	 -->
+	================ Switch statements =================== <br />
+	<!-- th:switch / th:case -->
+	<div th:switch="${user.name}">
+	  <p th:case="'admin'">User is an administrator</p>
+	  <!-- *: case的默认的选项 -->
+	  <p th:case="*">User is some other thing</p>
+	</div>
+</body>
+</html>

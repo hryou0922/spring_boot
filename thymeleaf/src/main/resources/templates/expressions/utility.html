@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Expression Utility Objects</title>
+</head>
+<body>
+==================== #messages ===============================<br/>
+<!-- #messages加载外部属性文件的key，对应接口org.thymeleaf.expression.Messages
+	这里只列出一种用法，其他可以用法也是类似
+	详细见：http://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#messages-1
+	-->
+${#messages.msgOrNull('home.welcome.replace','message')} --> <span th:text="${#messages.msgOrNull('home.welcome.replace','message')}" ></span>
+<br />
+
+==================== #uris ===============================<br/>
+<!-- 
+	#uri: URL/URI的工具类，对应接口org.thymeleaf.expression.Uris
+	详细见：
+	http://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#urisurls
+ -->
+${#uris.escapePath('http://blog.csdn.net/hry2015/')} --> <span th:text="${#uris.escapePath('http://blog.csdn.net/hry2015/')}" ></span>
+
+<br />
+<br />
+其它工具类见：<br />
+	• #execInfo: information about the template being processed. <br />
+	• #messages: methods for obtaining externalized messages inside variables expressions, in the same way as they would be obtained using #{…} syntax.<br />
+	• #uris: methods for escaping parts of URLs/URIs<br />
+	• #conversions: methods for executing the configured conversion service (if any).<br />
+	• #dates: methods for java.util.Date objects: formatting, component extraction, etc.<br />
+	• #calendars: analogous to #dates, but for java.util.Calendar objects.<br />
+	• #numbers: methods for formatting numeric objects.<br />
+	• #strings: methods for String objects: contains, startsWith, prepending/appending, etc.<br />
+	• #objects: methods for objects in general.<br />
+	• #bools: methods for boolean evaluation.<br />
+	• #arrays: methods for arrays.<br />
+	• #lists: methods for lists.<br />
+	• #sets: methods for sets.<br />
+	• #maps: methods for maps.<br />
+	• #aggregates: methods for creating aggregates on arrays or collections.<br />
+	• #ids: methods for dealing with id attributes that might be repeated (for example, as a result of an iteration).<br />
+<br />
+详细见这里：
+	<a href='http://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#appendix-b-expression-utility-objects'>http://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#appendix-b-expression-utility-objects</a><br />
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+@startuml
+1008 -> freeswitch: INVITE消息
+note right : 发起INVITE 消息，请求建立一个呼叫
+freeswitch -> 1008: 100 TRYING
+note right : 通过100 tyring消息通知1008已经收到他的请求。并对1008的权限进行验证，如果通过，a-leg建立
+freeswitch -> 1018 : INVITE消息
+note right : FS进行路由找到1018的contact信息，向1018发送INVITE信息
+1018 -> freeswitch : 100 TRYING
+note right : 1018 回送100 trying 消息, 它已经正常接收到INVITE消息
+1018 -> freeswitch : 180 RING
+note right : 1018 振铃，并向fs回送180 ring消息
+freeswitch -> 1008 : 183 Session Progress
+note right : FS 向1008产生一个回玲音
+1018 -> freeswitch : 200 OK
+note right : 1018 接听电话，向FS回送200 OK消息
+freeswitch -> 1018 : ACK
+note right : FS向1018回送ACK证实消息,b-leg建立成功
+freeswitch -> 1008 : 200 OK
+note right : FS向1008发送200K消息，将1008和1018进行桥接
+1008 -> freeswitch : ACK
+note right : 1008回送FS ACK消息，他已经收到200消息
+
+== 1008 和 1018 进行通话，中间使用RTP进行通信 ==
+
+1018 -> freeswitch : BYE
+note right :  1018 挂断电话，向FS发送BYE消息，FS进行拆线
+freeswitch -> 1018 : 200 OK
+note right : FS回送200消息，并释放b-leg
+freeswitch -> 1008 : BYE
+note right :  FS向1008发送BYE消息，通知1008拆线
+1008 -> freeswitch : 200 OK
+note right : 1008回送200消息, FS收到后，也释放a-leg，通话结束
+
+@enduml

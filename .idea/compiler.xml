@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="core" />
+        <module name="docker" />
+        <module name="grpc" />
+        <module name="log" />
+        <module name="mvc" />
+        <module name="mybatis" />
+        <module name="protobuf" />
+        <module name="rabbitmq" />
+        <module name="redis" />
+        <module name="taskExecutionAndScheduling" />
+        <module name="thymeleaf" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="core" target="1.8" />
+      <module name="docker" target="1.8" />
+      <module name="grpc" target="1.8" />
+      <module name="log" target="1.8" />
+      <module name="mvc" target="1.8" />
+      <module name="mybatis" target="1.8" />
+      <module name="protobuf" target="1.8" />
+      <module name="rabbitmq" target="1.8" />
+      <module name="redis" target="1.8" />
+      <module name="spring-boot" target="1.8" />
+      <module name="taskExecutionAndScheduling" target="1.8" />
+      <module name="thymeleaf" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

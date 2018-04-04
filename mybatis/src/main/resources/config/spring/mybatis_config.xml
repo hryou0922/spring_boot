@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 
+	<properties resource="config.properties" />
+
+	<settings>
+		<setting name="cacheEnabled" value="false" />
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+	</settings>
+
+	<plugins>
+		<plugin interceptor="im.yixin.api.dao.interceptor.OraclePaginationInterceptor" />
+		<plugin interceptor="im.yixin.api.dao.interceptor.OptimisticLockInterceptor">
+			<property name="versionColumn" value="version_" />
+		</plugin>
+
+	</plugins>
+	 -->
+
+</configuration>

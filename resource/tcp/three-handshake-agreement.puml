@@ -1,0 +1,9 @@
+@startuml
+客户端 --> 服务端: [SYN] seq=J ack=H
+hnote over 客户端  :SYN_SENT
+服务端 --> 客户端: [SYN ACK] seq=H ack=J+1
+hnote over 服务端  :SYN_RCVD
+客户端 --> 服务端: [ACK] seq=J+1, ack=H+1,
+hnote over 客户端  :ESTABLISHED
+hnote over 服务端  :ESTABLISHED
+@enduml
