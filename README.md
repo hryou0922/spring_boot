@@ -2,6 +2,7 @@
 - 博客[IntelliJ IDEA工具 - 使用IntelliJ IDEA导入Github工程](http://blog.csdn.net/hry2015/article/details/77984399): 本博客的代码全部存储在Github在，为了方便大家在本地创建工程,本博客演示如何从Github中加载代码到本地工程中以及加载tag分支代码到本地工程中
 
 # 更新说明
+- 2018-04-05 博客[Spring Boot系列十六 WebSocket简介和spring boot集成简单消息代理](https://blog.csdn.net/hry2015/article/details/79829616)对应的git代码为[tagv0.19](https://github.com/hryou0922/spring_boot/tree/v0.19/mvc/src/main/java/com/hry/spring/mvc/websocket/simple)
 - 2018-04-04 修改整个工程结构，将工程由平行目录结构修改为父子目录结构, 可以简化服务的搭建和代码的上传
 - 2018-03-15 博客[Spring Boot系列十四 Spring boot使用spring validation实现对Rest请求的数据进行校验](http://blog.csdn.net/hry2015/article/details/79572713)对应的git代码为[tagv0.18](https://github.com/hryou0922/spring_boot/tree/v0.18/mvc/src/main/java/com/hry/spring/mvc/validation)
 - 2018-03-13 博客[Spring Boot系列十三 Spring Boot集成RabbitMQ](http://blog.csdn.net/hry2015/article/details/79545157)对应的git代码为[tagv0.17](https://github.com/hryou0922/spring_boot/tree/v0.17/rabbitmq/src/main/java/com/hry/spring/rabbitmq/boot)
@@ -48,6 +49,9 @@
 
 ## mvc
 - 演示mvc的用法
+- com.hry.spring.mvc
+    - websocket: websocket用法
+        - simple: [Spring Boot系列十六 WebSocket简介和spring boot集成简单消息代理](https://blog.csdn.net/hry2015/article/details/79829616)
 
 ## mybatis
 - mybatis的用法
