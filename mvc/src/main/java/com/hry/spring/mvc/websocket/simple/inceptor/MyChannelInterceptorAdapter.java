@@ -41,15 +41,15 @@ public class MyChannelInterceptorAdapter extends ChannelInterceptorAdapter {
         System.out.println(this.getClass().getCanonicalName() +" afterSendCompletion");
         StompHeaderAccessor accessor = StompHeaderAccessor.wrap(message);
         StompCommand command = accessor.getCommand();
-        if (StompCommand.SUBSCRIBE.equals(command)){
-            System.out.println(this.getClass().getCanonicalName() + " 订阅消息发送成功");
-            this.simpMessagingTemplate.convertAndSend("/topic/getResponse","消息发送成功");
-        }
-        //如果用户断开连接
-        if (StompCommand.DISCONNECT.equals(command)){
-            System.out.println(this.getClass().getCanonicalName() + "用户断开连接成功");
-                simpMessagingTemplate.convertAndSend("/topic/getResponse","{'msg':'用户断开连接成功'}");
-        }
+//        if (StompCommand.SUBSCRIBE.equals(command)){
+//            System.out.println(this.getClass().getCanonicalName() + " 订阅消息发送成功");
+//            this.simpMessagingTemplate.convertAndSend("/topic/getResponse","消息发送成功");
+//        }
+//        //如果用户断开连接
+//        if (StompCommand.DISCONNECT.equals(command)){
+//            System.out.println(this.getClass().getCanonicalName() + "用户断开连接成功");
+//                simpMessagingTemplate.convertAndSend("/topic/getResponse","{'msg':'用户断开连接成功'}");
+//        }
 
         super.afterSendCompletion(message, channel, sent, ex);
     }

@@ -26,13 +26,13 @@ public class WebSocketRabbitMQMessageBrokerConfigurer extends AbstractWebSocketM
         /**
          * 配置消息代理
          * 使用RabbitMQ做为消息代理，替换默认的Simple Broker
-         * 设置目的地前缀：建议以”/"开始
+         * 设置目的地前缀
          */
         registry
                 //.setApplicationDestinationPrefixes("/demo")
                 .enableStompBrokerRelay("/exchange","/topic","/queue","/amq/queue")
-              //  .setRelayHost("192.168.0.113")
-                .setRelayHost("10.242.72.29")
+                .setRelayHost("192.168.0.113")
+              //  .setRelayHost("10.242.72.29")
                 .setClientLogin("hry")
                 .setClientPasscode("hry")
                 .setSystemLogin("hry")

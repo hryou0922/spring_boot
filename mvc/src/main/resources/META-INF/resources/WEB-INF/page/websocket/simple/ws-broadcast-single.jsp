@@ -39,7 +39,7 @@
     }
 
     function connect() {
-        // websocket的连接地址，此值等于WebSocketMessageBrokerConfigurer中registry.addEndpoint("/websocket-simple").withSockJS()配置的地址
+        // websocket的连接地址，此值等于WebSocketMessageBrokerConfigurer中registry.addEndpoint("/websocket-simple-single").withSockJS()配置的地址
         var socket = new SockJS('/websocket-simple-single'); //1
         stompClient = Stomp.over(socket);
         stompClient.connect({}, function(frame) {
@@ -69,7 +69,7 @@
 
     function showResponse(message) {
         var response = $("#response");
-        response.html(message);
+        response.html(message + "<br\>" + response.html());
     }
 </script>
 </body>

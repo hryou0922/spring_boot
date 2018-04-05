@@ -39,6 +39,8 @@ public class WebSocketMessageBrokerConfigurer extends AbstractWebSocketMessageBr
 
     @Override
     public void configureMessageBroker(MessageBrokerRegistry registry) {
+
+
         /**
          * 配置消息代理
          * 启动简单Broker，消息的发送的地址符合配置的前缀来的消息才发送到这个broker
@@ -47,6 +49,8 @@ public class WebSocketMessageBrokerConfigurer extends AbstractWebSocketMessageBr
         registry.enableSimpleBroker("/topic","/queue");
         //点对点使用的订阅前缀（客户端订阅路径上会体现出来），不设置的话，默认也是/user/
         //registry.setUserDestinationPrefix("/user/");
+        // 置客户端发送信息的路径的前缀
+        // registry.setApplicationDestinationPrefixes("/app");
     }
 
     @Override

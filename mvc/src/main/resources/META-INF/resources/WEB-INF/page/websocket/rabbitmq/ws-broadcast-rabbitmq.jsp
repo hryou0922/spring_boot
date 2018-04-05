@@ -75,7 +75,7 @@
 
     function showResponse(message) {
         var response = $("#response");
-        response.html(message);
+        response.html(message + "<br\>" + response.html());
     }
 </script>
 </body>
