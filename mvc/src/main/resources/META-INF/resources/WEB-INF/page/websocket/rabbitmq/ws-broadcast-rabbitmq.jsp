@@ -49,8 +49,8 @@
             stompClient.subscribe(
                 //'/exchange/rabbitmq/get-response',
                 //'/queue/rabbitmq',
-                '/amq/queue/rabbitmq2',
-                //'/topic/get-response',
+                //'/amq/queue/rabbitmq2',
+                '/topic/get-response',
                 function(respnose){
                 showResponse(JSON.parse(respnose.body).responseMessage);
                 }

@@ -28,10 +28,10 @@ public class BroadcastRabbitMQCtl {
      * 基于WebSocket的STOMP有个属性@SendTo。
      * @SendTo默认 消息将被发送到与传入消息相同的目的地，但是目的地前面附加前缀（默认情况下为“/topic”}）
      */
- //   @SendTo("/exchange/rabbitmq/get-response")
-   // @SendTo("/queue/rabbitmq")
-    @SendTo("/amq/queue/rabbitmq2")
-  //  @SendTo("/topic/get-response")
+   // @SendTo("/exchange/rabbitmq/get-response")
+  //  @SendTo("/queue/rabbitmq")
+  //  @SendTo("/amq/queue/rabbitmq2")
+    @SendTo("/topic/get-response")
     public ResponseMessage broadcast(RequestMessage requestMessage){
         logger.info("receive message = {}" , JSONObject.toJSONString(requestMessage));
         ResponseMessage responseMessage = new ResponseMessage();
