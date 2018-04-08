@@ -102,6 +102,12 @@
 			<version>4.1.22.Final</version>
 		</dependency>
 
+		<!-- aop -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+		</dependency>
+
 
 	</dependencies>
 
