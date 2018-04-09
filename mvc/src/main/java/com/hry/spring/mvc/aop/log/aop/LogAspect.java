@@ -1,7 +1,9 @@
 package com.hry.spring.mvc.aop.log.aop;
 
-import com.hry.spring.mvc.aop.log.annotation.LogEnable;
-import com.hry.spring.mvc.aop.log.annotation.LogModule;
+import com.hry.spring.mvc.aop.log.annotation.*;
+import com.hry.spring.mvc.aop.log.manager.ILogManager;
+import com.hry.spring.mvc.aop.log.manager.model.LogAdmModel;
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -11,7 +13,7 @@ import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * Created by huangrongyou@yixin.im on 2018/4/8.
@@ -20,7 +22,10 @@ import java.util.Arrays;
 @Aspect
 public class LogAspect {
     @Autowired
-    private LoggerAspect logAspect;
+    private LogInfoGeneration logInfoGeneration;
+
+    @Autowired
+    private ILogManager logManager;
 
     @Pointcut("execution(* com.hry.spring.mvc.aop.log.service.*.*(..))")
     public void managerLogPoint() {
@@ -28,9 +33,58 @@ public class LogAspect {
 
 
     @Around("managerLogPoint()")
-    public Object aroundManagerLogPoint(ProceedingJoinPoint jp){
+    public Object aroundManagerLogPoint(ProceedingJoinPoint jp) throws Throwable {
 
-                System.out.println("=======");
+        printJoinPoint(jp);
+
+        System.out.println(jp.getSignature().getDeclaringType());
+        Class target = jp.getTarget().getClass();
+        // 获取LogEnable
+        LogEnable logEnable = (LogEnable) target.getAnnotation(LogEnable.class);
+        if(logEnable == null || !logEnable.logEnable()){
+            return jp.proceed();
+        }
+
+        // 获取类上的LogEvent做为默认值
+        LogEvent logEventClass = (LogEvent) target.getAnnotation(LogEvent.class);
+        Method method = getInvokedMethod(jp);
+        if(method == null){
+            return jp.proceed();
+        }
+
+        // 获取方法上的LogEvent
+        LogEvent logEventMethod = method.getAnnotation(LogEvent.class);
+        if(logEventMethod == null){
+            return jp.proceed();
+        }
+
+        String optEvent = logEventMethod.event().getEvent();
+        String optModel = logEventMethod.module().getModule();
+        if(logEventClass != null){
+            // 如果方法上的值为默认值，则使用全局的值进行替换
+            optEvent = optEvent.equals(EventType.DEFAULT) ? logEventClass.event().getEvent() : optEvent;
+            optModel = optModel.equals(ModuleType.DEFAULT) ? logEventClass.module().getModule() : optModel;
+        }
+
+        LogAdmModel logBean = new LogAdmModel();
+        logBean.setAdmModel(optModel);
+        logBean.setAdmEvent(optEvent);
+        logBean.setCreateDate(new Date());
+        boolean isSuccess = this.logInfoGeneration.processingManagerLogMessage(jp,
+                logBean, optEvent);
+        Object returnObj = jp.proceed();
+        if (isSuccess) {
+            this.logManager.dealLog(logBean);
+        }
+        return returnObj;
+    }
+
+    /**
+     * 打印节点信息
+     * @param jp
+     */
+    private void printJoinPoint(ProceedingJoinPoint jp) {
+        System.out.println("=======");
         System.out.println("目标方法名为:" + jp.getSignature().getName());
         System.out.println("目标方法所属类的简单类名:" +        jp.getSignature().getDeclaringType().getSimpleName());
         // jp.getSignature().getDeclaringType()： 调用类的类型，通常为接口
@@ -50,27 +104,43 @@ public class LogAspect {
             System.out.println("==:" + method);
             System.out.println("getAnnotations ==:" + Arrays.toString(method.getAnnotations()));
         }
+    }
 
-
-        LogModule module = null;
-        System.out.println(jp.getSignature().getDeclaringType());
-        Class target = jp.getTarget().getClass();
-        // 获取LogEnable
-        LogEnable logEnable = (LogEnable) target.getAnnotation(LogEnable.class);
-        if(logEnable != null && logEnable.logEnable()){
-
-        }else {
-            System.out.println(target.getCanonicalName() + " 类上没有注解 logEnable，由未开启");
-        }
-
-//        Class[] intf = target.getInterfaces();
-//        for (Class item : intf) {
-//            if (item.getAnnotation(LogModule.class) != null) {
-//                module = (LogModule) item.getAnnotation(LogModule.class);
-//                break;
+    /**
+     * 获取请求方法
+     *
+     * @param jp
+     * @return
+     */
+    public Method getInvokedMethod(JoinPoint jp) {
+        // 调用方法的参数
+        List classList = new ArrayList();
+        for (Object obj : jp.getArgs()) {
+            classList.add(obj.getClass());
+//            if (obj instanceof ArrayList)
+//                classList.add(List.class);
+//            else if (obj instanceof LinkedList)
+//                classList.add(List.class);
+//            else if (obj instanceof HashMap)
+//                classList.add(Map.class);
+//            else if (obj instanceof HashSet)
+//                classList.add(Set.class);
+//            else if (obj == null)
+//                classList.add(null);
+//            else {
+//                classList.add(obj.getClass());
 //            }
-//        }
+        }
+        Class[] argsCls = (Class[]) classList.toArray(new Class[0]);
 
-        return null;
+        // 被调用方法名称
+        String methodName = jp.getSignature().getName();
+        Method method = null;
+        try {
+            method = jp.getTarget().getClass().getMethod(methodName, argsCls);
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        }
+        return method;
     }
 }

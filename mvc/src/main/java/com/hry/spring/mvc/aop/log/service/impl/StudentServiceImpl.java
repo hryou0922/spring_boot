@@ -22,17 +22,19 @@ public class StudentServiceImpl implements IStudentService {
     }
 
     @Override
-    @LogEvent(event = EventType.ADD)
+    @LogEvent(event = EventType.ADD) // 添加日志标识
     public int save(StudentModel studentModel) {
         System.out.printf(this.getClass() +  "save  save = " + JSON.toJSONString(studentModel));
         return 1;
     }
 
     @Override
+    @LogEvent(event = EventType.UPDATE) // 添加日志标识
     public void update(StudentModel studentModel) {
         System.out.printf(this.getClass() +  "save  update = " + JSON.toJSONString(studentModel));
     }
 
+    // 没有日志标识
     @Override
     public void queryById(String id) {
         System.out.printf(this.getClass() +  "queryById  id = " + id);

@@ -4,6 +4,7 @@ package com.hry.spring.mvc.aop.log.model;
  * Created by huangrongyou@yixin.im on 2018/4/8.
  */
 public class StudentModel {
+    private String id; // 编号
     private String name;  // 名称
     private Integer age; // 年龄
     private String grade;  // 年级
@@ -30,5 +31,13 @@ public class StudentModel {
 
     public void setGrade(String grade) {
         this.grade = grade;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

@@ -9,6 +9,6 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({java.lang.annotation.ElementType.METHOD, ElementType.TYPE})
 public @interface LogEvent {
-    ModuleType module(); // 日志所属的模块
+    ModuleType module() default ModuleType.DEFAULT; // 日志所属的模块
     EventType event() default EventType.DEFAULT; // 日志事件类型
 }
