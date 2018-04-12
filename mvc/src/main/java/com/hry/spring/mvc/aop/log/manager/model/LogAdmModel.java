@@ -8,13 +8,13 @@ import java.util.Date;
  */
 public class LogAdmModel {
     private Long id;
-    private String userId;
+    private String userId; // 操作用户
     private String userName;
-    private String admModel;
-    private String admEvent;
-    private String admEntity;
-    private Date createDate;
-    private String admOptContent;
+    private String admModel; // 模块
+    private String admEvent; // 操作
+    private Date createDate; // 操作内容
+    private String admOptContent; // 操作内容
+    private String desc; // 备注
 
     public Long getId() {
         return id;
@@ -56,14 +56,6 @@ public class LogAdmModel {
         this.admEvent = admEvent;
     }
 
-    public String getAdmEntity() {
-        return admEntity;
-    }
-
-    public void setAdmEntity(String admEntity) {
-        this.admEntity = admEntity;
-    }
-
     public Date getCreateDate() {
         return createDate;
     }
@@ -78,5 +70,13 @@ public class LogAdmModel {
 
     public void setAdmOptContent(String admOptContent) {
         this.admOptContent = admOptContent;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 }

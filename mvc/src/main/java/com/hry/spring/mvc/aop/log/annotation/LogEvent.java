@@ -11,4 +11,5 @@ import java.lang.annotation.*;
 public @interface LogEvent {
     ModuleType module() default ModuleType.DEFAULT; // 日志所属的模块
     EventType event() default EventType.DEFAULT; // 日志事件类型
+    String desc() default  ""; // 描述信息
 }

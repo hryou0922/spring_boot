@@ -1,9 +1,12 @@
 package com.hry.spring.mvc.aop.log.model;
 
+import com.hry.spring.mvc.aop.log.annotation.LogKey;
+
 /**
  * Created by huangrongyou@yixin.im on 2018/4/8.
  */
 public class StudentModel {
+    @LogKey(isUserId = true)
     private String id; // 编号
     private String name;  // 名称
     private Integer age; // 年龄

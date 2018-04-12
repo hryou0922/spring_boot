@@ -1,6 +1,5 @@
 package com.hry.spring.mvc.aop.log;
 
-import com.hry.spring.mvc.aop.log.service.AlarmTypeManager;
 import com.hry.spring.mvc.aop.log.service.IStudentService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,25 +13,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes=LogAopApplication.class)
 public class LogAopTest {
-
-    @Autowired
-    private AlarmTypeManager web;
-
     @Autowired
     private IStudentService studentService;
 
     @Test
-    public void aopLogTest(){
-//        web.updateAll("1","2");
-        web.deleteById(1l);
-//        web.save(new AlarmTypeBean(), AlarmType.class);
-//        web.update(new AlarmTypeBean(), AlarmType.class);
-
-    }
-
-    @Test
     public void studentService(){
-        studentService.deleteById("1");
+        studentService.deleteById("1","s");
     }
 
 }

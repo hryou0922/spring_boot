@@ -7,7 +7,7 @@ import com.hry.spring.mvc.aop.log.model.StudentModel;
  */
 public interface IStudentService {
 
-    void deleteById(String id);
+    void deleteById(String id, String a);
 
     int save(StudentModel studentModel);
 

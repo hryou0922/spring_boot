@@ -6,7 +6,7 @@ package com.hry.spring.mvc.aop.log.annotation;
  */
 public enum EventType {
     DEFAULT("1", "default"), ADD("2", "add"), UPDATE("3", "update"), DELETE_SINGLE("4", "delete-single"),
-    LOGIN("10","login");
+    LOGIN("10","login"),LOGIN_OUT("11","login_out");
 
     private EventType(String index, String name){
         this.name = name;

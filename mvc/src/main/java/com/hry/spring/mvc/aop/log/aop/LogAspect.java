@@ -11,6 +11,7 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.*;
@@ -27,17 +28,14 @@ public class LogAspect {
     @Autowired
     private ILogManager logManager;
 
-    @Pointcut("execution(* com.hry.spring.mvc.aop.log.service.*.*(..))")
+    @Pointcut("execution(* com.hry.spring.mvc.aop.log.service..*.*(..))")
     public void managerLogPoint() {
     }
-
 
     @Around("managerLogPoint()")
     public Object aroundManagerLogPoint(ProceedingJoinPoint jp) throws Throwable {
 
         printJoinPoint(jp);
-
-        System.out.println(jp.getSignature().getDeclaringType());
         Class target = jp.getTarget().getClass();
         // 获取LogEnable
         LogEnable logEnable = (LogEnable) target.getAnnotation(LogEnable.class);
@@ -70,10 +68,16 @@ public class LogAspect {
         logBean.setAdmModel(optModel);
         logBean.setAdmEvent(optEvent);
         logBean.setCreateDate(new Date());
-        boolean isSuccess = this.logInfoGeneration.processingManagerLogMessage(jp,
-                logBean, optEvent);
+        logInfoGeneration.processingManagerLogMessage(jp,
+                logBean, method);
         Object returnObj = jp.proceed();
-        if (isSuccess) {
+
+        if(optEvent.equals(EventType.LOGIN)){
+            //TODO 如果是登录，还需要根据返回值进行判断是不是成功了，如果成功了，则执行添加日志。这里判断比较简单
+            if(returnObj != null) {
+                this.logManager.dealLog(logBean);
+            }
+        }else {
             this.logManager.dealLog(logBean);
         }
         return returnObj;
