@@ -58,6 +58,8 @@ public class LogAspect {
 
         String optEvent = logEventMethod.event().getEvent();
         String optModel = logEventMethod.module().getModule();
+        String desc = logEventMethod.desc();
+
         if(logEventClass != null){
             // 如果方法上的值为默认值，则使用全局的值进行替换
             optEvent = optEvent.equals(EventType.DEFAULT) ? logEventClass.event().getEvent() : optEvent;
@@ -67,6 +69,7 @@ public class LogAspect {
         LogAdmModel logBean = new LogAdmModel();
         logBean.setAdmModel(optModel);
         logBean.setAdmEvent(optEvent);
+        logBean.setDesc(desc);
         logBean.setCreateDate(new Date());
         logInfoGeneration.processingManagerLogMessage(jp,
                 logBean, method);

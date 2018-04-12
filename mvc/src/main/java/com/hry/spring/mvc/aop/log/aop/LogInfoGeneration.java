@@ -26,10 +26,6 @@ public class LogInfoGeneration {
 
             // 获取方法上参数的注解
             Annotation[][] methodAnnotations = method.getParameterAnnotations();
-//            for(Annotation[] a : methodAnnotations) {
-//                System.out.println(Arrays.toString(a));
-//            }
-
             for(int i = 0; i < args.length; i++){
                 Object arg = args[i];
                 // 如果参数被 LogKey 注解了，则直接返回内容
@@ -60,7 +56,7 @@ public class LogInfoGeneration {
                         }
                     }
                 }
-                logBean.setAdmEntity(msgJson.toJSONString());
+                logBean.setAdmOptContent(msgJson.toJSONString());
             }
 
         }
