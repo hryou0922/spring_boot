@@ -28,6 +28,7 @@
         <module>redis</module>
         <module>taskExecutionAndScheduling</module>
         <module>thymeleaf</module>
+        <module>swagger</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -76,6 +76,9 @@
     - timedtask: 通过redis处理定时任务 1. 简单定时任务 2. 失败重推
 ## taskExecutionAndScheduling: 定时任务，异步任务
 
+## swagger
+- swagger用法demo
+- swagger访问地址：http://127.0.0.1:8080/swagger-ui.html
 
 ## thymeleaf
 - com.hry.spring

@@ -15,6 +15,7 @@
         <module name="protobuf" />
         <module name="rabbitmq" />
         <module name="redis" />
+        <module name="swagger" />
         <module name="taskExecutionAndScheduling" />
         <module name="thymeleaf" />
       </profile>
@@ -30,6 +31,7 @@
       <module name="rabbitmq" target="1.8" />
       <module name="redis" target="1.8" />
       <module name="spring-boot" target="1.8" />
+      <module name="swagger" target="1.8" />
       <module name="taskExecutionAndScheduling" target="1.8" />
       <module name="thymeleaf" target="1.8" />
     </bytecodeTargetLevel>
