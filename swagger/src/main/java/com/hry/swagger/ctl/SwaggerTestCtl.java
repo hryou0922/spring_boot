@@ -23,24 +23,33 @@ public class SwaggerTestCtl {
 
 
     @RequestMapping(value = "/queryById", method = {RequestMethod.POST, RequestMethod.GET})
+    // 方法的说明
+    @ApiOperation(value = "根据id获取记录", response = Student.class)
     // 定义请求参数
     @ApiImplicitParams({ @ApiImplicitParam(paramType = "query", dataType = "String", name = "id", value = "主键", required = true) })
-    public String queryById(String id){
-        return "test";
-    }
-
-    @ApiOperation(value = "Display greeting message to non-admin user", response = Student.class)
-    @RequestMapping(value = "/add", method = {RequestMethod.POST, RequestMethod.GET})
-    public Student add(@ApiParam(value="用户参数") Student student){
+    public Student queryById(String id){
+        System.out.println("queryById id = " + id);
         return new Student();
     }
 
+    @RequestMapping(value = "/add", method = {RequestMethod.POST, RequestMethod.GET})
+    // 方法说明
+    @ApiOperation(value = "添加学生记录", response = Integer.class)
+    public int add(@ApiParam(value="添加的学生") Student student){
+        System.out.println("add student = " + student);
+        return 1;
+    }
 
-    @RequestMapping(value = "/add2", method = {RequestMethod.POST, RequestMethod.GET})
+
+    @RequestMapping(value = "/del", method = {RequestMethod.POST, RequestMethod.GET})
+    // 方法说明
+    @ApiOperation(value = "删除学生记录学生记录")
+    // 定义返回值意义
     @ApiResponses({
             @ApiResponse(code = 400, message = "服务器内部异常"),
             @ApiResponse(code = 500, message = "权限不足") })
-    public int add2(Student student){
+    public int del(int id){
+        System.out.println("del id = " + id);
         return 1;
     }
 }

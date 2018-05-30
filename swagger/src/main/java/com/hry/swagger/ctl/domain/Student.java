@@ -1,19 +1,20 @@
 package com.hry.swagger.ctl.domain;
 
+import com.alibaba.fastjson.JSONObject;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
  * Created by huangrongyou@yixin.im on 2018/5/29.
  */
-@ApiModel( description = "登录参数")
+@ApiModel( description = "学生")
 public class Student {
-    @ApiModelProperty(value = "标题", notes="note")
+    @ApiModelProperty(value = "主键id")
     private String id;
-    @ApiModelProperty(value = "用户编号", required = true)
+    @ApiModelProperty(value = "名称", required = true)
     private String name;
+    @ApiModelProperty(value = "年龄", required = true)
     private int age;
-    private String a;
 
     public String getId() {
         return id;
@@ -39,11 +40,8 @@ public class Student {
         this.age = age;
     }
 
-    public String getA() {
-        return a;
-    }
-
-    public void setA(String a) {
-        this.a = a;
+    @Override
+    public String toString(){
+        return JSONObject.toJSONString(this);
     }
 }
