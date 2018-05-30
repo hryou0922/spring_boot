@@ -13,13 +13,13 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @RestController
 @EnableSwagger2 // 启动swagger注解
 // api-value：定义名称，如果没有定义，则默认显示类名
-@Api(value = "Swagger Test", description = "Rest API for test operations", tags = "test API")
+@Api(value = "Swagger Test Control", description = "演示Swagger用法的Control类", tags = "Swagger Test Control Tag")
 public class SwaggerTestCtl {
 
-    @RequestMapping(value = "/", method = {RequestMethod.POST, RequestMethod.GET})
-    public String index() {
-        return "index";
-    }
+//    @RequestMapping(value = "/", method = {RequestMethod.POST, RequestMethod.GET})
+//    public String index() {
+//        return "index";
+//    }
 
 
     @RequestMapping(value = "/queryById", method = {RequestMethod.POST, RequestMethod.GET})

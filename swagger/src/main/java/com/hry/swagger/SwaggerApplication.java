@@ -38,7 +38,7 @@ public class SwaggerApplication {
 		return new ApiInfoBuilder()
 				.title("演示 Swagger 的用法") // 标题
 				.description("演示Swagger中各种注解的用法") // 描述信息
-				.version("1.0.0") // //版本
+				.version("1.1.2") // //版本
 				.license("Apache 2.0")
 				.licenseUrl("http://www.apache.org/licenses/LICENSE-2.0")
 				.contact(contact)
