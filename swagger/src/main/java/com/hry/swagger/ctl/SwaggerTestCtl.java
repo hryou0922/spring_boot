@@ -2,6 +2,7 @@ package com.hry.swagger.ctl;
 
 import com.hry.swagger.ctl.domain.Student;
 import io.swagger.annotations.*;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -37,6 +38,14 @@ public class SwaggerTestCtl {
     @ApiOperation(value = "添加学生记录", response = Integer.class)
     public int add(@ApiParam(value="添加的学生") Student student){
         System.out.println("add student = " + student);
+        return 1;
+    }
+
+    @RequestMapping(value = "/update", method = {RequestMethod.POST})
+    // 方法说明
+    @ApiOperation(value = "添加学生记录", notes="传递复杂对象DTO",produces = "application/json")
+    public int update(@RequestBody Student student){
+        System.out.println("update student = " + student);
         return 1;
     }
 
