@@ -2,6 +2,7 @@
 - 博客[IntelliJ IDEA工具 - 使用IntelliJ IDEA导入Github工程](http://blog.csdn.net/hry2015/article/details/77984399): 本博客的代码全部存储在Github在，为了方便大家在本地创建工程,本博客演示如何从Github中加载代码到本地工程中以及加载tag分支代码到本地工程中
 
 # 更新说明
+- 2018-05-08 博客[Spring Boot系列十九 Spring boot集成 swagger](https://blog.csdn.net/hry2015/article/details/80614315)对应的git代码为[tagv0.22](https://github.com/hryou0922/spring_boot/tree/v0.22/swagger/src/main/java/com/hry/swagger)
 - 2018-05-08 博客[Spring Boot系列十八 Spring AOP + 注解实现统一注解](https://blog.csdn.net/hry2015/article/details/80244765)对应的git代码为[tagv0.21](https://github.com/hryou0922/spring_boot/tree/v0.21/mvc/src/main/java/com/hry/spring/mvc/aop/log)
 - 2018-04-07 博客[Spring Boot系列十七 Spring Boot 集成 websocket，使用RabbitMQ做为消息代理](https://blog.csdn.net/hry2015/article/details/79838194)对应的git代码为[tagv0.20](https://github.com/hryou0922/spring_boot/tree/v0.20/mvc/src/main/java/com/hry/spring/mvc/websocket/rabbitmq)
 - 2018-04-05 博客[Spring Boot系列十六 WebSocket简介和spring boot集成简单消息代理](https://blog.csdn.net/hry2015/article/details/79829616)对应的git代码为[tagv0.19](https://github.com/hryou0922/spring_boot/tree/v0.19/mvc/src/main/java/com/hry/spring/mvc/websocket/simple)

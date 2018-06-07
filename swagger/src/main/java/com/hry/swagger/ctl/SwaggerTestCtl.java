@@ -13,7 +13,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @RestController
 @EnableSwagger2 // 启动swagger注解
-// api-value：定义名称，如果没有定义，则默认显示类名
 @Api(value = "Swagger Test Control", description = "演示Swagger用法的Control类", tags = "Swagger Test Control Tag")
 public class SwaggerTestCtl {
 
