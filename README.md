@@ -56,6 +56,7 @@
     - websocket: websocket用法
         - simple: [Spring Boot系列十六 WebSocket简介和spring boot集成简单消息代理](https://blog.csdn.net/hry2015/article/details/79829616)
         - rabbitmq: [Spring Boot系列十七 Spring Boot 集成 websocket，使用RabbitMQ做为消息代理](https://blog.csdn.net/hry2015/article/details/79838194)
+        - xx: 发送到特定的用户
 
 ## mybatis
 - mybatis的用法

@@ -29,6 +29,7 @@
         <module>taskExecutionAndScheduling</module>
         <module>thymeleaf</module>
         <module>swagger</module>
+        <module>test</module>
     </modules>
     <packaging>pom</packaging>
 

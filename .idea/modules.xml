@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot.iml" filepath="$PROJECT_DIR$/spring-boot.iml" />
       <module fileurl="file://$PROJECT_DIR$/swagger/swagger.iml" filepath="$PROJECT_DIR$/swagger/swagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/taskExecutionAndScheduling/taskExecutionAndScheduling.iml" filepath="$PROJECT_DIR$/taskExecutionAndScheduling/taskExecutionAndScheduling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
       <module fileurl="file://$PROJECT_DIR$/thymeleaf/thymeleaf.iml" filepath="$PROJECT_DIR$/thymeleaf/thymeleaf.iml" />
     </modules>
   </component>
