@@ -1,50 +1,42 @@
 package com.hry.spring.mvc.websocket.sendtouser.config;
 
-
+import com.hry.spring.mvc.websocket.sendtouser.MyPrincipal;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.server.ServerHttpRequest;
-import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.http.server.ServletServerHttpRequest;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.socket.WebSocketHandler;
-import org.springframework.web.socket.server.HandshakeInterceptor;
+import org.springframework.web.socket.server.support.DefaultHandshakeHandler;
 
 import javax.servlet.http.HttpSession;
+import java.security.Principal;
 import java.util.Map;
 
 /**
- * 自定义的握手拦截，获取已登录的User
+ *  处理WebSocket的握手请求
+ *      定义自己的Principal
  * Created by huangrongyou@yixin.im on 2018/7/10.
  */
 @Component
-public class SessionAuthHandshakeInterceptor implements HandshakeInterceptor {
-    private static final Logger log = LoggerFactory.getLogger(SessionAuthHandshakeInterceptor.class);
-
+public class MyPrincipalHandshakeHandler extends DefaultHandshakeHandler {
+    private static final Logger log = LoggerFactory.getLogger(MyPrincipalHandshakeHandler.class);
 
     @Override
-    public boolean beforeHandshake(ServerHttpRequest request, ServerHttpResponse response, WebSocketHandler wsHandler, Map<String, Object> attributes) throws Exception {
+    protected Principal determineUser(ServerHttpRequest request, WebSocketHandler wsHandler, Map<String, Object> attributes) {
+
         HttpSession httpSession = getSession(request);
         String user = (String)httpSession.getAttribute("loginName");
 
         if(StringUtils.isEmpty(user)){
             log.error("未登录系统，禁止登录websocket!");
-            return false;
+            return null;
         }
-        log.info("login = " + user);
-
-        return true;
+        log.info(" MyDefaultHandshakeHandler login = " + user);
+        return new MyPrincipal(user);
     }
 
-    @Override
-    public void afterHandshake(ServerHttpRequest request, ServerHttpResponse response, WebSocketHandler wsHandler, Exception exception) {
-        // 删除值
-        HttpSession httpSession = getSession(request);
-        httpSession.removeAttribute("loginName");
-    }
-
-    // 参考 HttpSessionHandshakeInterceptor
     private HttpSession getSession(ServerHttpRequest request) {
         if (request instanceof ServletServerHttpRequest) {
             ServletServerHttpRequest serverRequest = (ServletServerHttpRequest) request;

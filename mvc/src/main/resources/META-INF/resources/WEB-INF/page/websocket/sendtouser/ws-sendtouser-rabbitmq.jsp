@@ -15,8 +15,6 @@
         <button id="disconnect" disabled="disabled" onclick="disconnect();">断开连接</button>
     </div>
     <div id="conversationDiv">
-        <label>输入你的名字</label><input type="text" id="name" />
-        <button id="sendName" onclick="sendName();">发送</button>
         <p id="response"></p>
     </div>
 </div>

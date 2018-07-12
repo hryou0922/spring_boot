@@ -1,7 +1,5 @@
 package com.hry.spring.mvc.websocket.sendtouser.config;
 
-import com.hry.spring.mvc.websocket.sendtouser.config.MyDefaultHandshakeHandler;
-import com.hry.spring.mvc.websocket.sendtouser.config.SessionAuthHandshakeInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
@@ -15,9 +13,9 @@ import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
 public class WebSocketRabbitMQMessageBrokerConfigurer extends AbstractWebSocketMessageBrokerConfigurer {
 
     @Autowired
-    private MyDefaultHandshakeHandler myDefaultHandshakeHandler;
+    private MyPrincipalHandshakeHandler myDefaultHandshakeHandler;
     @Autowired
-    private SessionAuthHandshakeInterceptor sessionAuthHandshakeInterceptor;
+    private AuthHandshakeInterceptor sessionAuthHandshakeInterceptor;
 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
@@ -31,7 +29,6 @@ public class WebSocketRabbitMQMessageBrokerConfigurer extends AbstractWebSocketM
                 .addInterceptors(sessionAuthHandshakeInterceptor)
                 .setHandshakeHandler(myDefaultHandshakeHandler)
                 .withSockJS();
-
         // registry.setErrorHandler();
     }
 
