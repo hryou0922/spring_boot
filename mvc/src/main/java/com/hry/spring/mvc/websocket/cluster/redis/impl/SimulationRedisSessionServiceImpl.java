@@ -14,7 +14,6 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * Redis服务类：模拟分布式的数据存储
- *  为了简便，本文只使用Map模拟redis操作，在实际使用时，需要使用真正的Redis替换这个类即可
  *
  * Created by huangrongyou@yixin.im on 2018/7/16.
  */
