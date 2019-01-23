@@ -1,4 +1,4 @@
-package im.yixin.sp.mq.spapp;
+package im.yixin.sp.mq.app;
 
 /**
  * MQ发送者

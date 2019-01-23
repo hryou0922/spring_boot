@@ -1,4 +1,4 @@
-package im.yixin.sp.mq.spapp;
+package im.yixin.sp.mq.app;
 
 /**
  * RabbitMQ配置信息

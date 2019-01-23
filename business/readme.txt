@@ -6,7 +6,7 @@ im.yixin
         control：contrl层的类
             exception: 定义control相关的异步
             interception：定义拦截器
-        domain：此接口定义了和其它服务共用的类，实际应用时应该定义在基础jar包中
+        domain：此包定义了和其它服务共用的类，实际应用时应该定义在基础jar包中
             sp: 以下所属的服务
                 dto：和其它服务交互的使用的类，主要被应用在Control层的RequestMapper方法上
                 mq：定义MQ消息
