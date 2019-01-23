@@ -44,7 +44,7 @@ public class TestMQCtl {
         HttpSession httpSession = request.getSession();
         // 如果登录成功，则保存到会话中
         httpSession.setAttribute("loginName", name);
-        return "websocket/sendtouser/ws-sendtouser-rabbitmq";
+        return "websocket/cluster/ws-cluster-rabbitmq";
     }
 
     /**
@@ -54,7 +54,7 @@ public class TestMQCtl {
     @RequestMapping(value = "login", method = RequestMethod.GET)
     public String loginPage(){
         // 转到登录页面
-        return "websocket/sendtouser/login";
+        return "websocket/cluster/login";
     }
 
     /**
@@ -63,7 +63,7 @@ public class TestMQCtl {
      */
     @RequestMapping(value="/broadcast-rabbitmq/index")
     public String broadcastIndex(){
-        return "websocket/sendtouser/ws-sendtouser-rabbitmq";
+        return "websocket/cluster/ws-cluster-rabbitmq";
     }
 
     /**
@@ -74,7 +74,7 @@ public class TestMQCtl {
      */
     @RequestMapping(value = "send")
     public String sendMq2UserPage(String msg, String userName){
-        return "websocket/sendtouser/send";
+        return "websocket/cluster/send";
     }
     /**
      * 向执行用户发送请求
