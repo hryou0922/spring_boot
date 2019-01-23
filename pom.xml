@@ -30,6 +30,7 @@
         <module>thymeleaf</module>
         <module>swagger</module>
         <module>test</module>
+        <module>business</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="business" />
         <module name="core" />
         <module name="docker" />
         <module name="grpc" />
@@ -22,6 +23,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="business" target="1.8" />
       <module name="core" target="1.8" />
       <module name="docker" target="1.8" />
       <module name="grpc" target="1.8" />
